@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from op3_online_walking_module_msgs/srv/GetPreviewMatrix.srv
+// generated code does not contain a copyright notice
+
+#include "op3_online_walking_module_msgs/msg/PreviewRequest.idl"
+#include "op3_online_walking_module_msgs/msg/PreviewResponse.idl"
+
+module op3_online_walking_module_msgs {
+  module srv {
+    struct GetPreviewMatrix_Request {
+      op3_online_walking_module_msgs::msg::PreviewRequest req;
+    };
+    struct GetPreviewMatrix_Response {
+      op3_online_walking_module_msgs::msg::PreviewResponse res;
+    };
+  };
+};

@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_online_walking_module_msgs/msg/WalkingParam.msg
+// generated code does not contain a copyright notice
+
+
+module op3_online_walking_module_msgs {
+  module msg {
+    struct WalkingParam {
+      double dsp_ratio;
+
+      double lipm_height;
+
+      double foot_height_max;
+
+      double zmp_offset_x;
+
+      double zmp_offset_y;
+    };
+  };
+};

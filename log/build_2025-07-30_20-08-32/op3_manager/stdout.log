@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target op3_manager[0m
+[100%] Built target op3_manager
+-- Install configuration: ""
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/lib/op3_manager/op3_manager
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/config
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/config/dxl_init_OP3.yaml
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/config/offset.yaml
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/config/OP3.robot
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/launch
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/launch/op3_simulation.launch.py
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/launch/op3_manager.launch.py
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/ament_index/resource_index/package_run_dependencies/op3_manager
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/ament_index/resource_index/parent_prefix_path/op3_manager
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/environment/ament_prefix_path.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/environment/path.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/environment/path.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/local_setup.bash
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/local_setup.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/local_setup.zsh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/local_setup.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/package.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/ament_index/resource_index/packages/op3_manager
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/cmake/op3_managerConfig.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/cmake/op3_managerConfig-version.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_manager/share/op3_manager/package.xml

@@ -1,0 +1,10 @@
+{
+  "package_name": "op3_camera_setting_tool_msgs",
+  "non_idl_tuples": [
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_camera_setting_tool_msgs:msg/CameraParams.msg",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_camera_setting_tool_msgs:msg/V4lParameter.msg",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_camera_setting_tool_msgs:msg/V4lParameters.msg",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_camera_setting_tool_msgs:srv/GetParameters.srv",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_camera_setting_tool_msgs:srv/SetParameters.srv"
+  ]
+}

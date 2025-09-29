@@ -1,0 +1,4 @@
+source;share/rf_gz_bridge/local_setup.bash
+source;share/rf_gz_bridge/local_setup.dsv
+source;share/rf_gz_bridge/local_setup.sh
+source;share/rf_gz_bridge/local_setup.zsh

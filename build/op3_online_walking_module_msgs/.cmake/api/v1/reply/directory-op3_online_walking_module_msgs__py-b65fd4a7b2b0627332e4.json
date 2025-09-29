@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "op3_online_walking_module_msgs__py",
+		"source" : "/home/certezas/robotis_ws/build/op3_online_walking_module_msgs/op3_online_walking_module_msgs__py"
+	}
+}

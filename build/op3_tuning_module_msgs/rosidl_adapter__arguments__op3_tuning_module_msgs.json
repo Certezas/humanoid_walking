@@ -1,0 +1,10 @@
+{
+  "package_name": "op3_tuning_module_msgs",
+  "non_idl_tuples": [
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_tuning_module_msgs:msg/JointOffsetData.msg",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_tuning_module_msgs:msg/JointOffsetPositionData.msg",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_tuning_module_msgs:msg/JointTorqueOnOff.msg",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_tuning_module_msgs:msg/JointTorqueOnOffArray.msg",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_tuning_module_msgs:srv/GetPresentJointOffsetData.srv"
+  ]
+}

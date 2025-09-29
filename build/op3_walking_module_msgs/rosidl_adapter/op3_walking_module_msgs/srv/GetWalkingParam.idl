@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from op3_walking_module_msgs/srv/GetWalkingParam.srv
+// generated code does not contain a copyright notice
+
+#include "op3_walking_module_msgs/msg/WalkingParam.idl"
+
+module op3_walking_module_msgs {
+  module srv {
+    struct GetWalkingParam_Request {
+      boolean get_param;
+    };
+    struct GetWalkingParam_Response {
+      op3_walking_module_msgs::msg::WalkingParam parameters;
+    };
+  };
+};

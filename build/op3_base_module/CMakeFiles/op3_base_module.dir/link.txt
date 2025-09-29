@@ -1,0 +1,2 @@
+/usr/bin/ar qc libop3_base_module.a CMakeFiles/op3_base_module.dir/src/base_module.cpp.o CMakeFiles/op3_base_module.dir/src/base_module_state.cpp.o
+/usr/bin/ranlib libop3_base_module.a

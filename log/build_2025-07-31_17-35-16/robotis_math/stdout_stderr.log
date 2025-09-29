@@ -1,0 +1,37 @@
+[100%] Built target robotis_math
+-- Install configuration: ""
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/lib/librobotis_math.a
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/step_data_define.h
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/fifth_order_polynomial_trajectory.h
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/robotis_linear_algebra.h
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/bezier_curve.h
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/minimum_jerk_trajectory.h
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/robotis_trajectory_calculator.h
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/robotis_math_base.h
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/simple_trapezoidal_velocity_profile.h
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/robotis_math.h
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/preview_control.h
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/minimum_jerk_trajectory_with_via_point.h
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/environment/library_path.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/environment/library_path.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/ament_index/resource_index/package_run_dependencies/robotis_math
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/ament_index/resource_index/parent_prefix_path/robotis_math
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/environment/ament_prefix_path.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/environment/path.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/environment/path.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/local_setup.bash
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/local_setup.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/local_setup.zsh
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/local_setup.dsv
+-- Installing: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/package.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/ament_index/resource_index/packages/robotis_math
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/export_robotis_mathExport.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/export_robotis_mathExport-noconfig.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/robotis_mathConfig.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/robotis_mathConfig-version.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/package.xml

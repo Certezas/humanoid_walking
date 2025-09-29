@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_online_walking_module_msgs/msg/Step2DArray.msg
+// generated code does not contain a copyright notice
+
+#include "op3_online_walking_module_msgs/msg/Step2D.idl"
+
+module op3_online_walking_module_msgs {
+  module msg {
+    struct Step2DArray {
+      double step_time;
+
+      sequence<op3_online_walking_module_msgs::msg::Step2D> footsteps_2d;
+    };
+  };
+};

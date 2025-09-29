@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_tuning_module_msgs/msg/JointTorqueOnOffArray.msg
+// generated code does not contain a copyright notice
+
+#include "op3_tuning_module_msgs/msg/JointTorqueOnOff.idl"
+
+module op3_tuning_module_msgs {
+  module msg {
+    struct JointTorqueOnOffArray {
+      sequence<op3_tuning_module_msgs::msg::JointTorqueOnOff> torque_enable_data;
+    };
+  };
+};

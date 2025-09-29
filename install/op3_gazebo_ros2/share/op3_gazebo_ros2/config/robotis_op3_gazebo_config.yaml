@@ -1,0 +1,40 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 500  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    robotis_op3_position:
+      type: forward_command_controller/ForwardCommandController
+
+robotis_op3_position:
+  ros__parameters:
+    joints:
+      - r_sho_pitch
+      - l_sho_pitch
+      - r_sho_roll
+      - l_sho_roll
+      - r_el
+      - l_el
+      - r_hip_yaw
+      - l_hip_yaw
+      - r_hip_roll
+      - l_hip_roll
+      - r_hip_pitch
+      - l_hip_pitch
+      - r_knee
+      - l_knee
+      - r_ank_pitch
+      - l_ank_pitch
+      - r_ank_roll
+      - l_ank_roll
+      - head_pan
+      - head_tilt
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+      - effort

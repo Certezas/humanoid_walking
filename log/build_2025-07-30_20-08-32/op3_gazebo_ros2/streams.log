@@ -1,0 +1,27 @@
+[1.592s] Invoking command in '/home/certezas/robotis_ws/build/op3_gazebo_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_gazebo_ros2 -- -j12 -l12
+[2.660s] Invoked command in '/home/certezas/robotis_ws/build/op3_gazebo_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_gazebo_ros2 -- -j12 -l12
+[2.710s] Invoking command in '/home/certezas/robotis_ws/build/op3_gazebo_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/op3_gazebo_ros2
+[2.966s] -- Install configuration: ""
+[2.966s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/config
+[2.966s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/config/bridge_parameters.yaml
+[2.966s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/config/robotis_op3_gazebo_config.yaml
+[2.966s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/launch
+[2.966s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/launch/robot_sim.launch.py
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/worlds
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/worlds/empty.sdf
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/ament_index/resource_index/package_run_dependencies/op3_gazebo_ros2
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/ament_index/resource_index/parent_prefix_path/op3_gazebo_ros2
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/environment/ament_prefix_path.sh
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/environment/ament_prefix_path.dsv
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/environment/path.sh
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/environment/path.dsv
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/local_setup.bash
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/local_setup.sh
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/local_setup.zsh
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/local_setup.dsv
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/package.dsv
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/ament_index/resource_index/packages/op3_gazebo_ros2
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/cmake/op3_gazebo_ros2Config.cmake
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/cmake/op3_gazebo_ros2Config-version.cmake
+[2.967s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_gazebo_ros2/share/op3_gazebo_ros2/package.xml
+[3.559s] Invoked command in '/home/certezas/robotis_ws/build/op3_gazebo_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/op3_gazebo_ros2

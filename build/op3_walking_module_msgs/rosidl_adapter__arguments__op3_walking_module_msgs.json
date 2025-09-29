@@ -1,0 +1,8 @@
+{
+  "package_name": "op3_walking_module_msgs",
+  "non_idl_tuples": [
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_walking_module_msgs:msg/WalkingParam.msg",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_walking_module_msgs:srv/GetWalkingParam.srv",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_walking_module_msgs:srv/SetWalkingParam.srv"
+  ]
+}

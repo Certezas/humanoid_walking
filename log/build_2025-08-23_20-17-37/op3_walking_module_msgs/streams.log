@@ -1,0 +1,204 @@
+[0.381s] Invoking command in '/home/certezas/robotis_ws/build/op3_walking_module_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_walking_module_msgs -- -j12 -l12
+[7.709s] [  2%] Built target op3_walking_module_msgs__cpp
+[7.944s] [ 12%] Built target op3_walking_module_msgs__rosidl_generator_c
+[8.762s] [ 23%] Built target op3_walking_module_msgs__rosidl_typesupport_fastrtps_c
+[9.163s] [ 44%] Built target op3_walking_module_msgs__rosidl_typesupport_introspection_cpp
+[9.163s] [ 44%] Built target op3_walking_module_msgs__rosidl_typesupport_fastrtps_cpp
+[9.163s] [ 55%] Built target op3_walking_module_msgs__rosidl_typesupport_c
+[9.163s] [ 65%] Built target op3_walking_module_msgs__rosidl_typesupport_introspection_c
+[9.834s] [ 76%] Built target op3_walking_module_msgs__rosidl_typesupport_cpp
+[10.232s] [ 76%] Built target op3_walking_module_msgs
+[10.291s] [ 76%] Built target ament_cmake_python_copy_op3_walking_module_msgs
+[10.488s] [ 78%] Built target op3_walking_module_msgs__py
+[10.672s] [ 87%] Built target op3_walking_module_msgs__rosidl_generator_py
+[10.786s] running egg_info
+[10.786s] writing op3_walking_module_msgs.egg-info/PKG-INFO
+[10.787s] writing dependency_links to op3_walking_module_msgs.egg-info/dependency_links.txt
+[10.787s] writing top-level names to op3_walking_module_msgs.egg-info/top_level.txt
+[10.789s] reading manifest file 'op3_walking_module_msgs.egg-info/SOURCES.txt'
+[10.789s] writing manifest file 'op3_walking_module_msgs.egg-info/SOURCES.txt'
+[10.809s] [ 87%] Built target ament_cmake_python_build_op3_walking_module_msgs_egg
+[10.984s] [ 91%] Built target op3_walking_module_msgs__rosidl_typesupport_fastrtps_c__pyext
+[11.081s] [ 95%] Built target op3_walking_module_msgs__rosidl_typesupport_c__pyext
+[11.129s] [100%] Built target op3_walking_module_msgs__rosidl_typesupport_introspection_c__pyext
+[12.280s] Invoked command in '/home/certezas/robotis_ws/build/op3_walking_module_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_walking_module_msgs -- -j12 -l12
+[12.337s] Invoking command in '/home/certezas/robotis_ws/build/op3_walking_module_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/op3_walking_module_msgs
+[12.675s] -- Install configuration: ""
+[12.721s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/ament_index/resource_index/rosidl_interfaces/op3_walking_module_msgs
+[12.721s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs
+[12.721s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv
+[12.721s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/get_walking_param.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/set_walking_param.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__type_support.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__type_support.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__functions.c
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__functions.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__struct.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__functions.c
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__struct.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__functions.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/rosidl_generator_c__visibility_control.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/walking_param.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__struct.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__functions.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__functions.c
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__type_support.h
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/environment/library_path.sh
+[12.722s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/environment/library_path.dsv
+[12.964s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/lib/libop3_walking_module_msgs__rosidl_generator_c.so
+[12.964s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs
+[12.964s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv
+[12.964s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail
+[12.964s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__rosidl_typesupport_fastrtps_c.h
+[12.964s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__rosidl_typesupport_fastrtps_c.h
+[12.965s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg
+[12.965s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail
+[12.965s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__rosidl_typesupport_fastrtps_c.h
+[12.965s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/lib/libop3_walking_module_msgs__rosidl_typesupport_fastrtps_c.so
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__rosidl_typesupport_introspection_c.h
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__rosidl_typesupport_introspection_c.h
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__type_support.c
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__type_support.c
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__type_support.c
+[13.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__rosidl_typesupport_introspection_c.h
+[13.152s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/lib/libop3_walking_module_msgs__rosidl_typesupport_introspection_c.so
+[13.235s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/lib/libop3_walking_module_msgs__rosidl_typesupport_c.so
+[13.235s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs
+[13.235s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv
+[13.235s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/get_walking_param.hpp
+[13.235s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/set_walking_param.hpp
+[13.235s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail
+[13.235s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__struct.hpp
+[13.235s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__traits.hpp
+[13.235s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__type_support.hpp
+[13.235s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__builder.hpp
+[13.235s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__type_support.hpp
+[13.235s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__builder.hpp
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__traits.hpp
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__struct.hpp
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/walking_param.hpp
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__struct.hpp
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__traits.hpp
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__builder.hpp
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__type_support.hpp
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/dds_fastrtps
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__rosidl_typesupport_fastrtps_cpp.hpp
+[13.236s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__rosidl_typesupport_fastrtps_cpp.hpp
+[13.237s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg
+[13.237s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[13.237s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail
+[13.237s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/dds_fastrtps
+[13.237s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__rosidl_typesupport_fastrtps_cpp.hpp
+[13.394s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/lib/libop3_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.so
+[13.394s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs
+[13.394s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv
+[13.395s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail
+[13.395s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__rosidl_typesupport_introspection_cpp.hpp
+[13.395s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__type_support.cpp
+[13.395s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/get_walking_param__rosidl_typesupport_introspection_cpp.hpp
+[13.395s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/srv/detail/set_walking_param__type_support.cpp
+[13.395s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg
+[13.395s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail
+[13.395s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__rosidl_typesupport_introspection_cpp.hpp
+[13.395s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/include/op3_walking_module_msgs/op3_walking_module_msgs/msg/detail/walking_param__type_support.cpp
+[13.563s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/lib/libop3_walking_module_msgs__rosidl_typesupport_introspection_cpp.so
+[13.577s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/lib/libop3_walking_module_msgs__rosidl_typesupport_cpp.so
+[13.577s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/environment/pythonpath.sh
+[13.577s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/environment/pythonpath.dsv
+[13.577s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs-0.1.1-py3.10.egg-info
+[13.577s] -- Installing: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs-0.1.1-py3.10.egg-info/PKG-INFO
+[13.577s] -- Installing: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs-0.1.1-py3.10.egg-info/dependency_links.txt
+[13.578s] -- Installing: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs-0.1.1-py3.10.egg-info/top_level.txt
+[13.578s] -- Installing: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs-0.1.1-py3.10.egg-info/SOURCES.txt
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/_op3_walking_module_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/op3_walking_module_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/op3_walking_module_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/_op3_walking_module_msgs_s.ep.rosidl_typesupport_c.c
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/__init__.py
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/libop3_walking_module_msgs__rosidl_generator_py.so
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/srv
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/srv/_set_walking_param_s.c
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/srv/_get_walking_param_s.c
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/srv/__init__.py
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/srv/_set_walking_param.py
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/srv/_get_walking_param.py
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/_op3_walking_module_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/op3_walking_module_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[13.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/msg
+[13.579s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/msg/_walking_param.py
+[13.579s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/msg/__init__.py
+[13.579s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/msg/_walking_param_s.c
+[13.779s] Listing '/home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs'...
+[13.779s] Listing '/home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/msg'...
+[13.780s] Listing '/home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/srv'...
+[13.814s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/op3_walking_module_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[13.847s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/op3_walking_module_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[13.859s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages/op3_walking_module_msgs/op3_walking_module_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[13.937s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/lib/libop3_walking_module_msgs__rosidl_generator_py.so
+[13.997s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/msg/WalkingParam.idl
+[13.997s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/srv/GetWalkingParam.idl
+[13.997s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/srv/SetWalkingParam.idl
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/msg/WalkingParam.msg
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/srv/GetWalkingParam.srv
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/srv/GetWalkingParam_Request.msg
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/srv/GetWalkingParam_Response.msg
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/srv/SetWalkingParam.srv
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/srv/SetWalkingParam_Request.msg
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/srv/SetWalkingParam_Response.msg
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/ament_index/resource_index/package_run_dependencies/op3_walking_module_msgs
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/ament_index/resource_index/parent_prefix_path/op3_walking_module_msgs
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/environment/ament_prefix_path.sh
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/environment/ament_prefix_path.dsv
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/environment/path.sh
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/environment/path.dsv
+[13.998s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/local_setup.bash
+[13.999s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/local_setup.sh
+[13.999s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/local_setup.zsh
+[13.999s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/local_setup.dsv
+[13.999s] -- Installing: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/package.dsv
+[14.024s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/ament_index/resource_index/packages/op3_walking_module_msgs
+[14.075s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/export_op3_walking_module_msgs__rosidl_generator_cExport.cmake
+[14.075s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/export_op3_walking_module_msgs__rosidl_generator_cExport-noconfig.cmake
+[14.076s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/export_op3_walking_module_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[14.076s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/export_op3_walking_module_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[14.076s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/op3_walking_module_msgs__rosidl_typesupport_introspection_cExport.cmake
+[14.076s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/op3_walking_module_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[14.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/op3_walking_module_msgs__rosidl_typesupport_cExport.cmake
+[14.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/op3_walking_module_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[14.077s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/export_op3_walking_module_msgs__rosidl_generator_cppExport.cmake
+[14.108s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/export_op3_walking_module_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[14.108s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/export_op3_walking_module_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[14.109s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/op3_walking_module_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[14.109s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/op3_walking_module_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[14.111s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/op3_walking_module_msgs__rosidl_typesupport_cppExport.cmake
+[14.111s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/op3_walking_module_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[14.111s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/export_op3_walking_module_msgs__rosidl_generator_pyExport.cmake
+[14.111s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/export_op3_walking_module_msgs__rosidl_generator_pyExport-noconfig.cmake
+[14.111s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/rosidl_cmake-extras.cmake
+[14.111s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.112s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.112s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[14.112s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[14.112s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[14.112s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[14.112s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/op3_walking_module_msgsConfig.cmake
+[14.112s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/cmake/op3_walking_module_msgsConfig-version.cmake
+[14.112s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_walking_module_msgs/share/op3_walking_module_msgs/package.xml
+[15.354s] Invoked command in '/home/certezas/robotis_ws/build/op3_walking_module_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/op3_walking_module_msgs

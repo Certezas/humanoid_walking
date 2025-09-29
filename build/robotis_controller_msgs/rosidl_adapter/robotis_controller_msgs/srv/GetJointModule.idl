@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robotis_controller_msgs/srv/GetJointModule.srv
+// generated code does not contain a copyright notice
+
+
+module robotis_controller_msgs {
+  module srv {
+    struct GetJointModule_Request {
+      sequence<string> joint_name;
+    };
+    struct GetJointModule_Response {
+      sequence<string> joint_name;
+
+      sequence<string> module_name;
+    };
+  };
+};

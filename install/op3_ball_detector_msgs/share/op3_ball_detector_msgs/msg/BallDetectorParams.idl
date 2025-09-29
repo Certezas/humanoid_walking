@@ -1,0 +1,66 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_ball_detector_msgs/msg/BallDetectorParams.msg
+// generated code does not contain a copyright notice
+
+
+module op3_ball_detector_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "This represents the parameters of ball_detector")
+    struct BallDetectorParams {
+      @verbatim (language="comment", text=
+        "only odd number, 1 - 11")
+      uint32 gaussian_blur_size;
+
+      @verbatim (language="comment", text=
+        "1 - 5")
+      float gaussian_blur_sigma;
+
+      @verbatim (language="comment", text=
+        "50 - 200")
+      float canny_edge_th;
+
+      @verbatim (language="comment", text=
+        "1 - 8")
+      float hough_accum_resolution;
+
+      @verbatim (language="comment", text=
+        "10 - 200")
+      float hough_accum_th;
+
+      @verbatim (language="comment", text=
+        "10 - 200")
+      float min_circle_dist;
+
+      @verbatim (language="comment", text=
+        "10 - 200")
+      uint32 min_radius;
+
+      @verbatim (language="comment", text=
+        "100 - 600")
+      uint32 max_radius;
+
+      @verbatim (language="comment", text=
+        "0 - 359")
+      uint32 filter_h_min;
+
+      uint32 filter_h_max;
+
+      @verbatim (language="comment", text=
+        "0 - 255")
+      uint32 filter_s_min;
+
+      uint32 filter_s_max;
+
+      @verbatim (language="comment", text=
+        "0 - 255")
+      uint32 filter_v_min;
+
+      uint32 filter_v_max;
+
+      @verbatim (language="comment", text=
+        "1 - 9")
+      uint32 ellipse_size;
+    };
+  };
+};

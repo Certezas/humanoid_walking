@@ -1,0 +1,76 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/certezas/robotis_ws/build/op3_description
+-- Install configuration: ""
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/ament_index/resource_index/package_run_dependencies/op3_description
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/ament_index/resource_index/parent_prefix_path/op3_description
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/environment/ament_prefix_path.sh
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/environment/ament_prefix_path.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/environment/path.sh
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/environment/path.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/local_setup.bash
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/local_setup.sh
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/local_setup.zsh
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/local_setup.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/package.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/ament_index/resource_index/packages/op3_description
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/cmake/op3_descriptionConfig.cmake
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/cmake/op3_descriptionConfig-version.cmake
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/package.xml
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/doc
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/doc/OP3 mass property.docx
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/doc/op3_sim.docx
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/doc/op3_sim.ods
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/launch
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/launch/op3_display.launch.py
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ll6.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/la1.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ll2.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/la2.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/h1.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ll5.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/rl3.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/rl1.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ll1.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ll3.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/body.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/rl5.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/rl4.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ll4.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ra1.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ra2.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/base.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/la3.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/rl6.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/h2.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ra3.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/rl2.stl
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/rviz
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/rviz/op3.rviz
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.gazebo.xacro
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.transmissions.xacro
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.inertia.xacro
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.structure.rarm.xacro
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.structure.head.xacro
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.urdf.xacro
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/gazebo_harness.xacro
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.structure.larm.xacro
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.structure.lleg.xacro
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.structure.rleg.xacro
+-- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.visuals.xacro

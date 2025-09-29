@@ -1,0 +1,33 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/msg/joint_ctrl_module__type_support.cpp.o"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/msg/joint_ctrl_module__type_support.cpp.o.d"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/msg/status_msg__type_support.cpp.o"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/msg/status_msg__type_support.cpp.o.d"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/msg/sync_write_item__type_support.cpp.o"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/msg/sync_write_item__type_support.cpp.o.d"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/msg/write_control_table__type_support.cpp.o"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/msg/write_control_table__type_support.cpp.o.d"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/srv/get_joint_module__type_support.cpp.o"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/srv/get_joint_module__type_support.cpp.o.d"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/srv/load_offset__type_support.cpp.o"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/srv/load_offset__type_support.cpp.o.d"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/srv/set_joint_module__type_support.cpp.o"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/srv/set_joint_module__type_support.cpp.o.d"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/srv/set_module__type_support.cpp.o"
+  "CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/srv/set_module__type_support.cpp.o.d"
+  "librobotis_controller_msgs__rosidl_typesupport_cpp.pdb"
+  "librobotis_controller_msgs__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/robotis_controller_msgs/msg/joint_ctrl_module__type_support.cpp"
+  "rosidl_typesupport_cpp/robotis_controller_msgs/msg/status_msg__type_support.cpp"
+  "rosidl_typesupport_cpp/robotis_controller_msgs/msg/sync_write_item__type_support.cpp"
+  "rosidl_typesupport_cpp/robotis_controller_msgs/msg/write_control_table__type_support.cpp"
+  "rosidl_typesupport_cpp/robotis_controller_msgs/srv/get_joint_module__type_support.cpp"
+  "rosidl_typesupport_cpp/robotis_controller_msgs/srv/load_offset__type_support.cpp"
+  "rosidl_typesupport_cpp/robotis_controller_msgs/srv/set_joint_module__type_support.cpp"
+  "rosidl_typesupport_cpp/robotis_controller_msgs/srv/set_module__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

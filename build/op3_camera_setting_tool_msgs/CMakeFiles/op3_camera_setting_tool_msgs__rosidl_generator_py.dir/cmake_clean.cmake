@@ -1,0 +1,19 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/op3_camera_setting_tool_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_camera_setting_tool_msgs/msg/_camera_params_s.c.o"
+  "CMakeFiles/op3_camera_setting_tool_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_camera_setting_tool_msgs/msg/_camera_params_s.c.o.d"
+  "CMakeFiles/op3_camera_setting_tool_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_camera_setting_tool_msgs/msg/_v4l_parameter_s.c.o"
+  "CMakeFiles/op3_camera_setting_tool_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_camera_setting_tool_msgs/msg/_v4l_parameter_s.c.o.d"
+  "CMakeFiles/op3_camera_setting_tool_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_camera_setting_tool_msgs/msg/_v4l_parameters_s.c.o"
+  "CMakeFiles/op3_camera_setting_tool_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_camera_setting_tool_msgs/msg/_v4l_parameters_s.c.o.d"
+  "CMakeFiles/op3_camera_setting_tool_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_camera_setting_tool_msgs/srv/_get_parameters_s.c.o"
+  "CMakeFiles/op3_camera_setting_tool_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_camera_setting_tool_msgs/srv/_get_parameters_s.c.o.d"
+  "CMakeFiles/op3_camera_setting_tool_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_camera_setting_tool_msgs/srv/_set_parameters_s.c.o"
+  "CMakeFiles/op3_camera_setting_tool_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_camera_setting_tool_msgs/srv/_set_parameters_s.c.o.d"
+  "rosidl_generator_py/op3_camera_setting_tool_msgs/libop3_camera_setting_tool_msgs__rosidl_generator_py.pdb"
+  "rosidl_generator_py/op3_camera_setting_tool_msgs/libop3_camera_setting_tool_msgs__rosidl_generator_py.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/op3_camera_setting_tool_msgs__rosidl_generator_py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

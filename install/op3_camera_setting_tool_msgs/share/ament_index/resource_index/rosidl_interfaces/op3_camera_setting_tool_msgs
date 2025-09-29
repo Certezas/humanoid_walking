@@ -1,0 +1,14 @@
+msg/CameraParams.idl
+msg/CameraParams.msg
+msg/V4lParameter.idl
+msg/V4lParameter.msg
+msg/V4lParameters.idl
+msg/V4lParameters.msg
+srv/GetParameters.idl
+srv/GetParameters.srv
+srv/GetParameters_Request.msg
+srv/GetParameters_Response.msg
+srv/SetParameters.idl
+srv/SetParameters.srv
+srv/SetParameters_Request.msg
+srv/SetParameters_Response.msg

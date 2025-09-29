@@ -1,0 +1,4 @@
+source;share/op3_online_walking_module/local_setup.bash
+source;share/op3_online_walking_module/local_setup.dsv
+source;share/op3_online_walking_module/local_setup.sh
+source;share/op3_online_walking_module/local_setup.zsh

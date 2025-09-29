@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_action_module_msgs/msg/StartAction.msg
+// generated code does not contain a copyright notice
+
+
+module op3_action_module_msgs {
+  module msg {
+    struct StartAction {
+      int32 page_num;
+
+      sequence<string> joint_name_array;
+    };
+  };
+};

@@ -1,0 +1,4 @@
+Invoking command in '/home/certezas/robotis_ws/build/robotis_math': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/robotis_math -- -j12 -l12
+Invoked command in '/home/certezas/robotis_ws/build/robotis_math' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/robotis_math -- -j12 -l12
+Invoking command in '/home/certezas/robotis_ws/build/robotis_math': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/robotis_math
+Invoked command in '/home/certezas/robotis_ws/build/robotis_math' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/robotis_math

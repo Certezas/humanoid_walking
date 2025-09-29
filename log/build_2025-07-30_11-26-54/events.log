@@ -1,0 +1,543 @@
+[0.000000] (-) TimerEvent: {}
+[0.000504] (-) JobUnselected: {'identifier': 'dynamixel_sdk'}
+[0.000524] (-) JobUnselected: {'identifier': 'dynamixel_sdk_custom_interfaces'}
+[0.000539] (-) JobUnselected: {'identifier': 'dynamixel_sdk_examples'}
+[0.000550] (-) JobUnselected: {'identifier': 'op3_action_editor'}
+[0.000561] (-) JobUnselected: {'identifier': 'op3_action_module'}
+[0.000572] (-) JobUnselected: {'identifier': 'op3_action_module_msgs'}
+[0.000582] (-) JobUnselected: {'identifier': 'op3_balance_control'}
+[0.000593] (-) JobUnselected: {'identifier': 'op3_ball_detector_msgs'}
+[0.000603] (-) JobUnselected: {'identifier': 'op3_base_module'}
+[0.000613] (-) JobUnselected: {'identifier': 'op3_bringup'}
+[0.000624] (-) JobUnselected: {'identifier': 'op3_camera_setting_tool'}
+[0.000634] (-) JobUnselected: {'identifier': 'op3_camera_setting_tool_msgs'}
+[0.000645] (-) JobUnselected: {'identifier': 'op3_demo'}
+[0.000655] (-) JobUnselected: {'identifier': 'op3_description'}
+[0.000666] (-) JobUnselected: {'identifier': 'op3_direct_control_module'}
+[0.000676] (-) JobUnselected: {'identifier': 'op3_gazebo_ros2'}
+[0.000686] (-) JobUnselected: {'identifier': 'op3_gui_demo'}
+[0.000697] (-) JobUnselected: {'identifier': 'op3_head_control_module'}
+[0.000707] (-) JobUnselected: {'identifier': 'op3_kinematics_dynamics'}
+[0.000718] (-) JobUnselected: {'identifier': 'op3_localization'}
+[0.000728] (-) JobUnselected: {'identifier': 'op3_manager'}
+[0.000738] (-) JobUnselected: {'identifier': 'op3_navigation'}
+[0.000749] (-) JobUnselected: {'identifier': 'op3_offset_tuner_client'}
+[0.000759] (-) JobUnselected: {'identifier': 'op3_offset_tuner_msgs'}
+[0.000769] (-) JobUnselected: {'identifier': 'op3_offset_tuner_server'}
+[0.000780] (-) JobUnselected: {'identifier': 'op3_online_walking_module'}
+[0.000790] (-) JobUnselected: {'identifier': 'op3_online_walking_module_msgs'}
+[0.000800] (-) JobUnselected: {'identifier': 'op3_read_write_demo'}
+[0.000811] (-) JobUnselected: {'identifier': 'op3_tuner_client'}
+[0.000821] (-) JobUnselected: {'identifier': 'op3_tuning_module'}
+[0.000831] (-) JobUnselected: {'identifier': 'op3_tuning_module_msgs'}
+[0.000841] (-) JobUnselected: {'identifier': 'op3_walking_module'}
+[0.000852] (-) JobUnselected: {'identifier': 'op3_walking_module_msgs'}
+[0.000867] (-) JobUnselected: {'identifier': 'op3_web_setting_tool'}
+[0.000895] (-) JobUnselected: {'identifier': 'op3_webots_ros2'}
+[0.000906] (-) JobUnselected: {'identifier': 'open_cr_module'}
+[0.000916] (-) JobUnselected: {'identifier': 'rf_gz_bridge'}
+[0.000927] (-) JobUnselected: {'identifier': 'robotis_controller'}
+[0.000937] (-) JobUnselected: {'identifier': 'robotis_controller_msgs'}
+[0.000947] (-) JobUnselected: {'identifier': 'robotis_device'}
+[0.000957] (-) JobUnselected: {'identifier': 'robotis_framework_common'}
+[0.000967] (-) JobUnselected: {'identifier': 'robotis_math'}
+[0.000978] (-) JobUnselected: {'identifier': 'ros_madplay_player'}
+[0.000988] (-) JobUnselected: {'identifier': 'ros_mpg321_player'}
+[0.001000] (op3_kajita_walking_module) JobQueued: {'identifier': 'op3_kajita_walking_module', 'dependencies': OrderedDict([('robotis_math', '/home/certezas/robotis_ws/install/robotis_math'), ('op3_kinematics_dynamics', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics')])}
+[0.001016] (op3_kajita_walking_module) JobStarted: {'identifier': 'op3_kajita_walking_module'}
+[0.099964] (-) TimerEvent: {}
+[0.200245] (-) TimerEvent: {}
+[0.300473] (-) TimerEvent: {}
+[0.401211] (-) TimerEvent: {}
+[0.502201] (-) TimerEvent: {}
+[0.602466] (-) TimerEvent: {}
+[0.703137] (-) TimerEvent: {}
+[0.803406] (-) TimerEvent: {}
+[0.806982] (op3_kajita_walking_module) JobProgress: {'identifier': 'op3_kajita_walking_module', 'progress': 'cmake'}
+[0.876074] (op3_kajita_walking_module) JobProgress: {'identifier': 'op3_kajita_walking_module', 'progress': 'build'}
+[0.876115] (op3_kajita_walking_module) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/certezas/robotis_ws/build/op3_kajita_walking_module', '--', '-j12', '-l12'], 'cwd': '/home/certezas/robotis_ws/build/op3_kajita_walking_module', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'pt_BR:pt:en'), ('USER', 'certezas'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics/lib:/home/certezas/robotis_ws/install/robotis_math/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/certezas'), ('OLDPWD', '/home/certezas'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2128'), ('SYSTEMD_EXEC_PID', '2467'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5049'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'certezas'), ('JOURNAL_STREAM', '8:19648'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'certezas'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/certezas/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/certezas/.dotnet/tools'), ('SESSION_MANAGER', 'local/certezas-A62-LIV:@/tmp/.ICE-unix/2443,unix/certezas-A62-LIV:/tmp/.ICE-unix/2443'), ('INVOCATION_ID', 'b42ad2a6bb234073a0e4102415b4cfc7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'pt_BR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/certezas/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics:/home/certezas/robotis_ws/install/robotis_math:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:a84b3e91-c1a7-4b2e-a930-d290e5de4862'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/certezas/robotis_ws/build/op3_kajita_walking_module'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics:/home/certezas/robotis_ws/install/robotis_math:/opt/ros/humble')]), 'shell': False}
+[0.903497] (-) TimerEvent: {}
+[1.019386] (-) TimerEvent: {}
+[1.187742] (-) TimerEvent: {}
+[1.288016] (-) TimerEvent: {}
+[1.388415] (-) TimerEvent: {}
+[1.488675] (-) TimerEvent: {}
+[1.588889] (-) TimerEvent: {}
+[1.689268] (-) TimerEvent: {}
+[1.790037] (-) TimerEvent: {}
+[1.890586] (-) TimerEvent: {}
+[1.990869] (-) TimerEvent: {}
+[2.091133] (-) TimerEvent: {}
+[2.191761] (-) TimerEvent: {}
+[2.292348] (-) TimerEvent: {}
+[2.392724] (-) TimerEvent: {}
+[2.493275] (-) TimerEvent: {}
+[2.593977] (-) TimerEvent: {}
+[2.694223] (-) TimerEvent: {}
+[2.794539] (-) TimerEvent: {}
+[2.894803] (-) TimerEvent: {}
+[3.011539] (-) TimerEvent: {}
+[3.111993] (-) TimerEvent: {}
+[3.212195] (-) TimerEvent: {}
+[3.312454] (-) TimerEvent: {}
+[3.413283] (-) TimerEvent: {}
+[3.513980] (-) TimerEvent: {}
+[3.614746] (-) TimerEvent: {}
+[3.715373] (-) TimerEvent: {}
+[3.816133] (-) TimerEvent: {}
+[3.917190] (-) TimerEvent: {}
+[4.017903] (-) TimerEvent: {}
+[4.118606] (-) TimerEvent: {}
+[4.219369] (-) TimerEvent: {}
+[4.320025] (-) TimerEvent: {}
+[4.420715] (-) TimerEvent: {}
+[4.521402] (-) TimerEvent: {}
+[4.622301] (-) TimerEvent: {}
+[4.722988] (-) TimerEvent: {}
+[4.823676] (-) TimerEvent: {}
+[4.924372] (-) TimerEvent: {}
+[5.024681] (-) TimerEvent: {}
+[5.125256] (-) TimerEvent: {}
+[5.225465] (-) TimerEvent: {}
+[5.325704] (-) TimerEvent: {}
+[5.426191] (-) TimerEvent: {}
+[5.526406] (-) TimerEvent: {}
+[5.560292] (op3_kajita_walking_module) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target kajita_walking_node\x1b[0m\n'}
+[5.626497] (-) TimerEvent: {}
+[5.726784] (-) TimerEvent: {}
+[5.827443] (-) TimerEvent: {}
+[5.928160] (-) TimerEvent: {}
+[6.028819] (-) TimerEvent: {}
+[6.129385] (-) TimerEvent: {}
+[6.230118] (-) TimerEvent: {}
+[6.330381] (-) TimerEvent: {}
+[6.431133] (-) TimerEvent: {}
+[6.531413] (-) TimerEvent: {}
+[6.631631] (-) TimerEvent: {}
+[6.731831] (-) TimerEvent: {}
+[6.832273] (-) TimerEvent: {}
+[6.932482] (-) TimerEvent: {}
+[7.032683] (-) TimerEvent: {}
+[7.133026] (-) TimerEvent: {}
+[7.233473] (-) TimerEvent: {}
+[7.333752] (-) TimerEvent: {}
+[7.434384] (-) TimerEvent: {}
+[7.534590] (-) TimerEvent: {}
+[7.634788] (-) TimerEvent: {}
+[7.735391] (-) TimerEvent: {}
+[7.836024] (-) TimerEvent: {}
+[7.936440] (-) TimerEvent: {}
+[8.036831] (-) TimerEvent: {}
+[8.137055] (-) TimerEvent: {}
+[8.237749] (-) TimerEvent: {}
+[8.314084] (op3_kajita_walking_module) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/kajita_walking_node.dir/src/kajita_walking_controller.cpp.o\x1b[0m\n'}
+[8.337847] (-) TimerEvent: {}
+[8.438550] (-) TimerEvent: {}
+[8.539258] (-) TimerEvent: {}
+[8.640231] (-) TimerEvent: {}
+[8.740897] (-) TimerEvent: {}
+[8.841150] (-) TimerEvent: {}
+[8.941813] (-) TimerEvent: {}
+[9.042483] (-) TimerEvent: {}
+[9.142779] (-) TimerEvent: {}
+[9.243232] (-) TimerEvent: {}
+[9.343554] (-) TimerEvent: {}
+[9.443851] (-) TimerEvent: {}
+[9.544252] (-) TimerEvent: {}
+[9.644536] (-) TimerEvent: {}
+[9.744827] (-) TimerEvent: {}
+[9.845382] (-) TimerEvent: {}
+[9.946040] (-) TimerEvent: {}
+[10.046381] (-) TimerEvent: {}
+[10.147098] (-) TimerEvent: {}
+[10.247505] (-) TimerEvent: {}
+[10.348192] (-) TimerEvent: {}
+[10.448409] (-) TimerEvent: {}
+[10.548616] (-) TimerEvent: {}
+[10.648816] (-) TimerEvent: {}
+[10.749433] (-) TimerEvent: {}
+[10.850149] (-) TimerEvent: {}
+[10.950466] (-) TimerEvent: {}
+[11.051167] (-) TimerEvent: {}
+[11.151486] (-) TimerEvent: {}
+[11.252251] (-) TimerEvent: {}
+[11.353114] (-) TimerEvent: {}
+[11.453845] (-) TimerEvent: {}
+[11.554629] (-) TimerEvent: {}
+[11.655310] (-) TimerEvent: {}
+[11.755574] (-) TimerEvent: {}
+[11.855845] (-) TimerEvent: {}
+[11.956063] (-) TimerEvent: {}
+[12.056385] (-) TimerEvent: {}
+[12.157084] (-) TimerEvent: {}
+[12.257284] (-) TimerEvent: {}
+[12.357937] (-) TimerEvent: {}
+[12.458622] (-) TimerEvent: {}
+[12.558911] (-) TimerEvent: {}
+[12.659364] (-) TimerEvent: {}
+[12.759616] (-) TimerEvent: {}
+[12.860695] (-) TimerEvent: {}
+[12.961294] (-) TimerEvent: {}
+[13.061623] (-) TimerEvent: {}
+[13.162303] (-) TimerEvent: {}
+[13.263055] (-) TimerEvent: {}
+[13.364062] (-) TimerEvent: {}
+[13.464321] (-) TimerEvent: {}
+[13.565010] (-) TimerEvent: {}
+[13.665719] (-) TimerEvent: {}
+[13.766095] (-) TimerEvent: {}
+[13.866397] (-) TimerEvent: {}
+[13.967137] (-) TimerEvent: {}
+[14.067843] (-) TimerEvent: {}
+[14.168594] (-) TimerEvent: {}
+[14.269303] (-) TimerEvent: {}
+[14.369698] (-) TimerEvent: {}
+[14.470381] (-) TimerEvent: {}
+[14.570626] (-) TimerEvent: {}
+[14.671486] (-) TimerEvent: {}
+[14.772512] (-) TimerEvent: {}
+[14.873193] (-) TimerEvent: {}
+[14.973477] (-) TimerEvent: {}
+[15.074200] (-) TimerEvent: {}
+[15.174386] (-) TimerEvent: {}
+[15.275070] (-) TimerEvent: {}
+[15.375271] (-) TimerEvent: {}
+[15.475572] (-) TimerEvent: {}
+[15.575920] (-) TimerEvent: {}
+[15.676264] (-) TimerEvent: {}
+[15.776536] (-) TimerEvent: {}
+[15.877243] (-) TimerEvent: {}
+[15.977986] (-) TimerEvent: {}
+[16.078419] (-) TimerEvent: {}
+[16.178649] (-) TimerEvent: {}
+[16.279352] (-) TimerEvent: {}
+[16.380038] (-) TimerEvent: {}
+[16.480952] (-) TimerEvent: {}
+[16.581178] (-) TimerEvent: {}
+[16.681877] (-) TimerEvent: {}
+[16.782395] (-) TimerEvent: {}
+[16.882724] (-) TimerEvent: {}
+[16.982958] (-) TimerEvent: {}
+[17.083643] (-) TimerEvent: {}
+[17.184333] (-) TimerEvent: {}
+[17.285020] (-) TimerEvent: {}
+[17.385246] (-) TimerEvent: {}
+[17.485572] (-) TimerEvent: {}
+[17.586052] (-) TimerEvent: {}
+[17.686736] (-) TimerEvent: {}
+[17.787391] (-) TimerEvent: {}
+[17.888149] (-) TimerEvent: {}
+[17.989017] (-) TimerEvent: {}
+[18.089417] (-) TimerEvent: {}
+[18.190151] (-) TimerEvent: {}
+[18.290454] (-) TimerEvent: {}
+[18.391136] (-) TimerEvent: {}
+[18.491890] (-) TimerEvent: {}
+[18.592376] (-) TimerEvent: {}
+[18.693066] (-) TimerEvent: {}
+[18.793323] (-) TimerEvent: {}
+[18.893993] (-) TimerEvent: {}
+[18.994379] (-) TimerEvent: {}
+[19.094577] (-) TimerEvent: {}
+[19.194922] (-) TimerEvent: {}
+[19.295770] (-) TimerEvent: {}
+[19.396537] (-) TimerEvent: {}
+[19.496833] (-) TimerEvent: {}
+[19.597334] (-) TimerEvent: {}
+[19.698250] (-) TimerEvent: {}
+[19.799074] (-) TimerEvent: {}
+[19.899801] (-) TimerEvent: {}
+[20.000634] (-) TimerEvent: {}
+[20.101317] (-) TimerEvent: {}
+[20.201972] (-) TimerEvent: {}
+[20.302631] (-) TimerEvent: {}
+[20.403274] (-) TimerEvent: {}
+[20.503515] (-) TimerEvent: {}
+[20.604164] (-) TimerEvent: {}
+[20.704408] (-) TimerEvent: {}
+[20.804656] (-) TimerEvent: {}
+[20.904979] (-) TimerEvent: {}
+[21.005817] (-) TimerEvent: {}
+[21.106544] (-) TimerEvent: {}
+[21.207636] (-) TimerEvent: {}
+[21.307964] (-) TimerEvent: {}
+[21.408282] (-) TimerEvent: {}
+[21.508474] (-) TimerEvent: {}
+[21.608798] (-) TimerEvent: {}
+[21.709742] (-) TimerEvent: {}
+[21.810379] (-) TimerEvent: {}
+[21.910741] (-) TimerEvent: {}
+[22.011417] (-) TimerEvent: {}
+[22.112107] (-) TimerEvent: {}
+[22.212314] (-) TimerEvent: {}
+[22.312975] (-) TimerEvent: {}
+[22.413749] (-) TimerEvent: {}
+[22.514441] (-) TimerEvent: {}
+[22.615106] (-) TimerEvent: {}
+[22.715819] (-) TimerEvent: {}
+[22.816359] (-) TimerEvent: {}
+[22.917026] (-) TimerEvent: {}
+[23.017684] (-) TimerEvent: {}
+[23.118136] (-) TimerEvent: {}
+[23.219104] (-) TimerEvent: {}
+[23.319362] (-) TimerEvent: {}
+[23.419786] (-) TimerEvent: {}
+[23.520410] (-) TimerEvent: {}
+[23.620608] (-) TimerEvent: {}
+[23.720921] (-) TimerEvent: {}
+[23.821171] (-) TimerEvent: {}
+[23.921412] (-) TimerEvent: {}
+[24.022173] (-) TimerEvent: {}
+[24.122834] (-) TimerEvent: {}
+[24.223530] (-) TimerEvent: {}
+[24.324189] (-) TimerEvent: {}
+[24.424898] (-) TimerEvent: {}
+[24.525119] (-) TimerEvent: {}
+[24.625803] (-) TimerEvent: {}
+[24.726505] (-) TimerEvent: {}
+[24.826730] (-) TimerEvent: {}
+[24.927398] (-) TimerEvent: {}
+[25.027649] (-) TimerEvent: {}
+[25.127936] (-) TimerEvent: {}
+[25.228205] (-) TimerEvent: {}
+[25.328880] (-) TimerEvent: {}
+[25.429091] (-) TimerEvent: {}
+[25.529347] (-) TimerEvent: {}
+[25.629586] (-) TimerEvent: {}
+[25.730302] (-) TimerEvent: {}
+[25.830504] (-) TimerEvent: {}
+[25.930785] (-) TimerEvent: {}
+[26.031020] (-) TimerEvent: {}
+[26.131313] (-) TimerEvent: {}
+[26.231581] (-) TimerEvent: {}
+[26.331917] (-) TimerEvent: {}
+[26.432181] (-) TimerEvent: {}
+[26.532434] (-) TimerEvent: {}
+[26.632727] (-) TimerEvent: {}
+[26.733448] (-) TimerEvent: {}
+[26.834171] (-) TimerEvent: {}
+[26.934394] (-) TimerEvent: {}
+[27.034677] (-) TimerEvent: {}
+[27.134905] (-) TimerEvent: {}
+[27.235366] (-) TimerEvent: {}
+[27.335604] (-) TimerEvent: {}
+[27.387130] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid KajitaWalkingController::initialize()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.387304] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:83:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[27.387397] (op3_kajita_walking_module) StderrLine: {'line': b'   83 |         if (\x1b[01;35m\x1b[Ktemp_idx_passo + 1 >= step_pos_.size()\x1b[m\x1b[K) {\n'}
+[27.387456] (op3_kajita_walking_module) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.435738] (-) TimerEvent: {}
+[27.536036] (-) TimerEvent: {}
+[27.574917] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid KajitaWalkingController::process()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.575104] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:195:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[27.575185] (op3_kajita_walking_module) StderrLine: {'line': b'  195 |     Vector2d pe_balanco_fim = (\x1b[01;35m\x1b[Kidx_pe_balanco + 1 < step_pos_.size()\x1b[m\x1b[K) ? step_pos_[idx_pe_balanco + 1] : step_pos_.back();\n'}
+[27.575254] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.636172] (-) TimerEvent: {}
+[27.736832] (-) TimerEvent: {}
+[27.837091] (-) TimerEvent: {}
+[27.937379] (-) TimerEvent: {}
+[28.037652] (-) TimerEvent: {}
+[28.137983] (-) TimerEvent: {}
+[28.238293] (-) TimerEvent: {}
+[28.338631] (-) TimerEvent: {}
+[28.438946] (-) TimerEvent: {}
+[28.539228] (-) TimerEvent: {}
+[28.639484] (-) TimerEvent: {}
+[28.739754] (-) TimerEvent: {}
+[28.840036] (-) TimerEvent: {}
+[28.940322] (-) TimerEvent: {}
+[29.040573] (-) TimerEvent: {}
+[29.140843] (-) TimerEvent: {}
+[29.241164] (-) TimerEvent: {}
+[29.341432] (-) TimerEvent: {}
+[29.441706] (-) TimerEvent: {}
+[29.541979] (-) TimerEvent: {}
+[29.642276] (-) TimerEvent: {}
+[29.742563] (-) TimerEvent: {}
+[29.842841] (-) TimerEvent: {}
+[29.943151] (-) TimerEvent: {}
+[30.043391] (-) TimerEvent: {}
+[30.143699] (-) TimerEvent: {}
+[30.243959] (-) TimerEvent: {}
+[30.344230] (-) TimerEvent: {}
+[30.444500] (-) TimerEvent: {}
+[30.544701] (-) TimerEvent: {}
+[30.644980] (-) TimerEvent: {}
+[30.745262] (-) TimerEvent: {}
+[30.845520] (-) TimerEvent: {}
+[30.945898] (-) TimerEvent: {}
+[31.046155] (-) TimerEvent: {}
+[31.146376] (-) TimerEvent: {}
+[31.246656] (-) TimerEvent: {}
+[31.346953] (-) TimerEvent: {}
+[31.447191] (-) TimerEvent: {}
+[31.547881] (-) TimerEvent: {}
+[31.648164] (-) TimerEvent: {}
+[31.748449] (-) TimerEvent: {}
+[31.848670] (-) TimerEvent: {}
+[31.949246] (-) TimerEvent: {}
+[32.049946] (-) TimerEvent: {}
+[32.150216] (-) TimerEvent: {}
+[32.250493] (-) TimerEvent: {}
+[32.350749] (-) TimerEvent: {}
+[32.451031] (-) TimerEvent: {}
+[32.551272] (-) TimerEvent: {}
+[32.651530] (-) TimerEvent: {}
+[32.751822] (-) TimerEvent: {}
+[32.852427] (-) TimerEvent: {}
+[32.953125] (-) TimerEvent: {}
+[33.053820] (-) TimerEvent: {}
+[33.154906] (-) TimerEvent: {}
+[33.255964] (-) TimerEvent: {}
+[33.356668] (-) TimerEvent: {}
+[33.457850] (-) TimerEvent: {}
+[33.558592] (-) TimerEvent: {}
+[33.659694] (-) TimerEvent: {}
+[33.759961] (-) TimerEvent: {}
+[33.860976] (-) TimerEvent: {}
+[33.961202] (-) TimerEvent: {}
+[34.061453] (-) TimerEvent: {}
+[34.161711] (-) TimerEvent: {}
+[34.261978] (-) TimerEvent: {}
+[34.362248] (-) TimerEvent: {}
+[34.462461] (-) TimerEvent: {}
+[34.562730] (-) TimerEvent: {}
+[34.662958] (-) TimerEvent: {}
+[34.763173] (-) TimerEvent: {}
+[34.863466] (-) TimerEvent: {}
+[34.963766] (-) TimerEvent: {}
+[35.064051] (-) TimerEvent: {}
+[35.164290] (-) TimerEvent: {}
+[35.264535] (-) TimerEvent: {}
+[35.364767] (-) TimerEvent: {}
+[35.465040] (-) TimerEvent: {}
+[35.565294] (-) TimerEvent: {}
+[35.665544] (-) TimerEvent: {}
+[35.765790] (-) TimerEvent: {}
+[35.866070] (-) TimerEvent: {}
+[35.966324] (-) TimerEvent: {}
+[36.066578] (-) TimerEvent: {}
+[36.166832] (-) TimerEvent: {}
+[36.267090] (-) TimerEvent: {}
+[36.367358] (-) TimerEvent: {}
+[36.467604] (-) TimerEvent: {}
+[36.567969] (-) TimerEvent: {}
+[36.668232] (-) TimerEvent: {}
+[36.768482] (-) TimerEvent: {}
+[36.868734] (-) TimerEvent: {}
+[36.968993] (-) TimerEvent: {}
+[37.069280] (-) TimerEvent: {}
+[37.169543] (-) TimerEvent: {}
+[37.269781] (-) TimerEvent: {}
+[37.370104] (-) TimerEvent: {}
+[37.470624] (-) TimerEvent: {}
+[37.571650] (-) TimerEvent: {}
+[37.672330] (-) TimerEvent: {}
+[37.773057] (-) TimerEvent: {}
+[37.873744] (-) TimerEvent: {}
+[37.974424] (-) TimerEvent: {}
+[38.075139] (-) TimerEvent: {}
+[38.175731] (-) TimerEvent: {}
+[38.276381] (-) TimerEvent: {}
+[38.376584] (-) TimerEvent: {}
+[38.476949] (-) TimerEvent: {}
+[38.577798] (-) TimerEvent: {}
+[38.678182] (-) TimerEvent: {}
+[38.778492] (-) TimerEvent: {}
+[38.878747] (-) TimerEvent: {}
+[38.979013] (-) TimerEvent: {}
+[39.079398] (-) TimerEvent: {}
+[39.179611] (-) TimerEvent: {}
+[39.279913] (-) TimerEvent: {}
+[39.333455] (op3_kajita_walking_module) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable kajita_walking_node\x1b[0m\n'}
+[39.380385] (-) TimerEvent: {}
+[39.480658] (-) TimerEvent: {}
+[39.581346] (-) TimerEvent: {}
+[39.681694] (-) TimerEvent: {}
+[39.782385] (-) TimerEvent: {}
+[39.883067] (-) TimerEvent: {}
+[39.983747] (-) TimerEvent: {}
+[40.083985] (-) TimerEvent: {}
+[40.184892] (-) TimerEvent: {}
+[40.285551] (-) TimerEvent: {}
+[40.385778] (-) TimerEvent: {}
+[40.486338] (-) TimerEvent: {}
+[40.586702] (-) TimerEvent: {}
+[40.687434] (-) TimerEvent: {}
+[40.787725] (-) TimerEvent: {}
+[40.888154] (-) TimerEvent: {}
+[40.988554] (-) TimerEvent: {}
+[41.089432] (-) TimerEvent: {}
+[41.190222] (-) TimerEvent: {}
+[41.291363] (-) TimerEvent: {}
+[41.391635] (-) TimerEvent: {}
+[41.492545] (-) TimerEvent: {}
+[41.593374] (-) TimerEvent: {}
+[41.693729] (-) TimerEvent: {}
+[41.794564] (-) TimerEvent: {}
+[41.894892] (-) TimerEvent: {}
+[41.995206] (-) TimerEvent: {}
+[42.095899] (-) TimerEvent: {}
+[42.196579] (-) TimerEvent: {}
+[42.297285] (-) TimerEvent: {}
+[42.397968] (-) TimerEvent: {}
+[42.498318] (-) TimerEvent: {}
+[42.598587] (-) TimerEvent: {}
+[42.699293] (-) TimerEvent: {}
+[42.800017] (-) TimerEvent: {}
+[42.900368] (-) TimerEvent: {}
+[43.001447] (-) TimerEvent: {}
+[43.102172] (-) TimerEvent: {}
+[43.202492] (-) TimerEvent: {}
+[43.303182] (-) TimerEvent: {}
+[43.403872] (-) TimerEvent: {}
+[43.504544] (-) TimerEvent: {}
+[43.604779] (-) TimerEvent: {}
+[43.705577] (-) TimerEvent: {}
+[43.806284] (-) TimerEvent: {}
+[43.906547] (-) TimerEvent: {}
+[44.007210] (-) TimerEvent: {}
+[44.107464] (-) TimerEvent: {}
+[44.208191] (-) TimerEvent: {}
+[44.308473] (-) TimerEvent: {}
+[44.408802] (-) TimerEvent: {}
+[44.509164] (-) TimerEvent: {}
+[44.609412] (-) TimerEvent: {}
+[44.654724] (op3_kajita_walking_module) StdoutLine: {'line': b'[100%] Built target kajita_walking_node\n'}
+[44.681097] (op3_kajita_walking_module) CommandEnded: {'returncode': 0}
+[44.709975] (-) TimerEvent: {}
+[44.810628] (-) TimerEvent: {}
+[44.848002] (op3_kajita_walking_module) JobProgress: {'identifier': 'op3_kajita_walking_module', 'progress': 'install'}
+[44.853592] (op3_kajita_walking_module) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/certezas/robotis_ws/build/op3_kajita_walking_module'], 'cwd': '/home/certezas/robotis_ws/build/op3_kajita_walking_module', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'pt_BR:pt:en'), ('USER', 'certezas'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics/lib:/home/certezas/robotis_ws/install/robotis_math/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/certezas'), ('OLDPWD', '/home/certezas'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2128'), ('SYSTEMD_EXEC_PID', '2467'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5049'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'certezas'), ('JOURNAL_STREAM', '8:19648'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'certezas'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/certezas/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/certezas/.dotnet/tools'), ('SESSION_MANAGER', 'local/certezas-A62-LIV:@/tmp/.ICE-unix/2443,unix/certezas-A62-LIV:/tmp/.ICE-unix/2443'), ('INVOCATION_ID', 'b42ad2a6bb234073a0e4102415b4cfc7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'pt_BR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/certezas/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics:/home/certezas/robotis_ws/install/robotis_math:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:a84b3e91-c1a7-4b2e-a930-d290e5de4862'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/certezas/robotis_ws/build/op3_kajita_walking_module'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics:/home/certezas/robotis_ws/install/robotis_math:/opt/ros/humble')]), 'shell': False}
+[44.910787] (-) TimerEvent: {}
+[44.932404] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[45.010994] (-) TimerEvent: {}
+[45.111684] (-) TimerEvent: {}
+[45.153794] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Installing: /home/certezas/robotis_ws/install/op3_kajita_walking_module/lib/op3_kajita_walking_module/kajita_walking_node\n'}
+[45.156947] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Set runtime path of "/home/certezas/robotis_ws/install/op3_kajita_walking_module/lib/op3_kajita_walking_module/kajita_walking_node" to ""\n'}
+[45.162508] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/ament_index/resource_index/package_run_dependencies/op3_kajita_walking_module\n'}
+[45.178190] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/ament_index/resource_index/parent_prefix_path/op3_kajita_walking_module\n'}
+[45.211826] (-) TimerEvent: {}
+[45.250799] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/environment/ament_prefix_path.sh\n'}
+[45.251012] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/environment/ament_prefix_path.dsv\n'}
+[45.251147] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/environment/path.sh\n'}
+[45.251249] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/environment/path.dsv\n'}
+[45.251294] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/local_setup.bash\n'}
+[45.251343] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/local_setup.sh\n'}
+[45.251386] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/local_setup.zsh\n'}
+[45.251427] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/local_setup.dsv\n'}
+[45.251469] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Installing: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/package.dsv\n'}
+[45.311422] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/ament_index/resource_index/packages/op3_kajita_walking_module\n'}
+[45.311681] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/cmake/op3_kajita_walking_moduleConfig.cmake\n'}
+[45.311787] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/cmake/op3_kajita_walking_moduleConfig-version.cmake\n'}
+[45.311989] (-) TimerEvent: {}
+[45.312106] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/package.xml\n'}
+[45.313465] (op3_kajita_walking_module) CommandEnded: {'returncode': 0}
+[45.412426] (-) TimerEvent: {}
+[45.512674] (-) TimerEvent: {}
+[45.613404] (-) TimerEvent: {}
+[45.713605] (-) TimerEvent: {}
+[45.814299] (-) TimerEvent: {}
+[45.914573] (-) TimerEvent: {}
+[46.015263] (-) TimerEvent: {}
+[46.065745] (op3_kajita_walking_module) JobEnded: {'identifier': 'op3_kajita_walking_module', 'rc': 0}
+[46.066401] (-) EventReactorShutdown: {}

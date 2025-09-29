@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from op3_ball_detector_msgs/srv/SetParameters.srv
+// generated code does not contain a copyright notice
+
+#include "op3_ball_detector_msgs/msg/BallDetectorParams.idl"
+
+module op3_ball_detector_msgs {
+  module srv {
+    struct SetParameters_Request {
+      op3_ball_detector_msgs::msg::BallDetectorParams params;
+    };
+    struct SetParameters_Response {
+      op3_ball_detector_msgs::msg::BallDetectorParams returns;
+    };
+  };
+};

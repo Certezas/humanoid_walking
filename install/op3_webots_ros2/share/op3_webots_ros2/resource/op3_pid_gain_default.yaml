@@ -1,0 +1,80 @@
+Neck:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+Head:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+ShoulderR:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+ArmUpperR:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+ArmLowerR:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+ShoulderL:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+ArmUpperL:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+ArmLowerL:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0  
+PelvYR:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+PelvR:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+LegUpperR:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+LegLowerR:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+AnkleR:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+FootR:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+PelvYL:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+PelvL:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+LegUpperL:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+LegLowerL:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+AnkleL:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0
+FootL:
+  p_gain: 10
+  d_gain: 0
+  i_gain: 0

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libop3_tuning_module.a CMakeFiles/op3_tuning_module.dir/src/tuning_module.cpp.o CMakeFiles/op3_tuning_module.dir/src/tuning_module_state.cpp.o CMakeFiles/op3_tuning_module.dir/src/tuning_data.cpp.o
+/usr/bin/ranlib libop3_tuning_module.a

@@ -1,0 +1,10 @@
+In file included from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1[m[K:
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:36:60:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   36 |     double t_step_, largura_passo_base_, hip_pitch_offset_;[01;35m[K;[m[K
+      |                                                            [01;35m[K^[m[K
+      |                                                            [31m[K-[m[K
+In file included from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/main.cpp:1[m[K:
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:36:60:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   36 |     double t_step_, largura_passo_base_, hip_pitch_offset_;[01;35m[K;[m[K
+      |                                                            [01;35m[K^[m[K
+      |                                                            [31m[K-[m[K

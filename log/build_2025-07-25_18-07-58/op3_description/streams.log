@@ -1,0 +1,82 @@
+[0.113s] Invoking command in '/home/certezas/robotis_ws/build/op3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake /home/certezas/robotis_ws/src/ROBOTIS-OP3-Common/op3_description -DCMAKE_INSTALL_PREFIX=/home/certezas/robotis_ws/install/op3_description
+[5.991s] -- The C compiler identification is GNU 11.4.0
+[5.991s] -- The CXX compiler identification is GNU 11.4.0
+[5.991s] -- Detecting C compiler ABI info
+[5.991s] -- Detecting C compiler ABI info - done
+[5.991s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.991s] -- Detecting C compile features
+[5.991s] -- Detecting C compile features - done
+[5.991s] -- Detecting CXX compiler ABI info
+[5.992s] -- Detecting CXX compiler ABI info - done
+[5.992s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.992s] -- Detecting CXX compile features
+[5.992s] -- Detecting CXX compile features - done
+[5.992s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.992s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.992s] -- Configuring done
+[5.992s] -- Generating done
+[5.992s] -- Build files have been written to: /home/certezas/robotis_ws/build/op3_description
+[6.000s] Invoked command in '/home/certezas/robotis_ws/build/op3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake /home/certezas/robotis_ws/src/ROBOTIS-OP3-Common/op3_description -DCMAKE_INSTALL_PREFIX=/home/certezas/robotis_ws/install/op3_description
+[6.000s] Invoking command in '/home/certezas/robotis_ws/build/op3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_description -- -j12 -l12
+[6.168s] Invoked command in '/home/certezas/robotis_ws/build/op3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_description -- -j12 -l12
+[6.169s] Invoking command in '/home/certezas/robotis_ws/build/op3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/op3_description
+[6.200s] -- Install configuration: ""
+[6.200s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/ament_index/resource_index/package_run_dependencies/op3_description
+[6.200s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/ament_index/resource_index/parent_prefix_path/op3_description
+[6.200s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/environment/ament_prefix_path.sh
+[6.200s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/environment/ament_prefix_path.dsv
+[6.200s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/environment/path.sh
+[6.200s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/environment/path.dsv
+[6.200s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/local_setup.bash
+[6.201s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/local_setup.sh
+[6.201s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/local_setup.zsh
+[6.201s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/local_setup.dsv
+[6.201s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/package.dsv
+[6.201s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/ament_index/resource_index/packages/op3_description
+[6.201s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/cmake/op3_descriptionConfig.cmake
+[6.201s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/cmake/op3_descriptionConfig-version.cmake
+[6.201s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/package.xml
+[6.201s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/doc
+[6.201s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/doc/OP3 mass property.docx
+[6.279s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/doc/op3_sim.docx
+[6.329s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/doc/op3_sim.ods
+[6.385s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/launch
+[6.385s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/launch/op3_display.launch.py
+[6.385s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes
+[6.385s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ll6.stl
+[6.529s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/la1.stl
+[6.573s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ll2.stl
+[7.113s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/la2.stl
+[7.557s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/h1.stl
+[7.666s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ll5.stl
+[8.655s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/rl3.stl
+[9.037s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/rl1.stl
+[9.145s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ll1.stl
+[9.271s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ll3.stl
+[9.620s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/body.stl
+[10.725s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/rl5.stl
+[11.487s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/rl4.stl
+[11.701s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ll4.stl
+[11.885s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ra1.stl
+[12.045s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ra2.stl
+[12.532s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/base.stl
+[13.844s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/la3.stl
+[13.924s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/rl6.stl
+[14.118s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/h2.stl
+[14.322s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/ra3.stl
+[14.484s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/meshes/rl2.stl
+[15.306s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/rviz
+[15.306s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/rviz/op3.rviz
+[15.318s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf
+[15.366s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.gazebo.xacro
+[15.369s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.transmissions.xacro
+[15.370s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.inertia.xacro
+[15.370s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.structure.rarm.xacro
+[15.370s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.structure.head.xacro
+[15.370s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.urdf.xacro
+[15.371s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/gazebo_harness.xacro
+[15.385s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.structure.larm.xacro
+[15.386s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.structure.lleg.xacro
+[15.386s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.structure.rleg.xacro
+[15.386s] -- Installing: /home/certezas/robotis_ws/install/op3_description/share/op3_description/urdf/robotis_op3.visuals.xacro
+[15.420s] Invoked command in '/home/certezas/robotis_ws/build/op3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/op3_description

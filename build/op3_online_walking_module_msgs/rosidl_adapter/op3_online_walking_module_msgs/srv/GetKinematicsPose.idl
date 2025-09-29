@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from op3_online_walking_module_msgs/srv/GetKinematicsPose.srv
+// generated code does not contain a copyright notice
+
+#include "op3_online_walking_module_msgs/msg/KinematicsPose.idl"
+
+module op3_online_walking_module_msgs {
+  module srv {
+    struct GetKinematicsPose_Request {
+      string name;
+    };
+    struct GetKinematicsPose_Response {
+      op3_online_walking_module_msgs::msg::KinematicsPose pose;
+    };
+  };
+};

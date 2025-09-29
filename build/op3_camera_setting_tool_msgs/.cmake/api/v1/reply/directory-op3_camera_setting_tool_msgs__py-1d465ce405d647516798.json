@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "op3_camera_setting_tool_msgs__py",
+		"source" : "/home/certezas/robotis_ws/build/op3_camera_setting_tool_msgs/op3_camera_setting_tool_msgs__py"
+	}
+}

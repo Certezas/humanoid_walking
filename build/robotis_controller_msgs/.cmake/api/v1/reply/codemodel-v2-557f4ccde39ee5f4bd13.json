@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-65f3b9ba6bc259b0266c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "robotis_controller_msgs__py",
+					"jsonFile" : "directory-robotis_controller_msgs__py-5c8d62cd27188ef0255b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/certezas/robotis_ws/build/robotis_controller_msgs/robotis_controller_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "robotis_controller_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_robotis_controller_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_robotis_controller_msgs_egg-37ee63e457c214afc4d4.json",
+					"name" : "ament_cmake_python_build_robotis_controller_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_robotis_controller_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_robotis_controller_msgs-c9a34c88efbed05082d7.json",
+					"name" : "ament_cmake_python_copy_robotis_controller_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs-4dcb1678ca3eccfa23da.json",
+					"name" : "robotis_controller_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs__cpp-1eaba911bbc49b65e150.json",
+					"name" : "robotis_controller_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "robotis_controller_msgs__py::@01da133e1e46ecb0e410",
+					"jsonFile" : "target-robotis_controller_msgs__py-e15d9d941557df08a4c9.json",
+					"name" : "robotis_controller_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs__rosidl_generator_c-2f65ba60803462512c54.json",
+					"name" : "robotis_controller_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs__rosidl_generator_py-40d76fa54c6ffde89b39.json",
+					"name" : "robotis_controller_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs__rosidl_typesupport_c-b3086c35d144426a4322.json",
+					"name" : "robotis_controller_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs__rosidl_typesupport_c__pyext-18f30caee3a889aa3043.json",
+					"name" : "robotis_controller_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs__rosidl_typesupport_cpp-ae7749e898d74590b964.json",
+					"name" : "robotis_controller_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs__rosidl_typesupport_fastrtps_c-c6fa2d476ae0aae4cf04.json",
+					"name" : "robotis_controller_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs__rosidl_typesupport_fastrtps_c__pyext-d9e3ec05ffe272a32a8b.json",
+					"name" : "robotis_controller_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs__rosidl_typesupport_fastrtps_cpp-8a9712c2027a973e7348.json",
+					"name" : "robotis_controller_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs__rosidl_typesupport_introspection_c-5416f52cbe6283dcc9f0.json",
+					"name" : "robotis_controller_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs__rosidl_typesupport_introspection_c__pyext-29aa190e9309196ef097.json",
+					"name" : "robotis_controller_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs__rosidl_typesupport_introspection_cpp-c2470f9c195bd589e5e7.json",
+					"name" : "robotis_controller_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robotis_controller_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robotis_controller_msgs_uninstall-25a375070aef2c6c7cf4.json",
+					"name" : "robotis_controller_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9e27b3ee8f24f51cff25.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/certezas/robotis_ws/build/robotis_controller_msgs",
+		"source" : "/home/certezas/robotis_ws/src/ROBOTIS-Framework-msgs/robotis_controller_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

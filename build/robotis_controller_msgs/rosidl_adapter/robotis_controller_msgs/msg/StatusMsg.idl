@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robotis_controller_msgs/msg/StatusMsg.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module robotis_controller_msgs {
+  module msg {
+    module StatusMsg_Constants {
+      const uint8 STATUS_UNKNOWN = 0;
+      const uint8 STATUS_INFO = 1;
+      const uint8 STATUS_WARN = 2;
+      const uint8 STATUS_ERROR = 3;
+    };
+    @verbatim (language="comment", text=
+      "Status Constants")
+    struct StatusMsg {
+      std_msgs::msg::Header header;
+
+      uint8 type;
+
+      string module_name;
+
+      string status_msg;
+    };
+  };
+};

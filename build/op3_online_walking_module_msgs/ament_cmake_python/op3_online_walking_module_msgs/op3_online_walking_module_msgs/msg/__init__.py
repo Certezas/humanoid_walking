@@ -1,0 +1,9 @@
+from op3_online_walking_module_msgs.msg._foot_step_array import FootStepArray  # noqa: F401
+from op3_online_walking_module_msgs.msg._foot_step_command import FootStepCommand  # noqa: F401
+from op3_online_walking_module_msgs.msg._joint_pose import JointPose  # noqa: F401
+from op3_online_walking_module_msgs.msg._kinematics_pose import KinematicsPose  # noqa: F401
+from op3_online_walking_module_msgs.msg._preview_request import PreviewRequest  # noqa: F401
+from op3_online_walking_module_msgs.msg._preview_response import PreviewResponse  # noqa: F401
+from op3_online_walking_module_msgs.msg._step2_d import Step2D  # noqa: F401
+from op3_online_walking_module_msgs.msg._step2_d_array import Step2DArray  # noqa: F401
+from op3_online_walking_module_msgs.msg._walking_param import WalkingParam  # noqa: F401

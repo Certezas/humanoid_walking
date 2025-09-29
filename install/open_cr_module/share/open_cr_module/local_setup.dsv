@@ -1,0 +1,3 @@
+source;share/open_cr_module/environment/ament_prefix_path.sh
+source;share/open_cr_module/environment/library_path.sh
+source;share/open_cr_module/environment/path.sh

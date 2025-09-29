@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_tuning_module_msgs/msg/JointOffsetData.msg
+// generated code does not contain a copyright notice
+
+
+module op3_tuning_module_msgs {
+  module msg {
+    struct JointOffsetData {
+      string joint_name;
+
+      double goal_value;
+
+      double offset_value;
+
+      int32 p_gain;
+
+      int32 i_gain;
+
+      int32 d_gain;
+    };
+  };
+};

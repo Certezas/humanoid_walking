@@ -1,0 +1,224 @@
+[1.024s] Invoking command in '/home/certezas/robotis_ws/build/op3_ball_detector_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_ball_detector_msgs -- -j12 -l12
+[8.477s] [ 10%] Built target op3_ball_detector_msgs__rosidl_generator_c
+[8.477s] [ 12%] Built target op3_ball_detector_msgs__cpp
+[8.477s] [ 23%] Built target op3_ball_detector_msgs__rosidl_typesupport_fastrtps_c
+[8.477s] [ 34%] Built target op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp
+[8.477s] [ 45%] Built target op3_ball_detector_msgs__rosidl_typesupport_introspection_cpp
+[8.477s] [ 56%] Built target op3_ball_detector_msgs__rosidl_typesupport_cpp
+[8.478s] [ 67%] Built target op3_ball_detector_msgs__rosidl_typesupport_introspection_c
+[8.478s] [ 78%] Built target op3_ball_detector_msgs__rosidl_typesupport_c
+[8.478s] [ 78%] Built target op3_ball_detector_msgs
+[8.781s] [ 80%] Built target op3_ball_detector_msgs__py
+[9.900s] [ 89%] Built target op3_ball_detector_msgs__rosidl_generator_py
+[10.040s] [ 92%] Built target op3_ball_detector_msgs__rosidl_typesupport_introspection_c__pyext
+[10.201s] [ 96%] Built target op3_ball_detector_msgs__rosidl_typesupport_fastrtps_c__pyext
+[10.282s] [100%] Built target op3_ball_detector_msgs__rosidl_typesupport_c__pyext
+[10.453s] [100%] Built target ament_cmake_python_copy_op3_ball_detector_msgs
+[10.730s] running egg_info
+[10.730s] writing op3_ball_detector_msgs.egg-info/PKG-INFO
+[10.730s] writing dependency_links to op3_ball_detector_msgs.egg-info/dependency_links.txt
+[10.731s] writing top-level names to op3_ball_detector_msgs.egg-info/top_level.txt
+[10.732s] reading manifest file 'op3_ball_detector_msgs.egg-info/SOURCES.txt'
+[10.910s] writing manifest file 'op3_ball_detector_msgs.egg-info/SOURCES.txt'
+[10.929s] [100%] Built target ament_cmake_python_build_op3_ball_detector_msgs_egg
+[12.234s] Invoked command in '/home/certezas/robotis_ws/build/op3_ball_detector_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_ball_detector_msgs -- -j12 -l12
+[12.405s] Invoking command in '/home/certezas/robotis_ws/build/op3_ball_detector_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/op3_ball_detector_msgs
+[12.515s] -- Install configuration: ""
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/ament_index/resource_index/rosidl_interfaces/op3_ball_detector_msgs
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/get_parameters.h
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/set_parameters.h
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__struct.h
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__type_support.h
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__functions.c
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__functions.h
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__type_support.h
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__functions.c
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__struct.h
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__functions.h
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/rosidl_generator_c__visibility_control.h
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/ball_detector_params.h
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/circle_set_stamped.h
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__struct.h
+[12.516s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__struct.h
+[12.517s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__functions.h
+[12.517s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__functions.c
+[12.517s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__functions.h
+[12.517s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__type_support.h
+[12.517s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__functions.c
+[12.517s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__type_support.h
+[12.517s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/environment/library_path.sh
+[12.517s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/environment/library_path.dsv
+[12.517s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib/libop3_ball_detector_msgs__rosidl_generator_c.so
+[12.517s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs
+[12.517s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__rosidl_typesupport_fastrtps_c.h
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__rosidl_typesupport_fastrtps_c.h
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__rosidl_typesupport_fastrtps_c.h
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__rosidl_typesupport_fastrtps_c.h
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib/libop3_ball_detector_msgs__rosidl_typesupport_fastrtps_c.so
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/set_parameters.hpp
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/get_parameters.hpp
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail
+[12.518s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__struct.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__type_support.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__builder.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__traits.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__type_support.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__traits.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__struct.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__builder.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/circle_set_stamped.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__type_support.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__traits.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__type_support.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__struct.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__struct.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__builder.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__builder.hpp
+[12.519s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__traits.hpp
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/ball_detector_params.hpp
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__rosidl_typesupport_fastrtps_cpp.hpp
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/dds_fastrtps
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__rosidl_typesupport_fastrtps_cpp.hpp
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/dds_fastrtps
+[12.520s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__rosidl_typesupport_fastrtps_cpp.hpp
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib/libop3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp.so
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__type_support.c
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__rosidl_typesupport_introspection_c.h
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__type_support.c
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__rosidl_typesupport_introspection_c.h
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__rosidl_typesupport_introspection_c.h
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__type_support.c
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__type_support.c
+[12.565s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__rosidl_typesupport_introspection_c.h
+[12.577s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib/libop3_ball_detector_msgs__rosidl_typesupport_introspection_c.so
+[12.577s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib/libop3_ball_detector_msgs__rosidl_typesupport_c.so
+[12.577s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs
+[12.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv
+[12.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail
+[12.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__type_support.cpp
+[12.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__type_support.cpp
+[12.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/get_parameters__rosidl_typesupport_introspection_cpp.hpp
+[12.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/srv/detail/set_parameters__rosidl_typesupport_introspection_cpp.hpp
+[12.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg
+[12.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail
+[12.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__type_support.cpp
+[12.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__type_support.cpp
+[12.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/ball_detector_params__rosidl_typesupport_introspection_cpp.hpp
+[12.578s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/include/op3_ball_detector_msgs/op3_ball_detector_msgs/msg/detail/circle_set_stamped__rosidl_typesupport_introspection_cpp.hpp
+[12.680s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib/libop3_ball_detector_msgs__rosidl_typesupport_introspection_cpp.so
+[12.693s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib/libop3_ball_detector_msgs__rosidl_typesupport_cpp.so
+[12.693s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/environment/pythonpath.sh
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/environment/pythonpath.dsv
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs-0.1.0-py3.10.egg-info
+[12.694s] -- Installing: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[12.694s] -- Installing: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[12.694s] -- Installing: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[12.694s] -- Installing: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/_op3_ball_detector_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/_op3_ball_detector_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/libop3_ball_detector_msgs__rosidl_generator_py.so
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/__init__.py
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/op3_ball_detector_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/srv
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/srv/_set_parameters_s.c
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/srv/_set_parameters.py
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/srv/__init__.py
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/srv/_get_parameters_s.c
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/srv/_get_parameters.py
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/op3_ball_detector_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/_op3_ball_detector_msgs_s.ep.rosidl_typesupport_c.c
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/op3_ball_detector_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.694s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/msg
+[12.695s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/msg/_ball_detector_params.py
+[12.695s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/msg/_ball_detector_params_s.c
+[12.695s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/msg/__init__.py
+[12.695s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/msg/_circle_set_stamped.py
+[12.695s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/msg/_circle_set_stamped_s.c
+[12.769s] Listing '/home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs'...
+[12.769s] Listing '/home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/msg'...
+[12.770s] Listing '/home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/srv'...
+[12.812s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/op3_ball_detector_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.884s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/op3_ball_detector_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.950s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages/op3_ball_detector_msgs/op3_ball_detector_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.985s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib/libop3_ball_detector_msgs__rosidl_generator_py.so
+[13.053s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/msg/BallDetectorParams.idl
+[13.053s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/msg/CircleSetStamped.idl
+[13.053s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/srv/GetParameters.idl
+[13.053s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/srv/SetParameters.idl
+[13.053s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/msg/BallDetectorParams.msg
+[13.053s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/msg/CircleSetStamped.msg
+[13.053s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/srv/GetParameters.srv
+[13.053s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/srv/GetParameters_Request.msg
+[13.053s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/srv/GetParameters_Response.msg
+[13.053s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/srv/SetParameters.srv
+[13.053s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/srv/SetParameters_Request.msg
+[13.054s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/srv/SetParameters_Response.msg
+[13.054s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/ament_index/resource_index/package_run_dependencies/op3_ball_detector_msgs
+[13.054s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/ament_index/resource_index/parent_prefix_path/op3_ball_detector_msgs
+[13.054s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/environment/ament_prefix_path.sh
+[13.054s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/environment/ament_prefix_path.dsv
+[13.054s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/environment/path.sh
+[13.054s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/environment/path.dsv
+[13.054s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/local_setup.bash
+[13.054s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/local_setup.sh
+[13.054s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/local_setup.zsh
+[13.054s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/local_setup.dsv
+[13.054s] -- Installing: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/package.dsv
+[13.073s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/ament_index/resource_index/packages/op3_ball_detector_msgs
+[13.176s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/export_op3_ball_detector_msgs__rosidl_generator_cExport.cmake
+[13.177s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/export_op3_ball_detector_msgs__rosidl_generator_cExport-noconfig.cmake
+[13.177s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/export_op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[13.177s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/export_op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[13.177s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/export_op3_ball_detector_msgs__rosidl_generator_cppExport.cmake
+[13.177s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/export_op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[13.177s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/export_op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[13.177s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/op3_ball_detector_msgs__rosidl_typesupport_introspection_cExport.cmake
+[13.177s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/op3_ball_detector_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[13.178s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/op3_ball_detector_msgs__rosidl_typesupport_cExport.cmake
+[13.178s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/op3_ball_detector_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[13.178s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/op3_ball_detector_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[13.178s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/op3_ball_detector_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[13.178s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/op3_ball_detector_msgs__rosidl_typesupport_cppExport.cmake
+[13.178s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/op3_ball_detector_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[13.178s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/export_op3_ball_detector_msgs__rosidl_generator_pyExport.cmake
+[13.178s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/export_op3_ball_detector_msgs__rosidl_generator_pyExport-noconfig.cmake
+[13.178s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/rosidl_cmake-extras.cmake
+[13.178s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.179s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.179s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[13.179s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[13.179s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[13.179s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[13.179s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/op3_ball_detector_msgsConfig.cmake
+[13.179s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/cmake/op3_ball_detector_msgsConfig-version.cmake
+[13.179s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/share/op3_ball_detector_msgs/package.xml
+[13.773s] Invoked command in '/home/certezas/robotis_ws/build/op3_ball_detector_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/op3_ball_detector_msgs

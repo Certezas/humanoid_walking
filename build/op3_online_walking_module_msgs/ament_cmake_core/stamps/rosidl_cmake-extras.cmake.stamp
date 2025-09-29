@@ -1,0 +1,4 @@
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(op3_online_walking_module_msgs_IDL_FILES "msg/JointPose.idl;msg/KinematicsPose.idl;msg/FootStepCommand.idl;msg/FootStepArray.idl;msg/PreviewRequest.idl;msg/PreviewResponse.idl;msg/WalkingParam.idl;msg/Step2D.idl;msg/Step2DArray.idl;srv/GetJointPose.idl;srv/GetKinematicsPose.idl;srv/GetPreviewMatrix.idl")
+set(op3_online_walking_module_msgs_INTERFACE_FILES "msg/JointPose.msg;msg/KinematicsPose.msg;msg/FootStepCommand.msg;msg/FootStepArray.msg;msg/PreviewRequest.msg;msg/PreviewResponse.msg;msg/WalkingParam.msg;msg/Step2D.msg;msg/Step2DArray.msg;srv/GetJointPose.srv;srv/GetJointPose_Request.msg;srv/GetJointPose_Response.msg;srv/GetKinematicsPose.srv;srv/GetKinematicsPose_Request.msg;srv/GetKinematicsPose_Response.msg;srv/GetPreviewMatrix.srv;srv/GetPreviewMatrix_Request.msg;srv/GetPreviewMatrix_Response.msg")

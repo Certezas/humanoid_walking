@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_online_walking_module_msgs/msg/FootStepArray.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose2D.idl"
+
+module op3_online_walking_module_msgs {
+  module msg {
+    module FootStepArray_Constants {
+      @verbatim (language="comment", text=
+        "Left foot constant")
+      const int32 LEFT_FOOT = 0;
+      @verbatim (language="comment", text=
+        "Right foot constant")
+      const int32 RIGHT_FOOT = 1;
+    };
+    struct FootStepArray {
+      sequence<int32> moving_foot;
+
+      sequence<geometry_msgs::msg::Pose2D> data;
+    };
+  };
+};

@@ -1,0 +1,10 @@
+/home/certezas/robotis_ws/build/op3_kinematics_dynamics/CMakeFiles/uninstall.dir
+/home/certezas/robotis_ws/build/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics_uninstall.dir
+/home/certezas/robotis_ws/build/op3_kinematics_dynamics/CMakeFiles/op3_kinematics_dynamics.dir
+/home/certezas/robotis_ws/build/op3_kinematics_dynamics/CMakeFiles/test.dir
+/home/certezas/robotis_ws/build/op3_kinematics_dynamics/CMakeFiles/edit_cache.dir
+/home/certezas/robotis_ws/build/op3_kinematics_dynamics/CMakeFiles/rebuild_cache.dir
+/home/certezas/robotis_ws/build/op3_kinematics_dynamics/CMakeFiles/list_install_components.dir
+/home/certezas/robotis_ws/build/op3_kinematics_dynamics/CMakeFiles/install.dir
+/home/certezas/robotis_ws/build/op3_kinematics_dynamics/CMakeFiles/install/local.dir
+/home/certezas/robotis_ws/build/op3_kinematics_dynamics/CMakeFiles/install/strip.dir

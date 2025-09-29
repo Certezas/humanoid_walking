@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robotis_controller_msgs/srv/LoadOffset.srv
+// generated code does not contain a copyright notice
+
+
+module robotis_controller_msgs {
+  module srv {
+    struct LoadOffset_Request {
+      string file_path;
+    };
+    struct LoadOffset_Response {
+      boolean result;
+    };
+  };
+};

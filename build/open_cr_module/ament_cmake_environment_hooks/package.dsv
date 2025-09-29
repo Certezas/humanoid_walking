@@ -1,0 +1,4 @@
+source;share/open_cr_module/local_setup.bash
+source;share/open_cr_module/local_setup.dsv
+source;share/open_cr_module/local_setup.sh
+source;share/open_cr_module/local_setup.zsh

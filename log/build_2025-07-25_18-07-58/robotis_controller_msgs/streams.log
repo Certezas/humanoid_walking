@@ -1,0 +1,456 @@
+[0.033s] Invoking command in '/home/certezas/robotis_ws/build/robotis_controller_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake /home/certezas/robotis_ws/src/ROBOTIS-Framework-msgs/robotis_controller_msgs -DCMAKE_INSTALL_PREFIX=/home/certezas/robotis_ws/install/robotis_controller_msgs
+[0.651s] -- The C compiler identification is GNU 11.4.0
+[0.804s] -- The CXX compiler identification is GNU 11.4.0
+[0.896s] -- Detecting C compiler ABI info
+[1.020s] -- Detecting C compiler ABI info - done
+[1.033s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.034s] -- Detecting C compile features
+[1.034s] -- Detecting C compile features - done
+[1.039s] -- Detecting CXX compiler ABI info
+[1.161s] -- Detecting CXX compiler ABI info - done
+[1.178s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.178s] -- Detecting CXX compile features
+[1.178s] -- Detecting CXX compile features - done
+[1.266s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.560s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.782s] -- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+[1.879s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.912s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.929s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.001s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.075s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.213s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.288s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.219s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.891s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.182s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.215s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.217s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.672s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.673s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.673s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.673s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[5.732s] -- Found PythonExtra: .so  
+[5.911s] -- Configuring done
+[6.125s] -- Generating done
+[6.144s] -- Build files have been written to: /home/certezas/robotis_ws/build/robotis_controller_msgs
+[6.157s] Invoked command in '/home/certezas/robotis_ws/build/robotis_controller_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake /home/certezas/robotis_ws/src/ROBOTIS-Framework-msgs/robotis_controller_msgs -DCMAKE_INSTALL_PREFIX=/home/certezas/robotis_ws/install/robotis_controller_msgs
+[6.159s] Invoking command in '/home/certezas/robotis_ws/build/robotis_controller_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/robotis_controller_msgs -- -j12 -l12
+[6.234s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.247s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.248s] [  2%] Built target ament_cmake_python_copy_robotis_controller_msgs
+[6.904s] running egg_info
+[6.904s] creating robotis_controller_msgs.egg-info
+[6.904s] writing robotis_controller_msgs.egg-info/PKG-INFO
+[6.905s] writing dependency_links to robotis_controller_msgs.egg-info/dependency_links.txt
+[6.905s] writing top-level names to robotis_controller_msgs.egg-info/top_level.txt
+[6.905s] writing manifest file 'robotis_controller_msgs.egg-info/SOURCES.txt'
+[6.906s] reading manifest file 'robotis_controller_msgs.egg-info/SOURCES.txt'
+[6.906s] writing manifest file 'robotis_controller_msgs.egg-info/SOURCES.txt'
+[6.985s] [  2%] Built target ament_cmake_python_build_robotis_controller_msgs_egg
+[10.527s] [  2%] Built target robotis_controller_msgs__cpp
+[10.592s] [  3%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[10.594s] [  4%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[10.594s] [  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[11.993s] [  6%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_c.dir/rosidl_generator_c/robotis_controller_msgs/msg/detail/sync_write_item__functions.c.o[0m
+[12.034s] [  8%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_c.dir/rosidl_generator_c/robotis_controller_msgs/msg/detail/status_msg__functions.c.o[0m
+[12.048s] [  9%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_c.dir/rosidl_generator_c/robotis_controller_msgs/msg/detail/joint_ctrl_module__functions.c.o[0m
+[12.084s] [ 10%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_c.dir/rosidl_generator_c/robotis_controller_msgs/msg/detail/write_control_table__functions.c.o[0m
+[12.089s] [ 11%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_c.dir/rosidl_generator_c/robotis_controller_msgs/srv/detail/set_module__functions.c.o[0m
+[12.099s] [ 13%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_c.dir/rosidl_generator_c/robotis_controller_msgs/srv/detail/load_offset__functions.c.o[0m
+[12.099s] [ 13%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_c.dir/rosidl_generator_c/robotis_controller_msgs/srv/detail/get_joint_module__functions.c.o[0m
+[12.118s] [ 14%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_c.dir/rosidl_generator_c/robotis_controller_msgs/srv/detail/set_joint_module__functions.c.o[0m
+[12.764s] [ 16%] [32m[1mLinking C shared library librobotis_controller_msgs__rosidl_generator_c.so[0m
+[13.003s] [ 16%] Built target robotis_controller_msgs__rosidl_generator_c
+[13.091s] [ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[13.116s] [ 18%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[13.137s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[15.672s] [ 20%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/msg/sync_write_item__type_support.cpp.o[0m
+[16.198s] [ 21%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotis_controller_msgs/msg/detail/sync_write_item__type_support.cpp.o[0m
+[16.780s] [ 22%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/srv/set_module__type_support.cpp.o[0m
+[17.128s] [ 24%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotis_controller_msgs/msg/sync_write_item__type_support.cpp.o[0m
+[17.243s] [ 25%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotis_controller_msgs/msg/joint_ctrl_module__type_support.cpp.o[0m
+[17.286s] [ 26%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotis_controller_msgs/msg/detail/dds_fastrtps/sync_write_item__type_support.cpp.o[0m
+[17.356s] [ 27%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotis_controller_msgs/msg/status_msg__type_support.cpp.o[0m
+[17.441s] [ 28%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotis_controller_msgs/msg/write_control_table__type_support.cpp.o[0m
+[17.527s] [ 29%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotis_controller_msgs/srv/get_joint_module__type_support.cpp.o[0m
+[17.601s] [ 31%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotis_controller_msgs/msg/detail/joint_ctrl_module__type_support.cpp.o[0m
+[17.616s] [ 32%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotis_controller_msgs/srv/set_joint_module__type_support.cpp.o[0m
+[17.632s] [ 33%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/srv/load_offset__type_support.cpp.o[0m
+[17.699s] [ 34%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotis_controller_msgs/srv/set_module__type_support.cpp.o[0m
+[17.763s] [ 35%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotis_controller_msgs/srv/load_offset__type_support.cpp.o[0m
+[17.879s] [ 36%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotis_controller_msgs/msg/detail/sync_write_item__type_support_c.cpp.o[0m
+[17.887s] [ 37%] [32m[1mLinking CXX shared library librobotis_controller_msgs__rosidl_typesupport_c.so[0m
+[17.990s] [ 39%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotis_controller_msgs/msg/detail/sync_write_item__type_support.c.o[0m
+[18.018s] [ 39%] Built target robotis_controller_msgs__rosidl_typesupport_c
+[18.121s] [ 40%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotis_controller_msgs/msg/detail/joint_ctrl_module__type_support.c.o[0m
+[18.378s] [ 41%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotis_controller_msgs/msg/detail/status_msg__type_support.c.o[0m
+[18.398s] [ 42%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/srv/set_joint_module__type_support.cpp.o[0m
+[18.412s] [ 43%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotis_controller_msgs/msg/detail/dds_fastrtps/joint_ctrl_module__type_support.cpp.o[0m
+[18.454s] [ 44%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotis_controller_msgs/msg/detail/status_msg__type_support.cpp.o[0m
+[18.469s] [ 45%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotis_controller_msgs/msg/detail/write_control_table__type_support.c.o[0m
+[18.582s] [ 47%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotis_controller_msgs/srv/detail/get_joint_module__type_support.c.o[0m
+[18.646s] [ 48%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotis_controller_msgs/msg/detail/status_msg__type_support_c.cpp.o[0m
+[18.676s] [ 49%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotis_controller_msgs/srv/detail/set_joint_module__type_support.c.o[0m
+[18.774s] [ 50%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotis_controller_msgs/srv/detail/set_module__type_support.c.o[0m
+[18.867s] [ 51%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotis_controller_msgs/srv/detail/load_offset__type_support.c.o[0m
+[18.963s] [ 52%] [32m[1mLinking C shared library librobotis_controller_msgs__rosidl_typesupport_introspection_c.so[0m
+[18.974s] [ 54%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/srv/get_joint_module__type_support.cpp.o[0m
+[19.080s] [ 54%] Built target robotis_controller_msgs__rosidl_typesupport_introspection_c
+[19.249s] [ 55%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotis_controller_msgs/srv/detail/dds_fastrtps/get_joint_module__type_support.cpp.o[0m
+[19.261s] [ 56%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotis_controller_msgs/msg/detail/write_control_table__type_support.cpp.o[0m
+[19.393s] [ 57%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/msg/write_control_table__type_support.cpp.o[0m
+[19.459s] [ 58%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotis_controller_msgs/srv/detail/set_joint_module__type_support_c.cpp.o[0m
+[19.953s] [ 59%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/msg/status_msg__type_support.cpp.o[0m
+[20.168s] [ 60%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotis_controller_msgs/srv/detail/get_joint_module__type_support.cpp.o[0m
+[20.400s] [ 62%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotis_controller_msgs/srv/detail/get_joint_module__type_support_c.cpp.o[0m
+[20.418s] [ 63%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotis_controller_msgs/srv/detail/dds_fastrtps/load_offset__type_support.cpp.o[0m
+[20.448s] [ 64%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotis_controller_msgs/msg/joint_ctrl_module__type_support.cpp.o[0m
+[20.765s] [ 65%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotis_controller_msgs/srv/detail/set_joint_module__type_support.cpp.o[0m
+[20.945s] [ 66%] [32m[1mLinking CXX shared library librobotis_controller_msgs__rosidl_typesupport_cpp.so[0m
+[20.970s] [ 67%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotis_controller_msgs/srv/detail/load_offset__type_support_c.cpp.o[0m
+[21.061s] [ 67%] Built target robotis_controller_msgs__rosidl_typesupport_cpp
+[21.105s] [ 68%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotis_controller_msgs/srv/detail/dds_fastrtps/set_module__type_support.cpp.o[0m
+[21.392s] [ 70%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotis_controller_msgs/srv/detail/load_offset__type_support.cpp.o[0m
+[21.503s] [ 71%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotis_controller_msgs/srv/detail/set_module__type_support_c.cpp.o[0m
+[21.678s] [ 72%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotis_controller_msgs/srv/detail/dds_fastrtps/set_joint_module__type_support.cpp.o[0m
+[21.971s] [ 73%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotis_controller_msgs/srv/detail/set_module__type_support.cpp.o[0m
+[22.041s] [ 74%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotis_controller_msgs/msg/detail/write_control_table__type_support_c.cpp.o[0m
+[22.294s] [ 75%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotis_controller_msgs/msg/detail/dds_fastrtps/write_control_table__type_support.cpp.o[0m
+[22.483s] [ 77%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotis_controller_msgs/msg/detail/joint_ctrl_module__type_support_c.cpp.o[0m
+[22.527s] [ 78%] [32m[1mLinking CXX shared library librobotis_controller_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[22.699s] [ 78%] Built target robotis_controller_msgs__rosidl_typesupport_introspection_cpp
+[22.922s] [ 79%] [32mBuilding CXX object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotis_controller_msgs/msg/detail/dds_fastrtps/status_msg__type_support.cpp.o[0m
+[22.989s] [ 80%] [32m[1mLinking CXX shared library librobotis_controller_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[23.099s] [ 80%] Built target robotis_controller_msgs__rosidl_typesupport_fastrtps_c
+[23.643s] [ 81%] [32m[1mLinking CXX shared library librobotis_controller_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[23.798s] [ 81%] Built target robotis_controller_msgs__rosidl_typesupport_fastrtps_cpp
+[23.826s] [ 81%] Built target robotis_controller_msgs
+[23.861s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[25.452s] [ 82%] Built target robotis_controller_msgs__py
+[25.474s] [ 83%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_py.dir/rosidl_generator_py/robotis_controller_msgs/msg/_sync_write_item_s.c.o[0m
+[25.612s] [ 85%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_py.dir/rosidl_generator_py/robotis_controller_msgs/srv/_load_offset_s.c.o[0m
+[25.733s] [ 86%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_py.dir/rosidl_generator_py/robotis_controller_msgs/srv/_set_module_s.c.o[0m
+[25.867s] [ 87%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_py.dir/rosidl_generator_py/robotis_controller_msgs/srv/_set_joint_module_s.c.o[0m
+[26.025s] [ 88%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_py.dir/rosidl_generator_py/robotis_controller_msgs/srv/_get_joint_module_s.c.o[0m
+[26.180s] [ 89%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_py.dir/rosidl_generator_py/robotis_controller_msgs/msg/_write_control_table_s.c.o[0m
+[26.338s] [ 90%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_py.dir/rosidl_generator_py/robotis_controller_msgs/msg/_status_msg_s.c.o[0m
+[26.494s] [ 91%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_generator_py.dir/rosidl_generator_py/robotis_controller_msgs/msg/_joint_ctrl_module_s.c.o[0m
+[26.655s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/robotis_controller_msgs/librobotis_controller_msgs__rosidl_generator_py.so[0m
+[26.759s] [ 93%] Built target robotis_controller_msgs__rosidl_generator_py
+[26.798s] [ 94%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robotis_controller_msgs/_robotis_controller_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[27.004s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/robotis_controller_msgs/robotis_controller_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.079s] [ 95%] Built target robotis_controller_msgs__rosidl_typesupport_fastrtps_c__pyext
+[27.107s] [ 96%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robotis_controller_msgs/_robotis_controller_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[27.305s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/robotis_controller_msgs/robotis_controller_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.360s] [ 97%] Built target robotis_controller_msgs__rosidl_typesupport_c__pyext
+[27.389s] [ 98%] [32mBuilding C object CMakeFiles/robotis_controller_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robotis_controller_msgs/_robotis_controller_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[27.576s] [100%] [32m[1mLinking C shared library rosidl_generator_py/robotis_controller_msgs/robotis_controller_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.639s] [100%] Built target robotis_controller_msgs__rosidl_typesupport_introspection_c__pyext
+[27.664s] Invoked command in '/home/certezas/robotis_ws/build/robotis_controller_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/robotis_controller_msgs -- -j12 -l12
+[27.665s] Invoking command in '/home/certezas/robotis_ws/build/robotis_controller_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/robotis_controller_msgs
+[35.253s] -- Install configuration: ""
+[35.254s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/ament_index/resource_index/rosidl_interfaces/robotis_controller_msgs
+[35.254s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs
+[35.254s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv
+[35.256s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/set_module.h
+[35.256s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/load_offset.h
+[35.256s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/get_joint_module.h
+[35.256s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail
+[35.256s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__struct.h
+[35.257s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__functions.c
+[35.257s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__type_support.h
+[35.257s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__functions.c
+[35.257s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__type_support.h
+[35.257s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__functions.c
+[35.257s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__type_support.h
+[35.257s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__type_support.h
+[35.257s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__functions.c
+[35.257s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__functions.h
+[35.258s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__struct.h
+[35.258s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__functions.h
+[35.258s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__struct.h
+[35.258s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__functions.h
+[35.258s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__struct.h
+[35.258s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__functions.h
+[35.258s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/set_joint_module.h
+[35.258s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg
+[35.259s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/rosidl_generator_c__visibility_control.h
+[35.259s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/write_control_table.h
+[35.259s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/joint_ctrl_module.h
+[35.259s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/status_msg.h
+[35.260s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/sync_write_item.h
+[35.260s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail
+[35.260s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__functions.c
+[35.260s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__type_support.h
+[35.260s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__struct.h
+[35.260s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__struct.h
+[35.260s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__functions.h
+[35.260s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__functions.h
+[35.261s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__functions.c
+[35.261s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__functions.h
+[35.261s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__struct.h
+[35.261s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__struct.h
+[35.261s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__functions.h
+[35.261s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__functions.c
+[35.261s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__type_support.h
+[35.261s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__type_support.h
+[35.261s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__type_support.h
+[35.261s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__functions.c
+[35.261s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/environment/library_path.sh
+[35.262s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/environment/library_path.dsv
+[35.262s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_generator_c.so
+[35.262s] -- Set runtime path of "/home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_generator_c.so" to ""
+[35.262s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs
+[35.262s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv
+[35.262s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail
+[35.262s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__rosidl_typesupport_fastrtps_c.h
+[35.262s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__rosidl_typesupport_fastrtps_c.h
+[35.262s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__rosidl_typesupport_fastrtps_c.h
+[35.262s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__rosidl_typesupport_fastrtps_c.h
+[35.262s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg
+[35.263s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail
+[35.263s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__rosidl_typesupport_fastrtps_c.h
+[35.263s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__rosidl_typesupport_fastrtps_c.h
+[35.263s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__rosidl_typesupport_fastrtps_c.h
+[35.263s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__rosidl_typesupport_fastrtps_c.h
+[35.263s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[35.263s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_fastrtps_c.so
+[35.264s] -- Set runtime path of "/home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[35.264s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs
+[35.264s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv
+[35.264s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/set_module.hpp
+[35.264s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/load_offset.hpp
+[35.264s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail
+[35.264s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__traits.hpp
+[35.264s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__struct.hpp
+[35.265s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__traits.hpp
+[35.265s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__struct.hpp
+[35.265s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__traits.hpp
+[35.265s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__builder.hpp
+[35.265s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__builder.hpp
+[35.265s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__builder.hpp
+[35.265s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__type_support.hpp
+[35.265s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__traits.hpp
+[35.265s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__builder.hpp
+[35.265s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__type_support.hpp
+[35.266s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__type_support.hpp
+[35.266s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__struct.hpp
+[35.266s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__type_support.hpp
+[35.266s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__struct.hpp
+[35.266s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/get_joint_module.hpp
+[35.266s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/set_joint_module.hpp
+[35.266s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg
+[35.266s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/write_control_table.hpp
+[35.266s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/joint_ctrl_module.hpp
+[35.266s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/status_msg.hpp
+[35.266s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[35.266s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/sync_write_item.hpp
+[35.266s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail
+[35.267s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__builder.hpp
+[35.267s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__traits.hpp
+[35.267s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__struct.hpp
+[35.267s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__traits.hpp
+[35.267s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__type_support.hpp
+[35.267s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__traits.hpp
+[35.267s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__type_support.hpp
+[35.267s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__traits.hpp
+[35.267s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__type_support.hpp
+[35.267s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__struct.hpp
+[35.267s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__builder.hpp
+[35.267s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__builder.hpp
+[35.268s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__type_support.hpp
+[35.268s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__struct.hpp
+[35.268s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__struct.hpp
+[35.268s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__builder.hpp
+[35.268s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs
+[35.268s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv
+[35.268s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail
+[35.268s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/dds_fastrtps
+[35.268s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__rosidl_typesupport_fastrtps_cpp.hpp
+[35.268s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__rosidl_typesupport_fastrtps_cpp.hpp
+[35.268s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__rosidl_typesupport_fastrtps_cpp.hpp
+[35.268s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__rosidl_typesupport_fastrtps_cpp.hpp
+[35.269s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg
+[35.269s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[35.269s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail
+[35.269s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__rosidl_typesupport_fastrtps_cpp.hpp
+[35.269s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/dds_fastrtps
+[35.269s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[35.269s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__rosidl_typesupport_fastrtps_cpp.hpp
+[35.269s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__rosidl_typesupport_fastrtps_cpp.hpp
+[35.269s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_fastrtps_cpp.so
+[35.270s] -- Set runtime path of "/home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[35.270s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs
+[35.270s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv
+[35.270s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail
+[35.270s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__type_support.c
+[35.270s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__type_support.c
+[35.271s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__type_support.c
+[35.271s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__rosidl_typesupport_introspection_c.h
+[35.271s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__rosidl_typesupport_introspection_c.h
+[35.271s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__type_support.c
+[35.271s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__rosidl_typesupport_introspection_c.h
+[35.271s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__rosidl_typesupport_introspection_c.h
+[35.271s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg
+[35.271s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[35.271s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail
+[35.271s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__rosidl_typesupport_introspection_c.h
+[35.271s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__type_support.c
+[35.272s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__type_support.c
+[35.272s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__rosidl_typesupport_introspection_c.h
+[35.272s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__rosidl_typesupport_introspection_c.h
+[35.272s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__type_support.c
+[35.272s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__type_support.c
+[35.272s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__rosidl_typesupport_introspection_c.h
+[35.272s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_introspection_c.so
+[35.272s] -- Set runtime path of "/home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_introspection_c.so" to ""
+[35.272s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_c.so
+[35.272s] -- Set runtime path of "/home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_c.so" to ""
+[35.273s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs
+[35.273s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv
+[35.273s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail
+[35.273s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__rosidl_typesupport_introspection_cpp.hpp
+[35.273s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__rosidl_typesupport_introspection_cpp.hpp
+[35.273s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__type_support.cpp
+[35.273s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/get_joint_module__rosidl_typesupport_introspection_cpp.hpp
+[35.273s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__rosidl_typesupport_introspection_cpp.hpp
+[35.273s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_joint_module__type_support.cpp
+[35.273s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/load_offset__type_support.cpp
+[35.273s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/srv/detail/set_module__type_support.cpp
+[35.273s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg
+[35.274s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail
+[35.274s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__type_support.cpp
+[35.274s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/write_control_table__rosidl_typesupport_introspection_cpp.hpp
+[35.274s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__rosidl_typesupport_introspection_cpp.hpp
+[35.274s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__type_support.cpp
+[35.274s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__rosidl_typesupport_introspection_cpp.hpp
+[35.274s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/sync_write_item__rosidl_typesupport_introspection_cpp.hpp
+[35.274s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/status_msg__type_support.cpp
+[35.274s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/include/robotis_controller_msgs/robotis_controller_msgs/msg/detail/joint_ctrl_module__type_support.cpp
+[35.274s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_introspection_cpp.so
+[35.274s] -- Set runtime path of "/home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[35.275s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_cpp.so
+[35.275s] -- Set runtime path of "/home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_cpp.so" to ""
+[35.275s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/environment/pythonpath.sh
+[35.275s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/environment/pythonpath.dsv
+[35.275s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs-0.1.4-py3.10.egg-info
+[35.275s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs-0.1.4-py3.10.egg-info/PKG-INFO
+[35.275s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs-0.1.4-py3.10.egg-info/dependency_links.txt
+[35.275s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs-0.1.4-py3.10.egg-info/top_level.txt
+[35.275s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs-0.1.4-py3.10.egg-info/SOURCES.txt
+[35.275s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs
+[35.275s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/_robotis_controller_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[35.276s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/robotis_controller_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[35.276s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/__init__.py
+[35.276s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/_robotis_controller_msgs_s.ep.rosidl_typesupport_c.c
+[35.276s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv
+[35.276s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/_set_module_s.c
+[35.276s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/_load_offset.py
+[35.276s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/_get_joint_module_s.c
+[35.276s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/_set_joint_module_s.c
+[35.276s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/_set_joint_module.py
+[35.276s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/__init__.py
+[35.276s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/_load_offset_s.c
+[35.277s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/_get_joint_module.py
+[35.277s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/_set_module.py
+[35.277s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/robotis_controller_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[35.277s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/_robotis_controller_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[35.277s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg
+[35.277s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/_status_msg.py
+[35.278s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/_write_control_table_s.c
+[35.278s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/__init__.py
+[35.278s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/_status_msg_s.c
+[35.278s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/_joint_ctrl_module_s.c
+[35.278s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/_sync_write_item.py
+[35.278s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/_joint_ctrl_module.py
+[35.278s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/_sync_write_item_s.c
+[35.278s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/_write_control_table.py
+[35.278s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/librobotis_controller_msgs__rosidl_generator_py.so
+[35.278s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/robotis_controller_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[35.319s] Listing '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs'...
+[35.319s] Compiling '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/__init__.py'...
+[35.319s] Listing '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg'...
+[35.319s] Compiling '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/__init__.py'...
+[35.320s] Compiling '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/_joint_ctrl_module.py'...
+[35.320s] Compiling '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/_status_msg.py'...
+[35.320s] Compiling '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/_sync_write_item.py'...
+[35.320s] Compiling '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/msg/_write_control_table.py'...
+[35.320s] Listing '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv'...
+[35.320s] Compiling '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/__init__.py'...
+[35.320s] Compiling '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/_get_joint_module.py'...
+[35.320s] Compiling '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/_load_offset.py'...
+[35.320s] Compiling '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/_set_joint_module.py'...
+[35.320s] Compiling '/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/srv/_set_module.py'...
+[35.324s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/robotis_controller_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[35.324s] -- Set runtime path of "/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/robotis_controller_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[35.324s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/robotis_controller_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[35.324s] -- Set runtime path of "/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/robotis_controller_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[35.324s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/robotis_controller_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[35.325s] -- Set runtime path of "/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages/robotis_controller_msgs/robotis_controller_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[35.325s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_generator_py.so
+[35.325s] -- Set runtime path of "/home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_generator_py.so" to ""
+[35.325s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/msg/SyncWriteItem.idl
+[35.325s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/msg/JointCtrlModule.idl
+[35.325s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/msg/StatusMsg.idl
+[35.325s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/msg/WriteControlTable.idl
+[35.326s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/GetJointModule.idl
+[35.326s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/SetJointModule.idl
+[35.326s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/SetModule.idl
+[35.326s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/LoadOffset.idl
+[35.326s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/msg/SyncWriteItem.msg
+[35.326s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/msg/JointCtrlModule.msg
+[35.326s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/msg/StatusMsg.msg
+[35.326s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/msg/WriteControlTable.msg
+[35.327s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/GetJointModule.srv
+[35.327s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/GetJointModule_Request.msg
+[35.327s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/GetJointModule_Response.msg
+[35.327s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/SetJointModule.srv
+[35.327s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/SetJointModule_Request.msg
+[35.327s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/SetJointModule_Response.msg
+[35.327s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/SetModule.srv
+[35.327s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/SetModule_Request.msg
+[35.327s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/SetModule_Response.msg
+[35.328s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/LoadOffset.srv
+[35.328s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/LoadOffset_Request.msg
+[35.328s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/srv/LoadOffset_Response.msg
+[35.328s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/ament_index/resource_index/package_run_dependencies/robotis_controller_msgs
+[35.328s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/ament_index/resource_index/parent_prefix_path/robotis_controller_msgs
+[35.328s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/environment/ament_prefix_path.sh
+[35.328s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/environment/ament_prefix_path.dsv
+[35.328s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/environment/path.sh
+[35.328s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/environment/path.dsv
+[35.329s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/local_setup.bash
+[35.329s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/local_setup.sh
+[35.329s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/local_setup.zsh
+[35.329s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/local_setup.dsv
+[35.329s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/package.dsv
+[35.329s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/ament_index/resource_index/packages/robotis_controller_msgs
+[35.329s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/export_robotis_controller_msgs__rosidl_generator_cExport.cmake
+[35.329s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/export_robotis_controller_msgs__rosidl_generator_cExport-noconfig.cmake
+[35.330s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/export_robotis_controller_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[35.330s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/export_robotis_controller_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[35.330s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/export_robotis_controller_msgs__rosidl_generator_cppExport.cmake
+[35.330s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/export_robotis_controller_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[35.330s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/export_robotis_controller_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[35.330s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/robotis_controller_msgs__rosidl_typesupport_introspection_cExport.cmake
+[35.330s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/robotis_controller_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[35.330s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/robotis_controller_msgs__rosidl_typesupport_cExport.cmake
+[35.330s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/robotis_controller_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[35.331s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/robotis_controller_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[35.331s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/robotis_controller_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[35.331s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/robotis_controller_msgs__rosidl_typesupport_cppExport.cmake
+[35.332s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/robotis_controller_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[35.332s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/export_robotis_controller_msgs__rosidl_generator_pyExport.cmake
+[35.332s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/export_robotis_controller_msgs__rosidl_generator_pyExport-noconfig.cmake
+[35.332s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/rosidl_cmake-extras.cmake
+[35.332s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[35.332s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[35.332s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[35.332s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[35.332s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[35.332s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[35.333s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/robotis_controller_msgsConfig.cmake
+[35.333s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/cmake/robotis_controller_msgsConfig-version.cmake
+[35.333s] -- Installing: /home/certezas/robotis_ws/install/robotis_controller_msgs/share/robotis_controller_msgs/package.xml
+[35.338s] Invoked command in '/home/certezas/robotis_ws/build/robotis_controller_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/robotis_controller_msgs

@@ -1,0 +1,8 @@
+source;share/op3_offset_tuner_server/hook/cmake_prefix_path.ps1
+source;share/op3_offset_tuner_server/hook/cmake_prefix_path.dsv
+source;share/op3_offset_tuner_server/hook/cmake_prefix_path.sh
+source;share/op3_offset_tuner_server/local_setup.bash
+source;share/op3_offset_tuner_server/local_setup.dsv
+source;share/op3_offset_tuner_server/local_setup.ps1
+source;share/op3_offset_tuner_server/local_setup.sh
+source;share/op3_offset_tuner_server/local_setup.zsh

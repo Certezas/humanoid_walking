@@ -1,0 +1,9 @@
+{
+  "package_name": "op3_ball_detector_msgs",
+  "non_idl_tuples": [
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_ball_detector_msgs:msg/BallDetectorParams.msg",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_ball_detector_msgs:msg/CircleSetStamped.msg",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_ball_detector_msgs:srv/GetParameters.srv",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_ball_detector_msgs:srv/SetParameters.srv"
+  ]
+}

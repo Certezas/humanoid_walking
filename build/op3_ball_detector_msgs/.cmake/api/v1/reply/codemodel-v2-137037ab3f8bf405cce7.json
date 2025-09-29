@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b1aac7f1d7b554184287.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "op3_ball_detector_msgs__py",
+					"jsonFile" : "directory-op3_ball_detector_msgs__py-10078cab01071833d0d9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/certezas/robotis_ws/build/op3_ball_detector_msgs/op3_ball_detector_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "op3_ball_detector_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_op3_ball_detector_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_op3_ball_detector_msgs_egg-e39ab79dab863607ad68.json",
+					"name" : "ament_cmake_python_build_op3_ball_detector_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_op3_ball_detector_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_op3_ball_detector_msgs-ae9e6644b66246b729fc.json",
+					"name" : "ament_cmake_python_copy_op3_ball_detector_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs-3656081dc1ff682254ed.json",
+					"name" : "op3_ball_detector_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs__cpp-7c6184a9d6df2ea0885c.json",
+					"name" : "op3_ball_detector_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "op3_ball_detector_msgs__py::@9f1d88ff0fbf1b7c7611",
+					"jsonFile" : "target-op3_ball_detector_msgs__py-13fa0267bf69f26d9631.json",
+					"name" : "op3_ball_detector_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs__rosidl_generator_c-1c952dde96b9c008e37b.json",
+					"name" : "op3_ball_detector_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs__rosidl_generator_py-cc589109c0c6591dcf0c.json",
+					"name" : "op3_ball_detector_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs__rosidl_typesupport_c-f68c19a638b5b4e013ef.json",
+					"name" : "op3_ball_detector_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs__rosidl_typesupport_c__pyext-dd81e7ca551fe5d634ef.json",
+					"name" : "op3_ball_detector_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs__rosidl_typesupport_cpp-234147f440b060f2f41a.json",
+					"name" : "op3_ball_detector_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs__rosidl_typesupport_fastrtps_c-dbdbc9f7d43f57c183d9.json",
+					"name" : "op3_ball_detector_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs__rosidl_typesupport_fastrtps_c__pyext-9ad78c4c5f46c6c7ce3d.json",
+					"name" : "op3_ball_detector_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp-84a2d3073e3380ba669b.json",
+					"name" : "op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs__rosidl_typesupport_introspection_c-9a6f7863d1a8833f7176.json",
+					"name" : "op3_ball_detector_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs__rosidl_typesupport_introspection_c__pyext-406e3ff64528acb4c966.json",
+					"name" : "op3_ball_detector_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs__rosidl_typesupport_introspection_cpp-59f8e9b8a5ea4bbb10ac.json",
+					"name" : "op3_ball_detector_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_ball_detector_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_ball_detector_msgs_uninstall-f32156ef057e76ef3d7d.json",
+					"name" : "op3_ball_detector_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-78228aec1a1866a6b3a3.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/certezas/robotis_ws/build/op3_ball_detector_msgs",
+		"source" : "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_ball_detector_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

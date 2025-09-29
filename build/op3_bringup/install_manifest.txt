@@ -1,0 +1,17 @@
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/launch/op3_bringup_visualization.launch.py
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/launch/op3_bringup.launch.py
+/home/certezas/robotis_ws/install/op3_bringup/share/ament_index/resource_index/package_run_dependencies/op3_bringup
+/home/certezas/robotis_ws/install/op3_bringup/share/ament_index/resource_index/parent_prefix_path/op3_bringup
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/environment/ament_prefix_path.sh
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/environment/ament_prefix_path.dsv
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/environment/path.sh
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/environment/path.dsv
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/local_setup.bash
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/local_setup.sh
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/local_setup.zsh
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/local_setup.dsv
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/package.dsv
+/home/certezas/robotis_ws/install/op3_bringup/share/ament_index/resource_index/packages/op3_bringup
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/cmake/op3_bringupConfig.cmake
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/cmake/op3_bringupConfig-version.cmake
+/home/certezas/robotis_ws/install/op3_bringup/share/op3_bringup/package.xml

@@ -1,0 +1,13 @@
+setup.py
+op3_camera_setting_tool_msgs/__init__.py
+op3_camera_setting_tool_msgs.egg-info/PKG-INFO
+op3_camera_setting_tool_msgs.egg-info/SOURCES.txt
+op3_camera_setting_tool_msgs.egg-info/dependency_links.txt
+op3_camera_setting_tool_msgs.egg-info/top_level.txt
+op3_camera_setting_tool_msgs/msg/__init__.py
+op3_camera_setting_tool_msgs/msg/_camera_params.py
+op3_camera_setting_tool_msgs/msg/_v4l_parameter.py
+op3_camera_setting_tool_msgs/msg/_v4l_parameters.py
+op3_camera_setting_tool_msgs/srv/__init__.py
+op3_camera_setting_tool_msgs/srv/_get_parameters.py
+op3_camera_setting_tool_msgs/srv/_set_parameters.py

@@ -1,0 +1,24 @@
+[0.064s] Invoking command in '/home/certezas/robotis_ws/build/ros_madplay_player': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/ros_madplay_player -- -j12 -l12
+[0.157s] [100%] Built target ros_madplay_player
+[0.232s] Invoked command in '/home/certezas/robotis_ws/build/ros_madplay_player' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/ros_madplay_player -- -j12 -l12
+[0.233s] Invoking command in '/home/certezas/robotis_ws/build/ros_madplay_player': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/ros_madplay_player
+[0.309s] -- Install configuration: ""
+[0.310s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/lib/ros_madplay_player/ros_madplay_player
+[0.311s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/include/ros_madplay_player
+[0.311s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/include/ros_madplay_player/ros_madplay_player.h
+[0.311s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ament_index/resource_index/package_run_dependencies/ros_madplay_player
+[0.311s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ament_index/resource_index/parent_prefix_path/ros_madplay_player
+[0.311s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/environment/ament_prefix_path.sh
+[0.311s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/environment/ament_prefix_path.dsv
+[0.311s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/environment/path.sh
+[0.311s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/environment/path.dsv
+[0.312s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/local_setup.bash
+[0.312s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/local_setup.sh
+[0.312s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/local_setup.zsh
+[0.312s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/local_setup.dsv
+[0.312s] -- Installing: /home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/package.dsv
+[0.312s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ament_index/resource_index/packages/ros_madplay_player
+[0.312s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/cmake/ros_madplay_playerConfig.cmake
+[0.312s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/cmake/ros_madplay_playerConfig-version.cmake
+[0.312s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/package.xml
+[0.345s] Invoked command in '/home/certezas/robotis_ws/build/ros_madplay_player' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/ros_madplay_player

@@ -1,0 +1,41 @@
+[0.222s] Invoking command in '/home/certezas/robotis_ws/build/robotis_math': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/robotis_math -- -j12 -l12
+[1.468s] [100%] Built target robotis_math
+[1.502s] Invoked command in '/home/certezas/robotis_ws/build/robotis_math' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/robotis_math -- -j12 -l12
+[1.639s] Invoking command in '/home/certezas/robotis_ws/build/robotis_math': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/robotis_math
+[7.725s] -- Install configuration: ""
+[7.725s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/lib/librobotis_math.a
+[7.725s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math
+[7.725s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/step_data_define.h
+[7.725s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/fifth_order_polynomial_trajectory.h
+[7.725s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/robotis_linear_algebra.h
+[7.725s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/bezier_curve.h
+[7.725s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/minimum_jerk_trajectory.h
+[7.725s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/robotis_trajectory_calculator.h
+[7.725s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/robotis_math_base.h
+[7.725s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/simple_trapezoidal_velocity_profile.h
+[7.725s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/robotis_math.h
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/preview_control.h
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/include/robotis_math/minimum_jerk_trajectory_with_via_point.h
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/environment/library_path.sh
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/environment/library_path.dsv
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/ament_index/resource_index/package_run_dependencies/robotis_math
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/ament_index/resource_index/parent_prefix_path/robotis_math
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/environment/ament_prefix_path.sh
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/environment/ament_prefix_path.dsv
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/environment/path.sh
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/environment/path.dsv
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/local_setup.bash
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/local_setup.sh
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/local_setup.zsh
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/local_setup.dsv
+[7.726s] -- Installing: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/package.dsv
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/ament_index/resource_index/packages/robotis_math
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/export_robotis_mathExport.cmake
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/export_robotis_mathExport-noconfig.cmake
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/ament_cmake_export_targets-extras.cmake
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/robotis_mathConfig.cmake
+[7.726s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake/robotis_mathConfig-version.cmake
+[7.727s] -- Up-to-date: /home/certezas/robotis_ws/install/robotis_math/share/robotis_math/package.xml
+[7.970s] Invoked command in '/home/certezas/robotis_ws/build/robotis_math' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/robotis_math

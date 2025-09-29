@@ -1,0 +1,4 @@
+source;share/robotis_device/local_setup.bash
+source;share/robotis_device/local_setup.dsv
+source;share/robotis_device/local_setup.sh
+source;share/robotis_device/local_setup.zsh

@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_ball_detector_msgs/msg/CircleSetStamped.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "std_msgs/msg/Header.idl"
+
+module op3_ball_detector_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "This represents the set of detected circles")
+    struct CircleSetStamped {
+      @verbatim (language="comment", text=
+        "timestamp and frame id of the image frame")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "set of detected circles:" "\n"
+        "      (circles[i].x, circles[i].y) is the center point in image coordinates" "\n"
+        "      circles[i].z is the circle radius")
+      sequence<geometry_msgs::msg::Point> circles;
+    };
+  };
+};

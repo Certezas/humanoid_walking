@@ -1,0 +1,570 @@
+[0.031s] Invoking command in '/home/certezas/robotis_ws/build/op3_online_walking_module_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake /home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_online_walking_module_msgs -DCMAKE_INSTALL_PREFIX=/home/certezas/robotis_ws/install/op3_online_walking_module_msgs
+[0.643s] -- The C compiler identification is GNU 11.4.0
+[0.801s] -- The CXX compiler identification is GNU 11.4.0
+[0.892s] -- Detecting C compiler ABI info
+[1.006s] -- Detecting C compiler ABI info - done
+[1.019s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.019s] -- Detecting C compile features
+[1.019s] -- Detecting C compile features - done
+[1.028s] -- Detecting CXX compiler ABI info
+[1.159s] -- Detecting CXX compiler ABI info - done
+[1.173s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.173s] -- Detecting CXX compile features
+[1.173s] -- Detecting CXX compile features - done
+[1.257s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.553s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.777s] -- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+[1.874s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.908s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.923s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.985s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.041s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.207s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.290s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.214s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.684s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.043s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.074s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.196s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.681s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.681s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.682s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.682s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[5.720s] -- Found PythonExtra: .so  
+[6.042s] -- Configuring done
+[6.124s] -- Generating done
+[6.144s] -- Build files have been written to: /home/certezas/robotis_ws/build/op3_online_walking_module_msgs
+[6.161s] Invoked command in '/home/certezas/robotis_ws/build/op3_online_walking_module_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake /home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_online_walking_module_msgs -DCMAKE_INSTALL_PREFIX=/home/certezas/robotis_ws/install/op3_online_walking_module_msgs
+[6.161s] Invoking command in '/home/certezas/robotis_ws/build/op3_online_walking_module_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_online_walking_module_msgs -- -j12 -l12
+[6.242s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.253s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.262s] [  1%] Built target ament_cmake_python_copy_op3_online_walking_module_msgs
+[6.819s] running egg_info
+[6.820s] creating op3_online_walking_module_msgs.egg-info
+[6.821s] writing op3_online_walking_module_msgs.egg-info/PKG-INFO
+[6.821s] writing dependency_links to op3_online_walking_module_msgs.egg-info/dependency_links.txt
+[6.822s] writing top-level names to op3_online_walking_module_msgs.egg-info/top_level.txt
+[6.823s] writing manifest file 'op3_online_walking_module_msgs.egg-info/SOURCES.txt'
+[6.828s] reading manifest file 'op3_online_walking_module_msgs.egg-info/SOURCES.txt'
+[6.829s] writing manifest file 'op3_online_walking_module_msgs.egg-info/SOURCES.txt'
+[6.888s] [  1%] Built target ament_cmake_python_build_op3_online_walking_module_msgs_egg
+[14.300s] [  2%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_c.dir/rosidl_generator_c/op3_online_walking_module_msgs/msg/detail/joint_pose__functions.c.o[0m
+[14.338s] [  3%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_c.dir/rosidl_generator_c/op3_online_walking_module_msgs/msg/detail/kinematics_pose__functions.c.o[0m
+[14.344s] [  4%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_c.dir/rosidl_generator_c/op3_online_walking_module_msgs/msg/detail/foot_step_command__functions.c.o[0m
+[14.355s] [  4%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_c.dir/rosidl_generator_c/op3_online_walking_module_msgs/msg/detail/foot_step_array__functions.c.o[0m
+[14.361s] [  5%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_c.dir/rosidl_generator_c/op3_online_walking_module_msgs/msg/detail/preview_request__functions.c.o[0m
+[14.413s] [  6%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_c.dir/rosidl_generator_c/op3_online_walking_module_msgs/msg/detail/preview_response__functions.c.o[0m
+[14.413s] [  7%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_c.dir/rosidl_generator_c/op3_online_walking_module_msgs/msg/detail/walking_param__functions.c.o[0m
+[14.415s] [  8%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_c.dir/rosidl_generator_c/op3_online_walking_module_msgs/msg/detail/step2_d__functions.c.o[0m
+[14.446s] [  9%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_c.dir/rosidl_generator_c/op3_online_walking_module_msgs/msg/detail/step2_d_array__functions.c.o[0m
+[14.485s] [  9%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_c.dir/rosidl_generator_c/op3_online_walking_module_msgs/srv/detail/get_joint_pose__functions.c.o[0m
+[14.495s] [  9%] Built target op3_online_walking_module_msgs__cpp
+[14.545s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[14.567s] [ 11%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_c.dir/rosidl_generator_c/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__functions.c.o[0m
+[15.130s] [ 12%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_c.dir/rosidl_generator_c/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__functions.c.o[0m
+[15.408s] [ 13%] [32m[1mLinking C shared library libop3_online_walking_module_msgs__rosidl_generator_c.so[0m
+[15.727s] [ 13%] Built target op3_online_walking_module_msgs__rosidl_generator_c
+[18.162s] [ 14%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/op3_online_walking_module_msgs/msg/joint_pose__type_support.cpp.o[0m
+[18.582s] [ 15%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/op3_online_walking_module_msgs/msg/walking_param__type_support.cpp.o[0m
+[19.062s] [ 16%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/op3_online_walking_module_msgs/msg/step2_d__type_support.cpp.o[0m
+[19.685s] [ 17%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/op3_online_walking_module_msgs/msg/step2_d_array__type_support.cpp.o[0m
+[20.148s] [ 18%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/op3_online_walking_module_msgs/srv/get_joint_pose__type_support.cpp.o[0m
+[20.583s] [ 18%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/op3_online_walking_module_msgs/srv/get_kinematics_pose__type_support.cpp.o[0m
+[21.059s] [ 19%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/op3_online_walking_module_msgs/srv/get_preview_matrix__type_support.cpp.o[0m
+[21.447s] [ 20%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/op3_online_walking_module_msgs/msg/preview_response__type_support.cpp.o[0m
+[21.814s] [ 20%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/op3_online_walking_module_msgs/msg/preview_request__type_support.cpp.o[0m
+[22.209s] [ 21%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/op3_online_walking_module_msgs/msg/foot_step_array__type_support.cpp.o[0m
+[22.650s] [ 22%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/op3_online_walking_module_msgs/msg/foot_step_command__type_support.cpp.o[0m
+[22.985s] [ 23%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/op3_online_walking_module_msgs/msg/kinematics_pose__type_support.cpp.o[0m
+[23.637s] [ 24%] [32m[1mLinking CXX shared library libop3_online_walking_module_msgs__rosidl_typesupport_cpp.so[0m
+[23.677s] [ 24%] Built target op3_online_walking_module_msgs__rosidl_typesupport_cpp
+[23.692s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[24.486s] [ 26%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/op3_online_walking_module_msgs/msg/joint_pose__type_support.cpp.o[0m
+[24.534s] [ 26%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/op3_online_walking_module_msgs/msg/step2_d__type_support.cpp.o[0m
+[24.573s] [ 27%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/op3_online_walking_module_msgs/msg/step2_d_array__type_support.cpp.o[0m
+[24.607s] [ 28%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/op3_online_walking_module_msgs/srv/get_joint_pose__type_support.cpp.o[0m
+[24.637s] [ 29%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/op3_online_walking_module_msgs/srv/get_kinematics_pose__type_support.cpp.o[0m
+[24.833s] [ 30%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/op3_online_walking_module_msgs/srv/get_preview_matrix__type_support.cpp.o[0m
+[24.882s] [ 31%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/op3_online_walking_module_msgs/msg/walking_param__type_support.cpp.o[0m
+[24.982s] [ 32%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/op3_online_walking_module_msgs/msg/preview_response__type_support.cpp.o[0m
+[25.021s] [ 33%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/op3_online_walking_module_msgs/msg/preview_request__type_support.cpp.o[0m
+[25.057s] [ 34%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/op3_online_walking_module_msgs/msg/foot_step_array__type_support.cpp.o[0m
+[25.096s] [ 35%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/op3_online_walking_module_msgs/msg/foot_step_command__type_support.cpp.o[0m
+[25.123s] [ 35%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/op3_online_walking_module_msgs/msg/kinematics_pose__type_support.cpp.o[0m
+[25.164s] [ 36%] [32m[1mLinking CXX shared library libop3_online_walking_module_msgs__rosidl_typesupport_c.so[0m
+[25.414s] [ 36%] Built target op3_online_walking_module_msgs__rosidl_typesupport_c
+[25.425s] [ 37%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[26.650s] [ 38%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/op3_online_walking_module_msgs/msg/detail/joint_pose__type_support.c.o[0m
+[26.803s] [ 39%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/op3_online_walking_module_msgs/msg/detail/step2_d_array__type_support.c.o[0m
+[26.850s] [ 40%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/op3_online_walking_module_msgs/srv/detail/get_joint_pose__type_support.c.o[0m
+[26.916s] [ 40%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__type_support.c.o[0m
+[26.967s] [ 41%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__type_support.c.o[0m
+[27.026s] [ 42%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/op3_online_walking_module_msgs/msg/detail/step2_d__type_support.c.o[0m
+[27.155s] [ 43%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/op3_online_walking_module_msgs/msg/detail/walking_param__type_support.c.o[0m
+[27.205s] [ 44%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/op3_online_walking_module_msgs/msg/detail/preview_response__type_support.c.o[0m
+[27.278s] [ 45%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/op3_online_walking_module_msgs/msg/detail/preview_request__type_support.c.o[0m
+[27.322s] [ 45%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/op3_online_walking_module_msgs/msg/detail/foot_step_array__type_support.c.o[0m
+[27.383s] [ 46%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/op3_online_walking_module_msgs/msg/detail/foot_step_command__type_support.c.o[0m
+[27.434s] [ 47%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/op3_online_walking_module_msgs/msg/detail/kinematics_pose__type_support.c.o[0m
+[27.571s] [ 48%] [32m[1mLinking C shared library libop3_online_walking_module_msgs__rosidl_typesupport_introspection_c.so[0m
+[27.630s] [ 48%] Built target op3_online_walking_module_msgs__rosidl_typesupport_introspection_c
+[27.644s] [ 49%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[29.108s] [ 50%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/op3_online_walking_module_msgs/msg/detail/joint_pose__type_support_c.cpp.o[0m
+[29.554s] [ 51%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/op3_online_walking_module_msgs/srv/detail/get_joint_pose__type_support_c.cpp.o[0m
+[29.974s] [ 52%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__type_support_c.cpp.o[0m
+[30.448s] [ 53%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__type_support_c.cpp.o[0m
+[31.057s] [ 53%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/op3_online_walking_module_msgs/msg/detail/step2_d_array__type_support_c.cpp.o[0m
+[31.445s] [ 54%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/op3_online_walking_module_msgs/msg/detail/step2_d__type_support_c.cpp.o[0m
+[31.762s] [ 55%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/op3_online_walking_module_msgs/msg/detail/walking_param__type_support_c.cpp.o[0m
+[32.157s] [ 56%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/op3_online_walking_module_msgs/msg/detail/preview_response__type_support_c.cpp.o[0m
+[32.669s] [ 57%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/op3_online_walking_module_msgs/msg/detail/preview_request__type_support_c.cpp.o[0m
+[33.110s] [ 58%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/op3_online_walking_module_msgs/msg/detail/foot_step_array__type_support_c.cpp.o[0m
+[33.565s] [ 58%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/op3_online_walking_module_msgs/msg/detail/foot_step_command__type_support_c.cpp.o[0m
+[34.038s] [ 59%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/op3_online_walking_module_msgs/msg/detail/kinematics_pose__type_support_c.cpp.o[0m
+[34.496s] [ 60%] [32m[1mLinking CXX shared library libop3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[34.652s] [ 60%] Built target op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c
+[34.673s] [ 61%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[35.996s] [ 61%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/op3_online_walking_module_msgs/msg/detail/joint_pose__type_support.cpp.o[0m
+[36.438s] [ 62%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__type_support.cpp.o[0m
+[36.861s] [ 63%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__type_support.cpp.o[0m
+[37.260s] [ 64%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/op3_online_walking_module_msgs/srv/detail/get_joint_pose__type_support.cpp.o[0m
+[37.666s] [ 65%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/op3_online_walking_module_msgs/msg/detail/step2_d_array__type_support.cpp.o[0m
+[38.063s] [ 66%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/op3_online_walking_module_msgs/msg/detail/step2_d__type_support.cpp.o[0m
+[38.660s] [ 66%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/op3_online_walking_module_msgs/msg/detail/walking_param__type_support.cpp.o[0m
+[39.007s] [ 67%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/op3_online_walking_module_msgs/msg/detail/preview_response__type_support.cpp.o[0m
+[39.379s] [ 68%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/op3_online_walking_module_msgs/msg/detail/preview_request__type_support.cpp.o[0m
+[39.901s] [ 69%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/op3_online_walking_module_msgs/msg/detail/foot_step_array__type_support.cpp.o[0m
+[40.363s] [ 70%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/op3_online_walking_module_msgs/msg/detail/foot_step_command__type_support.cpp.o[0m
+[40.713s] [ 71%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/op3_online_walking_module_msgs/msg/detail/kinematics_pose__type_support.cpp.o[0m
+[41.229s] [ 72%] [32m[1mLinking CXX shared library libop3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[41.361s] [ 72%] Built target op3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp
+[41.378s] [ 72%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[42.802s] [ 73%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_online_walking_module_msgs/msg/detail/dds_fastrtps/joint_pose__type_support.cpp.o[0m
+[44.961s] [ 73%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_online_walking_module_msgs/srv/detail/dds_fastrtps/get_preview_matrix__type_support.cpp.o[0m
+[45.466s] [ 74%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_online_walking_module_msgs/srv/detail/dds_fastrtps/get_kinematics_pose__type_support.cpp.o[0m
+[46.099s] [ 75%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_online_walking_module_msgs/srv/detail/dds_fastrtps/get_joint_pose__type_support.cpp.o[0m
+[46.704s] [ 76%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_online_walking_module_msgs/msg/detail/dds_fastrtps/step2_d_array__type_support.cpp.o[0m
+[47.311s] [ 77%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_online_walking_module_msgs/msg/detail/dds_fastrtps/step2_d__type_support.cpp.o[0m
+[47.849s] [ 78%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_online_walking_module_msgs/msg/detail/dds_fastrtps/walking_param__type_support.cpp.o[0m
+[48.963s] [ 78%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_online_walking_module_msgs/msg/detail/dds_fastrtps/preview_response__type_support.cpp.o[0m
+[49.633s] [ 79%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_online_walking_module_msgs/msg/detail/dds_fastrtps/preview_request__type_support.cpp.o[0m
+[50.177s] [ 80%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_online_walking_module_msgs/msg/detail/dds_fastrtps/foot_step_array__type_support.cpp.o[0m
+[50.931s] [ 81%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_online_walking_module_msgs/msg/detail/dds_fastrtps/foot_step_command__type_support.cpp.o[0m
+[51.498s] [ 82%] [32mBuilding CXX object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_online_walking_module_msgs/msg/detail/dds_fastrtps/kinematics_pose__type_support.cpp.o[0m
+[52.124s] [ 83%] [32m[1mLinking CXX shared library libop3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[52.390s] [ 83%] Built target op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp
+[52.418s] [ 83%] Built target op3_online_walking_module_msgs
+[52.448s] [ 84%] [34m[1mGenerating Python code for ROS interfaces[0m
+[55.303s] [ 84%] Built target op3_online_walking_module_msgs__py
+[55.334s] [ 85%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_online_walking_module_msgs/msg/_joint_pose_s.c.o[0m
+[55.489s] [ 86%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_online_walking_module_msgs/srv/_get_preview_matrix_s.c.o[0m
+[55.636s] [ 87%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_online_walking_module_msgs/srv/_get_kinematics_pose_s.c.o[0m
+[55.781s] [ 87%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_online_walking_module_msgs/srv/_get_joint_pose_s.c.o[0m
+[55.972s] [ 88%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_online_walking_module_msgs/msg/_step2_d_array_s.c.o[0m
+[56.124s] [ 89%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_online_walking_module_msgs/msg/_step2_d_s.c.o[0m
+[56.286s] [ 90%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_online_walking_module_msgs/msg/_walking_param_s.c.o[0m
+[56.460s] [ 91%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_online_walking_module_msgs/msg/_preview_response_s.c.o[0m
+[56.627s] [ 92%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_online_walking_module_msgs/msg/_preview_request_s.c.o[0m
+[56.782s] [ 93%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_online_walking_module_msgs/msg/_foot_step_array_s.c.o[0m
+[56.943s] [ 93%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_online_walking_module_msgs/msg/_foot_step_command_s.c.o[0m
+[57.396s] [ 94%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_generator_py.dir/rosidl_generator_py/op3_online_walking_module_msgs/msg/_kinematics_pose_s.c.o[0m
+[57.665s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/op3_online_walking_module_msgs/libop3_online_walking_module_msgs__rosidl_generator_py.so[0m
+[57.732s] [ 95%] Built target op3_online_walking_module_msgs__rosidl_generator_py
+[57.763s] [ 96%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/op3_online_walking_module_msgs/_op3_online_walking_module_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[57.985s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/op3_online_walking_module_msgs/op3_online_walking_module_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[58.045s] [ 97%] Built target op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c__pyext
+[58.075s] [ 97%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/op3_online_walking_module_msgs/_op3_online_walking_module_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[58.286s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/op3_online_walking_module_msgs/op3_online_walking_module_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[58.340s] [ 98%] Built target op3_online_walking_module_msgs__rosidl_typesupport_c__pyext
+[58.369s] [ 99%] [32mBuilding C object CMakeFiles/op3_online_walking_module_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/op3_online_walking_module_msgs/_op3_online_walking_module_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[58.584s] [100%] [32m[1mLinking C shared library rosidl_generator_py/op3_online_walking_module_msgs/op3_online_walking_module_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[58.637s] [100%] Built target op3_online_walking_module_msgs__rosidl_typesupport_introspection_c__pyext
+[58.655s] Invoked command in '/home/certezas/robotis_ws/build/op3_online_walking_module_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_online_walking_module_msgs -- -j12 -l12
+[58.656s] Invoking command in '/home/certezas/robotis_ws/build/op3_online_walking_module_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/op3_online_walking_module_msgs
+[63.350s] -- Install configuration: ""
+[63.350s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/ament_index/resource_index/rosidl_interfaces/op3_online_walking_module_msgs
+[63.350s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs
+[63.350s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv
+[63.350s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/get_joint_pose.h
+[63.350s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/get_preview_matrix.h
+[63.350s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/get_kinematics_pose.h
+[63.350s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail
+[63.351s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__type_support.h
+[63.352s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__functions.h
+[63.353s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__functions.h
+[63.353s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__type_support.h
+[63.353s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__type_support.h
+[63.353s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__functions.c
+[63.353s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__struct.h
+[63.353s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__struct.h
+[63.353s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__functions.c
+[63.353s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__functions.c
+[63.354s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__struct.h
+[63.354s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__functions.h
+[63.354s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg
+[63.354s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/rosidl_generator_c__visibility_control.h
+[63.354s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/kinematics_pose.h
+[63.354s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/step2_d.h
+[63.354s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/joint_pose.h
+[63.354s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/preview_response.h
+[63.354s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/step2_d_array.h
+[63.355s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/foot_step_command.h
+[63.355s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/walking_param.h
+[63.355s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail
+[63.355s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__type_support.h
+[63.355s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__type_support.h
+[63.355s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__functions.h
+[63.355s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__struct.h
+[63.355s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__type_support.h
+[63.355s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__functions.c
+[63.356s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__functions.c
+[63.356s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__functions.c
+[63.356s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__struct.h
+[63.356s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__functions.c
+[63.356s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__struct.h
+[63.356s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__struct.h
+[63.356s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__struct.h
+[63.356s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__functions.h
+[63.356s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__struct.h
+[63.356s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__functions.c
+[63.357s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__type_support.h
+[63.357s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__functions.c
+[63.357s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__struct.h
+[63.357s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__functions.h
+[63.357s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__functions.h
+[63.357s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__functions.h
+[63.357s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__functions.h
+[63.357s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__type_support.h
+[63.357s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__functions.c
+[63.358s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__functions.h
+[63.358s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__type_support.h
+[63.358s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__functions.h
+[63.358s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__functions.c
+[63.358s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__type_support.h
+[63.358s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__functions.c
+[63.358s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__struct.h
+[63.358s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__type_support.h
+[63.358s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__functions.h
+[63.358s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__struct.h
+[63.359s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__type_support.h
+[63.359s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/preview_request.h
+[63.359s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/foot_step_array.h
+[63.359s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/environment/library_path.sh
+[63.359s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/environment/library_path.dsv
+[63.359s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_generator_c.so
+[63.359s] -- Set runtime path of "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_generator_c.so" to ""
+[63.359s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs
+[63.359s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv
+[63.360s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail
+[63.360s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__rosidl_typesupport_fastrtps_c.h
+[63.360s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__rosidl_typesupport_fastrtps_c.h
+[63.360s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__rosidl_typesupport_fastrtps_c.h
+[63.360s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg
+[63.360s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail
+[63.360s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__rosidl_typesupport_fastrtps_c.h
+[63.360s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__rosidl_typesupport_fastrtps_c.h
+[63.360s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__rosidl_typesupport_fastrtps_c.h
+[63.361s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__rosidl_typesupport_fastrtps_c.h
+[63.361s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__rosidl_typesupport_fastrtps_c.h
+[63.361s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__rosidl_typesupport_fastrtps_c.h
+[63.361s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__rosidl_typesupport_fastrtps_c.h
+[63.361s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__rosidl_typesupport_fastrtps_c.h
+[63.361s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__rosidl_typesupport_fastrtps_c.h
+[63.362s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[63.362s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.so
+[63.362s] -- Set runtime path of "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[63.362s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs
+[63.362s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv
+[63.363s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/get_preview_matrix.hpp
+[63.363s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/get_joint_pose.hpp
+[63.363s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/get_kinematics_pose.hpp
+[63.363s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail
+[63.363s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__struct.hpp
+[63.363s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__type_support.hpp
+[63.363s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__builder.hpp
+[63.363s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__struct.hpp
+[63.363s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__builder.hpp
+[63.364s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__traits.hpp
+[63.364s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__builder.hpp
+[63.364s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__type_support.hpp
+[63.364s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__type_support.hpp
+[63.364s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__traits.hpp
+[63.364s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__struct.hpp
+[63.364s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__traits.hpp
+[63.364s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg
+[63.364s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/foot_step_command.hpp
+[63.364s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/kinematics_pose.hpp
+[63.365s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/walking_param.hpp
+[63.365s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/preview_request.hpp
+[63.365s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[63.365s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/preview_response.hpp
+[63.365s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/step2_d.hpp
+[63.365s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/step2_d_array.hpp
+[63.365s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/joint_pose.hpp
+[63.365s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/foot_step_array.hpp
+[63.366s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail
+[63.366s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__type_support.hpp
+[63.366s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__traits.hpp
+[63.366s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__type_support.hpp
+[63.366s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__struct.hpp
+[63.366s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__builder.hpp
+[63.366s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__struct.hpp
+[63.366s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__builder.hpp
+[63.366s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__traits.hpp
+[63.366s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__builder.hpp
+[63.367s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__builder.hpp
+[63.367s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__struct.hpp
+[63.367s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__struct.hpp
+[63.367s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__traits.hpp
+[63.367s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__traits.hpp
+[63.367s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__struct.hpp
+[63.367s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__traits.hpp
+[63.367s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__traits.hpp
+[63.367s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__builder.hpp
+[63.368s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__type_support.hpp
+[63.368s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__type_support.hpp
+[63.368s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__type_support.hpp
+[63.368s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__builder.hpp
+[63.368s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__struct.hpp
+[63.368s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__traits.hpp
+[63.368s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__builder.hpp
+[63.368s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__traits.hpp
+[63.368s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__type_support.hpp
+[63.368s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__builder.hpp
+[63.368s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__traits.hpp
+[63.369s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__type_support.hpp
+[63.369s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__type_support.hpp
+[63.369s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__builder.hpp
+[63.369s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__struct.hpp
+[63.369s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__struct.hpp
+[63.369s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__type_support.hpp
+[63.369s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__struct.hpp
+[63.369s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs
+[63.369s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv
+[63.369s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail
+[63.369s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/dds_fastrtps
+[63.370s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[63.370s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__rosidl_typesupport_fastrtps_cpp.hpp
+[63.370s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[63.370s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg
+[63.370s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[63.370s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail
+[63.370s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__rosidl_typesupport_fastrtps_cpp.hpp
+[63.370s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/dds_fastrtps
+[63.370s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__rosidl_typesupport_fastrtps_cpp.hpp
+[63.371s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[63.371s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[63.371s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__rosidl_typesupport_fastrtps_cpp.hpp
+[63.371s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__rosidl_typesupport_fastrtps_cpp.hpp
+[63.371s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__rosidl_typesupport_fastrtps_cpp.hpp
+[63.371s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[63.371s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__rosidl_typesupport_fastrtps_cpp.hpp
+[63.371s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.so
+[63.371s] -- Set runtime path of "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[63.372s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs
+[63.372s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv
+[63.372s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail
+[63.372s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__type_support.c
+[63.372s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__rosidl_typesupport_introspection_c.h
+[63.372s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__rosidl_typesupport_introspection_c.h
+[63.372s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__rosidl_typesupport_introspection_c.h
+[63.372s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__type_support.c
+[63.373s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__type_support.c
+[63.373s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg
+[63.373s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[63.373s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail
+[63.373s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__type_support.c
+[63.373s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__type_support.c
+[63.373s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__rosidl_typesupport_introspection_c.h
+[63.373s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__type_support.c
+[63.373s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__rosidl_typesupport_introspection_c.h
+[63.373s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__rosidl_typesupport_introspection_c.h
+[63.374s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__rosidl_typesupport_introspection_c.h
+[63.374s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__type_support.c
+[63.374s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__rosidl_typesupport_introspection_c.h
+[63.374s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__type_support.c
+[63.374s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__rosidl_typesupport_introspection_c.h
+[63.374s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__type_support.c
+[63.374s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__type_support.c
+[63.374s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__rosidl_typesupport_introspection_c.h
+[63.374s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__rosidl_typesupport_introspection_c.h
+[63.375s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__type_support.c
+[63.375s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__rosidl_typesupport_introspection_c.h
+[63.375s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__type_support.c
+[63.375s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_typesupport_introspection_c.so
+[63.375s] -- Set runtime path of "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_typesupport_introspection_c.so" to ""
+[63.375s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_typesupport_c.so
+[63.375s] -- Set runtime path of "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_typesupport_c.so" to ""
+[63.375s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs
+[63.375s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv
+[63.375s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail
+[63.375s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__type_support.cpp
+[63.376s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__rosidl_typesupport_introspection_cpp.hpp
+[63.376s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__rosidl_typesupport_introspection_cpp.hpp
+[63.376s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_preview_matrix__type_support.cpp
+[63.376s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_joint_pose__type_support.cpp
+[63.376s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/srv/detail/get_kinematics_pose__rosidl_typesupport_introspection_cpp.hpp
+[63.376s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg
+[63.376s] -- Up-to-date: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail
+[63.376s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__type_support.cpp
+[63.376s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__type_support.cpp
+[63.377s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__rosidl_typesupport_introspection_cpp.hpp
+[63.377s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__type_support.cpp
+[63.377s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__type_support.cpp
+[63.377s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__type_support.cpp
+[63.377s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__rosidl_typesupport_introspection_cpp.hpp
+[63.377s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d_array__rosidl_typesupport_introspection_cpp.hpp
+[63.377s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/kinematics_pose__rosidl_typesupport_introspection_cpp.hpp
+[63.377s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/walking_param__type_support.cpp
+[63.377s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_command__rosidl_typesupport_introspection_cpp.hpp
+[63.378s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__rosidl_typesupport_introspection_cpp.hpp
+[63.378s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__rosidl_typesupport_introspection_cpp.hpp
+[63.378s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/step2_d__type_support.cpp
+[63.378s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_request__type_support.cpp
+[63.378s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/joint_pose__rosidl_typesupport_introspection_cpp.hpp
+[63.378s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/foot_step_array__type_support.cpp
+[63.378s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/include/op3_online_walking_module_msgs/op3_online_walking_module_msgs/msg/detail/preview_response__rosidl_typesupport_introspection_cpp.hpp
+[63.378s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.so
+[63.378s] -- Set runtime path of "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[63.379s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_typesupport_cpp.so
+[63.379s] -- Set runtime path of "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_typesupport_cpp.so" to ""
+[63.379s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/environment/pythonpath.sh
+[63.379s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/environment/pythonpath.dsv
+[63.379s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs-0.1.1-py3.10.egg-info
+[63.379s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs-0.1.1-py3.10.egg-info/PKG-INFO
+[63.379s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs-0.1.1-py3.10.egg-info/dependency_links.txt
+[63.379s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs-0.1.1-py3.10.egg-info/top_level.txt
+[63.379s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs-0.1.1-py3.10.egg-info/SOURCES.txt
+[63.379s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs
+[63.380s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/_op3_online_walking_module_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[63.380s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/__init__.py
+[63.380s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv
+[63.380s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv/_get_preview_matrix_s.c
+[63.380s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv/_get_kinematics_pose.py
+[63.380s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv/_get_joint_pose_s.c
+[63.380s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv/__init__.py
+[63.380s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv/_get_kinematics_pose_s.c
+[63.380s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv/_get_preview_matrix.py
+[63.380s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv/_get_joint_pose.py
+[63.381s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/libop3_online_walking_module_msgs__rosidl_generator_py.so
+[63.381s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/_op3_online_walking_module_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[63.381s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/_op3_online_walking_module_msgs_s.ep.rosidl_typesupport_c.c
+[63.381s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/op3_online_walking_module_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[63.381s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/op3_online_walking_module_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[63.381s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/op3_online_walking_module_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[63.381s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg
+[63.381s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_preview_response.py
+[63.381s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_preview_response_s.c
+[63.381s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_step2_d_array.py
+[63.382s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_kinematics_pose.py
+[63.382s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_preview_request_s.c
+[63.382s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_joint_pose.py
+[63.382s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_walking_param.py
+[63.382s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_foot_step_array.py
+[63.382s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/__init__.py
+[63.382s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_foot_step_array_s.c
+[63.382s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_joint_pose_s.c
+[63.382s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_step2_d_s.c
+[63.382s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_walking_param_s.c
+[63.383s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_foot_step_command_s.c
+[63.383s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_preview_request.py
+[63.383s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_step2_d_array_s.c
+[63.383s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_kinematics_pose_s.c
+[63.383s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_foot_step_command.py
+[63.383s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_step2_d.py
+[63.456s] Listing '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs'...
+[63.457s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/__init__.py'...
+[63.457s] Listing '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg'...
+[63.457s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/__init__.py'...
+[63.457s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_foot_step_array.py'...
+[63.457s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_foot_step_command.py'...
+[63.457s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_joint_pose.py'...
+[63.457s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_kinematics_pose.py'...
+[63.457s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_preview_request.py'...
+[63.457s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_preview_response.py'...
+[63.457s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_step2_d.py'...
+[63.457s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_step2_d_array.py'...
+[63.457s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/msg/_walking_param.py'...
+[63.457s] Listing '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv'...
+[63.457s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv/__init__.py'...
+[63.458s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv/_get_joint_pose.py'...
+[63.458s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv/_get_kinematics_pose.py'...
+[63.458s] Compiling '/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/srv/_get_preview_matrix.py'...
+[63.464s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/op3_online_walking_module_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[63.465s] -- Set runtime path of "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/op3_online_walking_module_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[63.465s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/op3_online_walking_module_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[63.465s] -- Set runtime path of "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/op3_online_walking_module_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[63.465s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/op3_online_walking_module_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[63.466s] -- Set runtime path of "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages/op3_online_walking_module_msgs/op3_online_walking_module_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[63.466s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_generator_py.so
+[63.466s] -- Set runtime path of "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib/libop3_online_walking_module_msgs__rosidl_generator_py.so" to ""
+[63.466s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/JointPose.idl
+[63.466s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/KinematicsPose.idl
+[63.467s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/FootStepCommand.idl
+[63.467s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/FootStepArray.idl
+[63.467s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/PreviewRequest.idl
+[63.467s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/PreviewResponse.idl
+[63.467s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/WalkingParam.idl
+[63.467s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/Step2D.idl
+[63.467s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/Step2DArray.idl
+[63.468s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/srv/GetJointPose.idl
+[63.468s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/srv/GetKinematicsPose.idl
+[63.468s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/srv/GetPreviewMatrix.idl
+[63.468s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/JointPose.msg
+[63.468s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/KinematicsPose.msg
+[63.468s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/FootStepCommand.msg
+[63.468s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/FootStepArray.msg
+[63.468s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/PreviewRequest.msg
+[63.469s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/PreviewResponse.msg
+[63.469s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/WalkingParam.msg
+[63.469s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/Step2D.msg
+[63.469s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/msg/Step2DArray.msg
+[63.469s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/srv/GetJointPose.srv
+[63.469s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/srv/GetJointPose_Request.msg
+[63.469s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/srv/GetJointPose_Response.msg
+[63.470s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/srv/GetKinematicsPose.srv
+[63.470s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/srv/GetKinematicsPose_Request.msg
+[63.470s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/srv/GetKinematicsPose_Response.msg
+[63.470s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/srv/GetPreviewMatrix.srv
+[63.470s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/srv/GetPreviewMatrix_Request.msg
+[63.470s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/srv/GetPreviewMatrix_Response.msg
+[63.470s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/ament_index/resource_index/package_run_dependencies/op3_online_walking_module_msgs
+[63.471s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/ament_index/resource_index/parent_prefix_path/op3_online_walking_module_msgs
+[63.471s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/environment/ament_prefix_path.sh
+[63.471s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/environment/ament_prefix_path.dsv
+[63.471s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/environment/path.sh
+[63.471s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/environment/path.dsv
+[63.471s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/local_setup.bash
+[63.472s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/local_setup.sh
+[63.472s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/local_setup.zsh
+[63.472s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/local_setup.dsv
+[63.472s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/package.dsv
+[63.472s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/ament_index/resource_index/packages/op3_online_walking_module_msgs
+[63.474s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/export_op3_online_walking_module_msgs__rosidl_generator_cExport.cmake
+[63.474s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/export_op3_online_walking_module_msgs__rosidl_generator_cExport-noconfig.cmake
+[63.474s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/export_op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[63.474s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/export_op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[63.474s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/export_op3_online_walking_module_msgs__rosidl_generator_cppExport.cmake
+[63.474s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/export_op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[63.474s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/export_op3_online_walking_module_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[63.474s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cExport.cmake
+[63.475s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[63.475s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/op3_online_walking_module_msgs__rosidl_typesupport_cExport.cmake
+[63.475s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/op3_online_walking_module_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[63.475s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[63.475s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/op3_online_walking_module_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[63.475s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/op3_online_walking_module_msgs__rosidl_typesupport_cppExport.cmake
+[63.475s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/op3_online_walking_module_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[63.475s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/export_op3_online_walking_module_msgs__rosidl_generator_pyExport.cmake
+[63.475s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/export_op3_online_walking_module_msgs__rosidl_generator_pyExport-noconfig.cmake
+[63.476s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/rosidl_cmake-extras.cmake
+[63.476s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[63.476s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[63.476s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[63.476s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[63.476s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[63.476s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[63.476s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/op3_online_walking_module_msgsConfig.cmake
+[63.477s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/cmake/op3_online_walking_module_msgsConfig-version.cmake
+[63.477s] -- Installing: /home/certezas/robotis_ws/install/op3_online_walking_module_msgs/share/op3_online_walking_module_msgs/package.xml
+[63.480s] Invoked command in '/home/certezas/robotis_ws/build/op3_online_walking_module_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/op3_online_walking_module_msgs

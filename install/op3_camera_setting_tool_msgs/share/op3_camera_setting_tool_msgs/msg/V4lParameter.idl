@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_camera_setting_tool_msgs/msg/V4lParameter.msg
+// generated code does not contain a copyright notice
+
+
+module op3_camera_setting_tool_msgs {
+  module msg {
+    struct V4lParameter {
+      string name;
+
+      int32 value;
+    };
+  };
+};

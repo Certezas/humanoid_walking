@@ -1,0 +1,12 @@
+msg/JointOffsetData.idl
+msg/JointOffsetData.msg
+msg/JointOffsetPositionData.idl
+msg/JointOffsetPositionData.msg
+msg/JointTorqueOnOff.idl
+msg/JointTorqueOnOff.msg
+msg/JointTorqueOnOffArray.idl
+msg/JointTorqueOnOffArray.msg
+srv/GetPresentJointOffsetData.idl
+srv/GetPresentJointOffsetData.srv
+srv/GetPresentJointOffsetData_Request.msg
+srv/GetPresentJointOffsetData_Response.msg

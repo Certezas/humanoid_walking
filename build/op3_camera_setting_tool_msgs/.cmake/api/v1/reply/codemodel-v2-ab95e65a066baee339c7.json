@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-687e2c950f5cbd313648.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "op3_camera_setting_tool_msgs__py",
+					"jsonFile" : "directory-op3_camera_setting_tool_msgs__py-1d465ce405d647516798.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/certezas/robotis_ws/build/op3_camera_setting_tool_msgs/op3_camera_setting_tool_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "op3_camera_setting_tool_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_op3_camera_setting_tool_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_op3_camera_setting_tool_msgs_egg-a1374f81f3d4f33ed2c9.json",
+					"name" : "ament_cmake_python_build_op3_camera_setting_tool_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_op3_camera_setting_tool_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_op3_camera_setting_tool_msgs-0eff7ff8a5a451969da0.json",
+					"name" : "ament_cmake_python_copy_op3_camera_setting_tool_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs-afca2b3beac0fcd6ff58.json",
+					"name" : "op3_camera_setting_tool_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__cpp-dd450d7a3ab9e6d2855c.json",
+					"name" : "op3_camera_setting_tool_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "op3_camera_setting_tool_msgs__py::@9bee79d5770d21a6b64e",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__py-164b7aa77c7dcda161ec.json",
+					"name" : "op3_camera_setting_tool_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__rosidl_generator_c-a8bc3d8b2e36a5ba97e3.json",
+					"name" : "op3_camera_setting_tool_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__rosidl_generator_py-f56735b7619080ecd8c5.json",
+					"name" : "op3_camera_setting_tool_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__rosidl_typesupport_c-612c6cec3465036b2f04.json",
+					"name" : "op3_camera_setting_tool_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__rosidl_typesupport_c__pyext-c25099193dc99722005b.json",
+					"name" : "op3_camera_setting_tool_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__rosidl_typesupport_cpp-462b0f601be8df86310a.json",
+					"name" : "op3_camera_setting_tool_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__rosidl_typesupport_fastrtps_c-0154330f8a6ee0c645fa.json",
+					"name" : "op3_camera_setting_tool_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__rosidl_typesupport_fastrtps_c__pyext-2fc91e803ea5ccd5d916.json",
+					"name" : "op3_camera_setting_tool_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__rosidl_typesupport_fastrtps_cpp-1601e27e2894ddadcfcd.json",
+					"name" : "op3_camera_setting_tool_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__rosidl_typesupport_introspection_c-d79dad9170f636fa77af.json",
+					"name" : "op3_camera_setting_tool_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__rosidl_typesupport_introspection_c__pyext-8bfa43febfc281fc8516.json",
+					"name" : "op3_camera_setting_tool_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs__rosidl_typesupport_introspection_cpp-bb1963bfec2a8503763f.json",
+					"name" : "op3_camera_setting_tool_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "op3_camera_setting_tool_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-op3_camera_setting_tool_msgs_uninstall-191ec42160efd94797fd.json",
+					"name" : "op3_camera_setting_tool_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-6e5a870866d1a94d7bc1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/certezas/robotis_ws/build/op3_camera_setting_tool_msgs",
+		"source" : "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_camera_setting_tool_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

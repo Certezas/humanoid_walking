@@ -1,0 +1,60 @@
+[0.021s] Invoking command in '/home/certezas/robotis_ws/build/op3_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake /home/certezas/robotis_ws/src/ROBOTIS-OP3-Tools/op3_navigation -DCMAKE_INSTALL_PREFIX=/home/certezas/robotis_ws/install/op3_navigation
+[0.886s] -- The C compiler identification is GNU 11.4.0
+[0.886s] -- The CXX compiler identification is GNU 11.4.0
+[0.886s] -- Detecting C compiler ABI info
+[0.886s] -- Detecting C compiler ABI info - done
+[0.886s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.886s] -- Detecting C compile features
+[0.886s] -- Detecting C compile features - done
+[0.887s] -- Detecting CXX compiler ABI info
+[0.887s] -- Detecting CXX compiler ABI info - done
+[0.887s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.887s] -- Detecting CXX compile features
+[0.887s] -- Detecting CXX compile features - done
+[0.887s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.887s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.887s] -- Configuring done
+[0.887s] -- Generating done
+[0.887s] -- Build files have been written to: /home/certezas/robotis_ws/build/op3_navigation
+[0.894s] Invoked command in '/home/certezas/robotis_ws/build/op3_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake /home/certezas/robotis_ws/src/ROBOTIS-OP3-Tools/op3_navigation -DCMAKE_INSTALL_PREFIX=/home/certezas/robotis_ws/install/op3_navigation
+[0.896s] Invoking command in '/home/certezas/robotis_ws/build/op3_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_navigation -- -j12 -l12
+[1.304s] Invoked command in '/home/certezas/robotis_ws/build/op3_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_navigation -- -j12 -l12
+[1.306s] Invoking command in '/home/certezas/robotis_ws/build/op3_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/op3_navigation
+[1.533s] -- Install configuration: ""
+[1.534s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/ament_index/resource_index/package_run_dependencies/op3_navigation
+[1.534s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/ament_index/resource_index/parent_prefix_path/op3_navigation
+[1.534s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/environment/ament_prefix_path.sh
+[1.534s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/environment/ament_prefix_path.dsv
+[1.534s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/environment/path.sh
+[1.534s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/environment/path.dsv
+[1.534s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/local_setup.bash
+[1.534s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/local_setup.sh
+[1.534s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/local_setup.zsh
+[1.534s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/local_setup.dsv
+[1.534s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/package.dsv
+[1.536s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/ament_index/resource_index/packages/op3_navigation
+[1.536s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/cmake/op3_navigationConfig.cmake
+[1.536s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/cmake/op3_navigationConfig-version.cmake
+[1.536s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/package.xml
+[1.536s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/config
+[1.536s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/config/footsteps_thormang3.yaml
+[1.536s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/config/navigation_params.yaml
+[1.536s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/config/footsteps_robotis_op3.yaml
+[1.536s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/config/planning_params.yaml
+[1.537s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/config/planning_params_thormang3.yaml
+[1.537s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/config/planning_params_robotis_op3.yaml
+[1.537s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/launch
+[1.537s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/launch/map_server_empty.launch.xml
+[1.537s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/launch/op3_footstep_planner.launch.xml
+[1.537s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/maps
+[1.537s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/maps/empty.gif
+[1.537s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/maps/nao_map.yaml
+[1.537s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/maps/sample2.yaml
+[1.537s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/maps/empty.yaml
+[1.537s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/maps/nao_map.gif
+[1.538s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/maps/sample.yaml
+[1.538s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/maps/thor.yaml
+[1.538s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/maps/sample.gif
+[1.538s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/maps/sample2.gif
+[1.538s] -- Installing: /home/certezas/robotis_ws/install/op3_navigation/share/op3_navigation/maps/thor.gif
+[1.587s] Invoked command in '/home/certezas/robotis_ws/build/op3_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/certezas/robotis_ws/install/op3_head_control_module:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/op3_navigation

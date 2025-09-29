@@ -1,0 +1,6 @@
+-I/home/certezas/robotis_ws/src/ROBOTIS-OP3-Tools/op3_gui_demo
+-I/home/certezas/robotis_ws/build/op3_gui_demo
+-DHAVE_NEW_YAMLCPP
+-o
+/home/certezas/robotis_ws/build/op3_gui_demo/include/op3_gui_demo/moc_main_window.cpp
+/home/certezas/robotis_ws/src/ROBOTIS-OP3-Tools/op3_gui_demo/include/op3_gui_demo/main_window.hpp

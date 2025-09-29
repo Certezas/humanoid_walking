@@ -1,0 +1,2 @@
+/usr/bin/ar qc libop3_head_control_module.a CMakeFiles/op3_head_control_module.dir/src/head_control_module.cpp.o
+/usr/bin/ranlib libop3_head_control_module.a

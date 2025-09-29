@@ -1,0 +1,7 @@
+{
+  "package_name": "op3_action_module_msgs",
+  "non_idl_tuples": [
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_action_module_msgs:msg/StartAction.msg",
+    "/home/certezas/robotis_ws/src/ROBOTIS-OP3-msgs/op3_action_module_msgs:srv/IsRunning.srv"
+  ]
+}

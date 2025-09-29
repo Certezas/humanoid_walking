@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_online_walking_module_msgs/msg/JointPose.msg
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/JointState.idl"
+
+module op3_online_walking_module_msgs {
+  module msg {
+    struct JointPose {
+      double mov_time;
+
+      sensor_msgs::msg::JointState pose;
+    };
+  };
+};

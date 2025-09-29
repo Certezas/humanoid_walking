@@ -1,0 +1,78 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+-- Found op3_offset_tuner_msgs: 0.1.1 (/home/certezas/robotis_ws/install/op3_offset_tuner_msgs/share/op3_offset_tuner_msgs/cmake)
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Checking for module 'yaml-cpp'
+--   Found yaml-cpp, version 0.7.0
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/certezas/robotis_ws/build/op3_offset_tuner_client
+[  9%] [34m[1mGenerating ui_main_window.h[0m
+[ 18%] [34m[1mGenerating qrc_images.cpp[0m
+[ 27%] [34m[1mGenerating include/op3_offset_tuner_client/moc_qnode.cpp[0m
+[ 36%] [34m[1mGenerating include/op3_offset_tuner_client/moc_main_window.cpp[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/op3_offset_tuner_client.dir/src/main.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/op3_offset_tuner_client.dir/qrc_images.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/op3_offset_tuner_client.dir/include/op3_offset_tuner_client/moc_qnode.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/op3_offset_tuner_client.dir/include/op3_offset_tuner_client/moc_main_window.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/op3_offset_tuner_client.dir/src/qnode.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/op3_offset_tuner_client.dir/src/main_window.cpp.o[0m
+[100%] [32m[1mLinking CXX executable op3_offset_tuner_client[0m
+[100%] Built target op3_offset_tuner_client
+-- Install configuration: ""
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/lib/op3_offset_tuner_client/op3_offset_tuner_client
+-- Set runtime path of "/home/certezas/robotis_ws/install/op3_offset_tuner_client/lib/op3_offset_tuner_client/op3_offset_tuner_client" to ""
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/resources
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/resources/images.qrc
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/resources/images
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/resources/images/icon.png
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/launch
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/launch/client_only.launch.xml
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/launch/op3_offset_tuner.launch.xml
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/config
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/config/joint_data.yaml
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/ament_index/resource_index/package_run_dependencies/op3_offset_tuner_client
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/ament_index/resource_index/parent_prefix_path/op3_offset_tuner_client
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/environment/ament_prefix_path.sh
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/environment/ament_prefix_path.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/environment/path.sh
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/environment/path.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/local_setup.bash
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/local_setup.sh
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/local_setup.zsh
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/local_setup.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/package.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/ament_index/resource_index/packages/op3_offset_tuner_client
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/cmake/op3_offset_tuner_clientConfig.cmake
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/cmake/op3_offset_tuner_clientConfig-version.cmake
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/package.xml

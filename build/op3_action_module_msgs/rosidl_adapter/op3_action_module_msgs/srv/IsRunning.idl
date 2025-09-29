@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from op3_action_module_msgs/srv/IsRunning.srv
+// generated code does not contain a copyright notice
+
+
+module op3_action_module_msgs {
+  module srv {
+    struct IsRunning_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct IsRunning_Response {
+      boolean is_running;
+    };
+  };
+};

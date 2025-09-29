@@ -1,0 +1,1 @@
+rclcpp;std_msgs;sensor_msgs;geometry_msgs;robotis_controller_msgs;op3_walking_module_msgs;op3_action_module_msgs;ament_index_cpp;robotis_math;op3_ball_detector_msgs;boost;eigen;yaml-cpp;op3_manager;op3_camera_setting_tool;op3_web_setting_tool;ros_madplay_player

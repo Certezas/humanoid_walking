@@ -1,0 +1,27 @@
+[1.644s] Invoking command in '/home/certezas/robotis_ws/build/rf_gz_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/rf_gz_bridge -- -j12 -l12
+[1.970s] [35m[1mConsolidate compiler generated dependencies of target rf_gz_bridge_node[0m
+[1.983s] [100%] Built target rf_gz_bridge_node
+[2.755s] Invoked command in '/home/certezas/robotis_ws/build/rf_gz_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/rf_gz_bridge -- -j12 -l12
+[2.864s] Invoking command in '/home/certezas/robotis_ws/build/rf_gz_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/rf_gz_bridge
+[3.264s] -- Install configuration: ""
+[3.264s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/lib/rf_gz_bridge/rf_gz_bridge_node
+[3.264s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/include/rf_gz_bridge
+[3.264s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/include/rf_gz_bridge/rf_gz_bridge.hpp
+[3.264s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/config
+[3.264s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/config/op3_joint_list.yaml
+[3.264s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/ament_index/resource_index/package_run_dependencies/rf_gz_bridge
+[3.264s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/ament_index/resource_index/parent_prefix_path/rf_gz_bridge
+[3.264s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/environment/ament_prefix_path.sh
+[3.264s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/environment/ament_prefix_path.dsv
+[3.264s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/environment/path.sh
+[3.265s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/environment/path.dsv
+[3.265s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/local_setup.bash
+[3.265s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/local_setup.sh
+[3.265s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/local_setup.zsh
+[3.265s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/local_setup.dsv
+[3.265s] -- Installing: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/package.dsv
+[3.265s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/ament_index/resource_index/packages/rf_gz_bridge
+[3.265s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/cmake/rf_gz_bridgeConfig.cmake
+[3.265s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/cmake/rf_gz_bridgeConfig-version.cmake
+[3.265s] -- Up-to-date: /home/certezas/robotis_ws/install/rf_gz_bridge/share/rf_gz_bridge/package.xml
+[3.678s] Invoked command in '/home/certezas/robotis_ws/build/rf_gz_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/rf_gz_bridge

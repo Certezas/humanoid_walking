@@ -1,0 +1,17 @@
+/home/certezas/robotis_ws/install/ros_madplay_player/lib/ros_madplay_player/ros_madplay_player
+/home/certezas/robotis_ws/install/ros_madplay_player/include/ros_madplay_player/ros_madplay_player.h
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ament_index/resource_index/package_run_dependencies/ros_madplay_player
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ament_index/resource_index/parent_prefix_path/ros_madplay_player
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/environment/ament_prefix_path.sh
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/environment/ament_prefix_path.dsv
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/environment/path.sh
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/environment/path.dsv
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/local_setup.bash
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/local_setup.sh
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/local_setup.zsh
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/local_setup.dsv
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/package.dsv
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ament_index/resource_index/packages/ros_madplay_player
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/cmake/ros_madplay_playerConfig.cmake
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/cmake/ros_madplay_playerConfig-version.cmake
+/home/certezas/robotis_ws/install/ros_madplay_player/share/ros_madplay_player/package.xml

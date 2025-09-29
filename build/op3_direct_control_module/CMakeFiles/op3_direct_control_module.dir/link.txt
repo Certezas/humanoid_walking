@@ -1,0 +1,2 @@
+/usr/bin/ar qc libop3_direct_control_module.a CMakeFiles/op3_direct_control_module.dir/src/direct_control_module.cpp.o
+/usr/bin/ranlib libop3_direct_control_module.a

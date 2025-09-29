@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_online_walking_module_msgs/msg/Step2D.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose2D.idl"
+
+module op3_online_walking_module_msgs {
+  module msg {
+    module Step2D_Constants {
+      @verbatim (language="comment", text=
+        "Left foot constant")
+      const uint8 LEFT_FOOT_SWING = 1;
+      @verbatim (language="comment", text=
+        "Right foot constant")
+      const uint8 RIGHT_FOOT_SWING = 2;
+      @verbatim (language="comment", text=
+        "Standing constant")
+      const uint8 STANDING = 3;
+    };
+    @verbatim (language="comment", text=
+      "2D StepData")
+    struct Step2D {
+      @verbatim (language="comment", text=
+        "step pose as relative offset to last leg")
+      geometry_msgs::msg::Pose2D step2d;
+
+      @verbatim (language="comment", text=
+        "which leg to be used (left/right/no, see below)")
+      uint8 moving_foot;
+    };
+  };
+};

@@ -1,0 +1,12 @@
+msg/BallDetectorParams.idl
+msg/BallDetectorParams.msg
+msg/CircleSetStamped.idl
+msg/CircleSetStamped.msg
+srv/GetParameters.idl
+srv/GetParameters.srv
+srv/GetParameters_Request.msg
+srv/GetParameters_Response.msg
+srv/SetParameters.idl
+srv/SetParameters.srv
+srv/SetParameters_Request.msg
+srv/SetParameters_Response.msg

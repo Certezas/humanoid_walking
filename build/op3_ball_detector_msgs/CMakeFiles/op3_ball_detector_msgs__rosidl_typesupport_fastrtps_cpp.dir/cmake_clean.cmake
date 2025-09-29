@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/msg/detail/dds_fastrtps/ball_detector_params__type_support.cpp.o"
+  "CMakeFiles/op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/msg/detail/dds_fastrtps/ball_detector_params__type_support.cpp.o.d"
+  "CMakeFiles/op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/msg/detail/dds_fastrtps/circle_set_stamped__type_support.cpp.o"
+  "CMakeFiles/op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/msg/detail/dds_fastrtps/circle_set_stamped__type_support.cpp.o.d"
+  "CMakeFiles/op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/srv/detail/dds_fastrtps/get_parameters__type_support.cpp.o"
+  "CMakeFiles/op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/srv/detail/dds_fastrtps/get_parameters__type_support.cpp.o.d"
+  "CMakeFiles/op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/srv/detail/dds_fastrtps/set_parameters__type_support.cpp.o"
+  "CMakeFiles/op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/srv/detail/dds_fastrtps/set_parameters__type_support.cpp.o.d"
+  "libop3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libop3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/msg/detail/ball_detector_params__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/msg/detail/circle_set_stamped__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/msg/detail/dds_fastrtps/ball_detector_params__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/msg/detail/dds_fastrtps/circle_set_stamped__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/srv/detail/dds_fastrtps/get_parameters__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/srv/detail/dds_fastrtps/set_parameters__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/srv/detail/get_parameters__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/op3_ball_detector_msgs/srv/detail/set_parameters__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/op3_ball_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

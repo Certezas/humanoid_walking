@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from op3_offset_tuner_msgs/srv/GetPresentJointOffsetData.srv
+// generated code does not contain a copyright notice
+
+#include "op3_offset_tuner_msgs/msg/JointOffsetPositionData.idl"
+
+module op3_offset_tuner_msgs {
+  module srv {
+    struct GetPresentJointOffsetData_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetPresentJointOffsetData_Response {
+      sequence<op3_offset_tuner_msgs::msg::JointOffsetPositionData> present_data_array;
+    };
+  };
+};

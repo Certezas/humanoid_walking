@@ -1,0 +1,2 @@
+/usr/bin/ar qc librobotis_framework_common.a 
+/usr/bin/ranlib librobotis_framework_common.a

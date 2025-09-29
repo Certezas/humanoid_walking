@@ -1,0 +1,74 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_walking_module_msgs/msg/WalkingParam.msg
+// generated code does not contain a copyright notice
+
+
+module op3_walking_module_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "walking init pose #######")
+    struct WalkingParam {
+      float init_x_offset;
+
+      float init_y_offset;
+
+      float init_z_offset;
+
+      float init_roll_offset;
+
+      float init_pitch_offset;
+
+      float init_yaw_offset;
+
+      @verbatim (language="comment", text=
+        "time parameter #####")
+      float period_time;
+
+      float dsp_ratio;
+
+      float step_fb_ratio;
+
+      @verbatim (language="comment", text=
+        "walking parameter ########")
+      float x_move_amplitude;
+
+      float y_move_amplitude;
+
+      float z_move_amplitude;
+
+      float angle_move_amplitude;
+
+      boolean move_aim_on;
+
+      @verbatim (language="comment", text=
+        "balance parameter ##########")
+      boolean balance_enable;
+
+      float balance_hip_roll_gain;
+
+      float balance_knee_gain;
+
+      float balance_ankle_roll_gain;
+
+      float balance_ankle_pitch_gain;
+
+      float y_swap_amplitude;
+
+      float z_swap_amplitude;
+
+      float arm_swing_gain;
+
+      float pelvis_offset;
+
+      float hip_pitch_offset;
+
+      @verbatim (language="comment", text=
+        "gain parameter ##########")
+      int32 p_gain;
+
+      int32 i_gain;
+
+      int32 d_gain;
+    };
+  };
+};

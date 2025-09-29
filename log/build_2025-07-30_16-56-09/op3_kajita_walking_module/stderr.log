@@ -1,0 +1,19 @@
+In file included from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1[m[K:
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:41:12:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdouble KajitaWalkingController::hip_pitch_offset_[m[K’
+   41 |     double [01;31m[Khip_pitch_offset_[m[K;
+      |            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:36:42:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kdouble KajitaWalkingController::hip_pitch_offset_[m[K’
+   36 |     double t_step_, largura_passo_base_, [01;36m[Khip_pitch_offset_[m[K;
+      |                                          [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/main.cpp:1[m[K:
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:41:12:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdouble KajitaWalkingController::hip_pitch_offset_[m[K’
+   41 |     double [01;31m[Khip_pitch_offset_[m[K;
+      |            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:36:42:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kdouble KajitaWalkingController::hip_pitch_offset_[m[K’
+   36 |     double t_step_, largura_passo_base_, [01;36m[Khip_pitch_offset_[m[K;
+      |                                          [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/kajita_walking_node.dir/build.make:76: CMakeFiles/kajita_walking_node.dir/src/main.cpp.o] Erro 1
+gmake[2]: ** Esperando que outros processos terminem.
+gmake[2]: *** [CMakeFiles/kajita_walking_node.dir/build.make:90: CMakeFiles/kajita_walking_node.dir/src/kajita_walking_controller.cpp.o] Erro 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kajita_walking_node.dir/all] Erro 2
+gmake: *** [Makefile:146: all] Erro 2

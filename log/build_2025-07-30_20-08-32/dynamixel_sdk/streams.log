@@ -1,0 +1,87 @@
+[0.185s] Invoking command in '/home/certezas/robotis_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/dynamixel_sdk -- -j12 -l12
+[0.911s] [35m[1mConsolidate compiler generated dependencies of target dynamixel_sdk[0m
+[0.911s] [100%] Built target dynamixel_sdk
+[0.911s] [100%] Built target ament_cmake_python_copy_dynamixel_sdk
+[2.685s] running egg_info
+[2.686s] writing dynamixel_sdk.egg-info/PKG-INFO
+[2.686s] writing dependency_links to dynamixel_sdk.egg-info/dependency_links.txt
+[2.686s] writing top-level names to dynamixel_sdk.egg-info/top_level.txt
+[2.744s] reading manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[2.789s] writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[2.808s] [100%] Built target ament_cmake_python_build_dynamixel_sdk_egg
+[2.817s] Invoked command in '/home/certezas/robotis_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/dynamixel_sdk -- -j12 -l12
+[3.728s] Invoking command in '/home/certezas/robotis_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/dynamixel_sdk
+[5.896s] -- Install configuration: ""
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include/
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_sync_read.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_bulk_read.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_handler.h
+[5.896s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.sh
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.dsv
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.3-py3.10.egg-info
+[5.897s] -- Installing: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.3-py3.10.egg-info/PKG-INFO
+[5.897s] -- Installing: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.3-py3.10.egg-info/dependency_links.txt
+[5.897s] -- Installing: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.3-py3.10.egg-info/top_level.txt
+[5.897s] -- Installing: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.3-py3.10.egg-info/SOURCES.txt
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_fast_sync_read.cpp
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/robotis_def.py
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_windows.cpp
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol2_packet_handler.cpp
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_arduino.cpp
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_read.cpp
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler.py
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_write.py
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol1_packet_handler.cpp
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler.cpp
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_write.py
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/__init__.py
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_handler.cpp
+[5.897s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol2_packet_handler.py
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_read.cpp
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_read.py
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_fast_bulk_read.cpp
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/packet_handler.py
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_write.cpp
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_read.py
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_linux.cpp
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/packet_handler.cpp
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_write.cpp
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_mac.cpp
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol1_packet_handler.py
+[5.898s] Listing '/home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk'...
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash
+[5.898s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh
+[5.899s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh
+[5.899s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv
+[5.899s] -- Installing: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv
+[5.997s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk
+[5.997s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.997s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[5.997s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake
+[5.997s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake
+[5.997s] -- Up-to-date: /home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.xml
+[6.676s] Invoked command in '/home/certezas/robotis_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/dynamixel_sdk

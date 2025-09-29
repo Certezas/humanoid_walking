@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from op3_online_walking_module_msgs/msg/PreviewResponse.msg
+// generated code does not contain a copyright notice
+
+
+module op3_online_walking_module_msgs {
+  module msg {
+    struct PreviewResponse {
+      int32 k_row;
+
+      int32 k_col;
+
+      sequence<double> k;
+
+      int32 p_row;
+
+      int32 p_col;
+
+      sequence<double> p;
+    };
+  };
+};

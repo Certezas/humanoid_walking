@@ -1,0 +1,27 @@
+[100%] Built target op3_offset_tuner_client
+-- Install configuration: ""
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/lib/op3_offset_tuner_client/op3_offset_tuner_client
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/resources
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/resources/images.qrc
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/resources/images
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/resources/images/icon.png
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/launch
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/launch/client_only.launch.xml
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/launch/op3_offset_tuner.launch.xml
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/config
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/config/joint_data.yaml
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/ament_index/resource_index/package_run_dependencies/op3_offset_tuner_client
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/ament_index/resource_index/parent_prefix_path/op3_offset_tuner_client
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/environment/ament_prefix_path.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/environment/path.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/environment/path.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/local_setup.bash
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/local_setup.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/local_setup.zsh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/local_setup.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/package.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/ament_index/resource_index/packages/op3_offset_tuner_client
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/cmake/op3_offset_tuner_clientConfig.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/cmake/op3_offset_tuner_clientConfig-version.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_offset_tuner_client/share/op3_offset_tuner_client/package.xml

@@ -1,0 +1,28 @@
+[35m[1mConsolidate compiler generated dependencies of target op3_kinematics_dynamics[0m
+[100%] Built target op3_kinematics_dynamics
+-- Install configuration: ""
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/lib/libop3_kinematics_dynamics.so
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/include/op3_kinematics_dynamics
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/include/op3_kinematics_dynamics/link_data.h
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/include/op3_kinematics_dynamics/op3_kinematics_dynamics.h
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/include/op3_kinematics_dynamics/op3_kinematics_dynamics_define.h
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/environment/library_path.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/environment/library_path.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/ament_index/resource_index/package_run_dependencies/op3_kinematics_dynamics
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/ament_index/resource_index/parent_prefix_path/op3_kinematics_dynamics
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/environment/ament_prefix_path.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/environment/path.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/environment/path.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/local_setup.bash
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/local_setup.sh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/local_setup.zsh
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/local_setup.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/package.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/ament_index/resource_index/packages/op3_kinematics_dynamics
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/cmake/op3_kinematics_dynamicsConfig.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/cmake/op3_kinematics_dynamicsConfig-version.cmake
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/package.xml

@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/kajita_walking_node.dir/src/kajita_walking_controller.cpp.o: na função "KajitaWalkingController::KajitaWalkingController(rclcpp::NodeOptions const&)":
+kajita_walking_controller.cpp:(.text+0x1753): referência não definida para "KajitaWalkingController::process()"
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/kajita_walking_node.dir/build.make:195: kajita_walking_node] Erro 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kajita_walking_node.dir/all] Erro 2
+gmake: *** [Makefile:146: all] Erro 2

@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robotis_controller_msgs/msg/SyncWriteItem.msg
+// generated code does not contain a copyright notice
+
+
+module robotis_controller_msgs {
+  module msg {
+    struct SyncWriteItem {
+      string item_name;
+
+      sequence<string> joint_name;
+
+      sequence<uint32> value;
+    };
+  };
+};

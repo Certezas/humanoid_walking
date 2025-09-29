@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "robotis_controller_msgs__py",
+		"source" : "/home/certezas/robotis_ws/build/robotis_controller_msgs/robotis_controller_msgs__py"
+	}
+}

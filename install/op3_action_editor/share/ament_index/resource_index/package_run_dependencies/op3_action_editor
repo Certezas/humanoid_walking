@@ -1,0 +1,1 @@
+rclcpp;std_msgs;dynamixel_sdk;robotis_controller;robotis_device;op3_action_module;op3_base_module;libncurses-dev;yaml-cpp;rclpy;op3_manager;ros_mpg321_player

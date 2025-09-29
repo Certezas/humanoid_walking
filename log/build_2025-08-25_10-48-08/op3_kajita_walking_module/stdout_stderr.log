@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target kajita_walking_node[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/kajita_walking_node.dir/src/main.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/kajita_walking_node.dir/src/kajita_walking_controller.cpp.o[0m
+In file included from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/main.cpp:1[m[K:
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:94:10:[m[K [01;31m[Kerror: [m[Kscoped/unscoped mismatch in enum ‘[01m[Kenum class KajitaWalkingController::ControllerState[m[K’
+   94 |     enum [01;31m[KControllerState[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:51:16:[m[K [01;36m[Knote: [m[Kprevious definition here
+   51 |     enum class [01;36m[KControllerState[m[K {
+      |                [01;36m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1[m[K:
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:94:10:[m[K [01;31m[Kerror: [m[Kscoped/unscoped mismatch in enum ‘[01m[Kenum class KajitaWalkingController::ControllerState[m[K’
+   94 |     enum [01;31m[KControllerState[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:51:16:[m[K [01;36m[Knote: [m[Kprevious definition here
+   51 |     enum class [01;36m[KControllerState[m[K {
+      |                [01;36m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/kajita_walking_node.dir/build.make:76: CMakeFiles/kajita_walking_node.dir/src/main.cpp.o] Erro 1
+gmake[2]: ** Esperando que outros processos terminem.
+gmake[2]: *** [CMakeFiles/kajita_walking_node.dir/build.make:90: CMakeFiles/kajita_walking_node.dir/src/kajita_walking_controller.cpp.o] Erro 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kajita_walking_node.dir/all] Erro 2
+gmake: *** [Makefile:146: all] Erro 2

@@ -1,0 +1,4 @@
+/home/certezas/robotis_ws/build/op3_ball_detector_msgs/rosidl_adapter/op3_ball_detector_msgs:msg/BallDetectorParams.idl
+/home/certezas/robotis_ws/build/op3_ball_detector_msgs/rosidl_adapter/op3_ball_detector_msgs:msg/CircleSetStamped.idl
+/home/certezas/robotis_ws/build/op3_ball_detector_msgs/rosidl_adapter/op3_ball_detector_msgs:srv/GetParameters.idl
+/home/certezas/robotis_ws/build/op3_ball_detector_msgs/rosidl_adapter/op3_ball_detector_msgs:srv/SetParameters.idl

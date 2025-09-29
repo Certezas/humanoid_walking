@@ -1,0 +1,7 @@
+setup.py
+op3_action_editor/__init__.py
+op3_action_editor/module_to_import.py
+op3_action_editor.egg-info/PKG-INFO
+op3_action_editor.egg-info/SOURCES.txt
+op3_action_editor.egg-info/dependency_links.txt
+op3_action_editor.egg-info/top_level.txt

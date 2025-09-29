@@ -1,0 +1,4 @@
+source;share/op3_kinematics_dynamics/local_setup.bash
+source;share/op3_kinematics_dynamics/local_setup.dsv
+source;share/op3_kinematics_dynamics/local_setup.sh
+source;share/op3_kinematics_dynamics/local_setup.zsh
