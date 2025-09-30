@@ -1,0 +1,33 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_tuning_module_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_offset_tuner_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_action_module_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_tuning_module_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_offset_tuner_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/op3_action_module_msgs/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages",
+        "/home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "ros.distro": "humble"
+}
