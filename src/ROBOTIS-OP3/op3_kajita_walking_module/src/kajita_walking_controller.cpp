@@ -13,6 +13,8 @@ KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & opt
 
     this->initialize();
 
+    Kp_gz_ = 20.0; // Ajustar
+
 
     initial_pose_achieved_ = false;
     initial_pose_duration_ = 3.0; // Duração de 3 segundos para a transição
@@ -94,7 +96,7 @@ void KajitaWalkingController::initialize()
     g_ = 9.81;
     dt_ = 0.001;
     K_preview_ = int(1.6 / dt_);
-    t_dsp_ = t_step_ * 0.17; // 17% do tempo de passo
+    t_dsp_ = t_step_ * 0.23; // 23% do tempo de passo
     t_ssp_ = t_step_ - t_dsp_;
         
     // 2. Geração do Plano de Passos (step_pos_)
@@ -389,7 +391,7 @@ void KajitaWalkingController::process()
     double angulos_perna_direita[6], angulos_perna_esquerda[6];
     bool sucesso_ik_direita = kinematics_->calcInverseKinematicsForRightLeg(angulos_perna_direita, pos_perna_direita.x(), pos_perna_direita.y(), pos_perna_direita.z(), rpy_perna_direita.x(), rpy_perna_direita.y(), rpy_perna_direita.z());
     bool sucesso_ik_esquerda = kinematics_->calcInverseKinematicsForLeftLeg(angulos_perna_esquerda, pos_perna_esquerda.x(), pos_perna_esquerda.y(), pos_perna_esquerda.z(), rpy_perna_esquerda.x(), rpy_perna_esquerda.y(), rpy_perna_esquerda.z());
-
+    
     if (sucesso_ik_direita && sucesso_ik_esquerda) {
         std::map<std::string, double> angulos_calculados;
         angulos_calculados["r_hip_yaw"] = angulos_perna_direita[0];
@@ -405,6 +407,49 @@ void KajitaWalkingController::process()
         angulos_calculados["l_ank_pitch"] = angulos_perna_esquerda[4];
         angulos_calculados["l_ank_roll"] = angulos_perna_esquerda[5];
         
+        
+        // --- Compensação de Gravidade ---        
+        // 1. Define o vetor de gravidade no referencial do MUNDO.
+        Eigen::Vector3d gravity_in_world(0, 0, -g_);
+
+        // 2. Transforma o vetor para o referencial do TRONCO (considerando o pitch_offset_).
+        Eigen::Vector3d gravity_in_torso = body_rotation.transpose() * gravity_in_world;
+
+        std::map<std::string, double> gravity_comp;
+
+        if (tempo_no_passo_ >= t_ssp_) { // Fase de Duplo Suporte: Interpolar
+            std::map<std::string, double> comp_sol_esq = calculateGravityCompensation(true, gravity_in_torso);
+            std::map<std::string, double> comp_sol_dir = calculateGravityCompensation(false, gravity_in_torso);
+            
+            double alpha_ds = (tempo_no_passo_ - t_ssp_) / t_dsp_;
+            bool apoio_anterior_era_direito = pe_esquerdo_e_balanco;
+
+            // Lista explícita de todas as juntas que podem ser compensadas para um loop seguro.
+            std::vector<std::string> all_comp_joints = {"l_hip_roll", "l_knee", "r_hip_roll", "r_knee"};
+
+            for (const auto& joint_name : all_comp_joints) {
+                double comp_esq = comp_sol_esq.count(joint_name) ? comp_sol_esq.at(joint_name) : 0.0;
+                double comp_dir = comp_sol_dir.count(joint_name) ? comp_sol_dir.at(joint_name) : 0.0;
+                
+                if (apoio_anterior_era_direito) {
+                    gravity_comp[joint_name] = (1.0 - alpha_ds) * comp_dir + alpha_ds * comp_esq;
+                } else {
+                    gravity_comp[joint_name] = (1.0 - alpha_ds) * comp_esq + alpha_ds * comp_dir;
+                }
+            }
+        } else { // Fase de Suporte Simples
+            bool apoio_e_esquerdo = !pe_esquerdo_e_balanco;
+            gravity_comp = calculateGravityCompensation(apoio_e_esquerdo, gravity_in_torso);
+        }
+
+        // 3. Aplica a compensação calculada aos ângulos da IK.
+        for (const auto& comp_pair : gravity_comp) {
+            if (angulos_calculados.count(comp_pair.first)) {
+                angulos_calculados.at(comp_pair.first) += comp_pair.second;
+            }
+        }
+
+
         // =======================================================
         // Lógica de Publicação com dois modos
         // =======================================================
@@ -475,4 +520,68 @@ MatrixXd KajitaWalkingController::solveDARE(const MatrixXd &A, const MatrixXd &B
     }
     RCLCPP_WARN(this->get_logger(), "solveDARE nao convergiu.");
     return P;
+}
+
+std::map<std::string, double> KajitaWalkingController::calculateGravityCompensation(
+    bool is_left_support,
+    const Eigen::Vector3d& gravity_in_torso_frame)
+{
+    std::map<std::string, double> compensations;
+
+    // A tese foca no hip-roll e knee-pitch, os mais afetados pela gravidade.
+    std::string hip_roll_joint = is_left_support ? "l_hip_roll" : "r_hip_roll";
+    std::string knee_pitch_joint = is_left_support ? "l_knee" : "r_knee";
+    std::vector<std::string> joints_to_compensate = {hip_roll_joint, knee_pitch_joint};
+
+    // Atualiza a cinemática para a pose atual do robô (baseado nos ângulos comandados)
+    // ATENÇÃO: Verifique se sua biblioteca kinematics_ tem um método para isso.
+    // kinematics_->setAllJointPosition(...); // Pode ser necessário passar o mapa de ângulos aqui.
+
+    for (const auto& joint_name : joints_to_compensate)
+    {
+        double total_mass_above = 0.0;
+        Eigen::Vector3d combined_com_above = Eigen::Vector3d::Zero();
+        
+        std::vector<std::string> link_names = kinematics_->getLinkNames();
+
+        // Para a junta atual, some a massa e calcule o CoM de todos os links "acima" dela.
+        for (const auto& link_name : link_names)
+        {
+            if (kinematics_->isLinkAbove(link_name, joint_name))
+            {
+                robotis_framework::LinkData* link_data = kinematics_->getLinkData(link_name);
+                total_mass_above += link_data->mass;
+                combined_com_above += link_data->center_of_mass * link_data->mass;
+            }
+        }
+        
+        if (total_mass_above > 0.0)
+        {
+            combined_com_above /= total_mass_above;
+
+            Eigen::Vector3d joint_position = kinematics_->getJointPosition(joint_name);
+            Eigen::Vector3d vector_to_com = combined_com_above - joint_position;
+
+            // Calcula o vetor de força da gravidade usando o vetor já transformado.
+            Eigen::Vector3d gravity_force = gravity_in_torso_frame * total_mass_above;
+            Eigen::Vector3d torque_vector = vector_to_com.cross(gravity_force);
+            
+            // Garante que o eixo da junta seja um vetor unitário antes do produto escalar.
+            Eigen::Vector3d joint_axis = kinematics_->getJointAxis(joint_name).normalized();
+            
+            // Projeta o torque no eixo da junta para encontrar o componente a ser compensado.
+            double torque_at_joint = torque_vector.dot(joint_axis);
+
+            // Calcula o deslocamento angular necessário para gerar o torque oposto.
+            // A fórmula da tese (Eq. 4.21) sugere um sinal negativo: τ_k,g = -τ'_k ⋅ ê_k
+            // Vamos assumir que nosso torque_at_joint já é o τ'_k ⋅ ê_k
+            double compensated_torque = -torque_at_joint;
+            double delta_theta = compensated_torque / Kp_gz_;
+
+            // ATENÇÃO: Valide o sinal! Se a compensação piorar a postura,
+            // inverta o sinal de delta_theta aqui (ex: compensations[joint_name] = -delta_theta;).
+            compensations[joint_name] = delta_theta;
+        }
+    }
+    return compensations;
 }
