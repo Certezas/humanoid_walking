@@ -1,0 +1,263 @@
+[0.130s] Invoking command in '/home/certezas/robotis_ws/build/op3_kajita_walking_module': CMAKE_PREFIX_PATH=/home/certezas/robotis_ws/install/op3_kinematics_dynamics:/home/certezas/robotis_ws/install/robotis_math:/home/certezas/robotis_ws/install/op3_webots_ros2:/home/certezas/robotis_ws/install/op3_action_editor:/home/certezas/robotis_ws/install/ros_mpg321_player:/home/certezas/robotis_ws/install/op3_demo:/home/certezas/robotis_ws/install/ros_madplay_player:/home/certezas/robotis_ws/install/op3_read_write_demo:/home/certezas/robotis_ws/install/op3_bringup:/home/certezas/robotis_ws/install/op3_manager:/home/certezas/robotis_ws/install/open_cr_module:/home/certezas/robotis_ws/install/op3_walking_module:/home/certezas/robotis_ws/install/op3_tuning_module:/home/certezas/robotis_ws/install/op3_online_walking_module:/home/certezas/robotis_ws/install/op3_offset_tuner_server:/home/certezas/robotis_ws/install/op3_localization:/home/certezas/robotis_ws/install/op3_kajita_walking_module:/home/certezas/robotis_ws/install/op3_direct_control_module:/home/certezas/robotis_ws/install/op3_base_module:/home/certezas/robotis_ws/install/op3_head_control_module:/home/certezas/robotis_ws/install/op3_balance_control:/home/certezas/robotis_ws/install/robotis_controller:/home/certezas/robotis_ws/install/op3_action_module:/home/certezas/robotis_ws/install/robotis_framework_common:/home/certezas/robotis_ws/install/robotis_device:/home/certezas/robotis_ws/install/op3_gui_demo:/home/certezas/robotis_ws/install/robotis_controller_msgs:/home/certezas/robotis_ws/install/rf_gz_bridge:/home/certezas/robotis_ws/install/op3_web_setting_tool:/home/certezas/robotis_ws/install/op3_walking_module_msgs:/home/certezas/robotis_ws/install/op3_tuner_client:/home/certezas/robotis_ws/install/op3_tuning_module_msgs:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs:/home/certezas/robotis_ws/install/op3_offset_tuner_client:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs:/home/certezas/robotis_ws/install/op3_navigation:/home/certezas/robotis_ws/install/op3_gazebo_ros2:/home/certezas/robotis_ws/install/op3_description:/home/certezas/robotis_ws/install/op3_camera_setting_tool:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs:/home/certezas/robotis_ws/install/op3_ball_detector_msgs:/home/certezas/robotis_ws/install/op3_action_module_msgs:/home/certezas/robotis_ws/install/dynamixel_sdk_examples:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/certezas/robotis_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/certezas/robotis_ws/install/op3_kinematics_dynamics/lib:/home/certezas/robotis_ws/install/open_cr_module/lib:/home/certezas/robotis_ws/install/op3_walking_module/lib:/home/certezas/robotis_ws/install/op3_tuning_module/lib:/home/certezas/robotis_ws/install/op3_online_walking_module/lib:/home/certezas/robotis_ws/install/op3_direct_control_module/lib:/home/certezas/robotis_ws/install/op3_base_module/lib:/home/certezas/robotis_ws/install/op3_head_control_module/lib:/home/certezas/robotis_ws/install/op3_balance_control/lib:/home/certezas/robotis_ws/install/robotis_math/lib:/home/certezas/robotis_ws/install/robotis_controller/lib:/home/certezas/robotis_ws/install/op3_action_module/lib:/home/certezas/robotis_ws/install/robotis_device/lib:/home/certezas/robotis_ws/install/robotis_controller_msgs/lib:/home/certezas/robotis_ws/install/op3_walking_module_msgs/lib:/home/certezas/robotis_ws/install/op3_tuning_module_msgs/lib:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs/lib:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs/lib:/home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib:/home/certezas/robotis_ws/install/op3_action_module_msgs/lib:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/certezas/robotis_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/webots/lib/controller /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_kajita_walking_module -- -j12 -l12
+[0.922s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.787s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[2.086s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.119s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.147s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.208s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.238s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.386s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.405s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.665s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.866s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.924s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.043s] -- Found op3_kinematics_dynamics: 0.2.1 (/home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/cmake)
+[3.110s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.257s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.257s] -- Configured cppcheck include dirs: /home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include
+[3.257s] -- Configured cppcheck exclude dirs and/or files: 
+[3.257s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.258s] -- Added test 'lint_cmake' to check CMake code style
+[3.258s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.259s] -- Added test 'uncrustify' to check C / C++ code style
+[3.259s] -- Configured uncrustify additional arguments: 
+[3.260s] -- Added test 'xmllint' to check XML markup files
+[3.261s] -- Configuring done
+[3.324s] -- Generating done
+[3.328s] -- Build files have been written to: /home/certezas/robotis_ws/build/op3_kajita_walking_module
+[3.355s] [35m[1mConsolidate compiler generated dependencies of target kajita_walking_node[0m
+[3.375s] [ 33%] [32mBuilding CXX object CMakeFiles/kajita_walking_node.dir/src/main.cpp.o[0m
+[3.375s] [ 66%] [32mBuilding CXX object CMakeFiles/kajita_walking_node.dir/src/kajita_walking_controller.cpp.o[0m
+[7.327s] In file included from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/main.cpp:1[m[K:
+[7.327s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:122:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_x_H_[m[K’
+[7.327s]   122 | or<double> COM_x_H_[01;31m[K,[m[K COM_y_H_;
+[7.327s]       |                    [01;31m[K^[m[K
+[7.327s] 
+[7.327s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:118:25:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_x_H_[m[K’
+[7.327s]   118 | td::vector<double> [01;36m[KCOM_x_H_[m[K, COM_y_H_;
+[7.327s]       |                    [01;36m[K^~~~~~~~[m[K
+[7.327s] 
+[7.327s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:122:35:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_y_H_[m[K’
+[7.327s]   122 | or<double> COM_x_H_, [01;31m[KCOM_y_H_[m[K;
+[7.327s]       |                      [01;31m[K^~~~~~~~[m[K
+[7.327s] 
+[7.327s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:118:35:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_y_H_[m[K’
+[7.327s]   118 | or<double> COM_x_H_, [01;36m[KCOM_y_H_[m[K;
+[7.327s]       |                      [01;36m[K^~~~~~~~[m[K
+[7.327s] 
+[7.328s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:123:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_x_H_[m[K’
+[7.328s]   123 | or<double> ZMP_x_H_[01;31m[K,[m[K ZMP_y_H_;
+[7.328s]       |                    [01;31m[K^[m[K
+[7.328s] 
+[7.328s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:119:25:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_x_H_[m[K’
+[7.328s]   119 | td::vector<double> [01;36m[KZMP_x_H_[m[K, ZMP_y_H_;
+[7.328s]       |                    [01;36m[K^~~~~~~~[m[K
+[7.328s] 
+[7.328s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:123:35:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_y_H_[m[K’
+[7.328s]   123 | or<double> ZMP_x_H_, [01;31m[KZMP_y_H_[m[K;
+[7.328s]       |                      [01;31m[K^~~~~~~~[m[K
+[7.328s] 
+[7.328s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:119:35:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_y_H_[m[K’
+[7.329s]   119 | or<double> ZMP_x_H_, [01;36m[KZMP_y_H_[m[K;
+[7.329s]       |                      [01;36m[K^~~~~~~~[m[K
+[7.329s] 
+[7.371s] In file included from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1[m[K:
+[7.371s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:122:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_x_H_[m[K’
+[7.371s]   122 |     std::vector<double> COM_x_H_[01;31m[K,[m[K COM_y_H_;
+[7.371s]       |                                 [01;31m[K^[m[K
+[7.371s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:118:25:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_x_H_[m[K’
+[7.371s]   118 |     std::vector<double> [01;36m[KCOM_x_H_[m[K, COM_y_H_;
+[7.371s]       |                         [01;36m[K^~~~~~~~[m[K
+[7.371s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:122:35:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_y_H_[m[K’
+[7.371s]   122 |     std::vector<double> COM_x_H_, [01;31m[KCOM_y_H_[m[K;
+[7.371s]       |                                   [01;31m[K^~~~~~~~[m[K
+[7.371s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:118:35:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_y_H_[m[K’
+[7.371s]   118 |     std::vector<double> COM_x_H_, [01;36m[KCOM_y_H_[m[K;
+[7.371s]       |                                   [01;36m[K^~~~~~~~[m[K
+[7.371s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:123:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_x_H_[m[K’
+[7.372s]   123 |     std::vector<double> ZMP_x_H_[01;31m[K,[m[K ZMP_y_H_;
+[7.372s]       |                                 [01;31m[K^[m[K
+[7.372s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:119:25:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_x_H_[m[K’
+[7.372s]   119 |     std::vector<double> [01;36m[KZMP_x_H_[m[K, ZMP_y_H_;
+[7.372s]       |                         [01;36m[K^~~~~~~~[m[K
+[7.372s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:123:35:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_y_H_[m[K’
+[7.372s]   123 |     std::vector<double> ZMP_x_H_, [01;31m[KZMP_y_H_[m[K;
+[7.372s]       |                                   [01;31m[K^~~~~~~~[m[K
+[7.372s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:119:35:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_y_H_[m[K’
+[7.372s]   119 |     std::vector<double> ZMP_x_H_, [01;36m[KZMP_y_H_[m[K;
+[7.372s]       |                                   [01;36m[K^~~~~~~~[m[K
+[7.412s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:[m[K In constructor ‘[01m[KKajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions&)[m[K’:
+[7.412s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:64:24:[m[K [01;31m[Kerror: [m[K‘[01m[KID_L_HIP_ROLL[m[K’ was not declared in this scope
+[7.412s]    64 |         {"l_hip_roll", [01;31m[KID_L_HIP_ROLL[m[K},
+[7.412s]       |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[7.420s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:65:24:[m[K [01;31m[Kerror: [m[K‘[01m[KID_L_KNEE[m[K’ was not declared in this scope
+[7.420s]    65 |         {"l_knee",     [01;31m[KID_L_KNEE[m[K},
+[7.420s]       |                        [01;31m[K^~~~~~~~~[m[K
+[7.433s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:66:24:[m[K [01;31m[Kerror: [m[K‘[01m[KID_R_HIP_ROLL[m[K’ was not declared in this scope
+[7.433s]    66 |         {"r_hip_roll", [01;31m[KID_R_HIP_ROLL[m[K},
+[7.433s]       |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[7.443s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:67:24:[m[K [01;31m[Kerror: [m[K‘[01m[KID_R_KNEE[m[K’ was not declared in this scope
+[7.443s]    67 |         {"r_knee",     [01;31m[KID_R_KNEE[m[K}
+[7.443s]       |                        [01;31m[K^~~~~~~~~[m[K
+[7.444s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:68:5:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, int>[m[K’ and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+[7.444s]    68 |     [01;31m[K}[m[K;
+[7.444s]       |     [01;31m[K^[m[K
+[7.484s] In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+[7.484s]                  from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:8[m[K,
+[7.484s]                  from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1[m[K:
+[7.484s] [01m[K/usr/include/c++/11/bits/stl_map.h:319:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::map<_Key, _Tp, _Compare, _Alloc>& std::map<_Key, _Tp, _Compare, _Alloc>::operator=(const std::map<_Key, _Tp, _Compare, _Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = int; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, int> >][m[K’
+[7.484s]   319 |       [01;36m[Koperator[m[K=(const map&) = default;
+[7.484s]       |       [01;36m[K^~~~~~~~[m[K
+[7.484s] [01m[K/usr/include/c++/11/bits/stl_map.h:319:17:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std::map<std::__cxx11::basic_string<char>, int>&[m[K’
+[7.484s]   319 |       operator=([01;36m[Kconst map&[m[K) = default;
+[7.484s]       |                 [01;36m[K^~~~~~~~~~[m[K
+[7.484s] [01m[K/usr/include/c++/11/bits/stl_map.h:323:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::map<_Key, _Tp, _Compare, _Alloc>& std::map<_Key, _Tp, _Compare, _Alloc>::operator=(std::map<_Key, _Tp, _Compare, _Alloc>&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = int; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, int> >][m[K’
+[7.484s]   323 |       [01;36m[Koperator[m[K=(map&&) = default;
+[7.485s]       |       [01;36m[K^~~~~~~~[m[K
+[7.485s] [01m[K/usr/include/c++/11/bits/stl_map.h:323:17:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, int>&&[m[K’
+[7.485s]   323 |       operator=([01;36m[Kmap&&[m[K) = default;
+[7.485s]       |                 [01;36m[K^~~~~[m[K
+[7.485s] [01m[K/usr/include/c++/11/bits/stl_map.h:337:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::map<_Key, _Tp, _Compare, _Alloc>& std::map<_Key, _Tp, _Compare, _Alloc>::operator=(std::initializer_list<std::pair<const _Key, _Tp> >) [with _Key = std::__cxx11::basic_string<char>; _Tp = int; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, int> >][m[K’
+[7.485s]   337 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[7.485s]       |       [01;36m[K^~~~~~~~[m[K
+[7.485s] [01m[K/usr/include/c++/11/bits/stl_map.h:337:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::initializer_list<std::pair<const std::__cxx11::basic_string<char>, int> >[m[K’
+[7.485s]   337 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[7.485s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[8.071s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:[m[K In member function ‘[01m[Kvoid KajitaWalkingController::initialize()[m[K’:
+[8.072s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:147:13:[m[K [01;31m[Kerror: [m[K‘[01m[KVector2d[m[K’ was not declared in this scope; did you mean ‘[01m[KEigen::Vector2d[m[K’?
+[8.072s]   147 |             [01;31m[KVector2d[m[K pe_inicial = step_pos_[idx_passo_gerador];
+[8.072s]       |             [01;31m[K^~~~~~~~[m[K
+[8.072s]       |             [32m[KEigen::Vector2d[m[K
+[8.072s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:295[m[K,
+[8.072s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[8.072s]                  from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:15[m[K,
+[8.072s]                  from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1[m[K:
+[8.072s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:506:1:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Vector2d[m[K’ declared here
+[8.072s]   506 | [01;36m[KEIGEN_MAKE_TYPEDEFS_ALL_SIZES[m[K(double,               d)
+[8.072s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.072s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:148:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kpe_final[m[K’
+[8.072s]   148 |             Vector2d[01;31m[K [m[K[32m[Kpe_final[m[K = step_pos_[idx_passo_gerador + 1];
+[8.072s]       |                     [01;31m[K^[m[K[32m[K~~~~~~~~[m[K
+[8.072s]       |                     [32m[K;[m[K
+[8.080s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:153:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kpe_inicial[m[K’ was not declared in this scope
+[8.081s]   153 |             zmp_x = h00 * [01;31m[Kpe_inicial[m[K[0] + h01 * pe_final[0];
+[8.081s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[8.091s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:153:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kpe_final[m[K’ was not declared in this scope
+[8.091s]   153 |             zmp_x = h00 * pe_inicial[0] + h01 * [01;31m[Kpe_final[m[K[0];
+[8.091s]       |                                                 [01;31m[K^~~~~~~~[m[K
+[8.092s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:167:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRowVector3d[m[K’ was not declared in this scope; did you mean ‘[01m[KEigen::RowVector3d[m[K’?
+[8.092s]   167 |     [01;31m[KRowVector3d[m[K CA = C_ * A_;
+[8.092s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[8.092s]       |     [32m[KEigen::RowVector3d[m[K
+[8.093s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:295[m[K,
+[8.093s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[8.093s]                  from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:15[m[K,
+[8.093s]                  from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1[m[K:
+[8.093s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:506:1:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::RowVector3d[m[K’ declared here
+[8.093s]   506 | [01;36m[KEIGEN_MAKE_TYPEDEFS_ALL_SIZES[m[K(double,               d)
+[8.093s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.135s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:171:41:[m[K [01;31m[Kerror: [m[K‘[01m[KCA[m[K’ was not declared in this scope; did you mean ‘[01m[KC_[m[K’?
+[8.135s]   171 |     F_til_.resize(4,3); F_til_.row(0) = [01;31m[KCA[m[K; F_til_.bottomRows(3) = A_;
+[8.135s]       |                                         [01;31m[K^~[m[K
+[8.135s]       |                                         [32m[KC_[m[K
+[8.327s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:188:14:[m[K [01;31m[Kerror: [m[K‘[01m[KMatrixXd[m[K’ has not been declared
+[8.327s]   188 |     COM_x_ = [01;31m[KMatrixXd[m[K::Zero(3, ZMP_x_ref_.size() + 1);
+[8.327s]       |              [01;31m[K^~~~~~~~[m[K
+[8.328s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:189:14:[m[K [01;31m[Kerror: [m[K‘[01m[KMatrixXd[m[K’ has not been declared
+[8.328s]   189 |     COM_y_ = [01;31m[KMatrixXd[m[K::Zero(3, ZMP_y_ref_.size() + 1);
+[8.328s]       |              [01;31m[K^~~~~~~~[m[K
+[8.366s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:[m[K In member function ‘[01m[Kvoid KajitaWalkingController::process()[m[K’:
+[8.366s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:282:5:[m[K [01;31m[Kerror: [m[K‘[01m[KVectorXd[m[K’ was not declared in this scope; did you mean ‘[01m[KEigen::VectorXd[m[K’?
+[8.366s]   282 |     [01;31m[KVectorXd[m[K Zx_fut(K_preview_);
+[8.366s]       |     [01;31m[K^~~~~~~~[m[K
+[8.366s]       |     [32m[KEigen::VectorXd[m[K
+[8.366s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:295[m[K,
+[8.366s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[8.366s]                  from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:15[m[K,
+[8.366s]                  from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1[m[K:
+[8.366s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:506:1:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::VectorXd[m[K’ declared here
+[8.367s]   506 | [01;36m[KEIGEN_MAKE_TYPEDEFS_ALL_SIZES[m[K(double,               d)
+[8.367s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.367s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:283:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KZy_fut[m[K’
+[8.367s]   283 |     VectorXd[01;31m[K [m[K[32m[KZy_fut[m[K(K_preview_);
+[8.367s]       |             [01;31m[K^[m[K[32m[K~~~~~~[m[K
+[8.367s]       |             [32m[K;[m[K
+[8.377s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:285:9:[m[K [01;31m[Kerror: [m[K‘[01m[KZx_fut[m[K’ was not declared in this scope
+[8.377s]   285 |         [01;31m[KZx_fut[m[K(j) = ZMP_x_ref_[k + j];
+[8.377s]       |         [01;31m[K^~~~~~[m[K
+[8.386s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:286:9:[m[K [01;31m[Kerror: [m[K‘[01m[KZy_fut[m[K’ was not declared in this scope
+[8.386s]   286 |         [01;31m[KZy_fut[m[K(j) = ZMP_y_ref_[k + j];
+[8.386s]       |         [01;31m[K^~~~~~[m[K
+[8.412s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:288:83:[m[K [01;31m[Kerror: [m[K‘[01m[KZx_fut[m[K’ was not declared in this scope
+[8.412s]   288 |     double ux = -Gi_ * sum_e_x_ - (Gx_ * COM_x_.col(k))(0,0) - (Gp_.transpose() * [01;31m[KZx_fut[m[K)(0,0);
+[8.412s]       |                                                                                   [01;31m[K^~~~~~[m[K
+[8.428s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:289:83:[m[K [01;31m[Kerror: [m[K‘[01m[KZy_fut[m[K’ was not declared in this scope
+[8.428s]   289 |     double uy = -Gi_ * sum_e_y_ - (Gx_ * COM_y_.col(k))(0,0) - (Gp_.transpose() * [01;31m[KZy_fut[m[K)(0,0);
+[8.428s]       |                                                                                   [01;31m[K^~~~~~[m[K
+[8.563s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:312:5:[m[K [01;31m[Kerror: [m[K‘[01m[KVector2d[m[K’ was not declared in this scope; did you mean ‘[01m[KEigen::Vector2d[m[K’?
+[8.564s]   312 |     [01;31m[KVector2d[m[K pe_direito_inicial(0.0, -largura_passo_base_ / 2.0);
+[8.564s]       |     [01;31m[K^~~~~~~~[m[K
+[8.564s]       |     [32m[KEigen::Vector2d[m[K
+[8.564s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:295[m[K,
+[8.564s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[8.564s]                  from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:15[m[K,
+[8.564s]                  from [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1[m[K:
+[8.564s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:506:1:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Vector2d[m[K’ declared here
+[8.564s]   506 | [01;36m[KEIGEN_MAKE_TYPEDEFS_ALL_SIZES[m[K(double,               d)
+[8.564s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.564s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:313:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kpe_esquerdo_inicial[m[K’
+[8.564s]   313 |     Vector2d[01;31m[K [m[K[32m[Kpe_esquerdo_inicial[m[K(0.0, largura_passo_base_ / 2.0);
+[8.565s]       |             [01;31m[K^[m[K[32m[K~~~~~~~~~~~~~~~~~~~[m[K
+[8.565s]       |             [32m[K;[m[K
+[8.580s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:332:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kpe_direito_inicial[m[K’ was not declared in this scope
+[8.580s]   332 |             Eigen::Vector2d suporte = (idx_passo_suporte_ == 0) ? [01;31m[Kpe_direito_inicial[m[K
+[8.580s]       |                                                                   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.598s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:337:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kpe_esquerdo_inicial[m[K’ was not declared in this scope
+[8.599s]   337 |             Eigen::Vector2d inicio = (idx_passo_suporte_ == 1) ? [01;31m[Kpe_esquerdo_inicial[m[K
+[8.599s]       |                                                                  [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[8.622s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:349:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kpe_esquerdo_inicial[m[K’ was not declared in this scope
+[8.622s]   349 |             Eigen::Vector2d suporte = (idx_passo_suporte_ == 0) ? [01;31m[Kpe_esquerdo_inicial[m[K
+[8.622s]       |                                                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[8.640s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:354:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kpe_direito_inicial[m[K’ was not declared in this scope
+[8.640s]   354 |             Eigen::Vector2d inicio = (idx_passo_suporte_ == 0) ? [01;31m[Kpe_direito_inicial[m[K
+[8.640s]       |                                                                  [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.655s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:367:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kpe_direito_inicial[m[K’ was not declared in this scope
+[8.655s]   367 |             right_foot_pose.topRightCorner<3,1>() << [01;31m[Kpe_direito_inicial[m[K.x(),  pe_direito_inicial.y(),  0.0;
+[8.655s]       |                                                      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.664s] gmake[2]: *** [CMakeFiles/kajita_walking_node.dir/build.make:76: CMakeFiles/kajita_walking_node.dir/src/main.cpp.o] Erro 1
+[8.664s] gmake[2]: ** Esperando que outros processos terminem.
+[8.671s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:368:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kpe_esquerdo_inicial[m[K’ was not declared in this scope
+[8.671s]   368 |             left_foot_pose.topRightCorner<3,1>()  << [01;31m[Kpe_esquerdo_inicial[m[K.x(), pe_esquerdo_inicial.y(), 0.0;
+[8.671s]       |                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[8.761s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:[m[K At global scope:
+[8.761s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:517:1:[m[K [01;31m[Kerror: [m[K‘[01m[KMatrixXd[m[K’ does not name a type
+[8.761s]   517 | [01;31m[KMatrixXd[m[K KajitaWalkingController::solveDARE(const MatrixXd &A, const MatrixXd &B, const MatrixXd &Q, double R)
+[8.761s]       | [01;31m[K^~~~~~~~[m[K
+[8.761s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:[m[K In member function ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, double> KajitaWalkingController::calculateGravityCompensation(const std::map<std::__cxx11::basic_string<char>, double>&, bool, const Vector3d&)[m[K’:
+[8.761s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:543:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass robotis_op::OP3KinematicsDynamics[m[K’ has no member named ‘[01m[KsetAllJointPositions[m[K’
+[8.761s]   543 |     kinematics_->[01;31m[KsetAllJointPositions[m[K(joint_positions_commanded);
+[8.761s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[8.775s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:557:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass robotis_op::OP3KinematicsDynamics[m[K’ has no member named ‘[01m[Klink_data_[m[K’; did you mean ‘[01m[Kop3_link_data_[m[K’?
+[8.775s]   557 |             auto* link = kinematics_->[01;31m[Klink_data_[m[K[link_id];
+[8.775s]       |                                       [01;31m[K^~~~~~~~~~[m[K
+[8.775s]       |                                       [32m[Kop3_link_data_[m[K
+[8.799s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:574:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass robotis_op::OP3KinematicsDynamics[m[K’ has no member named ‘[01m[Klink_data_[m[K’; did you mean ‘[01m[Kop3_link_data_[m[K’?
+[8.799s]   574 |         Eigen::Vector3d joint_pos = kinematics_->[01;31m[Klink_data_[m[K[joint_id]->position;
+[8.799s]       |                                                  [01;31m[K^~~~~~~~~~[m[K
+[8.799s]       |                                                  [32m[Kop3_link_data_[m[K
+[8.813s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:580:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass robotis_op::OP3KinematicsDynamics[m[K’ has no member named ‘[01m[Klink_data_[m[K’; did you mean ‘[01m[Kop3_link_data_[m[K’?
+[8.813s]   580 |         Eigen::Vector3d jaxis = kinematics_->[01;31m[Klink_data_[m[K[joint_id]->joint_axis;
+[8.813s]       |                                              [01;31m[K^~~~~~~~~~[m[K
+[8.814s]       |                                              [32m[Kop3_link_data_[m[K
+[8.815s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:534:10:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis_left_support[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.815s]   534 |     [01;35m[Kbool is_left_support[m[K,
+[8.815s]       |     [01;35m[K~~~~~^~~~~~~~~~~~~~~[m[K
+[8.815s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:[m[K In member function ‘[01m[Kvoid KajitaWalkingController::collectDescendants(int, std::vector<int>&)[m[K’:
+[8.815s] [01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:601:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass robotis_op::OP3KinematicsDynamics[m[K’ has no member named ‘[01m[Klink_data_[m[K’; did you mean ‘[01m[Kop3_link_data_[m[K’?
+[8.815s]   601 |     for (int child_id : kinematics_->[01;31m[Klink_data_[m[K[joint_id]->child)
+[8.815s]       |                                      [01;31m[K^~~~~~~~~~[m[K
+[8.815s]       |                                      [32m[Kop3_link_data_[m[K
+[13.630s] gmake[2]: *** [CMakeFiles/kajita_walking_node.dir/build.make:90: CMakeFiles/kajita_walking_node.dir/src/kajita_walking_controller.cpp.o] Erro 1
+[13.630s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kajita_walking_node.dir/all] Erro 2
+[13.631s] gmake: *** [Makefile:146: all] Erro 2
+[13.633s] Invoked command in '/home/certezas/robotis_ws/build/op3_kajita_walking_module' returned '2': CMAKE_PREFIX_PATH=/home/certezas/robotis_ws/install/op3_kinematics_dynamics:/home/certezas/robotis_ws/install/robotis_math:/home/certezas/robotis_ws/install/op3_webots_ros2:/home/certezas/robotis_ws/install/op3_action_editor:/home/certezas/robotis_ws/install/ros_mpg321_player:/home/certezas/robotis_ws/install/op3_demo:/home/certezas/robotis_ws/install/ros_madplay_player:/home/certezas/robotis_ws/install/op3_read_write_demo:/home/certezas/robotis_ws/install/op3_bringup:/home/certezas/robotis_ws/install/op3_manager:/home/certezas/robotis_ws/install/open_cr_module:/home/certezas/robotis_ws/install/op3_walking_module:/home/certezas/robotis_ws/install/op3_tuning_module:/home/certezas/robotis_ws/install/op3_online_walking_module:/home/certezas/robotis_ws/install/op3_offset_tuner_server:/home/certezas/robotis_ws/install/op3_localization:/home/certezas/robotis_ws/install/op3_kajita_walking_module:/home/certezas/robotis_ws/install/op3_direct_control_module:/home/certezas/robotis_ws/install/op3_base_module:/home/certezas/robotis_ws/install/op3_head_control_module:/home/certezas/robotis_ws/install/op3_balance_control:/home/certezas/robotis_ws/install/robotis_controller:/home/certezas/robotis_ws/install/op3_action_module:/home/certezas/robotis_ws/install/robotis_framework_common:/home/certezas/robotis_ws/install/robotis_device:/home/certezas/robotis_ws/install/op3_gui_demo:/home/certezas/robotis_ws/install/robotis_controller_msgs:/home/certezas/robotis_ws/install/rf_gz_bridge:/home/certezas/robotis_ws/install/op3_web_setting_tool:/home/certezas/robotis_ws/install/op3_walking_module_msgs:/home/certezas/robotis_ws/install/op3_tuner_client:/home/certezas/robotis_ws/install/op3_tuning_module_msgs:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs:/home/certezas/robotis_ws/install/op3_offset_tuner_client:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs:/home/certezas/robotis_ws/install/op3_navigation:/home/certezas/robotis_ws/install/op3_gazebo_ros2:/home/certezas/robotis_ws/install/op3_description:/home/certezas/robotis_ws/install/op3_camera_setting_tool:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs:/home/certezas/robotis_ws/install/op3_ball_detector_msgs:/home/certezas/robotis_ws/install/op3_action_module_msgs:/home/certezas/robotis_ws/install/dynamixel_sdk_examples:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/certezas/robotis_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/certezas/robotis_ws/install/op3_kinematics_dynamics/lib:/home/certezas/robotis_ws/install/open_cr_module/lib:/home/certezas/robotis_ws/install/op3_walking_module/lib:/home/certezas/robotis_ws/install/op3_tuning_module/lib:/home/certezas/robotis_ws/install/op3_online_walking_module/lib:/home/certezas/robotis_ws/install/op3_direct_control_module/lib:/home/certezas/robotis_ws/install/op3_base_module/lib:/home/certezas/robotis_ws/install/op3_head_control_module/lib:/home/certezas/robotis_ws/install/op3_balance_control/lib:/home/certezas/robotis_ws/install/robotis_math/lib:/home/certezas/robotis_ws/install/robotis_controller/lib:/home/certezas/robotis_ws/install/op3_action_module/lib:/home/certezas/robotis_ws/install/robotis_device/lib:/home/certezas/robotis_ws/install/robotis_controller_msgs/lib:/home/certezas/robotis_ws/install/op3_walking_module_msgs/lib:/home/certezas/robotis_ws/install/op3_tuning_module_msgs/lib:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs/lib:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs/lib:/home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib:/home/certezas/robotis_ws/install/op3_action_module_msgs/lib:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/certezas/robotis_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/webots/lib/controller /usr/bin/cmake --build /home/certezas/robotis_ws/build/op3_kajita_walking_module -- -j12 -l12

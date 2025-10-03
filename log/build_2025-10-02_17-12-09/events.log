@@ -1,0 +1,451 @@
+[0.000000] (-) TimerEvent: {}
+[0.000095] (-) JobUnselected: {'identifier': 'dynamixel_sdk'}
+[0.000114] (-) JobUnselected: {'identifier': 'dynamixel_sdk_custom_interfaces'}
+[0.000128] (-) JobUnselected: {'identifier': 'dynamixel_sdk_examples'}
+[0.000141] (-) JobUnselected: {'identifier': 'op3_action_editor'}
+[0.000153] (-) JobUnselected: {'identifier': 'op3_action_module'}
+[0.000164] (-) JobUnselected: {'identifier': 'op3_action_module_msgs'}
+[0.000176] (-) JobUnselected: {'identifier': 'op3_balance_control'}
+[0.000187] (-) JobUnselected: {'identifier': 'op3_ball_detector_msgs'}
+[0.000198] (-) JobUnselected: {'identifier': 'op3_base_module'}
+[0.000209] (-) JobUnselected: {'identifier': 'op3_bringup'}
+[0.000220] (-) JobUnselected: {'identifier': 'op3_camera_setting_tool'}
+[0.000231] (-) JobUnselected: {'identifier': 'op3_camera_setting_tool_msgs'}
+[0.000242] (-) JobUnselected: {'identifier': 'op3_demo'}
+[0.000253] (-) JobUnselected: {'identifier': 'op3_description'}
+[0.000264] (-) JobUnselected: {'identifier': 'op3_direct_control_module'}
+[0.000275] (-) JobUnselected: {'identifier': 'op3_gazebo_ros2'}
+[0.000286] (-) JobUnselected: {'identifier': 'op3_gui_demo'}
+[0.000297] (-) JobUnselected: {'identifier': 'op3_head_control_module'}
+[0.000308] (-) JobUnselected: {'identifier': 'op3_kinematics_dynamics'}
+[0.000319] (-) JobUnselected: {'identifier': 'op3_localization'}
+[0.000330] (-) JobUnselected: {'identifier': 'op3_manager'}
+[0.000341] (-) JobUnselected: {'identifier': 'op3_navigation'}
+[0.000352] (-) JobUnselected: {'identifier': 'op3_offset_tuner_client'}
+[0.000362] (-) JobUnselected: {'identifier': 'op3_offset_tuner_msgs'}
+[0.000373] (-) JobUnselected: {'identifier': 'op3_offset_tuner_server'}
+[0.000384] (-) JobUnselected: {'identifier': 'op3_online_walking_module'}
+[0.000395] (-) JobUnselected: {'identifier': 'op3_online_walking_module_msgs'}
+[0.000406] (-) JobUnselected: {'identifier': 'op3_read_write_demo'}
+[0.000416] (-) JobUnselected: {'identifier': 'op3_tuner_client'}
+[0.000427] (-) JobUnselected: {'identifier': 'op3_tuning_module'}
+[0.000438] (-) JobUnselected: {'identifier': 'op3_tuning_module_msgs'}
+[0.000449] (-) JobUnselected: {'identifier': 'op3_walking_module'}
+[0.000460] (-) JobUnselected: {'identifier': 'op3_walking_module_msgs'}
+[0.000471] (-) JobUnselected: {'identifier': 'op3_web_setting_tool'}
+[0.000482] (-) JobUnselected: {'identifier': 'op3_webots_ros2'}
+[0.000493] (-) JobUnselected: {'identifier': 'open_cr_module'}
+[0.000504] (-) JobUnselected: {'identifier': 'rf_gz_bridge'}
+[0.000515] (-) JobUnselected: {'identifier': 'robotis_controller'}
+[0.000526] (-) JobUnselected: {'identifier': 'robotis_controller_msgs'}
+[0.000537] (-) JobUnselected: {'identifier': 'robotis_device'}
+[0.000548] (-) JobUnselected: {'identifier': 'robotis_framework_common'}
+[0.000559] (-) JobUnselected: {'identifier': 'robotis_math'}
+[0.000570] (-) JobUnselected: {'identifier': 'ros_madplay_player'}
+[0.000581] (-) JobUnselected: {'identifier': 'ros_mpg321_player'}
+[0.000594] (op3_kajita_walking_module) JobQueued: {'identifier': 'op3_kajita_walking_module', 'dependencies': OrderedDict([('op3_webots_ros2', '/home/certezas/robotis_ws/install/op3_webots_ros2'), ('robotis_math', '/home/certezas/robotis_ws/install/robotis_math'), ('op3_kinematics_dynamics', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics')])}
+[0.000842] (op3_kajita_walking_module) JobStarted: {'identifier': 'op3_kajita_walking_module'}
+[0.099685] (-) TimerEvent: {}
+[0.110835] (op3_kajita_walking_module) JobProgress: {'identifier': 'op3_kajita_walking_module', 'progress': 'cmake'}
+[0.130025] (op3_kajita_walking_module) JobProgress: {'identifier': 'op3_kajita_walking_module', 'progress': 'build'}
+[0.130578] (op3_kajita_walking_module) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/certezas/robotis_ws/build/op3_kajita_walking_module', '--', '-j12', '-l12'], 'cwd': '/home/certezas/robotis_ws/build/op3_kajita_walking_module', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'pt_BR:pt:en'), ('USER', 'certezas'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics/lib:/home/certezas/robotis_ws/install/open_cr_module/lib:/home/certezas/robotis_ws/install/op3_walking_module/lib:/home/certezas/robotis_ws/install/op3_tuning_module/lib:/home/certezas/robotis_ws/install/op3_online_walking_module/lib:/home/certezas/robotis_ws/install/op3_direct_control_module/lib:/home/certezas/robotis_ws/install/op3_base_module/lib:/home/certezas/robotis_ws/install/op3_head_control_module/lib:/home/certezas/robotis_ws/install/op3_balance_control/lib:/home/certezas/robotis_ws/install/robotis_math/lib:/home/certezas/robotis_ws/install/robotis_controller/lib:/home/certezas/robotis_ws/install/op3_action_module/lib:/home/certezas/robotis_ws/install/robotis_device/lib:/home/certezas/robotis_ws/install/robotis_controller_msgs/lib:/home/certezas/robotis_ws/install/op3_walking_module_msgs/lib:/home/certezas/robotis_ws/install/op3_tuning_module_msgs/lib:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs/lib:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs/lib:/home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib:/home/certezas/robotis_ws/install/op3_action_module_msgs/lib:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/certezas/robotis_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/webots/lib/controller'), ('HOME', '/home/certezas'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2055'), ('SYSTEMD_EXEC_PID', '2243'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4980'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/certezas/robotis_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'certezas'), ('JOURNAL_STREAM', '8:16078'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'certezas'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/certezas/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/certezas/.dotnet/tools'), ('SESSION_MANAGER', 'local/certezas-A62-LIV:@/tmp/.ICE-unix/2213,unix/certezas-A62-LIV:/tmp/.ICE-unix/2213'), ('INVOCATION_ID', 'e50e03400f8f4dc8bda7077ad4b82f0d'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'pt_BR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/certezas/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4WE8C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/certezas/robotis_ws/install/op3_action_editor:/home/certezas/robotis_ws/install/ros_mpg321_player:/home/certezas/robotis_ws/install/op3_demo:/home/certezas/robotis_ws/install/ros_madplay_player:/home/certezas/robotis_ws/install/op3_read_write_demo:/home/certezas/robotis_ws/install/op3_bringup:/home/certezas/robotis_ws/install/op3_manager:/home/certezas/robotis_ws/install/open_cr_module:/home/certezas/robotis_ws/install/op3_walking_module:/home/certezas/robotis_ws/install/op3_tuning_module:/home/certezas/robotis_ws/install/op3_online_walking_module:/home/certezas/robotis_ws/install/op3_offset_tuner_server:/home/certezas/robotis_ws/install/op3_localization:/home/certezas/robotis_ws/install/op3_kajita_walking_module:/home/certezas/robotis_ws/install/op3_direct_control_module:/home/certezas/robotis_ws/install/op3_base_module:/home/certezas/robotis_ws/install/op3_kinematics_dynamics:/home/certezas/robotis_ws/install/op3_head_control_module:/home/certezas/robotis_ws/install/op3_balance_control:/home/certezas/robotis_ws/install/robotis_math:/home/certezas/robotis_ws/install/robotis_controller:/home/certezas/robotis_ws/install/op3_action_module:/home/certezas/robotis_ws/install/robotis_framework_common:/home/certezas/robotis_ws/install/robotis_device:/home/certezas/robotis_ws/install/op3_gui_demo:/home/certezas/robotis_ws/install/robotis_controller_msgs:/home/certezas/robotis_ws/install/rf_gz_bridge:/home/certezas/robotis_ws/install/op3_webots_ros2:/home/certezas/robotis_ws/install/op3_web_setting_tool:/home/certezas/robotis_ws/install/op3_walking_module_msgs:/home/certezas/robotis_ws/install/op3_tuner_client:/home/certezas/robotis_ws/install/op3_tuning_module_msgs:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs:/home/certezas/robotis_ws/install/op3_offset_tuner_client:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs:/home/certezas/robotis_ws/install/op3_navigation:/home/certezas/robotis_ws/install/op3_gazebo_ros2:/home/certezas/robotis_ws/install/op3_description:/home/certezas/robotis_ws/install/op3_camera_setting_tool:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs:/home/certezas/robotis_ws/install/op3_ball_detector_msgs:/home/certezas/robotis_ws/install/op3_action_module_msgs:/home/certezas/robotis_ws/install/dynamixel_sdk_examples:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/certezas/robotis_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c366bcc4-f9d2-4cf4-b3b4-b406284cd9ec'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/certezas/robotis_ws/build/op3_kajita_walking_module'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_tuning_module_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_action_module_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics:/home/certezas/robotis_ws/install/robotis_math:/home/certezas/robotis_ws/install/op3_webots_ros2:/home/certezas/robotis_ws/install/op3_action_editor:/home/certezas/robotis_ws/install/ros_mpg321_player:/home/certezas/robotis_ws/install/op3_demo:/home/certezas/robotis_ws/install/ros_madplay_player:/home/certezas/robotis_ws/install/op3_read_write_demo:/home/certezas/robotis_ws/install/op3_bringup:/home/certezas/robotis_ws/install/op3_manager:/home/certezas/robotis_ws/install/open_cr_module:/home/certezas/robotis_ws/install/op3_walking_module:/home/certezas/robotis_ws/install/op3_tuning_module:/home/certezas/robotis_ws/install/op3_online_walking_module:/home/certezas/robotis_ws/install/op3_offset_tuner_server:/home/certezas/robotis_ws/install/op3_localization:/home/certezas/robotis_ws/install/op3_kajita_walking_module:/home/certezas/robotis_ws/install/op3_direct_control_module:/home/certezas/robotis_ws/install/op3_base_module:/home/certezas/robotis_ws/install/op3_head_control_module:/home/certezas/robotis_ws/install/op3_balance_control:/home/certezas/robotis_ws/install/robotis_controller:/home/certezas/robotis_ws/install/op3_action_module:/home/certezas/robotis_ws/install/robotis_framework_common:/home/certezas/robotis_ws/install/robotis_device:/home/certezas/robotis_ws/install/op3_gui_demo:/home/certezas/robotis_ws/install/robotis_controller_msgs:/home/certezas/robotis_ws/install/rf_gz_bridge:/home/certezas/robotis_ws/install/op3_web_setting_tool:/home/certezas/robotis_ws/install/op3_walking_module_msgs:/home/certezas/robotis_ws/install/op3_tuner_client:/home/certezas/robotis_ws/install/op3_tuning_module_msgs:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs:/home/certezas/robotis_ws/install/op3_offset_tuner_client:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs:/home/certezas/robotis_ws/install/op3_navigation:/home/certezas/robotis_ws/install/op3_gazebo_ros2:/home/certezas/robotis_ws/install/op3_description:/home/certezas/robotis_ws/install/op3_camera_setting_tool:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs:/home/certezas/robotis_ws/install/op3_ball_detector_msgs:/home/certezas/robotis_ws/install/op3_action_module_msgs:/home/certezas/robotis_ws/install/dynamixel_sdk_examples:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/certezas/robotis_ws/install/dynamixel_sdk:/opt/ros/humble')]), 'shell': False}
+[0.199869] (-) TimerEvent: {}
+[0.300147] (-) TimerEvent: {}
+[0.400375] (-) TimerEvent: {}
+[0.500590] (-) TimerEvent: {}
+[0.601248] (-) TimerEvent: {}
+[0.701477] (-) TimerEvent: {}
+[0.801994] (-) TimerEvent: {}
+[0.902482] (-) TimerEvent: {}
+[0.922790] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.002542] (-) TimerEvent: {}
+[1.102751] (-) TimerEvent: {}
+[1.203105] (-) TimerEvent: {}
+[1.303432] (-) TimerEvent: {}
+[1.403650] (-) TimerEvent: {}
+[1.503874] (-) TimerEvent: {}
+[1.604148] (-) TimerEvent: {}
+[1.704437] (-) TimerEvent: {}
+[1.787900] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.804528] (-) TimerEvent: {}
+[1.904738] (-) TimerEvent: {}
+[2.004997] (-) TimerEvent: {}
+[2.086717] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.105131] (-) TimerEvent: {}
+[2.119701] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.147748] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.205249] (-) TimerEvent: {}
+[2.209200] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.238537] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.305342] (-) TimerEvent: {}
+[2.387037] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.405424] (-) TimerEvent: {}
+[2.405956] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.505526] (-) TimerEvent: {}
+[2.605748] (-) TimerEvent: {}
+[2.665875] (op3_kajita_walking_module) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.705911] (-) TimerEvent: {}
+[2.806306] (-) TimerEvent: {}
+[2.866727] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.906377] (-) TimerEvent: {}
+[2.925252] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.006550] (-) TimerEvent: {}
+[3.043585] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Found op3_kinematics_dynamics: 0.2.1 (/home/certezas/robotis_ws/install/op3_kinematics_dynamics/share/op3_kinematics_dynamics/cmake)\n'}
+[3.106619] (-) TimerEvent: {}
+[3.110604] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.206726] (-) TimerEvent: {}
+[3.257736] (op3_kajita_walking_module) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.257922] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include\n'}
+[3.257996] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.258313] (op3_kajita_walking_module) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.258795] (op3_kajita_walking_module) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.259309] (op3_kajita_walking_module) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.260400] (op3_kajita_walking_module) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.260486] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.260785] (op3_kajita_walking_module) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.261975] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.306806] (-) TimerEvent: {}
+[3.325154] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Generating done\n'}
+[3.328552] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Build files have been written to: /home/certezas/robotis_ws/build/op3_kajita_walking_module\n'}
+[3.356338] (op3_kajita_walking_module) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target kajita_walking_node\x1b[0m\n'}
+[3.375794] (op3_kajita_walking_module) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/kajita_walking_node.dir/src/main.cpp.o\x1b[0m\n'}
+[3.376210] (op3_kajita_walking_module) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/kajita_walking_node.dir/src/kajita_walking_controller.cpp.o\x1b[0m\n'}
+[3.406876] (-) TimerEvent: {}
+[3.507109] (-) TimerEvent: {}
+[3.607318] (-) TimerEvent: {}
+[3.707590] (-) TimerEvent: {}
+[3.807965] (-) TimerEvent: {}
+[3.908223] (-) TimerEvent: {}
+[4.008543] (-) TimerEvent: {}
+[4.108914] (-) TimerEvent: {}
+[4.209108] (-) TimerEvent: {}
+[4.309314] (-) TimerEvent: {}
+[4.409546] (-) TimerEvent: {}
+[4.509787] (-) TimerEvent: {}
+[4.610108] (-) TimerEvent: {}
+[4.710351] (-) TimerEvent: {}
+[4.810606] (-) TimerEvent: {}
+[4.910865] (-) TimerEvent: {}
+[5.011175] (-) TimerEvent: {}
+[5.111410] (-) TimerEvent: {}
+[5.211664] (-) TimerEvent: {}
+[5.312048] (-) TimerEvent: {}
+[5.412427] (-) TimerEvent: {}
+[5.512700] (-) TimerEvent: {}
+[5.612979] (-) TimerEvent: {}
+[5.713281] (-) TimerEvent: {}
+[5.813703] (-) TimerEvent: {}
+[5.913925] (-) TimerEvent: {}
+[6.014142] (-) TimerEvent: {}
+[6.114410] (-) TimerEvent: {}
+[6.214726] (-) TimerEvent: {}
+[6.315083] (-) TimerEvent: {}
+[6.415441] (-) TimerEvent: {}
+[6.515776] (-) TimerEvent: {}
+[6.616221] (-) TimerEvent: {}
+[6.716694] (-) TimerEvent: {}
+[6.817186] (-) TimerEvent: {}
+[6.917530] (-) TimerEvent: {}
+[7.018618] (-) TimerEvent: {}
+[7.119060] (-) TimerEvent: {}
+[7.219409] (-) TimerEvent: {}
+[7.319865] (-) TimerEvent: {}
+[7.327574] (op3_kajita_walking_module) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/main.cpp:1\x1b[m\x1b[K:\n'}
+[7.327779] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:122:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_x_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.327856] (op3_kajita_walking_module) StderrLine: {'line': b'  122 | or<double> COM_x_H_\x1b[01;31m\x1b[K,\x1b[m\x1b[K COM_y_H_;\n'}
+[7.327911] (op3_kajita_walking_module) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.327958] (op3_kajita_walking_module) StderrLine: {'line': b'\n'}
+[7.328005] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:118:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_x_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.328055] (op3_kajita_walking_module) StderrLine: {'line': b'  118 | td::vector<double> \x1b[01;36m\x1b[KCOM_x_H_\x1b[m\x1b[K, COM_y_H_;\n'}
+[7.328101] (op3_kajita_walking_module) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.328145] (op3_kajita_walking_module) StderrLine: {'line': b'\n'}
+[7.328190] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:122:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_y_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.328238] (op3_kajita_walking_module) StderrLine: {'line': b'  122 | or<double> COM_x_H_, \x1b[01;31m\x1b[KCOM_y_H_\x1b[m\x1b[K;\n'}
+[7.328282] (op3_kajita_walking_module) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.328325] (op3_kajita_walking_module) StderrLine: {'line': b'\n'}
+[7.328368] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:118:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_y_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.328423] (op3_kajita_walking_module) StderrLine: {'line': b'  118 | or<double> COM_x_H_, \x1b[01;36m\x1b[KCOM_y_H_\x1b[m\x1b[K;\n'}
+[7.328467] (op3_kajita_walking_module) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.328512] (op3_kajita_walking_module) StderrLine: {'line': b'\n'}
+[7.328556] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:123:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_x_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.328625] (op3_kajita_walking_module) StderrLine: {'line': b'  123 | or<double> ZMP_x_H_\x1b[01;31m\x1b[K,\x1b[m\x1b[K ZMP_y_H_;\n'}
+[7.328686] (op3_kajita_walking_module) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.328729] (op3_kajita_walking_module) StderrLine: {'line': b'\n'}
+[7.328773] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:119:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_x_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.328818] (op3_kajita_walking_module) StderrLine: {'line': b'  119 | td::vector<double> \x1b[01;36m\x1b[KZMP_x_H_\x1b[m\x1b[K, ZMP_y_H_;\n'}
+[7.328943] (op3_kajita_walking_module) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.329007] (op3_kajita_walking_module) StderrLine: {'line': b'\n'}
+[7.329084] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:123:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_y_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.329147] (op3_kajita_walking_module) StderrLine: {'line': b'  123 | or<double> ZMP_x_H_, \x1b[01;31m\x1b[KZMP_y_H_\x1b[m\x1b[K;\n'}
+[7.329218] (op3_kajita_walking_module) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.329279] (op3_kajita_walking_module) StderrLine: {'line': b'\n'}
+[7.329508] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:119:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_y_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.329566] (op3_kajita_walking_module) StderrLine: {'line': b'  119 | or<double> ZMP_x_H_, \x1b[01;36m\x1b[KZMP_y_H_\x1b[m\x1b[K;\n'}
+[7.329618] (op3_kajita_walking_module) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.329664] (op3_kajita_walking_module) StderrLine: {'line': b'\n'}
+[7.371505] (op3_kajita_walking_module) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1\x1b[m\x1b[K:\n'}
+[7.371852] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:122:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_x_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.371964] (op3_kajita_walking_module) StderrLine: {'line': b'  122 |     std::vector<double> COM_x_H_\x1b[01;31m\x1b[K,\x1b[m\x1b[K COM_y_H_;\n'}
+[7.372017] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.372065] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:118:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_x_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.372124] (op3_kajita_walking_module) StderrLine: {'line': b'  118 |     std::vector<double> \x1b[01;36m\x1b[KCOM_x_H_\x1b[m\x1b[K, COM_y_H_;\n'}
+[7.372169] (op3_kajita_walking_module) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.372214] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:122:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_y_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.372260] (op3_kajita_walking_module) StderrLine: {'line': b'  122 |     std::vector<double> COM_x_H_, \x1b[01;31m\x1b[KCOM_y_H_\x1b[m\x1b[K;\n'}
+[7.372305] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.372349] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:118:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::COM_y_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.372395] (op3_kajita_walking_module) StderrLine: {'line': b'  118 |     std::vector<double> COM_x_H_, \x1b[01;36m\x1b[KCOM_y_H_\x1b[m\x1b[K;\n'}
+[7.372438] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.372481] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:123:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_x_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.372531] (op3_kajita_walking_module) StderrLine: {'line': b'  123 |     std::vector<double> ZMP_x_H_\x1b[01;31m\x1b[K,\x1b[m\x1b[K ZMP_y_H_;\n'}
+[7.372576] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.372620] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:119:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_x_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.372665] (op3_kajita_walking_module) StderrLine: {'line': b'  119 |     std::vector<double> \x1b[01;36m\x1b[KZMP_x_H_\x1b[m\x1b[K, ZMP_y_H_;\n'}
+[7.372713] (op3_kajita_walking_module) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.372771] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:123:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_y_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.372846] (op3_kajita_walking_module) StderrLine: {'line': b'  123 |     std::vector<double> ZMP_x_H_, \x1b[01;31m\x1b[KZMP_y_H_\x1b[m\x1b[K;\n'}
+[7.372938] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.372978] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:119:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > KajitaWalkingController::ZMP_y_H_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.373056] (op3_kajita_walking_module) StderrLine: {'line': b'  119 |     std::vector<double> ZMP_x_H_, \x1b[01;36m\x1b[KZMP_y_H_\x1b[m\x1b[K;\n'}
+[7.373113] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.412621] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KKajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.412811] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:64:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KID_L_HIP_ROLL\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.412906] (op3_kajita_walking_module) StderrLine: {'line': b'   64 |         {"l_hip_roll", \x1b[01;31m\x1b[KID_L_HIP_ROLL\x1b[m\x1b[K},\n'}
+[7.412956] (op3_kajita_walking_module) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.419948] (-) TimerEvent: {}
+[7.420794] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:65:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KID_L_KNEE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.420977] (op3_kajita_walking_module) StderrLine: {'line': b'   65 |         {"l_knee",     \x1b[01;31m\x1b[KID_L_KNEE\x1b[m\x1b[K},\n'}
+[7.421045] (op3_kajita_walking_module) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.433971] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:66:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KID_R_HIP_ROLL\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.434120] (op3_kajita_walking_module) StderrLine: {'line': b'   66 |         {"r_hip_roll", \x1b[01;31m\x1b[KID_R_HIP_ROLL\x1b[m\x1b[K},\n'}
+[7.434175] (op3_kajita_walking_module) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.443661] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:67:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KID_R_KNEE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.444013] (op3_kajita_walking_module) StderrLine: {'line': b'   67 |         {"r_knee",     \x1b[01;31m\x1b[KID_R_KNEE\x1b[m\x1b[K}\n'}
+[7.444114] (op3_kajita_walking_module) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.445151] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:68:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::map<std::__cxx11::basic_string<char>, int>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[7.445272] (op3_kajita_walking_module) StderrLine: {'line': b'   68 |     \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[7.445324] (op3_kajita_walking_module) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.484250] (op3_kajita_walking_module) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/map:61\x1b[m\x1b[K,\n'}
+[7.484685] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:8\x1b[m\x1b[K,\n'}
+[7.484820] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1\x1b[m\x1b[K:\n'}
+[7.484923] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:319:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::map<_Key, _Tp, _Compare, _Alloc>& std::map<_Key, _Tp, _Compare, _Alloc>::operator=(const std::map<_Key, _Tp, _Compare, _Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = int; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, int> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.485013] (op3_kajita_walking_module) StderrLine: {'line': b'  319 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const map&) = default;\n'}
+[7.485090] (op3_kajita_walking_module) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.485160] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:319:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::map<std::__cxx11::basic_string<char>, int>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.485236] (op3_kajita_walking_module) StderrLine: {'line': b'  319 |       operator=(\x1b[01;36m\x1b[Kconst map&\x1b[m\x1b[K) = default;\n'}
+[7.485320] (op3_kajita_walking_module) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.485395] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:323:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::map<_Key, _Tp, _Compare, _Alloc>& std::map<_Key, _Tp, _Compare, _Alloc>::operator=(std::map<_Key, _Tp, _Compare, _Alloc>&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = int; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, int> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.485473] (op3_kajita_walking_module) StderrLine: {'line': b'  323 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(map&&) = default;\n'}
+[7.485549] (op3_kajita_walking_module) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.485626] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:323:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::map<std::__cxx11::basic_string<char>, int>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.485711] (op3_kajita_walking_module) StderrLine: {'line': b'  323 |       operator=(\x1b[01;36m\x1b[Kmap&&\x1b[m\x1b[K) = default;\n'}
+[7.485797] (op3_kajita_walking_module) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.485895] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:337:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::map<_Key, _Tp, _Compare, _Alloc>& std::map<_Key, _Tp, _Compare, _Alloc>::operator=(std::initializer_list<std::pair<const _Key, _Tp> >) [with _Key = std::__cxx11::basic_string<char>; _Tp = int; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, int> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.485983] (op3_kajita_walking_module) StderrLine: {'line': b'  337 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(initializer_list<value_type> __l)\n'}
+[7.486063] (op3_kajita_walking_module) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.486140] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:337:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<std::pair<const std::__cxx11::basic_string<char>, int> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.486224] (op3_kajita_walking_module) StderrLine: {'line': b'  337 |       operator=(\x1b[01;36m\x1b[Kinitializer_list<value_type> __l\x1b[m\x1b[K)\n'}
+[7.486304] (op3_kajita_walking_module) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[7.520077] (-) TimerEvent: {}
+[7.620669] (-) TimerEvent: {}
+[7.721167] (-) TimerEvent: {}
+[7.821447] (-) TimerEvent: {}
+[7.921869] (-) TimerEvent: {}
+[8.022461] (-) TimerEvent: {}
+[8.072349] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid KajitaWalkingController::initialize()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.072587] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:147:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVector2d\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.072657] (op3_kajita_walking_module) StderrLine: {'line': b'  147 |             \x1b[01;31m\x1b[KVector2d\x1b[m\x1b[K pe_inicial = step_pos_[idx_passo_gerador];\n'}
+[8.072704] (op3_kajita_walking_module) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.072749] (op3_kajita_walking_module) StderrLine: {'line': b'      |             \x1b[32m\x1b[KEigen::Vector2d\x1b[m\x1b[K\n'}
+[8.072791] (op3_kajita_walking_module) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:295\x1b[m\x1b[K,\n'}
+[8.072866] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[8.072934] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:15\x1b[m\x1b[K,\n'}
+[8.072981] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1\x1b[m\x1b[K:\n'}
+[8.073024] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:506:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[8.073067] (op3_kajita_walking_module) StderrLine: {'line': b'  506 | \x1b[01;36m\x1b[KEIGEN_MAKE_TYPEDEFS_ALL_SIZES\x1b[m\x1b[K(double,               d)\n'}
+[8.073112] (op3_kajita_walking_module) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.073153] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:148:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kpe_final\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.073195] (op3_kajita_walking_module) StderrLine: {'line': b'  148 |             Vector2d\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kpe_final\x1b[m\x1b[K = step_pos_[idx_passo_gerador + 1];\n'}
+[8.073237] (op3_kajita_walking_module) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~~~~~\x1b[m\x1b[K\n'}
+[8.073278] (op3_kajita_walking_module) StderrLine: {'line': b'      |                     \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[8.081293] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:153:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpe_inicial\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.081552] (op3_kajita_walking_module) StderrLine: {'line': b'  153 |             zmp_x = h00 * \x1b[01;31m\x1b[Kpe_inicial\x1b[m\x1b[K[0] + h01 * pe_final[0];\n'}
+[8.081660] (op3_kajita_walking_module) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.091450] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:153:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpe_final\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.091606] (op3_kajita_walking_module) StderrLine: {'line': b'  153 |             zmp_x = h00 * pe_inicial[0] + h01 * \x1b[01;31m\x1b[Kpe_final\x1b[m\x1b[K[0];\n'}
+[8.091666] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.093243] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:167:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRowVector3d\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KEigen::RowVector3d\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.093399] (op3_kajita_walking_module) StderrLine: {'line': b'  167 |     \x1b[01;31m\x1b[KRowVector3d\x1b[m\x1b[K CA = C_ * A_;\n'}
+[8.093452] (op3_kajita_walking_module) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.093497] (op3_kajita_walking_module) StderrLine: {'line': b'      |     \x1b[32m\x1b[KEigen::RowVector3d\x1b[m\x1b[K\n'}
+[8.093539] (op3_kajita_walking_module) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:295\x1b[m\x1b[K,\n'}
+[8.093581] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[8.093622] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:15\x1b[m\x1b[K,\n'}
+[8.093665] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1\x1b[m\x1b[K:\n'}
+[8.093706] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:506:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::RowVector3d\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[8.093795] (op3_kajita_walking_module) StderrLine: {'line': b'  506 | \x1b[01;36m\x1b[KEIGEN_MAKE_TYPEDEFS_ALL_SIZES\x1b[m\x1b[K(double,               d)\n'}
+[8.093909] (op3_kajita_walking_module) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.122587] (-) TimerEvent: {}
+[8.135551] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:171:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCA\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KC_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.136077] (op3_kajita_walking_module) StderrLine: {'line': b'  171 |     F_til_.resize(4,3); F_til_.row(0) = \x1b[01;31m\x1b[KCA\x1b[m\x1b[K; F_til_.bottomRows(3) = A_;\n'}
+[8.136193] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.136276] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[KC_\x1b[m\x1b[K\n'}
+[8.222735] (-) TimerEvent: {}
+[8.323195] (-) TimerEvent: {}
+[8.328226] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:188:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMatrixXd\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.328429] (op3_kajita_walking_module) StderrLine: {'line': b'  188 |     COM_x_ = \x1b[01;31m\x1b[KMatrixXd\x1b[m\x1b[K::Zero(3, ZMP_x_ref_.size() + 1);\n'}
+[8.328490] (op3_kajita_walking_module) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.328535] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:189:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMatrixXd\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[8.328632] (op3_kajita_walking_module) StderrLine: {'line': b'  189 |     COM_y_ = \x1b[01;31m\x1b[KMatrixXd\x1b[m\x1b[K::Zero(3, ZMP_y_ref_.size() + 1);\n'}
+[8.328693] (op3_kajita_walking_module) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.366883] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid KajitaWalkingController::process()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.367117] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:282:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVectorXd\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KEigen::VectorXd\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.367180] (op3_kajita_walking_module) StderrLine: {'line': b'  282 |     \x1b[01;31m\x1b[KVectorXd\x1b[m\x1b[K Zx_fut(K_preview_);\n'}
+[8.367226] (op3_kajita_walking_module) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.367270] (op3_kajita_walking_module) StderrLine: {'line': b'      |     \x1b[32m\x1b[KEigen::VectorXd\x1b[m\x1b[K\n'}
+[8.367313] (op3_kajita_walking_module) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:295\x1b[m\x1b[K,\n'}
+[8.367357] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[8.367399] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:15\x1b[m\x1b[K,\n'}
+[8.367457] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1\x1b[m\x1b[K:\n'}
+[8.367502] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:506:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::VectorXd\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[8.367545] (op3_kajita_walking_module) StderrLine: {'line': b'  506 | \x1b[01;36m\x1b[KEIGEN_MAKE_TYPEDEFS_ALL_SIZES\x1b[m\x1b[K(double,               d)\n'}
+[8.367614] (op3_kajita_walking_module) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.367658] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:283:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[KZy_fut\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.367707] (op3_kajita_walking_module) StderrLine: {'line': b'  283 |     VectorXd\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[KZy_fut\x1b[m\x1b[K(K_preview_);\n'}
+[8.367749] (op3_kajita_walking_module) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~~~\x1b[m\x1b[K\n'}
+[8.367792] (op3_kajita_walking_module) StderrLine: {'line': b'      |             \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[8.377656] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:285:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KZx_fut\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.378123] (op3_kajita_walking_module) StderrLine: {'line': b'  285 |         \x1b[01;31m\x1b[KZx_fut\x1b[m\x1b[K(j) = ZMP_x_ref_[k + j];\n'}
+[8.378274] (op3_kajita_walking_module) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[8.386545] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:286:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KZy_fut\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.386993] (op3_kajita_walking_module) StderrLine: {'line': b'  286 |         \x1b[01;31m\x1b[KZy_fut\x1b[m\x1b[K(j) = ZMP_y_ref_[k + j];\n'}
+[8.387181] (op3_kajita_walking_module) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[8.412779] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:288:83:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KZx_fut\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.413127] (op3_kajita_walking_module) StderrLine: {'line': b'  288 |     double ux = -Gi_ * sum_e_x_ - (Gx_ * COM_x_.col(k))(0,0) - (Gp_.transpose() * \x1b[01;31m\x1b[KZx_fut\x1b[m\x1b[K)(0,0);\n'}
+[8.413202] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                                                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[8.423433] (-) TimerEvent: {}
+[8.428907] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:289:83:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KZy_fut\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.429199] (op3_kajita_walking_module) StderrLine: {'line': b'  289 |     double uy = -Gi_ * sum_e_y_ - (Gx_ * COM_y_.col(k))(0,0) - (Gp_.transpose() * \x1b[01;31m\x1b[KZy_fut\x1b[m\x1b[K)(0,0);\n'}
+[8.429307] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                                                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[8.523508] (-) TimerEvent: {}
+[8.564235] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:312:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVector2d\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.564547] (op3_kajita_walking_module) StderrLine: {'line': b'  312 |     \x1b[01;31m\x1b[KVector2d\x1b[m\x1b[K pe_direito_inicial(0.0, -largura_passo_base_ / 2.0);\n'}
+[8.564653] (op3_kajita_walking_module) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.564725] (op3_kajita_walking_module) StderrLine: {'line': b'      |     \x1b[32m\x1b[KEigen::Vector2d\x1b[m\x1b[K\n'}
+[8.564792] (op3_kajita_walking_module) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:295\x1b[m\x1b[K,\n'}
+[8.564914] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[8.565010] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/include/op3_kajita_walking_module/kajita_walking_controller.h:15\x1b[m\x1b[K,\n'}
+[8.565119] (op3_kajita_walking_module) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:1\x1b[m\x1b[K:\n'}
+[8.565187] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:506:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2d\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[8.565260] (op3_kajita_walking_module) StderrLine: {'line': b'  506 | \x1b[01;36m\x1b[KEIGEN_MAKE_TYPEDEFS_ALL_SIZES\x1b[m\x1b[K(double,               d)\n'}
+[8.565330] (op3_kajita_walking_module) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.565399] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:313:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kpe_esquerdo_inicial\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.565464] (op3_kajita_walking_module) StderrLine: {'line': b'  313 |     Vector2d\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kpe_esquerdo_inicial\x1b[m\x1b[K(0.0, largura_passo_base_ / 2.0);\n'}
+[8.565528] (op3_kajita_walking_module) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.565593] (op3_kajita_walking_module) StderrLine: {'line': b'      |             \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[8.580663] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:332:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpe_direito_inicial\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.581088] (op3_kajita_walking_module) StderrLine: {'line': b'  332 |             Eigen::Vector2d suporte = (idx_passo_suporte_ == 0) ? \x1b[01;31m\x1b[Kpe_direito_inicial\x1b[m\x1b[K\n'}
+[8.581240] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.599234] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:337:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpe_esquerdo_inicial\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.599639] (op3_kajita_walking_module) StderrLine: {'line': b'  337 |             Eigen::Vector2d inicio = (idx_passo_suporte_ == 1) ? \x1b[01;31m\x1b[Kpe_esquerdo_inicial\x1b[m\x1b[K\n'}
+[8.599776] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.622882] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:349:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpe_esquerdo_inicial\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.623179] (op3_kajita_walking_module) StderrLine: {'line': b'  349 |             Eigen::Vector2d suporte = (idx_passo_suporte_ == 0) ? \x1b[01;31m\x1b[Kpe_esquerdo_inicial\x1b[m\x1b[K\n'}
+[8.623291] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.623588] (-) TimerEvent: {}
+[8.640786] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:354:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpe_direito_inicial\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.640956] (op3_kajita_walking_module) StderrLine: {'line': b'  354 |             Eigen::Vector2d inicio = (idx_passo_suporte_ == 0) ? \x1b[01;31m\x1b[Kpe_direito_inicial\x1b[m\x1b[K\n'}
+[8.641017] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.655867] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:367:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpe_direito_inicial\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.656088] (op3_kajita_walking_module) StderrLine: {'line': b'  367 |             right_foot_pose.topRightCorner<3,1>() << \x1b[01;31m\x1b[Kpe_direito_inicial\x1b[m\x1b[K.x(),  pe_direito_inicial.y(),  0.0;\n'}
+[8.656165] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.664859] (op3_kajita_walking_module) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/kajita_walking_node.dir/build.make:76: CMakeFiles/kajita_walking_node.dir/src/main.cpp.o] Erro 1\n'}
+[8.665229] (op3_kajita_walking_module) StderrLine: {'line': b'gmake[2]: ** Esperando que outros processos terminem.\n'}
+[8.671910] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:368:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpe_esquerdo_inicial\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.672219] (op3_kajita_walking_module) StderrLine: {'line': b'  368 |             left_foot_pose.topRightCorner<3,1>()  << \x1b[01;31m\x1b[Kpe_esquerdo_inicial\x1b[m\x1b[K.x(), pe_esquerdo_inicial.y(), 0.0;\n'}
+[8.672341] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.723708] (-) TimerEvent: {}
+[8.761872] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:\x1b[m\x1b[K At global scope:\n'}
+[8.762019] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:517:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMatrixXd\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[8.762076] (op3_kajita_walking_module) StderrLine: {'line': b'  517 | \x1b[01;31m\x1b[KMatrixXd\x1b[m\x1b[K KajitaWalkingController::solveDARE(const MatrixXd &A, const MatrixXd &B, const MatrixXd &Q, double R)\n'}
+[8.762122] (op3_kajita_walking_module) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.762237] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::map<std::__cxx11::basic_string<char>, double> KajitaWalkingController::calculateGravityCompensation(const std::map<std::__cxx11::basic_string<char>, double>&, bool, const Vector3d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.762293] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:543:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass robotis_op::OP3KinematicsDynamics\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KsetAllJointPositions\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.762341] (op3_kajita_walking_module) StderrLine: {'line': b'  543 |     kinematics_->\x1b[01;31m\x1b[KsetAllJointPositions\x1b[m\x1b[K(joint_positions_commanded);\n'}
+[8.762386] (op3_kajita_walking_module) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.775517] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:557:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass robotis_op::OP3KinematicsDynamics\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Klink_data_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kop3_link_data_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.775665] (op3_kajita_walking_module) StderrLine: {'line': b'  557 |             auto* link = kinematics_->\x1b[01;31m\x1b[Klink_data_\x1b[m\x1b[K[link_id];\n'}
+[8.775716] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.775762] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[Kop3_link_data_\x1b[m\x1b[K\n'}
+[8.799801] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:574:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass robotis_op::OP3KinematicsDynamics\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Klink_data_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kop3_link_data_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.800010] (op3_kajita_walking_module) StderrLine: {'line': b'  574 |         Eigen::Vector3d joint_pos = kinematics_->\x1b[01;31m\x1b[Klink_data_\x1b[m\x1b[K[joint_id]->position;\n'}
+[8.800092] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.800161] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                                  \x1b[32m\x1b[Kop3_link_data_\x1b[m\x1b[K\n'}
+[8.813869] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:580:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass robotis_op::OP3KinematicsDynamics\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Klink_data_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kop3_link_data_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.814320] (op3_kajita_walking_module) StderrLine: {'line': b'  580 |         Eigen::Vector3d jaxis = kinematics_->\x1b[01;31m\x1b[Klink_data_\x1b[m\x1b[K[joint_id]->joint_axis;\n'}
+[8.814480] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.814575] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[Kop3_link_data_\x1b[m\x1b[K\n'}
+[8.815774] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:534:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kis_left_support\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.816032] (op3_kajita_walking_module) StderrLine: {'line': b'  534 |     \x1b[01;35m\x1b[Kbool is_left_support\x1b[m\x1b[K,\n'}
+[8.816103] (op3_kajita_walking_module) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.816151] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid KajitaWalkingController::collectDescendants(int, std::vector<int>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.816199] (op3_kajita_walking_module) StderrLine: {'line': b'\x1b[01m\x1b[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:601:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass robotis_op::OP3KinematicsDynamics\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Klink_data_\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kop3_link_data_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.816256] (op3_kajita_walking_module) StderrLine: {'line': b'  601 |     for (int child_id : kinematics_->\x1b[01;31m\x1b[Klink_data_\x1b[m\x1b[K[joint_id]->child)\n'}
+[8.816301] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.816345] (op3_kajita_walking_module) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[Kop3_link_data_\x1b[m\x1b[K\n'}
+[8.823931] (-) TimerEvent: {}
+[8.924419] (-) TimerEvent: {}
+[9.024714] (-) TimerEvent: {}
+[9.125031] (-) TimerEvent: {}
+[9.225410] (-) TimerEvent: {}
+[9.325652] (-) TimerEvent: {}
+[9.425891] (-) TimerEvent: {}
+[9.526105] (-) TimerEvent: {}
+[9.626321] (-) TimerEvent: {}
+[9.726608] (-) TimerEvent: {}
+[9.826884] (-) TimerEvent: {}
+[9.927117] (-) TimerEvent: {}
+[10.027368] (-) TimerEvent: {}
+[10.127671] (-) TimerEvent: {}
+[10.228237] (-) TimerEvent: {}
+[10.328640] (-) TimerEvent: {}
+[10.429019] (-) TimerEvent: {}
+[10.529250] (-) TimerEvent: {}
+[10.629476] (-) TimerEvent: {}
+[10.729735] (-) TimerEvent: {}
+[10.829969] (-) TimerEvent: {}
+[10.930239] (-) TimerEvent: {}
+[11.030478] (-) TimerEvent: {}
+[11.130758] (-) TimerEvent: {}
+[11.231065] (-) TimerEvent: {}
+[11.331298] (-) TimerEvent: {}
+[11.431565] (-) TimerEvent: {}
+[11.531895] (-) TimerEvent: {}
+[11.632141] (-) TimerEvent: {}
+[11.732341] (-) TimerEvent: {}
+[11.832550] (-) TimerEvent: {}
+[11.932862] (-) TimerEvent: {}
+[12.033216] (-) TimerEvent: {}
+[12.133441] (-) TimerEvent: {}
+[12.233744] (-) TimerEvent: {}
+[12.334106] (-) TimerEvent: {}
+[12.434413] (-) TimerEvent: {}
+[12.534608] (-) TimerEvent: {}
+[12.634897] (-) TimerEvent: {}
+[12.735162] (-) TimerEvent: {}
+[12.835390] (-) TimerEvent: {}
+[12.935731] (-) TimerEvent: {}
+[13.035915] (-) TimerEvent: {}
+[13.136118] (-) TimerEvent: {}
+[13.236332] (-) TimerEvent: {}
+[13.336614] (-) TimerEvent: {}
+[13.436944] (-) TimerEvent: {}
+[13.537413] (-) TimerEvent: {}
+[13.631262] (op3_kajita_walking_module) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/kajita_walking_node.dir/build.make:90: CMakeFiles/kajita_walking_node.dir/src/kajita_walking_controller.cpp.o] Erro 1\n'}
+[13.631471] (op3_kajita_walking_module) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kajita_walking_node.dir/all] Erro 2\n'}
+[13.631686] (op3_kajita_walking_module) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Erro 2\n'}
+[13.633847] (op3_kajita_walking_module) CommandEnded: {'returncode': 2}
+[13.637461] (-) TimerEvent: {}
+[13.737899] (-) TimerEvent: {}
+[13.780920] (op3_kajita_walking_module) JobEnded: {'identifier': 'op3_kajita_walking_module', 'rc': 2}
+[13.791710] (-) EventReactorShutdown: {}

@@ -6,6 +6,7 @@
 #include <fstream>
 #include <string>
 #include <map>
+#include <algorithm>
 
 // Bibliotecas Externas (ROS, Eigen, etc.)
 #include "rclcpp/rclcpp.hpp"
@@ -16,8 +17,11 @@
 
 // Cabeçalhos Específicos do Projeto
 #include "op3_kinematics_dynamics/op3_kinematics_dynamics.h"
+#include "op3_kinematics_dynamics/link_data.h"
+#include "op3_kinematics_dynamics/op3_kinematics_dynamics_define.h"
 #include "robotis_math/robotis_math.h"
 
+using namespace Eigen;
 
 // Implementa um controlador de caminhada para o robô OP3 baseado na teoria de
 // Preview Control e Ponto de Momento Zero (ZMP) de Shuuji Kajita.
@@ -118,13 +122,9 @@ private:
     std::vector<double> COM_x_H_, COM_y_H_;
     std::vector<double> ZMP_x_H_, ZMP_y_H_;
 
-    // --- Armazenamento de Dados para Análise ---
-    std::vector<double> COM_x_H_, COM_y_H_;
-    std::vector<double> ZMP_x_H_, ZMP_y_H_;
-
-    // Ganho de compensação de gravidade
+    // --- Compensador de gravidade
     double Kp_gz_; // Ganho proporcional do servo em Nm/rad
 
 };
 
-#endif 
+#endif

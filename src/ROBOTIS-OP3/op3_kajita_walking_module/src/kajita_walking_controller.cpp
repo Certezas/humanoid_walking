@@ -1,7 +1,5 @@
 #include "op3_kajita_walking_module/kajita_walking_controller.h"
-#include <map>
-#include <string>
-#include <algorithm>
+
 
 KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & options)
   : Node("op3_kajita_walking_controller_node", options) {
@@ -90,13 +88,13 @@ void KajitaWalkingController::initialize()
     // 1. Parâmetros
     vx_desejada_ = 0.03; // m/s
     n_step_ = 20;
-    t_step_ = 0.6; 
+    t_step_ = 0.5; 
     largura_passo_base_ = 0.03; // Largura do passo (distância lateral entre os pés)
     zc_ = 0.22;
     g_ = 9.81;
     dt_ = 0.001;
     K_preview_ = int(1.6 / dt_);
-    t_dsp_ = t_step_ * 0.23; // 23% do tempo de passo
+    t_dsp_ = t_step_ * 0.2; // 20% do tempo de passo
     t_ssp_ = t_step_ - t_dsp_;
         
     // 2. Geração do Plano de Passos (step_pos_)
@@ -393,6 +391,7 @@ void KajitaWalkingController::process()
     bool sucesso_ik_esquerda = kinematics_->calcInverseKinematicsForLeftLeg(angulos_perna_esquerda, pos_perna_esquerda.x(), pos_perna_esquerda.y(), pos_perna_esquerda.z(), rpy_perna_esquerda.x(), rpy_perna_esquerda.y(), rpy_perna_esquerda.z());
     
     if (sucesso_ik_direita && sucesso_ik_esquerda) {
+        // ETAPA 1: Preencher o mapa com os ângulos base calculados pela Cinemática Inversa (IK).
         std::map<std::string, double> angulos_calculados;
         angulos_calculados["r_hip_yaw"] = angulos_perna_direita[0];
         angulos_calculados["r_hip_roll"] = angulos_perna_direita[1];
@@ -407,14 +406,22 @@ void KajitaWalkingController::process()
         angulos_calculados["l_ank_pitch"] = angulos_perna_esquerda[4];
         angulos_calculados["l_ank_roll"] = angulos_perna_esquerda[5];
         
-        
-        // --- Compensação de Gravidade ---        
-        // 1. Define o vetor de gravidade no referencial do MUNDO.
+        // =========================================================================================
+        // ETAPA 2: ATUALIZAR O ESTADO INTERNO DA CINEMÁTICA COM OS ÂNGULOS ACIMA
+        // =========================================================================================
+        for (int id = 1; id <= ALL_JOINT_ID; id++) {
+            robotis_op::LinkData* link = kinematics_->op3_link_data_[id];
+            if (link != NULL && angulos_calculados.count(link->name_)) {
+                link->joint_angle_ = angulos_calculados.at(link->name_);
+            }
+        }
+        kinematics_->calcForwardKinematics(0);
+
+        // =========================================================================================
+        // ETAPA 3: CALCULAR E APLICAR A COMPENSAÇÃO DE GRAVIDADE
+        // =========================================================================================
         Eigen::Vector3d gravity_in_world(0, 0, -g_);
-
-        // 2. Transforma o vetor para o referencial do TRONCO (considerando o pitch_offset_).
         Eigen::Vector3d gravity_in_torso = body_rotation.transpose() * gravity_in_world;
-
         std::map<std::string, double> gravity_comp;
 
         if (tempo_no_passo_ >= t_ssp_) { // Fase de Duplo Suporte: Interpolar
@@ -423,8 +430,6 @@ void KajitaWalkingController::process()
             
             double alpha_ds = (tempo_no_passo_ - t_ssp_) / t_dsp_;
             bool apoio_anterior_era_direito = pe_esquerdo_e_balanco;
-
-            // Lista explícita de todas as juntas que podem ser compensadas para um loop seguro.
             std::vector<std::string> all_comp_joints = {"l_hip_roll", "l_knee", "r_hip_roll", "r_knee"};
 
             for (const auto& joint_name : all_comp_joints) {
@@ -442,7 +447,7 @@ void KajitaWalkingController::process()
             gravity_comp = calculateGravityCompensation(apoio_e_esquerdo, gravity_in_torso);
         }
 
-        // 3. Aplica a compensação calculada aos ângulos da IK.
+        // Aplica a compensação calculada aos ângulos base da IK.
         for (const auto& comp_pair : gravity_comp) {
             if (angulos_calculados.count(comp_pair.first)) {
                 angulos_calculados.at(comp_pair.first) += comp_pair.second;
@@ -522,64 +527,71 @@ MatrixXd KajitaWalkingController::solveDARE(const MatrixXd &A, const MatrixXd &B
     return P;
 }
 
+
+// Substitua a função de compensação inteira pela versão abaixo
+
 std::map<std::string, double> KajitaWalkingController::calculateGravityCompensation(
     bool is_left_support,
     const Eigen::Vector3d& gravity_in_torso_frame)
 {
     std::map<std::string, double> compensations;
 
-    // A tese foca no hip-roll e knee-pitch, os mais afetados pela gravidade.
-    std::string hip_roll_joint = is_left_support ? "l_hip_roll" : "r_hip_roll";
-    std::string knee_pitch_joint = is_left_support ? "l_knee" : "r_knee";
-    std::vector<std::string> joints_to_compensate = {hip_roll_joint, knee_pitch_joint};
+    // 1. Define as juntas da perna de apoio que queremos compensar.
+    std::string hip_roll_joint_name = is_left_support ? "l_hip_roll" : "r_hip_roll";
+    std::string knee_pitch_joint_name = is_left_support ? "l_knee" : "r_knee";
+    std::vector<std::string> joints_to_compensate = {hip_roll_joint_name, knee_pitch_joint_name};
 
-    // Atualiza a cinemática para a pose atual do robô (baseado nos ângulos comandados)
-    // ATENÇÃO: Verifique se sua biblioteca kinematics_ tem um método para isso.
-    // kinematics_->setAllJointPosition(...); // Pode ser necessário passar o mapa de ângulos aqui.
-
+    // 2. Itera sobre cada junta que precisa de compensação.
     for (const auto& joint_name : joints_to_compensate)
     {
         double total_mass_above = 0.0;
-        Eigen::Vector3d combined_com_above = Eigen::Vector3d::Zero();
-        
-        std::vector<std::string> link_names = kinematics_->getLinkNames();
+        Eigen::Vector3d combined_moment_above = Eigen::Vector3d::Zero();
 
-        // Para a junta atual, some a massa e calcule o CoM de todos os links "acima" dela.
-        for (const auto& link_name : link_names)
+        // 3. Para a junta atual, recalcula do zero a massa e o momento de TUDO que está acima dela.
+        // Isso é menos eficiente, mas muito mais robusto e fácil de verificar.
+        for (int id = 1; id <= ALL_JOINT_ID; ++id) 
         {
-            if (kinematics_->isLinkAbove(link_name, joint_name))
+            robotis_op::LinkData* current_link = kinematics_->op3_link_data_[id];
+            if (current_link == NULL || current_link->mass_ == 0.0) continue;
+
+            // Lógica para verificar se o 'current_link' está cinematicamente "acima" da 'joint_name'.
+            // Para isso, "subimos" na árvore a partir do 'current_link' usando os pais.
+            bool is_link_above = false;
+            int parent_id = current_link->parent_;
+            int joint_id_target = kinematics_->getLinkData(joint_name)->parent_;
+
+            while (parent_id != -1) {
+                if (parent_id == joint_id_target) {
+                    is_link_above = true;
+                    break;
+                }
+                parent_id = kinematics_->op3_link_data_[parent_id]->parent_;
+            }
+
+            if (is_link_above)
             {
-                robotis_framework::LinkData* link_data = kinematics_->getLinkData(link_name);
-                total_mass_above += link_data->mass;
-                combined_com_above += link_data->center_of_mass * link_data->mass;
+                total_mass_above += current_link->mass_;
+                Eigen::Vector3d com_in_world_frame = current_link->orientation_ * current_link->center_of_mass_ + current_link->position_;
+                combined_moment_above += com_in_world_frame * current_link->mass_;
             }
         }
         
+        // 4. Com a massa e CoM corretos, calcula o torque e a compensação.
         if (total_mass_above > 0.0)
         {
-            combined_com_above /= total_mass_above;
-
-            Eigen::Vector3d joint_position = kinematics_->getJointPosition(joint_name);
+            Eigen::Vector3d combined_com_above = combined_moment_above / total_mass_above;
+            Eigen::Vector3d joint_position = kinematics_->getLinkData(joint_name)->position_;
             Eigen::Vector3d vector_to_com = combined_com_above - joint_position;
 
-            // Calcula o vetor de força da gravidade usando o vetor já transformado.
             Eigen::Vector3d gravity_force = gravity_in_torso_frame * total_mass_above;
             Eigen::Vector3d torque_vector = vector_to_com.cross(gravity_force);
             
-            // Garante que o eixo da junta seja um vetor unitário antes do produto escalar.
-            Eigen::Vector3d joint_axis = kinematics_->getJointAxis(joint_name).normalized();
+            Eigen::Vector3d joint_axis = kinematics_->getLinkData(joint_name)->joint_axis_.normalized();
             
-            // Projeta o torque no eixo da junta para encontrar o componente a ser compensado.
-            double torque_at_joint = torque_vector.dot(joint_axis);
-
-            // Calcula o deslocamento angular necessário para gerar o torque oposto.
-            // A fórmula da tese (Eq. 4.21) sugere um sinal negativo: τ_k,g = -τ'_k ⋅ ê_k
-            // Vamos assumir que nosso torque_at_joint já é o τ'_k ⋅ ê_k
-            double compensated_torque = -torque_at_joint;
+            // A fórmula da tese (Eq. 4.21) usa um sinal negativo.
+            double compensated_torque = -torque_vector.dot(joint_axis);
             double delta_theta = compensated_torque / Kp_gz_;
 
-            // ATENÇÃO: Valide o sinal! Se a compensação piorar a postura,
-            // inverta o sinal de delta_theta aqui (ex: compensations[joint_name] = -delta_theta;).
             compensations[joint_name] = delta_theta;
         }
     }
