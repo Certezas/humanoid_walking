@@ -1,0 +1,41 @@
+[0.278s] Invoking command in '/home/certezas/robotis_ws/build/ros_mpg321_player': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/ros_mpg321_player -- -j12 -l12
+[1.510s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.510s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.562s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.567s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.578s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.596s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.618s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.672s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.675s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.888s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.442s] -- Configuring done
+[3.383s] -- Generating done
+[3.757s] -- Build files have been written to: /home/certezas/robotis_ws/build/ros_mpg321_player
+[3.994s] [35m[1mConsolidate compiler generated dependencies of target ros_mpg321_player[0m
+[4.029s] [ 50%] [32mBuilding CXX object CMakeFiles/ros_mpg321_player.dir/src/ros_mpg321_player.cpp.o[0m
+[18.787s] [100%] [32m[1mLinking CXX executable ros_mpg321_player[0m
+[21.005s] [100%] Built target ros_mpg321_player
+[21.034s] Invoked command in '/home/certezas/robotis_ws/build/ros_mpg321_player' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/certezas/robotis_ws/build/ros_mpg321_player -- -j12 -l12
+[21.078s] Invoking command in '/home/certezas/robotis_ws/build/ros_mpg321_player': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/ros_mpg321_player
+[21.498s] -- Install configuration: ""
+[21.498s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/lib/ros_mpg321_player/ros_mpg321_player
+[21.498s] -- Set runtime path of "/home/certezas/robotis_ws/install/ros_mpg321_player/lib/ros_mpg321_player/ros_mpg321_player" to ""
+[21.499s] -- Up-to-date: /home/certezas/robotis_ws/install/ros_mpg321_player/include/ros_mpg321_player
+[21.499s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/include/ros_mpg321_player/ros_mpg321_player.h
+[21.499s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ament_index/resource_index/package_run_dependencies/ros_mpg321_player
+[21.499s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ament_index/resource_index/parent_prefix_path/ros_mpg321_player
+[21.499s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ros_mpg321_player/environment/ament_prefix_path.sh
+[21.499s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ros_mpg321_player/environment/ament_prefix_path.dsv
+[21.499s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ros_mpg321_player/environment/path.sh
+[21.499s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ros_mpg321_player/environment/path.dsv
+[21.499s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ros_mpg321_player/local_setup.bash
+[21.500s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ros_mpg321_player/local_setup.sh
+[21.500s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ros_mpg321_player/local_setup.zsh
+[21.500s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ros_mpg321_player/local_setup.dsv
+[21.500s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ros_mpg321_player/package.dsv
+[21.500s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ament_index/resource_index/packages/ros_mpg321_player
+[21.500s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ros_mpg321_player/cmake/ros_mpg321_playerConfig.cmake
+[21.500s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ros_mpg321_player/cmake/ros_mpg321_playerConfig-version.cmake
+[21.500s] -- Installing: /home/certezas/robotis_ws/install/ros_mpg321_player/share/ros_mpg321_player/package.xml
+[21.531s] Invoked command in '/home/certezas/robotis_ws/build/ros_mpg321_player' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/certezas/robotis_ws/build/ros_mpg321_player

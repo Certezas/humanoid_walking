@@ -7,6 +7,8 @@
 #include <string>
 #include <map>
 #include <algorithm>
+#include <mutex>
+#include <fstream> 
 
 // Bibliotecas Externas (ROS, Eigen, etc.)
 #include "rclcpp/rclcpp.hpp"
@@ -20,6 +22,7 @@
 #include "op3_kinematics_dynamics/link_data.h"
 #include "op3_kinematics_dynamics/op3_kinematics_dynamics_define.h"
 #include "robotis_math/robotis_math.h"
+
 
 using namespace Eigen;
 
@@ -53,6 +56,9 @@ private:
     // Callback para o tópico /cmd_vel que atualiza as velocidades desejadas.
     void cmdVelCallback(const geometry_msgs::msg::Twist::SharedPtr msg);
 
+    // Callback para o tópico /joint_states que atualiza os estados das juntas.
+    void jointStateCallback(const sensor_msgs::msg::JointState::SharedPtr msg);
+
     // --- Método de Compensação de Gravidade ---
     std::map<std::string, double> calculateGravityCompensation(
         bool is_left_support,
@@ -77,7 +83,7 @@ private:
     // --- Máquina de Estados da Pose Inicial ---
     bool initial_pose_achieved_;
     double initial_pose_duration_;
-    int initial_pose_ticks_count_;
+    double initial_pose_elapsed_time_;
     std::map<std::string, double> target_initial_pose_;
 
     // --- Parâmetros de Entrada da Caminhada ---
@@ -124,6 +130,20 @@ private:
 
     // --- Compensador de gravidade
     double Kp_gz_; // Ganho proporcional do servo em Nm/rad
+    bool enable_gravity_compensation_;
+
+    // --- Variáveis de teste de estresse estático ---
+    bool run_static_stress_test_;
+    int stress_test_phase_;
+    double stress_test_phase_elapsed_time_; 
+    double shift_duration_sec_;             
+    double lift_duration_sec_;              
+
+    // --- ADIÇÕES PARA ANÁLISE GRÁFICA ---
+    std::ofstream log_file_;
+    rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_state_sub_;
+    std::mutex joint_state_mutex_;
+    sensor_msgs::msg::JointState latest_joint_states_;
 
 };
 

@@ -1,0 +1,70 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found dynamixel_sdk: 3.8.3 (/home/certezas/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+-- Found robotis_controller: 0.2.9 (/home/certezas/robotis_ws/install/robotis_controller/share/robotis_controller/cmake)
+-- Found robotis_math: 0.2.6 (/home/certezas/robotis_ws/install/robotis_math/share/robotis_math/cmake)
+-- Found op3_action_module: 0.2.1 (/home/certezas/robotis_ws/install/op3_action_module/share/op3_action_module/cmake)
+-- Found op3_base_module: 0.2.1 (/home/certezas/robotis_ws/install/op3_base_module/share/op3_base_module/cmake)
+-- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/certezas/robotis_ws/build/op3_action_editor
+[35m[1mConsolidate compiler generated dependencies of target op3_action_editor[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/op3_action_editor.dir/src/main.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/op3_action_editor.dir/src/action_editor.cpp.o[0m
+[100%] [32m[1mLinking CXX executable op3_action_editor[0m
+[100%] Built target op3_action_editor
+[100%] Built target ament_cmake_python_copy_op3_action_editor
+running egg_info
+writing op3_action_editor.egg-info/PKG-INFO
+writing dependency_links to op3_action_editor.egg-info/dependency_links.txt
+writing top-level names to op3_action_editor.egg-info/top_level.txt
+reading manifest file 'op3_action_editor.egg-info/SOURCES.txt'
+writing manifest file 'op3_action_editor.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_op3_action_editor_egg
+-- Install configuration: ""
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/lib/op3_action_editor/op3_action_editor
+-- Set runtime path of "/home/certezas/robotis_ws/install/op3_action_editor/lib/op3_action_editor/op3_action_editor" to ""
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_action_editor/include/op3_action_editor
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/include/op3_action_editor/action_editor.h
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor//config
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor//config/editor_script.yaml
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor//config/config_mirror_joint.yaml
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/environment/pythonpath.sh
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/environment/pythonpath.dsv
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages/op3_action_editor-0.2.2-py3.10.egg-info
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages/op3_action_editor-0.2.2-py3.10.egg-info/PKG-INFO
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages/op3_action_editor-0.2.2-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages/op3_action_editor-0.2.2-py3.10.egg-info/top_level.txt
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages/op3_action_editor-0.2.2-py3.10.egg-info/SOURCES.txt
+-- Up-to-date: /home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages/op3_action_editor
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages/op3_action_editor/__init__.py
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages/op3_action_editor/module_to_import.py
+Listing '/home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages/op3_action_editor'...
+Compiling '/home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages/op3_action_editor/__init__.py'...
+Compiling '/home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages/op3_action_editor/module_to_import.py'...
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/lib/op3_action_editor/executor.py
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/ament_index/resource_index/package_run_dependencies/op3_action_editor
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/ament_index/resource_index/parent_prefix_path/op3_action_editor
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/environment/ament_prefix_path.sh
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/environment/ament_prefix_path.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/environment/path.sh
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/environment/path.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/local_setup.bash
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/local_setup.sh
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/local_setup.zsh
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/local_setup.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/package.dsv
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/ament_index/resource_index/packages/op3_action_editor
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/cmake/op3_action_editorConfig.cmake
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/cmake/op3_action_editorConfig-version.cmake
+-- Installing: /home/certezas/robotis_ws/install/op3_action_editor/share/op3_action_editor/package.xml

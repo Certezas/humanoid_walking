@@ -213,7 +213,6 @@ op_demo_node: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib/libop
 op_demo_node: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib/libop3_ball_detector_msgs__rosidl_typesupport_introspection_cpp.so
 op_demo_node: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib/libop3_ball_detector_msgs__rosidl_typesupport_cpp.so
 op_demo_node: /home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib/libop3_ball_detector_msgs__rosidl_generator_py.so
-op_demo_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0
 op_demo_node: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so
 op_demo_node: /home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_typesupport_c.so
 op_demo_node: /home/certezas/robotis_ws/install/robotis_controller_msgs/lib/librobotis_controller_msgs__rosidl_generator_c.so
@@ -301,7 +300,6 @@ op_demo_node: /opt/ros/humble/lib/librcpputils.so
 op_demo_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 op_demo_node: /opt/ros/humble/lib/librcutils.so
 op_demo_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-op_demo_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.74.0
 op_demo_node: CMakeFiles/op_demo_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/certezas/robotis_ws/build/op3_demo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable op_demo_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/op_demo_node.dir/link.txt --verbose=$(VERBOSE)
