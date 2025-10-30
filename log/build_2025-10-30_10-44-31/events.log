@@ -1,0 +1,286 @@
+[0.000000] (-) TimerEvent: {}
+[0.000377] (-) JobUnselected: {'identifier': 'dynamixel_sdk'}
+[0.000399] (-) JobUnselected: {'identifier': 'dynamixel_sdk_custom_interfaces'}
+[0.000414] (-) JobUnselected: {'identifier': 'dynamixel_sdk_examples'}
+[0.000427] (-) JobUnselected: {'identifier': 'op3_action_editor'}
+[0.000440] (-) JobUnselected: {'identifier': 'op3_action_module'}
+[0.000452] (-) JobUnselected: {'identifier': 'op3_action_module_msgs'}
+[0.000465] (-) JobUnselected: {'identifier': 'op3_balance_control'}
+[0.000477] (-) JobUnselected: {'identifier': 'op3_ball_detector_msgs'}
+[0.000489] (-) JobUnselected: {'identifier': 'op3_base_module'}
+[0.000501] (-) JobUnselected: {'identifier': 'op3_bringup'}
+[0.000514] (-) JobUnselected: {'identifier': 'op3_camera_setting_tool'}
+[0.000526] (-) JobUnselected: {'identifier': 'op3_camera_setting_tool_msgs'}
+[0.000538] (-) JobUnselected: {'identifier': 'op3_demo'}
+[0.000550] (-) JobUnselected: {'identifier': 'op3_description'}
+[0.000562] (-) JobUnselected: {'identifier': 'op3_direct_control_module'}
+[0.000574] (-) JobUnselected: {'identifier': 'op3_gazebo_ros2'}
+[0.000586] (-) JobUnselected: {'identifier': 'op3_gui_demo'}
+[0.000598] (-) JobUnselected: {'identifier': 'op3_head_control_module'}
+[0.000610] (-) JobUnselected: {'identifier': 'op3_kinematics_dynamics'}
+[0.000623] (-) JobUnselected: {'identifier': 'op3_localization'}
+[0.000639] (-) JobUnselected: {'identifier': 'op3_manager'}
+[0.000675] (-) JobUnselected: {'identifier': 'op3_navigation'}
+[0.000688] (-) JobUnselected: {'identifier': 'op3_offset_tuner_client'}
+[0.000700] (-) JobUnselected: {'identifier': 'op3_offset_tuner_msgs'}
+[0.000713] (-) JobUnselected: {'identifier': 'op3_offset_tuner_server'}
+[0.000725] (-) JobUnselected: {'identifier': 'op3_online_walking_module'}
+[0.000737] (-) JobUnselected: {'identifier': 'op3_online_walking_module_msgs'}
+[0.000750] (-) JobUnselected: {'identifier': 'op3_read_write_demo'}
+[0.000763] (-) JobUnselected: {'identifier': 'op3_tuner_client'}
+[0.000775] (-) JobUnselected: {'identifier': 'op3_tuning_module'}
+[0.000787] (-) JobUnselected: {'identifier': 'op3_tuning_module_msgs'}
+[0.000799] (-) JobUnselected: {'identifier': 'op3_walking_module'}
+[0.000811] (-) JobUnselected: {'identifier': 'op3_walking_module_msgs'}
+[0.000823] (-) JobUnselected: {'identifier': 'op3_web_setting_tool'}
+[0.000835] (-) JobUnselected: {'identifier': 'op3_webots_ros2'}
+[0.000847] (-) JobUnselected: {'identifier': 'open_cr_module'}
+[0.000860] (-) JobUnselected: {'identifier': 'rf_gz_bridge'}
+[0.000872] (-) JobUnselected: {'identifier': 'robotis_controller'}
+[0.000884] (-) JobUnselected: {'identifier': 'robotis_controller_msgs'}
+[0.000896] (-) JobUnselected: {'identifier': 'robotis_device'}
+[0.000908] (-) JobUnselected: {'identifier': 'robotis_framework_common'}
+[0.000920] (-) JobUnselected: {'identifier': 'robotis_math'}
+[0.000932] (-) JobUnselected: {'identifier': 'ros_madplay_player'}
+[0.000945] (-) JobUnselected: {'identifier': 'ros_mpg321_player'}
+[0.000959] (op3_kajita_walking_module) JobQueued: {'identifier': 'op3_kajita_walking_module', 'dependencies': OrderedDict([('op3_webots_ros2', '/home/certezas/robotis_ws/install/op3_webots_ros2'), ('robotis_math', '/home/certezas/robotis_ws/install/robotis_math'), ('op3_kinematics_dynamics', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics')])}
+[0.000979] (op3_kajita_walking_module) JobStarted: {'identifier': 'op3_kajita_walking_module'}
+[0.017006] (op3_kajita_walking_module) JobProgress: {'identifier': 'op3_kajita_walking_module', 'progress': 'cmake'}
+[0.017523] (op3_kajita_walking_module) JobProgress: {'identifier': 'op3_kajita_walking_module', 'progress': 'build'}
+[0.018120] (op3_kajita_walking_module) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/certezas/robotis_ws/build/op3_kajita_walking_module', '--', '-j12', '-l12'], 'cwd': '/home/certezas/robotis_ws/build/op3_kajita_walking_module', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'pt_BR:pt:en'), ('USER', 'certezas'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics/lib:/home/certezas/robotis_ws/install/open_cr_module/lib:/home/certezas/robotis_ws/install/op3_walking_module/lib:/home/certezas/robotis_ws/install/op3_tuning_module/lib:/home/certezas/robotis_ws/install/op3_online_walking_module/lib:/home/certezas/robotis_ws/install/op3_direct_control_module/lib:/home/certezas/robotis_ws/install/op3_base_module/lib:/home/certezas/robotis_ws/install/op3_head_control_module/lib:/home/certezas/robotis_ws/install/op3_balance_control/lib:/home/certezas/robotis_ws/install/robotis_math/lib:/home/certezas/robotis_ws/install/robotis_controller/lib:/home/certezas/robotis_ws/install/op3_action_module/lib:/home/certezas/robotis_ws/install/robotis_device/lib:/home/certezas/robotis_ws/install/robotis_controller_msgs/lib:/home/certezas/robotis_ws/install/op3_walking_module_msgs/lib:/home/certezas/robotis_ws/install/op3_tuning_module_msgs/lib:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs/lib:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs/lib:/home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib:/home/certezas/robotis_ws/install/op3_action_module_msgs/lib:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/certezas/robotis_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/webots/lib/controller'), ('HOME', '/home/certezas'), ('OLDPWD', '/home/certezas'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2001'), ('SYSTEMD_EXEC_PID', '2190'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '30433'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/certezas/robotis_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'certezas'), ('JOURNAL_STREAM', '8:8170'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'certezas'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/certezas/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/certezas/.dotnet/tools'), ('SESSION_MANAGER', 'local/certezas-A62-LIV:@/tmp/.ICE-unix/2162,unix/certezas-A62-LIV:/tmp/.ICE-unix/2162'), ('INVOCATION_ID', 'f7718fd824df45639fd56931eed37bab'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'pt_BR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/certezas/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.CRS6E3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/certezas/robotis_ws/install/op3_action_editor:/home/certezas/robotis_ws/install/ros_mpg321_player:/home/certezas/robotis_ws/install/op3_demo:/home/certezas/robotis_ws/install/ros_madplay_player:/home/certezas/robotis_ws/install/op3_read_write_demo:/home/certezas/robotis_ws/install/op3_bringup:/home/certezas/robotis_ws/install/op3_manager:/home/certezas/robotis_ws/install/open_cr_module:/home/certezas/robotis_ws/install/op3_walking_module:/home/certezas/robotis_ws/install/op3_tuning_module:/home/certezas/robotis_ws/install/op3_online_walking_module:/home/certezas/robotis_ws/install/op3_offset_tuner_server:/home/certezas/robotis_ws/install/op3_localization:/home/certezas/robotis_ws/install/op3_kajita_walking_module:/home/certezas/robotis_ws/install/op3_direct_control_module:/home/certezas/robotis_ws/install/op3_base_module:/home/certezas/robotis_ws/install/op3_kinematics_dynamics:/home/certezas/robotis_ws/install/op3_head_control_module:/home/certezas/robotis_ws/install/op3_balance_control:/home/certezas/robotis_ws/install/robotis_math:/home/certezas/robotis_ws/install/robotis_controller:/home/certezas/robotis_ws/install/op3_action_module:/home/certezas/robotis_ws/install/robotis_framework_common:/home/certezas/robotis_ws/install/robotis_device:/home/certezas/robotis_ws/install/op3_gui_demo:/home/certezas/robotis_ws/install/robotis_controller_msgs:/home/certezas/robotis_ws/install/rf_gz_bridge:/home/certezas/robotis_ws/install/op3_webots_ros2:/home/certezas/robotis_ws/install/op3_web_setting_tool:/home/certezas/robotis_ws/install/op3_walking_module_msgs:/home/certezas/robotis_ws/install/op3_tuner_client:/home/certezas/robotis_ws/install/op3_tuning_module_msgs:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs:/home/certezas/robotis_ws/install/op3_offset_tuner_client:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs:/home/certezas/robotis_ws/install/op3_navigation:/home/certezas/robotis_ws/install/op3_gazebo_ros2:/home/certezas/robotis_ws/install/op3_description:/home/certezas/robotis_ws/install/op3_camera_setting_tool:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs:/home/certezas/robotis_ws/install/op3_ball_detector_msgs:/home/certezas/robotis_ws/install/op3_action_module_msgs:/home/certezas/robotis_ws/install/dynamixel_sdk_examples:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/certezas/robotis_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2d2a7647-cc4c-406a-ad58-96fa967b8b8f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/certezas/robotis_ws/build/op3_kajita_walking_module'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_tuning_module_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_action_module_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics:/home/certezas/robotis_ws/install/robotis_math:/home/certezas/robotis_ws/install/op3_webots_ros2:/home/certezas/robotis_ws/install/op3_action_editor:/home/certezas/robotis_ws/install/ros_mpg321_player:/home/certezas/robotis_ws/install/op3_demo:/home/certezas/robotis_ws/install/ros_madplay_player:/home/certezas/robotis_ws/install/op3_read_write_demo:/home/certezas/robotis_ws/install/op3_bringup:/home/certezas/robotis_ws/install/op3_manager:/home/certezas/robotis_ws/install/open_cr_module:/home/certezas/robotis_ws/install/op3_walking_module:/home/certezas/robotis_ws/install/op3_tuning_module:/home/certezas/robotis_ws/install/op3_online_walking_module:/home/certezas/robotis_ws/install/op3_offset_tuner_server:/home/certezas/robotis_ws/install/op3_localization:/home/certezas/robotis_ws/install/op3_kajita_walking_module:/home/certezas/robotis_ws/install/op3_direct_control_module:/home/certezas/robotis_ws/install/op3_base_module:/home/certezas/robotis_ws/install/op3_head_control_module:/home/certezas/robotis_ws/install/op3_balance_control:/home/certezas/robotis_ws/install/robotis_controller:/home/certezas/robotis_ws/install/op3_action_module:/home/certezas/robotis_ws/install/robotis_framework_common:/home/certezas/robotis_ws/install/robotis_device:/home/certezas/robotis_ws/install/op3_gui_demo:/home/certezas/robotis_ws/install/robotis_controller_msgs:/home/certezas/robotis_ws/install/rf_gz_bridge:/home/certezas/robotis_ws/install/op3_web_setting_tool:/home/certezas/robotis_ws/install/op3_walking_module_msgs:/home/certezas/robotis_ws/install/op3_tuner_client:/home/certezas/robotis_ws/install/op3_tuning_module_msgs:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs:/home/certezas/robotis_ws/install/op3_offset_tuner_client:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs:/home/certezas/robotis_ws/install/op3_navigation:/home/certezas/robotis_ws/install/op3_gazebo_ros2:/home/certezas/robotis_ws/install/op3_description:/home/certezas/robotis_ws/install/op3_camera_setting_tool:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs:/home/certezas/robotis_ws/install/op3_ball_detector_msgs:/home/certezas/robotis_ws/install/op3_action_module_msgs:/home/certezas/robotis_ws/install/dynamixel_sdk_examples:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/certezas/robotis_ws/install/dynamixel_sdk:/opt/ros/humble')]), 'shell': False}
+[0.066648] (op3_kajita_walking_module) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target kajita_walking_node\x1b[0m\n'}
+[0.091135] (op3_kajita_walking_module) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/kajita_walking_node.dir/src/kajita_walking_controller.cpp.o\x1b[0m\n'}
+[0.099657] (-) TimerEvent: {}
+[0.199869] (-) TimerEvent: {}
+[0.300107] (-) TimerEvent: {}
+[0.400418] (-) TimerEvent: {}
+[0.500857] (-) TimerEvent: {}
+[0.601395] (-) TimerEvent: {}
+[0.701897] (-) TimerEvent: {}
+[0.802253] (-) TimerEvent: {}
+[0.902740] (-) TimerEvent: {}
+[1.003063] (-) TimerEvent: {}
+[1.103296] (-) TimerEvent: {}
+[1.203582] (-) TimerEvent: {}
+[1.303850] (-) TimerEvent: {}
+[1.404105] (-) TimerEvent: {}
+[1.504341] (-) TimerEvent: {}
+[1.604602] (-) TimerEvent: {}
+[1.704850] (-) TimerEvent: {}
+[1.805089] (-) TimerEvent: {}
+[1.905313] (-) TimerEvent: {}
+[2.005685] (-) TimerEvent: {}
+[2.106112] (-) TimerEvent: {}
+[2.206653] (-) TimerEvent: {}
+[2.306890] (-) TimerEvent: {}
+[2.407189] (-) TimerEvent: {}
+[2.507473] (-) TimerEvent: {}
+[2.607678] (-) TimerEvent: {}
+[2.707894] (-) TimerEvent: {}
+[2.808102] (-) TimerEvent: {}
+[2.908322] (-) TimerEvent: {}
+[3.008487] (-) TimerEvent: {}
+[3.109417] (-) TimerEvent: {}
+[3.209868] (-) TimerEvent: {}
+[3.310182] (-) TimerEvent: {}
+[3.410412] (-) TimerEvent: {}
+[3.510712] (-) TimerEvent: {}
+[3.611035] (-) TimerEvent: {}
+[3.711295] (-) TimerEvent: {}
+[3.811512] (-) TimerEvent: {}
+[3.911788] (-) TimerEvent: {}
+[4.012085] (-) TimerEvent: {}
+[4.112307] (-) TimerEvent: {}
+[4.212552] (-) TimerEvent: {}
+[4.312815] (-) TimerEvent: {}
+[4.413073] (-) TimerEvent: {}
+[4.513343] (-) TimerEvent: {}
+[4.613601] (-) TimerEvent: {}
+[4.713829] (-) TimerEvent: {}
+[4.814074] (-) TimerEvent: {}
+[4.914351] (-) TimerEvent: {}
+[5.014570] (-) TimerEvent: {}
+[5.114807] (-) TimerEvent: {}
+[5.215067] (-) TimerEvent: {}
+[5.315339] (-) TimerEvent: {}
+[5.415636] (-) TimerEvent: {}
+[5.515897] (-) TimerEvent: {}
+[5.616199] (-) TimerEvent: {}
+[5.716427] (-) TimerEvent: {}
+[5.816663] (-) TimerEvent: {}
+[5.916905] (-) TimerEvent: {}
+[6.017143] (-) TimerEvent: {}
+[6.117417] (-) TimerEvent: {}
+[6.217659] (-) TimerEvent: {}
+[6.317919] (-) TimerEvent: {}
+[6.418160] (-) TimerEvent: {}
+[6.518387] (-) TimerEvent: {}
+[6.618606] (-) TimerEvent: {}
+[6.718865] (-) TimerEvent: {}
+[6.819084] (-) TimerEvent: {}
+[6.919302] (-) TimerEvent: {}
+[7.019539] (-) TimerEvent: {}
+[7.119837] (-) TimerEvent: {}
+[7.220179] (-) TimerEvent: {}
+[7.320434] (-) TimerEvent: {}
+[7.420794] (-) TimerEvent: {}
+[7.521097] (-) TimerEvent: {}
+[7.621334] (-) TimerEvent: {}
+[7.721620] (-) TimerEvent: {}
+[7.821860] (-) TimerEvent: {}
+[7.922079] (-) TimerEvent: {}
+[8.022295] (-) TimerEvent: {}
+[8.122552] (-) TimerEvent: {}
+[8.222774] (-) TimerEvent: {}
+[8.322978] (-) TimerEvent: {}
+[8.423194] (-) TimerEvent: {}
+[8.523417] (-) TimerEvent: {}
+[8.623677] (-) TimerEvent: {}
+[8.723939] (-) TimerEvent: {}
+[8.824206] (-) TimerEvent: {}
+[8.924427] (-) TimerEvent: {}
+[9.024682] (-) TimerEvent: {}
+[9.124875] (-) TimerEvent: {}
+[9.225145] (-) TimerEvent: {}
+[9.325387] (-) TimerEvent: {}
+[9.425617] (-) TimerEvent: {}
+[9.526018] (-) TimerEvent: {}
+[9.626334] (-) TimerEvent: {}
+[9.726692] (-) TimerEvent: {}
+[9.827055] (-) TimerEvent: {}
+[9.927343] (-) TimerEvent: {}
+[10.027644] (-) TimerEvent: {}
+[10.127914] (-) TimerEvent: {}
+[10.228140] (-) TimerEvent: {}
+[10.328408] (-) TimerEvent: {}
+[10.428708] (-) TimerEvent: {}
+[10.528957] (-) TimerEvent: {}
+[10.629226] (-) TimerEvent: {}
+[10.729478] (-) TimerEvent: {}
+[10.829743] (-) TimerEvent: {}
+[10.929980] (-) TimerEvent: {}
+[11.030279] (-) TimerEvent: {}
+[11.130524] (-) TimerEvent: {}
+[11.230817] (-) TimerEvent: {}
+[11.331038] (-) TimerEvent: {}
+[11.431279] (-) TimerEvent: {}
+[11.531555] (-) TimerEvent: {}
+[11.631823] (-) TimerEvent: {}
+[11.732073] (-) TimerEvent: {}
+[11.832354] (-) TimerEvent: {}
+[11.932747] (-) TimerEvent: {}
+[12.033246] (-) TimerEvent: {}
+[12.133527] (-) TimerEvent: {}
+[12.233750] (-) TimerEvent: {}
+[12.333970] (-) TimerEvent: {}
+[12.434220] (-) TimerEvent: {}
+[12.534600] (-) TimerEvent: {}
+[12.634869] (-) TimerEvent: {}
+[12.735303] (-) TimerEvent: {}
+[12.835803] (-) TimerEvent: {}
+[12.936167] (-) TimerEvent: {}
+[13.036485] (-) TimerEvent: {}
+[13.136738] (-) TimerEvent: {}
+[13.236975] (-) TimerEvent: {}
+[13.337326] (-) TimerEvent: {}
+[13.437594] (-) TimerEvent: {}
+[13.537825] (-) TimerEvent: {}
+[13.638093] (-) TimerEvent: {}
+[13.738389] (-) TimerEvent: {}
+[13.838615] (-) TimerEvent: {}
+[13.938868] (-) TimerEvent: {}
+[14.039132] (-) TimerEvent: {}
+[14.139418] (-) TimerEvent: {}
+[14.239668] (-) TimerEvent: {}
+[14.339987] (-) TimerEvent: {}
+[14.440222] (-) TimerEvent: {}
+[14.540483] (-) TimerEvent: {}
+[14.640710] (-) TimerEvent: {}
+[14.740986] (-) TimerEvent: {}
+[14.841209] (-) TimerEvent: {}
+[14.941482] (-) TimerEvent: {}
+[15.041722] (-) TimerEvent: {}
+[15.141970] (-) TimerEvent: {}
+[15.242217] (-) TimerEvent: {}
+[15.342427] (-) TimerEvent: {}
+[15.442683] (-) TimerEvent: {}
+[15.542964] (-) TimerEvent: {}
+[15.643224] (-) TimerEvent: {}
+[15.743515] (-) TimerEvent: {}
+[15.843840] (-) TimerEvent: {}
+[15.944066] (-) TimerEvent: {}
+[16.044280] (-) TimerEvent: {}
+[16.144511] (-) TimerEvent: {}
+[16.244783] (-) TimerEvent: {}
+[16.345035] (-) TimerEvent: {}
+[16.445300] (-) TimerEvent: {}
+[16.545524] (-) TimerEvent: {}
+[16.645785] (-) TimerEvent: {}
+[16.746012] (-) TimerEvent: {}
+[16.846293] (-) TimerEvent: {}
+[16.946501] (-) TimerEvent: {}
+[17.046749] (-) TimerEvent: {}
+[17.147037] (-) TimerEvent: {}
+[17.247278] (-) TimerEvent: {}
+[17.347511] (-) TimerEvent: {}
+[17.447773] (-) TimerEvent: {}
+[17.548015] (-) TimerEvent: {}
+[17.648273] (-) TimerEvent: {}
+[17.748503] (-) TimerEvent: {}
+[17.848747] (-) TimerEvent: {}
+[17.948968] (-) TimerEvent: {}
+[18.049342] (-) TimerEvent: {}
+[18.149593] (-) TimerEvent: {}
+[18.249839] (-) TimerEvent: {}
+[18.350040] (-) TimerEvent: {}
+[18.450322] (-) TimerEvent: {}
+[18.550564] (-) TimerEvent: {}
+[18.650846] (-) TimerEvent: {}
+[18.751086] (-) TimerEvent: {}
+[18.851310] (-) TimerEvent: {}
+[18.951536] (-) TimerEvent: {}
+[19.051919] (-) TimerEvent: {}
+[19.152158] (-) TimerEvent: {}
+[19.252427] (-) TimerEvent: {}
+[19.352770] (-) TimerEvent: {}
+[19.452999] (-) TimerEvent: {}
+[19.553237] (-) TimerEvent: {}
+[19.653541] (-) TimerEvent: {}
+[19.689893] (op3_kajita_walking_module) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable kajita_walking_node\x1b[0m\n'}
+[19.753647] (-) TimerEvent: {}
+[19.853890] (-) TimerEvent: {}
+[19.954155] (-) TimerEvent: {}
+[20.054435] (-) TimerEvent: {}
+[20.154736] (-) TimerEvent: {}
+[20.254987] (-) TimerEvent: {}
+[20.355246] (-) TimerEvent: {}
+[20.455528] (-) TimerEvent: {}
+[20.555753] (-) TimerEvent: {}
+[20.602891] (op3_kajita_walking_module) StdoutLine: {'line': b'[100%] Built target kajita_walking_node\n'}
+[20.613439] (op3_kajita_walking_module) CommandEnded: {'returncode': 0}
+[20.614150] (op3_kajita_walking_module) JobProgress: {'identifier': 'op3_kajita_walking_module', 'progress': 'install'}
+[20.623351] (op3_kajita_walking_module) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/certezas/robotis_ws/build/op3_kajita_walking_module'], 'cwd': '/home/certezas/robotis_ws/build/op3_kajita_walking_module', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'pt_BR:pt:en'), ('USER', 'certezas'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics/lib:/home/certezas/robotis_ws/install/open_cr_module/lib:/home/certezas/robotis_ws/install/op3_walking_module/lib:/home/certezas/robotis_ws/install/op3_tuning_module/lib:/home/certezas/robotis_ws/install/op3_online_walking_module/lib:/home/certezas/robotis_ws/install/op3_direct_control_module/lib:/home/certezas/robotis_ws/install/op3_base_module/lib:/home/certezas/robotis_ws/install/op3_head_control_module/lib:/home/certezas/robotis_ws/install/op3_balance_control/lib:/home/certezas/robotis_ws/install/robotis_math/lib:/home/certezas/robotis_ws/install/robotis_controller/lib:/home/certezas/robotis_ws/install/op3_action_module/lib:/home/certezas/robotis_ws/install/robotis_device/lib:/home/certezas/robotis_ws/install/robotis_controller_msgs/lib:/home/certezas/robotis_ws/install/op3_walking_module_msgs/lib:/home/certezas/robotis_ws/install/op3_tuning_module_msgs/lib:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/lib:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs/lib:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs/lib:/home/certezas/robotis_ws/install/op3_ball_detector_msgs/lib:/home/certezas/robotis_ws/install/op3_action_module_msgs/lib:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/certezas/robotis_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/webots/lib/controller'), ('HOME', '/home/certezas'), ('OLDPWD', '/home/certezas'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2001'), ('SYSTEMD_EXEC_PID', '2190'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '30433'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/certezas/robotis_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'certezas'), ('JOURNAL_STREAM', '8:8170'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'certezas'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/certezas/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/certezas/.dotnet/tools'), ('SESSION_MANAGER', 'local/certezas-A62-LIV:@/tmp/.ICE-unix/2162,unix/certezas-A62-LIV:/tmp/.ICE-unix/2162'), ('INVOCATION_ID', 'f7718fd824df45639fd56931eed37bab'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'pt_BR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/certezas/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.CRS6E3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/certezas/robotis_ws/install/op3_action_editor:/home/certezas/robotis_ws/install/ros_mpg321_player:/home/certezas/robotis_ws/install/op3_demo:/home/certezas/robotis_ws/install/ros_madplay_player:/home/certezas/robotis_ws/install/op3_read_write_demo:/home/certezas/robotis_ws/install/op3_bringup:/home/certezas/robotis_ws/install/op3_manager:/home/certezas/robotis_ws/install/open_cr_module:/home/certezas/robotis_ws/install/op3_walking_module:/home/certezas/robotis_ws/install/op3_tuning_module:/home/certezas/robotis_ws/install/op3_online_walking_module:/home/certezas/robotis_ws/install/op3_offset_tuner_server:/home/certezas/robotis_ws/install/op3_localization:/home/certezas/robotis_ws/install/op3_kajita_walking_module:/home/certezas/robotis_ws/install/op3_direct_control_module:/home/certezas/robotis_ws/install/op3_base_module:/home/certezas/robotis_ws/install/op3_kinematics_dynamics:/home/certezas/robotis_ws/install/op3_head_control_module:/home/certezas/robotis_ws/install/op3_balance_control:/home/certezas/robotis_ws/install/robotis_math:/home/certezas/robotis_ws/install/robotis_controller:/home/certezas/robotis_ws/install/op3_action_module:/home/certezas/robotis_ws/install/robotis_framework_common:/home/certezas/robotis_ws/install/robotis_device:/home/certezas/robotis_ws/install/op3_gui_demo:/home/certezas/robotis_ws/install/robotis_controller_msgs:/home/certezas/robotis_ws/install/rf_gz_bridge:/home/certezas/robotis_ws/install/op3_webots_ros2:/home/certezas/robotis_ws/install/op3_web_setting_tool:/home/certezas/robotis_ws/install/op3_walking_module_msgs:/home/certezas/robotis_ws/install/op3_tuner_client:/home/certezas/robotis_ws/install/op3_tuning_module_msgs:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs:/home/certezas/robotis_ws/install/op3_offset_tuner_client:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs:/home/certezas/robotis_ws/install/op3_navigation:/home/certezas/robotis_ws/install/op3_gazebo_ros2:/home/certezas/robotis_ws/install/op3_description:/home/certezas/robotis_ws/install/op3_camera_setting_tool:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs:/home/certezas/robotis_ws/install/op3_ball_detector_msgs:/home/certezas/robotis_ws/install/op3_action_module_msgs:/home/certezas/robotis_ws/install/dynamixel_sdk_examples:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/certezas/robotis_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2d2a7647-cc4c-406a-ad58-96fa967b8b8f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/certezas/robotis_ws/build/op3_kajita_walking_module'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/certezas/robotis_ws/install/op3_action_editor/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/robotis_controller_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_walking_module_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_tuning_module_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_ball_detector_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/op3_action_module_msgs/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/certezas/robotis_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/certezas/robotis_ws/install/op3_kinematics_dynamics:/home/certezas/robotis_ws/install/robotis_math:/home/certezas/robotis_ws/install/op3_webots_ros2:/home/certezas/robotis_ws/install/op3_action_editor:/home/certezas/robotis_ws/install/ros_mpg321_player:/home/certezas/robotis_ws/install/op3_demo:/home/certezas/robotis_ws/install/ros_madplay_player:/home/certezas/robotis_ws/install/op3_read_write_demo:/home/certezas/robotis_ws/install/op3_bringup:/home/certezas/robotis_ws/install/op3_manager:/home/certezas/robotis_ws/install/open_cr_module:/home/certezas/robotis_ws/install/op3_walking_module:/home/certezas/robotis_ws/install/op3_tuning_module:/home/certezas/robotis_ws/install/op3_online_walking_module:/home/certezas/robotis_ws/install/op3_offset_tuner_server:/home/certezas/robotis_ws/install/op3_localization:/home/certezas/robotis_ws/install/op3_kajita_walking_module:/home/certezas/robotis_ws/install/op3_direct_control_module:/home/certezas/robotis_ws/install/op3_base_module:/home/certezas/robotis_ws/install/op3_head_control_module:/home/certezas/robotis_ws/install/op3_balance_control:/home/certezas/robotis_ws/install/robotis_controller:/home/certezas/robotis_ws/install/op3_action_module:/home/certezas/robotis_ws/install/robotis_framework_common:/home/certezas/robotis_ws/install/robotis_device:/home/certezas/robotis_ws/install/op3_gui_demo:/home/certezas/robotis_ws/install/robotis_controller_msgs:/home/certezas/robotis_ws/install/rf_gz_bridge:/home/certezas/robotis_ws/install/op3_web_setting_tool:/home/certezas/robotis_ws/install/op3_walking_module_msgs:/home/certezas/robotis_ws/install/op3_tuner_client:/home/certezas/robotis_ws/install/op3_tuning_module_msgs:/home/certezas/robotis_ws/install/op3_online_walking_module_msgs:/home/certezas/robotis_ws/install/op3_offset_tuner_client:/home/certezas/robotis_ws/install/op3_offset_tuner_msgs:/home/certezas/robotis_ws/install/op3_navigation:/home/certezas/robotis_ws/install/op3_gazebo_ros2:/home/certezas/robotis_ws/install/op3_description:/home/certezas/robotis_ws/install/op3_camera_setting_tool:/home/certezas/robotis_ws/install/op3_camera_setting_tool_msgs:/home/certezas/robotis_ws/install/op3_ball_detector_msgs:/home/certezas/robotis_ws/install/op3_action_module_msgs:/home/certezas/robotis_ws/install/dynamixel_sdk_examples:/home/certezas/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/certezas/robotis_ws/install/dynamixel_sdk:/opt/ros/humble')]), 'shell': False}
+[20.630665] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.630884] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Installing: /home/certezas/robotis_ws/install/op3_kajita_walking_module/lib/op3_kajita_walking_module/kajita_walking_node\n'}
+[20.636504] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Set runtime path of "/home/certezas/robotis_ws/install/op3_kajita_walking_module/lib/op3_kajita_walking_module/kajita_walking_node" to ""\n'}
+[20.636699] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/launch\n'}
+[20.636785] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/launch/kajita_walk_webots.launch.py\n'}
+[20.636855] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/launch/visualize_walk.launch.py\n'}
+[20.636905] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/ament_index/resource_index/package_run_dependencies/op3_kajita_walking_module\n'}
+[20.636955] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/ament_index/resource_index/parent_prefix_path/op3_kajita_walking_module\n'}
+[20.637023] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/environment/ament_prefix_path.sh\n'}
+[20.637074] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/environment/ament_prefix_path.dsv\n'}
+[20.637135] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/environment/path.sh\n'}
+[20.637183] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/environment/path.dsv\n'}
+[20.637238] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/local_setup.bash\n'}
+[20.637286] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/local_setup.sh\n'}
+[20.637334] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/local_setup.zsh\n'}
+[20.637381] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/local_setup.dsv\n'}
+[20.637428] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Installing: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/package.dsv\n'}
+[20.637475] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/ament_index/resource_index/packages/op3_kajita_walking_module\n'}
+[20.637523] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/cmake/op3_kajita_walking_moduleConfig.cmake\n'}
+[20.637570] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/cmake/op3_kajita_walking_moduleConfig-version.cmake\n'}
+[20.637617] (op3_kajita_walking_module) StdoutLine: {'line': b'-- Up-to-date: /home/certezas/robotis_ws/install/op3_kajita_walking_module/share/op3_kajita_walking_module/package.xml\n'}
+[20.638744] (op3_kajita_walking_module) CommandEnded: {'returncode': 0}
+[20.654049] (op3_kajita_walking_module) JobEnded: {'identifier': 'op3_kajita_walking_module', 'rc': 0}
+[20.654568] (-) EventReactorShutdown: {}

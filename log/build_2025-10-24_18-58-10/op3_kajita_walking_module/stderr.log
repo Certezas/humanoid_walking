@@ -1,0 +1,4 @@
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:[m[K In member function ‘[01m[Kvoid KajitaWalkingController::process()[m[K’:
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:223:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kik_success_needed[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  223 |         bool [01;35m[Kik_success_needed[m[K = false; // Flag para saber se precisamos checar o sucesso da IK
+      |              [01;35m[K^~~~~~~~~~~~~~~~~[m[K

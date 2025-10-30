@@ -1,0 +1,19 @@
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:[m[K In member function ‘[01m[Kvoid KajitaWalkingController::process()[m[K’:
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:324:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KEigen::Matrix4d body_pose[m[K’
+  324 |                 Eigen::Matrix4d [01;31m[Kbody_pose[m[K = kinematics_->op3_link_data_[ID_TORSO]->transformation_;
+      |                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:291:33:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Matrix4d body_pose[m[K’ previously declared here
+  291 |                 Eigen::Matrix4d [01;36m[Kbody_pose[m[K = Eigen::Matrix4d::Identity();
+      |                                 [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:657:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbody_pose[m[K’ was not declared in this scope
+  657 |     [01;31m[Kbody_pose[m[K.topLeftCorner<3,3>() = body_rotation;
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:657:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+  657 |     body_pose.topLeftCorner<3,3>([01;31m[K)[m[K = body_rotation;
+      |                                  [01;31m[K^[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:658:35:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+  658 |     body_pose.topRightCorner<3,1>([01;31m[K)[m[K << COM_x_(0, k+1) + x_offset_,
+      |                                   [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/kajita_walking_node.dir/build.make:90: CMakeFiles/kajita_walking_node.dir/src/kajita_walking_controller.cpp.o] Erro 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kajita_walking_node.dir/all] Erro 2
+gmake: *** [Makefile:146: all] Erro 2

@@ -145,6 +145,19 @@ private:
     std::mutex joint_state_mutex_;
     sensor_msgs::msg::JointState latest_joint_states_;
 
+    // --- Variáveis para Transição de Fase ---
+    bool aguardando_transicao_ = false;
+    double tempo_espera_transicao_ = 0.0;
+
+    std::map<std::string, double> target_shift_pose_;
+    std::map<std::string, double> target_lift_pose_;
+
+    std::map<std::string, double> interpolate_poses(
+        std::map<std::string, double>& pose_a,
+        std::map<std::string, double>& pose_b,
+        double ratio
+    );
+
 };
 
 #endif

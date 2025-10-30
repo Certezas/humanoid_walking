@@ -47,15 +47,15 @@ KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & opt
     // Braços abaixados e pernas em posição neutra
     target_initial_pose_["r_hip_yaw"] = 0.0;
     target_initial_pose_["r_hip_roll"] = 0.0;
-    target_initial_pose_["r_hip_pitch"] = 0.0;
-    target_initial_pose_["r_knee"] = 0.0;
-    target_initial_pose_["r_ank_pitch"] = 0.0;
+    target_initial_pose_["r_hip_pitch"] = 0.785398; // 45 graus em radianos
+    target_initial_pose_["r_knee"] = -1.57; // -90 graus em radianos
+    target_initial_pose_["r_ank_pitch"] = -0.785398;
     target_initial_pose_["r_ank_roll"] = 0.0;
     target_initial_pose_["l_hip_yaw"] = 0.0;
     target_initial_pose_["l_hip_roll"] = 0.0;
-    target_initial_pose_["l_hip_pitch"] = 0.0;
-    target_initial_pose_["l_knee"] = 0.0;
-    target_initial_pose_["l_ank_pitch"] = 0.0;
+    target_initial_pose_["l_hip_pitch"] = -0.785398;
+    target_initial_pose_["l_knee"] = 1.57;
+    target_initial_pose_["l_ank_pitch"] = 0.785398;
     target_initial_pose_["l_ank_roll"] = 0.0;
     target_initial_pose_["r_sho_pitch"] = 0.0; 
     target_initial_pose_["r_sho_roll"] = -1.3;
@@ -65,6 +65,40 @@ KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & opt
     target_initial_pose_["l_el"] = -0.2;
     target_initial_pose_["head_pan"] = 0.0;
     target_initial_pose_["head_tilt"] = 0.0;
+
+    // =======================================================================
+    // ADICIONE ESTE NOVO BLOCO: Pré-cálculo das Poses Alvo
+    // =======================================================================
+    
+    // 1. Define a Posa de Deslocamento (Fase 1)
+    target_shift_pose_ = target_initial_pose_; // Começa como uma cópia da pose de agachamento
+    
+    // --- Ajuste Fino (Tuning) do Deslocamento ---
+    // Para deslocar o CoM para a ESQUERDA (pé de apoio), o tronco deve inclinar para a esquerda.
+    // Ângulo de inclinação (em radianos) - COMECE COM VALORES BEM PEQUENOS!
+    double shift_hip_roll_rad = 0.3;  // Ex: ~5.7 graus
+    double shift_ank_roll_rad = 0.3; // Compensação no tornozelo (sinal oposto)
+    
+    // Aplica o deslocamento às juntas de ROLAGEM de AMBAS as pernas
+    target_shift_pose_["l_hip_roll"] += shift_hip_roll_rad;
+    target_shift_pose_["r_hip_roll"] += shift_hip_roll_rad;
+    target_shift_pose_["l_ank_roll"] += shift_ank_roll_rad;
+    target_shift_pose_["r_ank_roll"] += shift_ank_roll_rad;
+    // ---------------------------------------------
+
+    // 2. Define a Pose de Pé Levantado (Fase 2)
+    target_lift_pose_ = target_shift_pose_; // Começa como uma cópia da pose deslocada
+
+    // --- Ajuste Fino (Tuning) do Levantamento ---
+    // Ângulos para levantar a perna DIREITA (balanço) - COMECE COM VALORES PEQUENOS!
+    double lift_hip_pitch_rad = 0.25; // Flexiona o quadril direito
+    double lift_knee_rad = -0.5;      // Flexiona o joelho direito
+    double lift_ank_pitch_rad = -0.25; // Compensa o tornozelo
+    
+    target_lift_pose_["r_hip_pitch"] += lift_hip_pitch_rad;
+    target_lift_pose_["r_knee"]      += lift_knee_rad;
+    target_lift_pose_["r_ank_pitch"] += lift_ank_pitch_rad;
+    // ---------------------------------------------
 
     // ====================================================================
     // Definição dos Offsets de Pose do Corpo  
@@ -117,7 +151,7 @@ void KajitaWalkingController::initialize()
     // 1. Parâmetros
     vx_desejada_ = 0.040; // m/s
     n_step_ = 20;
-    t_step_ = 0.5; 
+    t_step_ = 1.3; 
     largura_passo_base_ = 0.03; // Largura do passo (distância lateral entre os pés)
     zc_ = 0.22; // Altura do centro de massa
     g_ = 9.81;
@@ -215,219 +249,188 @@ void KajitaWalkingController::process()
 {
 
     // =================================================================================================
-    // INÍCIO DO BLOCO COMPLETO DO STRESS TEST (VERSÃO FINAL EM SEGUNDOS)
+    // INÍCIO DO BLOCO DO STRESS TEST (VERSÃO 100% ÂNGULOS DIRETOS)
     // =================================================================================================
     if (run_static_stress_test_)
     {
         std::map<std::string, double> angulos_calculados;
+        std::map<std::string, double> pose_zero; // Mapa vazio (ângulos 0.0)
 
-        switch (stress_test_phase_)
+        // Lógica de pausa entre as fases
+        if (aguardando_transicao_)
         {
-            case 0: // FASE 0: Atingir a pose inicial padrão
+            tempo_espera_transicao_ += dt_;
+            if (tempo_espera_transicao_ >= 3.0) // espera de 3 segundos
             {
-                if (initial_pose_elapsed_time_ < initial_pose_duration_)
+                aguardando_transicao_ = false;
+                tempo_espera_transicao_ = 0.0;
+                RCLCPP_INFO(this->get_logger(), "Iniciando fase %d após espera de 3s", stress_test_phase_);
+            }
+            else
+            {
+                // Mantém os ângulos da última fase enquanto espera
+                if (stress_test_phase_ == 1) angulos_calculados = target_initial_pose_;
+                else if (stress_test_phase_ == 2) angulos_calculados = target_shift_pose_;
+                else if (stress_test_phase_ == 3) angulos_calculados = target_lift_pose_;
+                else angulos_calculados = target_lift_pose_; // Fica na pose 3
+            }
+        }
+        else // Se não estiver aguardando, executa a interpolação da fase
+        {
+            switch (stress_test_phase_)
+            {
+                case 0: // FASE 0: Interpolar de 0 para a Pose de Agachamento
                 {
-                    double ratio = initial_pose_elapsed_time_ / initial_pose_duration_;
-                    
-                    // Interpola cada junta da pose inicial
-                    for (const auto& pair : target_initial_pose_) {
-                        // Assume que a pose "zero" é 0.0 para todas as juntas
-                        double initial_angle = 0.0;
-                        double target_angle = pair.second;
-                        angulos_calculados[pair.first] = initial_angle + ratio * (target_angle - initial_angle);
+                    if (initial_pose_elapsed_time_ < initial_pose_duration_)
+                    {
+                        double ratio = initial_pose_elapsed_time_ / initial_pose_duration_;
+                        angulos_calculados = interpolate_poses(pose_zero, target_initial_pose_, ratio);
+                        initial_pose_elapsed_time_ += dt_;
                     }
-                    
-                    initial_pose_elapsed_time_ += dt_;
+                    else // Transição
+                    {
+                        angulos_calculados = target_initial_pose_;
+                        stress_test_phase_ = 1; 
+                        stress_test_phase_elapsed_time_ = 0.0;
+                        aguardando_transicao_ = true;
+                    }
+                    break;
                 }
-                else // Transição para a próxima fase
+
+                case 1: // FASE 1: Interpolar da Pose de Agachamento para a Pose Deslocada
                 {
-                    angulos_calculados = target_initial_pose_;
-                    stress_test_phase_ = 1; 
-                    stress_test_phase_elapsed_time_ = 0.0;
+                    double ratio = stress_test_phase_elapsed_time_ / shift_duration_sec_;
+                    if (ratio > 1.0) ratio = 1.0;
+                    
+                    angulos_calculados = interpolate_poses(target_initial_pose_, target_shift_pose_, ratio);
+
+                    if (stress_test_phase_elapsed_time_ >= shift_duration_sec_) {
+                        stress_test_phase_ = 2;
+                        stress_test_phase_elapsed_time_ = 0.0;
+                        aguardando_transicao_ = true;
+                    }
+                    break;
                 }
-                break;
-            }
 
-            case 1: // FASE 1: Deslocar o CoM para o pé de apoio (esquerdo)
-            {
-                double ratio = stress_test_phase_elapsed_time_ / shift_duration_sec_;
-                if (ratio > 1.0) ratio = 1.0;
+                case 2: // FASE 2: Interpolar da Pose Deslocada para a Pose de Pé Levantado
+                {
+                    double ratio = stress_test_phase_elapsed_time_ / lift_duration_sec_;
+                    if (ratio > 1.0) ratio = 1.0;
+                    
+                    angulos_calculados = interpolate_poses(target_shift_pose_, target_lift_pose_, ratio);
 
-                double start_y_l = y_offset_, start_y_r = -y_offset_;
-                double target_y_l = 0,        target_y_r = -2 * y_offset_;
-                double current_y_l = start_y_l + ratio * (target_y_l - start_y_l);
-                double current_y_r = start_y_r + ratio * (target_y_r - start_y_r);
-                
-                double angulos_esq[6], angulos_dir[6];
-                kinematics_->calcInverseKinematicsForLeftLeg(angulos_esq, 0, current_y_l, -z_offset_, 0, 0, 0);
-                kinematics_->calcInverseKinematicsForRightLeg(angulos_dir, 0, current_y_r, -z_offset_, 0, 0, 0);
-                
-                // Preenche o mapa com os ângulos da IK
-                angulos_calculados["r_hip_yaw"]   = angulos_dir[0];
-                angulos_calculados["r_hip_roll"]  = angulos_dir[1];
-                angulos_calculados["r_hip_pitch"] = angulos_dir[2];
-                angulos_calculados["r_knee"]      = angulos_dir[3];
-                angulos_calculados["r_ank_pitch"] = angulos_dir[4];
-                angulos_calculados["r_ank_roll"]  = angulos_dir[5];
-                angulos_calculados["l_hip_yaw"]   = angulos_esq[0];
-                angulos_calculados["l_hip_roll"]  = angulos_esq[1];
-                angulos_calculados["l_hip_pitch"] = angulos_esq[2];
-                angulos_calculados["l_knee"]      = angulos_esq[3];
-                angulos_calculados["l_ank_pitch"] = angulos_esq[4];
-                angulos_calculados["l_ank_roll"]  = angulos_esq[5];
-
-                if (stress_test_phase_elapsed_time_ >= shift_duration_sec_) {
-                    stress_test_phase_ = 2; // Transição
-                    stress_test_phase_elapsed_time_ = 0.0;
+                    if (stress_test_phase_elapsed_time_ >= lift_duration_sec_) {
+                        stress_test_phase_ = 3;
+                        stress_test_phase_elapsed_time_ = 0.0;
+                        aguardando_transicao_ = true;
+                    }
+                    break;
                 }
-                break;
-            }
 
-            case 2: // FASE 2: Levantar o pé de balanço (direito)
-            {
-                double ratio = stress_test_phase_elapsed_time_ / lift_duration_sec_;
-                if (ratio > 1.0) ratio = 1.0;
-                
-                double altura_pe_levantado = 0.03;
-                double current_z_r = -z_offset_ + (ratio * altura_pe_levantado);
-
-                double angulos_esq[6], angulos_dir[6];
-                kinematics_->calcInverseKinematicsForLeftLeg(angulos_esq, 0, 0, -z_offset_, 0, 0, 0);
-                kinematics_->calcInverseKinematicsForRightLeg(angulos_dir, 0, -2 * y_offset_, current_z_r, 0, 0, 0);
-                
-                // Preenche o mapa com os ângulos da IK
-                angulos_calculados["r_hip_yaw"]   = angulos_dir[0];
-                angulos_calculados["r_hip_roll"]  = angulos_dir[1];
-                angulos_calculados["r_hip_pitch"] = angulos_dir[2];
-                angulos_calculados["r_knee"]      = angulos_dir[3];
-                angulos_calculados["r_ank_pitch"] = angulos_dir[4];
-                angulos_calculados["r_ank_roll"]  = angulos_dir[5];
-                angulos_calculados["l_hip_yaw"]   = angulos_esq[0];
-                angulos_calculados["l_hip_roll"]  = angulos_esq[1];
-                angulos_calculados["l_hip_pitch"] = angulos_esq[2];
-                angulos_calculados["l_knee"]      = angulos_esq[3];
-                angulos_calculados["l_ank_pitch"] = angulos_esq[4];
-                angulos_calculados["l_ank_roll"]  = angulos_esq[5];
-
-                if (stress_test_phase_elapsed_time_ >= lift_duration_sec_) {
-                    stress_test_phase_ = 3; // Transição
-                    stress_test_phase_elapsed_time_ = 0.0;
+                case 3: // FASE 3: Manter a pose final para análise
+                {
+                    angulos_calculados = target_lift_pose_;
+                    break;
                 }
-                break;
             }
-
-            case 3: // FASE 3: Manter a pose final para análise
-            {
-                double altura_pe_levantado = 0.03;
-                double angulos_esq[6], angulos_dir[6];
-                kinematics_->calcInverseKinematicsForLeftLeg(angulos_esq, 0, 0, -z_offset_, 0, 0, 0);
-                kinematics_->calcInverseKinematicsForRightLeg(angulos_dir, 0, -2 * y_offset_, -z_offset_ + altura_pe_levantado, 0, 0, 0);
-                
-                // Preenche o mapa com os ângulos da IK
-                angulos_calculados["r_hip_yaw"]   = angulos_dir[0];
-                angulos_calculados["r_hip_roll"]  = angulos_dir[1];
-                angulos_calculados["r_hip_pitch"] = angulos_dir[2];
-                angulos_calculados["r_knee"]      = angulos_dir[3];
-                angulos_calculados["r_ank_pitch"] = angulos_dir[4];
-                angulos_calculados["r_ank_roll"]  = angulos_dir[5];
-                angulos_calculados["l_hip_yaw"]   = angulos_esq[0];
-                angulos_calculados["l_hip_roll"]  = angulos_esq[1];
-                angulos_calculados["l_hip_pitch"] = angulos_esq[2];
-                angulos_calculados["l_knee"]      = angulos_esq[3];
-                angulos_calculados["l_ank_pitch"] = angulos_esq[4];
-                angulos_calculados["l_ank_roll"]  = angulos_esq[5];
-
-                break;
+        
+            // Incrementa o timer (apenas se não estiver esperando)
+            if (stress_test_phase_ > 0) {
+                stress_test_phase_elapsed_time_ += dt_;
             }
         }
         
-        // Incrementa o timer da fase (a fase 0 já incrementa seu próprio timer)
-        if (stress_test_phase_ > 0) {
-            stress_test_phase_elapsed_time_ += dt_;
-        }
-
-        // (Esta parte é executada independentemente da fase, usando os 'angulos_calculados' definidos no switch)
-        // ETAPA A: Atualiza o estado interno da cinemática com os ângulos comandados
-        for (int id = 1; id <= ALL_JOINT_ID; id++) {
-            robotis_op::LinkData* link = kinematics_->op3_link_data_[id];
-            if (link != NULL && angulos_calculados.count(link->name_))
-                link->joint_angle_ = angulos_calculados.at(link->name_);
-        }
-        kinematics_->calcForwardKinematics(0);
-
-        // ETAPA B: Aplica a compensação de gravidade (se habilitada)
-        if (enable_gravity_compensation_)
+        if (!angulos_calculados.empty())
         {
-            // Usa a rotação do corpo que inclui o pitch_offset_
-            Eigen::Matrix3d body_rotation = robotis_framework::getRotationY(pitch_offset_);
-            Eigen::Vector3d gravity_in_world(0, 0, -g_);
-            Eigen::Vector3d gravity_in_torso = body_rotation.transpose() * gravity_in_world;
-            
-            // No teste estático, o apoio é sempre o esquerdo
-            std::map<std::string, double> gravity_comp = calculateGravityCompensation(true, gravity_in_torso);
-            
-            // Aplica a compensação aos ângulos base
-            for (const auto& comp_pair : gravity_comp) {
-                if (angulos_calculados.count(comp_pair.first))
-                    angulos_calculados.at(comp_pair.first) += comp_pair.second;
+            // (Esta parte é executada independentemente da fase, usando os 'angulos_calculados' definidos no switch)
+            // ETAPA A: Atualiza o estado interno da cinemática com os ângulos comandados
+            for (int id = 1; id <= ALL_JOINT_ID; id++) {
+                robotis_op::LinkData* link = kinematics_->op3_link_data_[id];
+                if (link != NULL && angulos_calculados.count(link->name_))
+                    link->joint_angle_ = angulos_calculados.at(link->name_);
             }
-        }
+            kinematics_->calcForwardKinematics(0);
 
-        // ETAPA C: Lógica de Publicação dos ângulos finais
-        if (publish_mode_ == "joint_state") {
-            sensor_msgs::msg::JointState goal_joint_msg;
-            goal_joint_msg.header.stamp = this->now();
-            for (const auto& joint_name : all_joint_names_) {
-                goal_joint_msg.name.push_back(joint_name);
-                goal_joint_msg.position.push_back(angulos_calculados.count(joint_name) ? angulos_calculados.at(joint_name) : 0.0);
+            // ETAPA B: Aplica a compensação de gravidade (se habilitada)
+            if (enable_gravity_compensation_)
+            {
+                // Usa a rotação do corpo que inclui o pitch_offset_
+                Eigen::Matrix3d body_rotation = robotis_framework::getRotationY(pitch_offset_);
+                Eigen::Vector3d gravity_in_world(0, 0, -g_);
+                Eigen::Vector3d gravity_in_torso = body_rotation.transpose() * gravity_in_world;
+                
+                // No teste estático, o apoio é sempre o esquerdo
+                std::map<std::string, double> gravity_comp = calculateGravityCompensation(true, gravity_in_torso);
+                
+                // Aplica a compensação aos ângulos base
+                for (const auto& comp_pair : gravity_comp) {
+                    if (angulos_calculados.count(comp_pair.first))
+                        angulos_calculados.at(comp_pair.first) += comp_pair.second;
+                }
             }
-            joint_state_pub_->publish(goal_joint_msg);
-        } else if (publish_mode_ == "individual_topics") {
-            for (const auto& joint_pair : angulos_calculados) {
-                if (joint_publishers_.count(joint_pair.first)) {
-                    auto goal_msg = std_msgs::msg::Float64();
-                    goal_msg.data = joint_pair.second;
-                    joint_publishers_[joint_pair.first]->publish(goal_msg);
+
+            // ETAPA C: Lógica de Publicação dos ângulos finais
+            if (publish_mode_ == "joint_state") {
+                sensor_msgs::msg::JointState goal_joint_msg;
+                goal_joint_msg.header.stamp = this->now();
+                for (const auto& joint_name : all_joint_names_) {
+                    goal_joint_msg.name.push_back(joint_name);
+                    goal_joint_msg.position.push_back(angulos_calculados.count(joint_name) ? angulos_calculados.at(joint_name) : 0.0);
+                }
+                joint_state_pub_->publish(goal_joint_msg);
+            } else if (publish_mode_ == "individual_topics") {
+                for (const auto& joint_pair : angulos_calculados) {
+                    if (joint_publishers_.count(joint_pair.first)) {
+                        auto goal_msg = std_msgs::msg::Float64();
+                        goal_msg.data = joint_pair.second;
+                        joint_publishers_[joint_pair.first]->publish(goal_msg);
+                    }
+                }
+            }
+
+            // ETAPA D: Lógica de Geração de Log para análise gráfica
+            if (log_file_.is_open())
+            {
+                sensor_msgs::msg::JointState current_states;
+                { const std::lock_guard<std::mutex> lock(joint_state_mutex_); current_states = latest_joint_states_; }
+
+                if (!current_states.name.empty()) {
+                    std::map<std::string, double> real_positions;
+                    for (size_t i = 0; i < current_states.name.size(); ++i) {
+                        real_positions[current_states.name[i]] = current_states.position[i];
+                    }
+
+                    // Para este teste, a perna de apoio é sempre a esquerda
+                    std::string apoio_roll_joint_name = "l_hip_roll";
+                    std::string apoio_knee_joint_name = "l_knee";
+
+                    double cmd_apoio_roll = angulos_calculados.count(apoio_roll_joint_name) ? angulos_calculados.at(apoio_roll_joint_name) : 0.0;
+                    double real_apoio_roll = real_positions.count(apoio_roll_joint_name) ? real_positions.at(apoio_roll_joint_name) : 0.0;
+                    double cmd_apoio_knee = angulos_calculados.count(apoio_knee_joint_name) ? angulos_calculados.at(apoio_knee_joint_name) : 0.0;
+                    double real_apoio_knee = real_positions.count(apoio_knee_joint_name) ? real_positions.at(apoio_knee_joint_name) : 0.0;
+
+                    log_file_ << this->now().seconds() << "," << k_sim_atual_ << ",1," // is_left_support = 1 (true)
+                            << cmd_apoio_roll << "," << real_apoio_roll << "," << (real_apoio_roll - cmd_apoio_roll) << ","
+                            << cmd_apoio_knee << "," << real_apoio_knee << "," << (real_apoio_knee - cmd_apoio_knee) << "\n";
                 }
             }
         }
-
-        // ETAPA D: Lógica de Geração de Log para análise gráfica
-        if (log_file_.is_open())
-        {
-            sensor_msgs::msg::JointState current_states;
-            { const std::lock_guard<std::mutex> lock(joint_state_mutex_); current_states = latest_joint_states_; }
-
-            if (!current_states.name.empty()) {
-                std::map<std::string, double> real_positions;
-                for (size_t i = 0; i < current_states.name.size(); ++i) {
-                    real_positions[current_states.name[i]] = current_states.position[i];
-                }
-
-                // Para este teste, a perna de apoio é sempre a esquerda
-                std::string apoio_roll_joint_name = "l_hip_roll";
-                std::string apoio_knee_joint_name = "l_knee";
-
-                double cmd_apoio_roll = angulos_calculados.count(apoio_roll_joint_name) ? angulos_calculados.at(apoio_roll_joint_name) : 0.0;
-                double real_apoio_roll = real_positions.count(apoio_roll_joint_name) ? real_positions.at(apoio_roll_joint_name) : 0.0;
-                double cmd_apoio_knee = angulos_calculados.count(apoio_knee_joint_name) ? angulos_calculados.at(apoio_knee_joint_name) : 0.0;
-                double real_apoio_knee = real_positions.count(apoio_knee_joint_name) ? real_positions.at(apoio_knee_joint_name) : 0.0;
-
-                log_file_ << this->now().seconds() << "," << k_sim_atual_ << ",1," // is_left_support = 1 (true)
-                        << cmd_apoio_roll << "," << real_apoio_roll << "," << (real_apoio_roll - cmd_apoio_roll) << ","
-                        << cmd_apoio_knee << "," << real_apoio_knee << "," << (real_apoio_knee - cmd_apoio_knee) << "\n";
-            }
+        else if (stress_test_phase_ > 0) { 
+            RCLCPP_WARN_ONCE(this->get_logger(), "IK falhou ou angulos_calculados não foi preenchido nas Fases 1, 2 ou 3 do teste! Nenhuma junta será comandada nesta iteração.");
+            // Não fazemos nada, mantendo a última posição válida enviada.
         }
         
         return; // Impede a execução da lógica de caminhada
-    }   
+    } // FIM DO if (run_static_stress_test_)
+
+   
 
     // ==============================================================
     // BLOCO DE LÓGICA PARA ATINGIR A POSE INICIAL
     // ==============================================================
     if (!initial_pose_achieved_)
     {
-        int total_ticks = static_cast<int>(initial_pose_duration_ / dt_);
+        //int total_ticks = static_cast<int>(initial_pose_duration_ / dt_);
         
         // Calcula a interpolação linear suave
         double alpha = initial_pose_elapsed_time_ / initial_pose_duration_;
@@ -869,4 +872,24 @@ void KajitaWalkingController::jointStateCallback(const sensor_msgs::msg::JointSt
     // Usa um mutex para garantir que a escrita e leitura dos dados não conflitem
     const std::lock_guard<std::mutex> lock(joint_state_mutex_);
     latest_joint_states_ = *msg;
+}
+
+
+std::map<std::string, double> KajitaWalkingController::interpolate_poses(
+    std::map<std::string, double>& pose_a,
+    std::map<std::string, double>& pose_b,
+    double ratio)
+{
+    std::map<std::string, double> result_pose;
+    // Itera sobre todas as juntas definidas na pose final
+    for (const auto& pair : pose_b) {
+        const std::string& joint_name = pair.first;
+        double target_angle = pair.second;
+        // Pega o ângulo inicial (se não existir em A, assume 0)
+        double initial_angle = pose_a.count(joint_name) ? pose_a.at(joint_name) : 0.0;
+        
+        // Interpolação linear
+        result_pose[joint_name] = initial_angle * (1.0 - ratio) + target_angle * ratio;
+    }
+    return result_pose;
 }

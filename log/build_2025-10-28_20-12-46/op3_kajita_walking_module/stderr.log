@@ -1,0 +1,65 @@
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:[m[K In member function ‘[01m[Kvoid KajitaWalkingController::process()[m[K’:
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:324:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KEigen::Matrix4d body_pose[m[K’
+  324 |                 Eigen::Matrix4d [01;31m[Kbody_pose[m[K = kinematics_->op3_link_data_[ID_TORSO]->transformation_;
+      |                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:291:33:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Matrix4d body_pose[m[K’ previously declared here
+  291 |                 Eigen::Matrix4d [01;36m[Kbody_pose[m[K = Eigen::Matrix4d::Identity();
+      |                                 [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:325:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KEigen::Matrix4d body_pose_inv[m[K’
+  325 |                 Eigen::Matrix4d [01;31m[Kbody_pose_inv[m[K = body_pose.inverse();
+      |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:297:33:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Matrix4d body_pose_inv[m[K’ previously declared here
+  297 |                 Eigen::Matrix4d [01;36m[Kbody_pose_inv[m[K = body_pose.inverse();
+      |                                 [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:426:18:[m[K [01;31m[Kerror: [m[Kjump to case label
+  426 |             case [01;31m[K3[m[K: // FASE 3: Manter a pose (Usando IK com alvo final)
+      |                  [01;31m[K^[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:407:22:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kbool sucesso_ik_direita[m[K’
+  407 |                 bool [01;36m[Ksucesso_ik_direita[m[K = kinematics_->calcInverseKinematicsForRightLeg(angulos_dir, 0, current_y_r, -z_offset_ + altura_pe_levantado, 0, 0, 0);
+      |                      [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:406:22:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kbool sucesso_ik_esquerda[m[K’
+  406 |                 bool [01;36m[Ksucesso_ik_esquerda[m[K = kinematics_->calcInverseKinematicsForLeftLeg(angulos_esq, 0, current_y_l, -z_offset_, 0, 0, 0);
+      |                      [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:402:24:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble current_y_r[m[K’
+  402 |                 double [01;36m[Kcurrent_y_r[m[K = target_y_r;
+      |                        [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:401:24:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble current_y_l[m[K’
+  401 |                 double [01;36m[Kcurrent_y_l[m[K = target_y_l; // Pé esquerdo já deslocado
+      |                        [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:399:24:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble target_y_r[m[K’
+  399 |                 double [01;36m[Ktarget_y_r[m[K = -y_offset_ * (1.0 + fator_deslocamento);
+      |                        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:398:24:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble target_y_l[m[K’
+  398 |                 double [01;36m[Ktarget_y_l[m[K = y_offset_ * (1.0 - fator_deslocamento);
+      |                        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:397:24:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble fator_deslocamento[m[K’
+  397 |                 double [01;36m[Kfator_deslocamento[m[K = 1.0;
+      |                        [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:395:24:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble altura_pe_levantado[m[K’
+  395 |                 double [01;36m[Kaltura_pe_levantado[m[K = 0.03 * ratio; // Levanta até 3 cm
+      |                        [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:392:24:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble ratio[m[K’
+  392 |                 double [01;36m[Kratio[m[K = stress_test_phase_elapsed_time_ / lift_duration_sec_;
+      |                        [01;36m[K^~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:898:45:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  898 | void KajitaWalkingController::cmdVelCallback[01;31m[K([m[Kconst geometry_msgs::msg::Twist::SharedPtr msg)
+      |                                             [01;31m[K^[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:904:44:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  904 | MatrixXd KajitaWalkingController::solveDARE[01;31m[K([m[Kconst MatrixXd &A, const MatrixXd &B, const MatrixXd &Q, double R)
+      |                                            [01;31m[K^[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:922:84:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  922 | :string, double> KajitaWalkingController::calculateGravityCompensation[01;31m[K([m[K
+      |                                                                       [01;31m[K^[m[K
+
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:990:49:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  990 | void KajitaWalkingController::jointStateCallback[01;31m[K([m[Kconst sensor_msgs::msg::JointState::SharedPtr msg)
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:995:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  995 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:215:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  215 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/kajita_walking_node.dir/build.make:90: CMakeFiles/kajita_walking_node.dir/src/kajita_walking_controller.cpp.o] Erro 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kajita_walking_node.dir/all] Erro 2
+gmake: *** [Makefile:146: all] Erro 2

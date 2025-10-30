@@ -1,0 +1,7 @@
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:[m[K In member function ‘[01m[Kvoid KajitaWalkingController::process()[m[K’:
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:304:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_x_l[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  304 |                 double [01;35m[Kcurrent_x_l[m[K = start_x_l + ratio * (target_x - start_x_l);
+      |                        [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/certezas/robotis_ws/src/ROBOTIS-OP3/op3_kajita_walking_module/src/kajita_walking_controller.cpp:305:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_x_r[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  305 |                 double [01;35m[Kcurrent_x_r[m[K = start_x_r + ratio * (target_x - start_x_r);
+      |                        [01;35m[K^~~~~~~~~~~[m[K
