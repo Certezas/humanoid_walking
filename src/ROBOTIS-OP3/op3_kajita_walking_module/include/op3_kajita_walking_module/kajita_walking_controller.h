@@ -7,8 +7,6 @@
 #include <string>
 #include <map>
 #include <algorithm>
-#include <mutex>
-#include <fstream> 
 
 // Bibliotecas Externas (ROS, Eigen, etc.)
 #include "rclcpp/rclcpp.hpp"
@@ -23,13 +21,8 @@
 #include "op3_kinematics_dynamics/op3_kinematics_dynamics_define.h"
 #include "robotis_math/robotis_math.h"
 
+// NOTA: 'using namespace Eigen;' foi removido daqui para seguir as boas práticas.
 
-using namespace Eigen;
-
-// Implementa um controlador de caminhada para o robô OP3 baseado na teoria de
-// Preview Control e Ponto de Momento Zero (ZMP) de Shuuji Kajita.
-// Este nó ROS 2 gera um padrão de caminhada dinamicamente estável para
-// seguir os comandos de velocidade recebidos.
 class KajitaWalkingController : public rclcpp::Node
 {
 public:
@@ -45,18 +38,14 @@ private:
     // =========================================================================
 
     // --- Lógica Principal ---
-    // Inicializa todos os parâmetros, matrizes e trajetórias para a caminhada.
     void initialize();
-    // O loop principal do controlador, chamado a cada passo de tempo dt_.
     void process();
-    // Resolve a Equação Discreta Algébrica de Riccati (DARE) para os ganhos.
     Eigen::MatrixXd solveDARE(const Eigen::MatrixXd &A, const Eigen::MatrixXd &B, const Eigen::MatrixXd &Q, double R);
 
     // --- Callbacks ---
-    // Callback para o tópico /cmd_vel que atualiza as velocidades desejadas.
     void cmdVelCallback(const geometry_msgs::msg::Twist::SharedPtr msg);
 
-    // Callback para o tópico /joint_states que atualiza os estados das juntas.
+        // Callback para o tópico /joint_states que atualiza os estados das juntas.
     void jointStateCallback(const sensor_msgs::msg::JointState::SharedPtr msg);
 
     // --- Método de Compensação de Gravidade ---
@@ -75,6 +64,10 @@ private:
     rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_state_pub_;
     std::map<std::string, rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr> joint_publishers_;
     std::string publish_mode_;
+
+    // Grupos de Callback para Multi-threading
+    rclcpp::CallbackGroup::SharedPtr timer_group_;
+    rclcpp::CallbackGroup::SharedPtr sub_group_;
 
     // --- Componentes do Robô e Cinemática ---
     robotis_op::OP3KinematicsDynamics* kinematics_;
@@ -102,7 +95,7 @@ private:
     double g_;  // Aceleração da gravidade
     double dt_; // Passo de tempo da simulação
 
-    // --- Matrizes e Ganhos do Controlador de Antevisão ---
+    // --- Matrizes e Ganhos do Controlador ---
     int K_preview_, K_sim_;
     double t_dsp_, t_ssp_;
     Eigen::MatrixXd A_, B_;
@@ -124,40 +117,19 @@ private:
     int idx_passo_suporte_;
     double tempo_no_passo_;
 
-    // --- Armazenamento de Dados para Análise ---
+    // --- Armazenamento de Dados para Análise (Opcional) ---
     std::vector<double> COM_x_H_, COM_y_H_;
     std::vector<double> ZMP_x_H_, ZMP_y_H_;
 
-    // --- Compensador de gravidade
-    double Kp_gz_; // Ganho proporcional do servo em Nm/rad
+    // --- Compensador de gravidade ---
+    double Kp_gz_; 
     bool enable_gravity_compensation_;
-
-    // --- Variáveis de teste de estresse estático ---
-    bool run_static_stress_test_;
-    int stress_test_phase_;
-    double stress_test_phase_elapsed_time_; 
-    double shift_duration_sec_;             
-    double lift_duration_sec_;              
 
     // --- ADIÇÕES PARA ANÁLISE GRÁFICA ---
     std::ofstream log_file_;
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_state_sub_;
     std::mutex joint_state_mutex_;
     sensor_msgs::msg::JointState latest_joint_states_;
-
-    // --- Variáveis para Transição de Fase ---
-    bool aguardando_transicao_ = false;
-    double tempo_espera_transicao_ = 0.0;
-
-    std::map<std::string, double> target_shift_pose_;
-    std::map<std::string, double> target_lift_pose_;
-
-    std::map<std::string, double> interpolate_poses(
-        std::map<std::string, double>& pose_a,
-        std::map<std::string, double>& pose_b,
-        double ratio
-    );
-
 };
 
-#endif
+#endif 

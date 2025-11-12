@@ -1,5 +1,6 @@
 #include "op3_kajita_walking_module/kajita_walking_controller.h"
 
+using namespace Eigen;
 
 KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & options)
   : Node("op3_kajita_walking_controller_node", options) {
@@ -15,90 +16,32 @@ KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & opt
     Kp_gz_ = 100.0; // Ajustar
     enable_gravity_compensation_ = true; //Alterar para false se não quiser compensação de gravidade
 
-    // INICIALIZAÇÃO DA MÁQUINA DE ESTADOS DO STRESS TEST
-    run_static_stress_test_ = true;
-    stress_test_phase_ = 0;
-    stress_test_phase_elapsed_time_ = 0.0;
-
-    // Define durações em segundos
-    shift_duration_sec_ = 2.0; // 2 segundos para deslocar o CoM
-    lift_duration_sec_ = 1.5; // 1.5 segundos para levantar o pé
-
-
-    // --- ADIÇÕES PARA ANÁLISE GRÁFICA ---
-    // Abre o arquivo de log. O nome muda dependendo do teste.
-    std::string file_name = enable_gravity_compensation_ ? "log_com_compensador.csv" : "log_sem_compensador.csv";
-    log_file_.open(file_name);
-    // Escreve o cabeçalho do CSV
-    log_file_ << "timestamp,k,comando_l_hip_roll,real_l_hip_roll,erro_l_hip_roll,comando_l_knee,real_l_knee,erro_l_knee\n";
-
-    // Cria o subscriber para o tópico /joint_states
-    joint_state_sub_ = this->create_subscription<sensor_msgs::msg::JointState>(
-        "/joint_states", 10, std::bind(&KajitaWalkingController::jointStateCallback, this, std::placeholders::_1));
-
-    RCLCPP_INFO(this->get_logger(), "Log de dados configurado para salvar em: %s", file_name.c_str());
-
     // INICIALIZAÇÃO DA POSE INICIAL
     initial_pose_duration_ = 3.0; // Duração em segundos
     initial_pose_elapsed_time_ = 0.0;
     initial_pose_achieved_ = false;
 
-    // Pose inicial alvo - Pode ser ajustada conforme necessário
-    // Braços abaixados e pernas em posição neutra
+    // Pose inicial alvo (Agachamento e braços para baixo)
     target_initial_pose_["r_hip_yaw"] = 0.0;
     target_initial_pose_["r_hip_roll"] = 0.0;
-    target_initial_pose_["r_hip_pitch"] = 0.785398; // 45 graus em radianos
-    target_initial_pose_["r_knee"] = -1.57; // -90 graus em radianos
-    target_initial_pose_["r_ank_pitch"] = -0.785398;
+    target_initial_pose_["r_hip_pitch"] = 45 * M_PI / 180.0; // 45 graus em radianos
+    target_initial_pose_["r_knee"] = -90 * M_PI / 180.0; // -90 graus em radianos
+    target_initial_pose_["r_ank_pitch"] = -45 * M_PI / 180.0;
     target_initial_pose_["r_ank_roll"] = 0.0;
     target_initial_pose_["l_hip_yaw"] = 0.0;
     target_initial_pose_["l_hip_roll"] = 0.0;
-    target_initial_pose_["l_hip_pitch"] = -0.785398;
-    target_initial_pose_["l_knee"] = 1.57;
-    target_initial_pose_["l_ank_pitch"] = 0.785398;
+    target_initial_pose_["l_hip_pitch"] = -45 * M_PI / 180.0;
+    target_initial_pose_["l_knee"] = 90 * M_PI / 180.0;
+    target_initial_pose_["l_ank_pitch"] = 45 * M_PI / 180.0;
     target_initial_pose_["l_ank_roll"] = 0.0;
     target_initial_pose_["r_sho_pitch"] = 0.0; 
-    target_initial_pose_["r_sho_roll"] = -1.3;
-    target_initial_pose_["r_el"] = 0.2;
+    target_initial_pose_["r_sho_roll"] = -75 * M_PI / 180.0;
+    target_initial_pose_["r_el"] = 10 * M_PI / 180.0;
     target_initial_pose_["l_sho_pitch"] = 0.0; 
-    target_initial_pose_["l_sho_roll"] = 1.3;
-    target_initial_pose_["l_el"] = -0.2;
+    target_initial_pose_["l_sho_roll"] = 75 * M_PI / 180.0;
+    target_initial_pose_["l_el"] = -10 * M_PI / 180.0;
     target_initial_pose_["head_pan"] = 0.0;
     target_initial_pose_["head_tilt"] = 0.0;
-
-    // =======================================================================
-    // ADICIONE ESTE NOVO BLOCO: Pré-cálculo das Poses Alvo
-    // =======================================================================
-    
-    // 1. Define a Posa de Deslocamento (Fase 1)
-    target_shift_pose_ = target_initial_pose_; // Começa como uma cópia da pose de agachamento
-    
-    // --- Ajuste Fino (Tuning) do Deslocamento ---
-    // Para deslocar o CoM para a ESQUERDA (pé de apoio), o tronco deve inclinar para a esquerda.
-    // Ângulo de inclinação (em radianos) - COMECE COM VALORES BEM PEQUENOS!
-    double shift_hip_roll_rad = 0.3;  // Ex: ~5.7 graus
-    double shift_ank_roll_rad = 0.3; // Compensação no tornozelo (sinal oposto)
-    
-    // Aplica o deslocamento às juntas de ROLAGEM de AMBAS as pernas
-    target_shift_pose_["l_hip_roll"] += shift_hip_roll_rad;
-    target_shift_pose_["r_hip_roll"] += shift_hip_roll_rad;
-    target_shift_pose_["l_ank_roll"] += shift_ank_roll_rad;
-    target_shift_pose_["r_ank_roll"] += shift_ank_roll_rad;
-    // ---------------------------------------------
-
-    // 2. Define a Pose de Pé Levantado (Fase 2)
-    target_lift_pose_ = target_shift_pose_; // Começa como uma cópia da pose deslocada
-
-    // --- Ajuste Fino (Tuning) do Levantamento ---
-    // Ângulos para levantar a perna DIREITA (balanço) - COMECE COM VALORES PEQUENOS!
-    double lift_hip_pitch_rad = 0.25; // Flexiona o quadril direito
-    double lift_knee_rad = -0.5;      // Flexiona o joelho direito
-    double lift_ank_pitch_rad = -0.25; // Compensa o tornozelo
-    
-    target_lift_pose_["r_hip_pitch"] += lift_hip_pitch_rad;
-    target_lift_pose_["r_knee"]      += lift_knee_rad;
-    target_lift_pose_["r_ank_pitch"] += lift_ank_pitch_rad;
-    // ---------------------------------------------
 
     // ====================================================================
     // Definição dos Offsets de Pose do Corpo  
@@ -117,8 +60,15 @@ KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & opt
         "head_pan", "head_tilt"
     };
 
+    // --- Configuração dos Grupos de Callback para Multi-threading ---
+    timer_group_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+    sub_group_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+    rclcpp::SubscriptionOptions sub_options;
+    sub_options.callback_group = sub_group_;
+
     cmd_vel_sub_ = this->create_subscription<geometry_msgs::msg::Twist>(
-        "/cmd_vel", 10, std::bind(&KajitaWalkingController::cmdVelCallback, this, std::placeholders::_1));
+        "/cmd_vel", 10, std::bind(&KajitaWalkingController::cmdVelCallback, this, std::placeholders::_1),
+        sub_options);
 
     joint_state_pub_ = this->create_publisher<sensor_msgs::msg::JointState>("/joint_states", 10);
 
@@ -132,17 +82,15 @@ KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & opt
     
     process_timer_ = this->create_wall_timer(
         std::chrono::duration<double>(dt_),
-        std::bind(&KajitaWalkingController::process, this));
+        std::bind(&KajitaWalkingController::process, this),
+        timer_group_ // Atribui o timer ao seu próprio grupo
+    );
 
     RCLCPP_INFO(this->get_logger(), "Controlador Kajita pronto para operar.");
 }
 
 KajitaWalkingController::~KajitaWalkingController()
 {
-    // ADICIONE ESTA LINHA
-    if (log_file_.is_open()) {
-        log_file_.close();
-    }
     delete kinematics_;
 }
 
@@ -151,7 +99,7 @@ void KajitaWalkingController::initialize()
     // 1. Parâmetros
     vx_desejada_ = 0.040; // m/s
     n_step_ = 20;
-    t_step_ = 1.3; 
+    t_step_ = 0.6; 
     largura_passo_base_ = 0.03; // Largura do passo (distância lateral entre os pés)
     zc_ = 0.22; // Altura do centro de massa
     g_ = 9.81;
@@ -241,220 +189,38 @@ void KajitaWalkingController::initialize()
     sum_e_x_ = 0.0; sum_e_y_ = 0.0; k_sim_atual_ = 0;
     COM_x_ = MatrixXd::Zero(3, ZMP_x_ref_.size() + 1);
     COM_y_ = MatrixXd::Zero(3, ZMP_y_ref_.size() + 1);
-    idx_passo_suporte_ = 0; // Inicia no passo 0
+    idx_passo_suporte_ = 0; 
     tempo_no_passo_ = 0.0;
 }
 
 void KajitaWalkingController::process()
 {
 
-    // =================================================================================================
-    // INÍCIO DO BLOCO DO STRESS TEST (VERSÃO 100% ÂNGULOS DIRETOS)
-    // =================================================================================================
-    if (run_static_stress_test_)
-    {
-        std::map<std::string, double> angulos_calculados;
-        std::map<std::string, double> pose_zero; // Mapa vazio (ângulos 0.0)
-
-        // Lógica de pausa entre as fases
-        if (aguardando_transicao_)
-        {
-            tempo_espera_transicao_ += dt_;
-            if (tempo_espera_transicao_ >= 3.0) // espera de 3 segundos
-            {
-                aguardando_transicao_ = false;
-                tempo_espera_transicao_ = 0.0;
-                RCLCPP_INFO(this->get_logger(), "Iniciando fase %d após espera de 3s", stress_test_phase_);
-            }
-            else
-            {
-                // Mantém os ângulos da última fase enquanto espera
-                if (stress_test_phase_ == 1) angulos_calculados = target_initial_pose_;
-                else if (stress_test_phase_ == 2) angulos_calculados = target_shift_pose_;
-                else if (stress_test_phase_ == 3) angulos_calculados = target_lift_pose_;
-                else angulos_calculados = target_lift_pose_; // Fica na pose 3
-            }
-        }
-        else // Se não estiver aguardando, executa a interpolação da fase
-        {
-            switch (stress_test_phase_)
-            {
-                case 0: // FASE 0: Interpolar de 0 para a Pose de Agachamento
-                {
-                    if (initial_pose_elapsed_time_ < initial_pose_duration_)
-                    {
-                        double ratio = initial_pose_elapsed_time_ / initial_pose_duration_;
-                        angulos_calculados = interpolate_poses(pose_zero, target_initial_pose_, ratio);
-                        initial_pose_elapsed_time_ += dt_;
-                    }
-                    else // Transição
-                    {
-                        angulos_calculados = target_initial_pose_;
-                        stress_test_phase_ = 1; 
-                        stress_test_phase_elapsed_time_ = 0.0;
-                        aguardando_transicao_ = true;
-                    }
-                    break;
-                }
-
-                case 1: // FASE 1: Interpolar da Pose de Agachamento para a Pose Deslocada
-                {
-                    double ratio = stress_test_phase_elapsed_time_ / shift_duration_sec_;
-                    if (ratio > 1.0) ratio = 1.0;
-                    
-                    angulos_calculados = interpolate_poses(target_initial_pose_, target_shift_pose_, ratio);
-
-                    if (stress_test_phase_elapsed_time_ >= shift_duration_sec_) {
-                        stress_test_phase_ = 2;
-                        stress_test_phase_elapsed_time_ = 0.0;
-                        aguardando_transicao_ = true;
-                    }
-                    break;
-                }
-
-                case 2: // FASE 2: Interpolar da Pose Deslocada para a Pose de Pé Levantado
-                {
-                    double ratio = stress_test_phase_elapsed_time_ / lift_duration_sec_;
-                    if (ratio > 1.0) ratio = 1.0;
-                    
-                    angulos_calculados = interpolate_poses(target_shift_pose_, target_lift_pose_, ratio);
-
-                    if (stress_test_phase_elapsed_time_ >= lift_duration_sec_) {
-                        stress_test_phase_ = 3;
-                        stress_test_phase_elapsed_time_ = 0.0;
-                        aguardando_transicao_ = true;
-                    }
-                    break;
-                }
-
-                case 3: // FASE 3: Manter a pose final para análise
-                {
-                    angulos_calculados = target_lift_pose_;
-                    break;
-                }
-            }
-        
-            // Incrementa o timer (apenas se não estiver esperando)
-            if (stress_test_phase_ > 0) {
-                stress_test_phase_elapsed_time_ += dt_;
-            }
-        }
-        
-        if (!angulos_calculados.empty())
-        {
-            // (Esta parte é executada independentemente da fase, usando os 'angulos_calculados' definidos no switch)
-            // ETAPA A: Atualiza o estado interno da cinemática com os ângulos comandados
-            for (int id = 1; id <= ALL_JOINT_ID; id++) {
-                robotis_op::LinkData* link = kinematics_->op3_link_data_[id];
-                if (link != NULL && angulos_calculados.count(link->name_))
-                    link->joint_angle_ = angulos_calculados.at(link->name_);
-            }
-            kinematics_->calcForwardKinematics(0);
-
-            // ETAPA B: Aplica a compensação de gravidade (se habilitada)
-            if (enable_gravity_compensation_)
-            {
-                // Usa a rotação do corpo que inclui o pitch_offset_
-                Eigen::Matrix3d body_rotation = robotis_framework::getRotationY(pitch_offset_);
-                Eigen::Vector3d gravity_in_world(0, 0, -g_);
-                Eigen::Vector3d gravity_in_torso = body_rotation.transpose() * gravity_in_world;
-                
-                // No teste estático, o apoio é sempre o esquerdo
-                std::map<std::string, double> gravity_comp = calculateGravityCompensation(true, gravity_in_torso);
-                
-                // Aplica a compensação aos ângulos base
-                for (const auto& comp_pair : gravity_comp) {
-                    if (angulos_calculados.count(comp_pair.first))
-                        angulos_calculados.at(comp_pair.first) += comp_pair.second;
-                }
-            }
-
-            // ETAPA C: Lógica de Publicação dos ângulos finais
-            if (publish_mode_ == "joint_state") {
-                sensor_msgs::msg::JointState goal_joint_msg;
-                goal_joint_msg.header.stamp = this->now();
-                for (const auto& joint_name : all_joint_names_) {
-                    goal_joint_msg.name.push_back(joint_name);
-                    goal_joint_msg.position.push_back(angulos_calculados.count(joint_name) ? angulos_calculados.at(joint_name) : 0.0);
-                }
-                joint_state_pub_->publish(goal_joint_msg);
-            } else if (publish_mode_ == "individual_topics") {
-                for (const auto& joint_pair : angulos_calculados) {
-                    if (joint_publishers_.count(joint_pair.first)) {
-                        auto goal_msg = std_msgs::msg::Float64();
-                        goal_msg.data = joint_pair.second;
-                        joint_publishers_[joint_pair.first]->publish(goal_msg);
-                    }
-                }
-            }
-
-            // ETAPA D: Lógica de Geração de Log para análise gráfica
-            if (log_file_.is_open())
-            {
-                sensor_msgs::msg::JointState current_states;
-                { const std::lock_guard<std::mutex> lock(joint_state_mutex_); current_states = latest_joint_states_; }
-
-                if (!current_states.name.empty()) {
-                    std::map<std::string, double> real_positions;
-                    for (size_t i = 0; i < current_states.name.size(); ++i) {
-                        real_positions[current_states.name[i]] = current_states.position[i];
-                    }
-
-                    // Para este teste, a perna de apoio é sempre a esquerda
-                    std::string apoio_roll_joint_name = "l_hip_roll";
-                    std::string apoio_knee_joint_name = "l_knee";
-
-                    double cmd_apoio_roll = angulos_calculados.count(apoio_roll_joint_name) ? angulos_calculados.at(apoio_roll_joint_name) : 0.0;
-                    double real_apoio_roll = real_positions.count(apoio_roll_joint_name) ? real_positions.at(apoio_roll_joint_name) : 0.0;
-                    double cmd_apoio_knee = angulos_calculados.count(apoio_knee_joint_name) ? angulos_calculados.at(apoio_knee_joint_name) : 0.0;
-                    double real_apoio_knee = real_positions.count(apoio_knee_joint_name) ? real_positions.at(apoio_knee_joint_name) : 0.0;
-
-                    log_file_ << this->now().seconds() << "," << k_sim_atual_ << ",1," // is_left_support = 1 (true)
-                            << cmd_apoio_roll << "," << real_apoio_roll << "," << (real_apoio_roll - cmd_apoio_roll) << ","
-                            << cmd_apoio_knee << "," << real_apoio_knee << "," << (real_apoio_knee - cmd_apoio_knee) << "\n";
-                }
-            }
-        }
-        else if (stress_test_phase_ > 0) { 
-            RCLCPP_WARN_ONCE(this->get_logger(), "IK falhou ou angulos_calculados não foi preenchido nas Fases 1, 2 ou 3 do teste! Nenhuma junta será comandada nesta iteração.");
-            // Não fazemos nada, mantendo a última posição válida enviada.
-        }
-        
-        return; // Impede a execução da lógica de caminhada
-    } // FIM DO if (run_static_stress_test_)
-
-   
-
     // ==============================================================
     // BLOCO DE LÓGICA PARA ATINGIR A POSE INICIAL
     // ==============================================================
     if (!initial_pose_achieved_)
     {
-        //int total_ticks = static_cast<int>(initial_pose_duration_ / dt_);
-        
-        // Calcula a interpolação linear suave
         double alpha = initial_pose_elapsed_time_ / initial_pose_duration_;
         alpha = std::min(1.0, std::max(0.0, alpha));
 
         std::map<std::string, double> angulos_atuais;
 
-        // Assumindo que a pose de spawn é 0 para todas as juntas (T-pose)
         for (const auto& pair : target_initial_pose_) {
             const std::string& joint_name = pair.first;
             double target_angle = pair.second;
-            double initial_angle = 0.0; // Posição inicial da T-pose
+            double initial_angle = 0.0; // Posição inicial (T-pose)
             
-            // Fórmula de Interpolação Linear (LERP)
             angulos_atuais[joint_name] = initial_angle * (1.0 - alpha) + target_angle * alpha;
         }
 
-        // Publica os ângulos calculados nos dois modos de publicação
+        // Publica os ângulos calculados
         if (publish_mode_ == "joint_state") {
             sensor_msgs::msg::JointState goal_joint_msg;
             goal_joint_msg.header.stamp = this->now();
             for (const auto& joint_name : all_joint_names_) {
                 goal_joint_msg.name.push_back(joint_name);
-                goal_joint_msg.position.push_back(angulos_atuais.at(joint_name));
+                goal_joint_msg.position.push_back(angulos_atuais.count(joint_name) ? angulos_atuais.at(joint_name) : 0.0);
             }
             joint_state_pub_->publish(goal_joint_msg);
         }
@@ -468,10 +234,8 @@ void KajitaWalkingController::process()
             }
         }
 
-        // Incrementa o contador de tempo
         initial_pose_elapsed_time_ += dt_;
 
-        // Verifica se o tempo da transição terminou.
         if (initial_pose_elapsed_time_ >= initial_pose_duration_) {
             initial_pose_achieved_ = true;
             RCLCPP_INFO(this->get_logger(), "Pose inicial alcançada. Iniciando a caminhada...");
@@ -480,7 +244,6 @@ void KajitaWalkingController::process()
         return; 
     }
     
-
     // ==============================================================
     // BLOCO DE LÓGICA CAMINHADA
     // ==============================================================
@@ -523,12 +286,8 @@ void KajitaWalkingController::process()
 
     // --- Etapa 3: Preparar Poses para IK ---
     Eigen::Matrix4d body_pose = Eigen::Matrix4d::Identity();
-
-    // 3.1. Criar a matriz de rotação a partir dos ângulos de Euler (RPY)
     Eigen::Matrix3d body_rotation = robotis_framework::convertRPYToRotation(
         roll_offset_, pitch_offset_, yaw_offset_);
-
-    // 3.2. Aplicar a rotação e a translação (posição do CoM) na matriz de pose do corpo
     body_pose.topLeftCorner<3,3>() = body_rotation;
     body_pose.topRightCorner<3,1>() << COM_x_(0, k+1) + x_offset_, 
                                     COM_y_(0, k+1) + y_offset_, 
@@ -539,7 +298,6 @@ void KajitaWalkingController::process()
     
     bool pe_esquerdo_e_balanco = (idx_passo_suporte_ % 2 != 0); 
 
-    // Define a posição inicial dos pés (antes de qualquer passo)
     Vector2d pe_direito_inicial(0.0, -largura_passo_base_ / 2.0);
     Vector2d pe_esquerdo_inicial(0.0, largura_passo_base_ / 2.0);
 
@@ -547,7 +305,6 @@ void KajitaWalkingController::process()
         auto clamp01 = [](double v){ return v < 0.0 ? 0.0 : (v > 1.0 ? 1.0 : v); };
         double s = clamp01(tempo_no_passo_ / t_ssp_);
 
-        // smoothstep 3s^2 - 2s^3 para (x,y): velocidade zero nas extremidades
         auto smoothstep = [](double v){
             if (v <= 0.0) return 0.0;
             if (v >= 1.0) return 1.0;
@@ -559,12 +316,10 @@ void KajitaWalkingController::process()
         double z_sin = altura_passo * std::sin(s * M_PI);
 
         if (pe_esquerdo_e_balanco) { // esquerdo = balanço, direito = suporte
-            // pé de suporte (direito)
             Eigen::Vector2d suporte = (idx_passo_suporte_ == 0) ? pe_direito_inicial
                                                                 : step_pos_[idx_passo_suporte_ - 1];
             right_foot_pose.topRightCorner<3,1>() << suporte.x(), suporte.y(), 0.0;
 
-            // início do swing (esquerdo)
             Eigen::Vector2d inicio = (idx_passo_suporte_ == 1) ? pe_esquerdo_inicial
                                                             : step_pos_[idx_passo_suporte_ - 2];
             Eigen::Vector2d fim = step_pos_[idx_passo_suporte_];
@@ -575,13 +330,11 @@ void KajitaWalkingController::process()
             if (s >= 1.0 - 1e-12)  left_foot_pose.topRightCorner<3,1>() << fim.x(), fim.y(), 0.0;
             else                   left_foot_pose.topRightCorner<3,1>() << x, y, z_sin;
 
-        } else { // direito = balanço, esquerdo = suporte (primeiro passo típico)
-            // pé de suporte (esquerdo)
+        } else { // direito = balanço, esquerdo = suporte
             Eigen::Vector2d suporte = (idx_passo_suporte_ == 0) ? pe_esquerdo_inicial
                                                                 : step_pos_[idx_passo_suporte_ - 1];
             left_foot_pose.topRightCorner<3,1>() << suporte.x(), suporte.y(), 0.0;
 
-            // início do swing (direito)
             Eigen::Vector2d inicio = (idx_passo_suporte_ == 0) ? pe_direito_inicial
                                                             : step_pos_[idx_passo_suporte_ - 2];
             Eigen::Vector2d fim = step_pos_[idx_passo_suporte_];
@@ -592,13 +345,11 @@ void KajitaWalkingController::process()
             if (s >= 1.0 - 1e-12)  right_foot_pose.topRightCorner<3,1>() << fim.x(), fim.y(), 0.0;
             else                   right_foot_pose.topRightCorner<3,1>() << x, y, z_sin;
         }
-    } else { // DSP — manter pés em contato
+    } else { // fase de duplo suporte (DSP)
         if (idx_passo_suporte_ == 0) {
-            // estado inicial
             right_foot_pose.topRightCorner<3,1>() << pe_direito_inicial.x(),  pe_direito_inicial.y(),  0.0;
             left_foot_pose.topRightCorner<3,1>()  << pe_esquerdo_inicial.x(), pe_esquerdo_inicial.y(), 0.0;
         } else {
-            // suporte = passo anterior, pousado = passo atual
             Eigen::Vector2d suporte = step_pos_[idx_passo_suporte_ - 1];
             int idx_pousado = std::min(idx_passo_suporte_, static_cast<int>(step_pos_.size() - 1));
             Eigen::Vector2d pousado = step_pos_[idx_pousado];
@@ -613,8 +364,6 @@ void KajitaWalkingController::process()
         }
     }
 
-
-
     // --- Etapa 4: Chamada da IK e Publicação ---
     Eigen::Matrix4d body_pose_inv = body_pose.inverse();
     Eigen::Matrix4d right_foot_pose_relativa = body_pose_inv * right_foot_pose;
@@ -625,13 +374,11 @@ void KajitaWalkingController::process()
     Eigen::Vector3d pos_perna_esquerda = left_foot_pose_relativa.topRightCorner<3,1>();
     Eigen::Vector3d rpy_perna_esquerda = robotis_framework::convertRotationToRPY(left_foot_pose_relativa.topLeftCorner<3,3>());
     
-
     double angulos_perna_direita[6], angulos_perna_esquerda[6];
     bool sucesso_ik_direita = kinematics_->calcInverseKinematicsForRightLeg(angulos_perna_direita, pos_perna_direita.x(), pos_perna_direita.y(), pos_perna_direita.z(), rpy_perna_direita.x(), rpy_perna_direita.y(), rpy_perna_direita.z());
     bool sucesso_ik_esquerda = kinematics_->calcInverseKinematicsForLeftLeg(angulos_perna_esquerda, pos_perna_esquerda.x(), pos_perna_esquerda.y(), pos_perna_esquerda.z(), rpy_perna_esquerda.x(), rpy_perna_esquerda.y(), rpy_perna_esquerda.z());
     
     if (sucesso_ik_direita && sucesso_ik_esquerda) {
-        // ETAPA 1: Preencher o mapa com os ângulos base calculados pela Cinemática Inversa (IK).
         std::map<std::string, double> angulos_calculados;
         angulos_calculados["r_hip_yaw"] = angulos_perna_direita[0];
         angulos_calculados["r_hip_roll"] = angulos_perna_direita[1];
@@ -646,9 +393,7 @@ void KajitaWalkingController::process()
         angulos_calculados["l_ank_pitch"] = angulos_perna_esquerda[4];
         angulos_calculados["l_ank_roll"] = angulos_perna_esquerda[5];
         
-        // =========================================================================================
-        // ETAPA 2: ATUALIZAR O ESTADO INTERNO DA CINEMÁTICA COM OS ÂNGULOS ACIMA
-        // =========================================================================================
+        // --- Atualizar Cinemática ---
         for (int id = 1; id <= ALL_JOINT_ID; id++) {
             robotis_op::LinkData* link = kinematics_->op3_link_data_[id];
             if (link != NULL && angulos_calculados.count(link->name_)) {
@@ -657,15 +402,13 @@ void KajitaWalkingController::process()
         }
         kinematics_->calcForwardKinematics(0);
 
-        // =========================================================================================
-        // ETAPA 3: CALCULAR E APLICAR A COMPENSAÇÃO DE GRAVIDADE
-        // =========================================================================================
+        // --- Compensação de Gravidade ---
         if (enable_gravity_compensation_) {
             Eigen::Vector3d gravity_in_world(0, 0, -g_);
             Eigen::Vector3d gravity_in_torso = body_rotation.transpose() * gravity_in_world;
             std::map<std::string, double> gravity_comp;
 
-            if (tempo_no_passo_ >= t_ssp_) { // Fase de Duplo Suporte: Interpolar
+            if (tempo_no_passo_ >= t_ssp_) { // DSP
                 std::map<std::string, double> comp_sol_esq = calculateGravityCompensation(true, gravity_in_torso);
                 std::map<std::string, double> comp_sol_dir = calculateGravityCompensation(false, gravity_in_torso);
                 
@@ -683,12 +426,11 @@ void KajitaWalkingController::process()
                         gravity_comp[joint_name] = (1.0 - alpha_ds) * comp_esq + alpha_ds * comp_dir;
                     }
                 }
-            } else { // Fase de Suporte Simples
+            } else { // SSP
                 bool apoio_e_esquerdo = !pe_esquerdo_e_balanco;
                 gravity_comp = calculateGravityCompensation(apoio_e_esquerdo, gravity_in_torso);
             }
 
-            // Aplica a compensação calculada aos ângulos base da IK.
             for (const auto& comp_pair : gravity_comp) {
                 if (angulos_calculados.count(comp_pair.first)) {
                     angulos_calculados.at(comp_pair.first) += comp_pair.second;
@@ -696,69 +438,24 @@ void KajitaWalkingController::process()
             }
         }
 
-        // =======================================================
-        // Lógica de Publicação com dois modos
-        // =======================================================
+        // --- Publicação ---
         if (publish_mode_ == "joint_state") {
-            // MODO RViz2: Publica uma única mensagem JointState COMPLETA
             sensor_msgs::msg::JointState goal_joint_msg;
             goal_joint_msg.header.stamp = this->now();
-
-            // Itera sobre a lista COMPLETA de todas as juntas do robô
             for (const auto& joint_name : all_joint_names_) {
                 goal_joint_msg.name.push_back(joint_name);
-
-                // Verifica se a junta atual é uma das pernas que calculámos
-                if (angulos_calculados.count(joint_name)) {
-                    // Se for uma junta da perna, usa o ângulo calculado do mapa
-                    goal_joint_msg.position.push_back(angulos_calculados.at(joint_name));
-                } else {
-                    // Se não for (é um braço ou a cabeça), usa o valor padrão 0.0
-                    goal_joint_msg.position.push_back(0.0);
-                }
+                goal_joint_msg.position.push_back(angulos_calculados.count(joint_name) ? angulos_calculados.at(joint_name) : 0.0);
             }
             joint_state_pub_->publish(goal_joint_msg);
         }
         else if (publish_mode_ == "individual_topics") {
-            // MODO WEBOTS: Publica em tópicos individuais
             for (const auto& joint_pair : angulos_calculados) {
-                std::string joint_name = joint_pair.first;
-                double joint_angle = joint_pair.second;
-
-                auto goal_msg = std_msgs::msg::Float64();
-                goal_msg.data = joint_angle;
-
-                if (joint_publishers_.count(joint_name)) {
-                    joint_publishers_[joint_name]->publish(goal_msg);
+                if (joint_publishers_.count(joint_pair.first)) {
+                    auto goal_msg = std_msgs::msg::Float64();
+                    goal_msg.data = joint_pair.second;
+                    joint_publishers_[joint_pair.first]->publish(goal_msg);
                 }
             }
-        }
-
-        // =================================================================================
-        // ETAPA 5: LÓGICA PARA GRAVAR DADOS NO ARQUIVO DE LOG (POSIÇÃO CORRETA)
-        // =================================================================================
-        if (log_file_.is_open())
-        {
-            sensor_msgs::msg::JointState current_states;
-            {
-                const std::lock_guard<std::mutex> lock(joint_state_mutex_);
-                current_states = latest_joint_states_;
-            }
-
-            std::map<std::string, double> real_positions;
-            for (size_t i = 0; i < current_states.name.size(); ++i) {
-                real_positions[current_states.name[i]] = current_states.position[i];
-            }
-
-            double cmd_l_hip_roll = angulos_calculados.count("l_hip_roll") ? angulos_calculados.at("l_hip_roll") : 0.0;
-            double real_l_hip_roll = real_positions.count("l_hip_roll") ? real_positions.at("l_hip_roll") : 0.0;
-            double cmd_l_knee = angulos_calculados.count("l_knee") ? angulos_calculados.at("l_knee") : 0.0;
-            double real_l_knee = real_positions.count("l_knee") ? real_positions.at("l_knee") : 0.0;
-
-            log_file_ << this->now().seconds() << ","
-                      << k_sim_atual_ << ","
-                      << cmd_l_hip_roll << "," << real_l_hip_roll << "," << (real_l_hip_roll - cmd_l_hip_roll) << ","
-                      << cmd_l_knee << "," << real_l_knee << "," << (real_l_knee - cmd_l_knee) << "\n";
         }
     
     } else {
@@ -771,23 +468,23 @@ void KajitaWalkingController::process()
     COM_y_H_.push_back(COM_y_(0, k));
 
 
-    // --- Etapa 5: Atualizar Contador de Tempo Principal ---
     k_sim_atual_++;
 }
 
+// Callback do subscriber /cmd_vel. Atualiza as variáveis de velocidade linear (x) e lateral (y) desejadas para a caminhada.
 void KajitaWalkingController::cmdVelCallback(const geometry_msgs::msg::Twist::SharedPtr msg)
 {
     vx_desejada_ = msg->linear.x;
-    vy_desejada_ = msg->linear.y;
 }
 
+// Resolve a Equação Discreta Algébrica de Riccati (DARE) de forma iterativa para encontrar a matriz de ganho 'S' do controlador LQR.
 MatrixXd KajitaWalkingController::solveDARE(const MatrixXd &A, const MatrixXd &B, const MatrixXd &Q, double R)
 {
     MatrixXd P = Q;
     for (int i = 0; i < 10000; ++i) {
         MatrixXd P_next = A.transpose() * P * A - (A.transpose() * P * B) * pow(R + (B.transpose() * P * B)(0,0), -1) * (B.transpose() * P * A) + Q;
         if ((P_next - P).norm() < 1e-6) {
-            RCLCPP_INFO(this->get_logger(), "solveDARE convergiu em %d iteracoes.", i+1);
+            if (i > 100) RCLCPP_INFO(this->get_logger(), "solveDARE convergiu em %d iteracoes.", i+1);
             return P_next;
         }
         P = P_next;
@@ -796,35 +493,27 @@ MatrixXd KajitaWalkingController::solveDARE(const MatrixXd &A, const MatrixXd &B
     return P;
 }
 
-
-// Substitua a função de compensação inteira pela versão abaixo
-
+// Calcula um ângulo de correção (feedforward) para as juntas da perna de apoio (hip_roll, knee) para neutralizar o torque da gravidade.
 std::map<std::string, double> KajitaWalkingController::calculateGravityCompensation(
     bool is_left_support,
     const Eigen::Vector3d& gravity_in_torso_frame)
 {
     std::map<std::string, double> compensations;
 
-    // 1. Define as juntas da perna de apoio que queremos compensar.
     std::string hip_roll_joint_name = is_left_support ? "l_hip_roll" : "r_hip_roll";
     std::string knee_pitch_joint_name = is_left_support ? "l_knee" : "r_knee";
     std::vector<std::string> joints_to_compensate = {hip_roll_joint_name, knee_pitch_joint_name};
 
-    // 2. Itera sobre cada junta que precisa de compensação.
     for (const auto& joint_name : joints_to_compensate)
     {
         double total_mass_above = 0.0;
         Eigen::Vector3d combined_moment_above = Eigen::Vector3d::Zero();
 
-        // 3. Para a junta atual, recalcula do zero a massa e o momento de TUDO que está acima dela.
-        // Isso é menos eficiente, mas muito mais robusto e fácil de verificar.
         for (int id = 1; id <= ALL_JOINT_ID; ++id) 
         {
             robotis_op::LinkData* current_link = kinematics_->op3_link_data_[id];
             if (current_link == NULL || current_link->mass_ == 0.0) continue;
 
-            // Lógica para verificar se o 'current_link' está cinematicamente "acima" da 'joint_name'.
-            // Para isso, "subimos" na árvore a partir do 'current_link' usando os pais.
             bool is_link_above = false;
             int parent_id = current_link->parent_;
             int joint_id_target = kinematics_->getLinkData(joint_name)->parent_;
@@ -845,7 +534,6 @@ std::map<std::string, double> KajitaWalkingController::calculateGravityCompensat
             }
         }
         
-        // 4. Com a massa e CoM corretos, calcula o torque e a compensação.
         if (total_mass_above > 0.0)
         {
             Eigen::Vector3d combined_com_above = combined_moment_above / total_mass_above;
@@ -857,7 +545,6 @@ std::map<std::string, double> KajitaWalkingController::calculateGravityCompensat
             
             Eigen::Vector3d joint_axis = kinematics_->getLinkData(joint_name)->joint_axis_.normalized();
             
-            // A fórmula da tese (Eq. 4.21) usa um sinal negativo.
             double compensated_torque = -torque_vector.dot(joint_axis);
             double delta_theta = compensated_torque / Kp_gz_;
 
@@ -869,27 +556,6 @@ std::map<std::string, double> KajitaWalkingController::calculateGravityCompensat
 
 void KajitaWalkingController::jointStateCallback(const sensor_msgs::msg::JointState::SharedPtr msg)
 {
-    // Usa um mutex para garantir que a escrita e leitura dos dados não conflitem
     const std::lock_guard<std::mutex> lock(joint_state_mutex_);
     latest_joint_states_ = *msg;
-}
-
-
-std::map<std::string, double> KajitaWalkingController::interpolate_poses(
-    std::map<std::string, double>& pose_a,
-    std::map<std::string, double>& pose_b,
-    double ratio)
-{
-    std::map<std::string, double> result_pose;
-    // Itera sobre todas as juntas definidas na pose final
-    for (const auto& pair : pose_b) {
-        const std::string& joint_name = pair.first;
-        double target_angle = pair.second;
-        // Pega o ângulo inicial (se não existir em A, assume 0)
-        double initial_angle = pose_a.count(joint_name) ? pose_a.at(joint_name) : 0.0;
-        
-        // Interpolação linear
-        result_pose[joint_name] = initial_angle * (1.0 - ratio) + target_angle * ratio;
-    }
-    return result_pose;
 }
