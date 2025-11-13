@@ -1,11 +1,16 @@
 #include "op3_kajita_walking_module/kajita_walking_controller.h"
-#include <map>
-#include <string>
-#include <algorithm>
+#include <iostream>
+
+// Adiciona o 'using namespace Eigen' que foi removido do .h
+using namespace Eigen;
+
+// =========================================================================
+// CONSTRUTOR E DESTRUTOR
+// =========================================================================
 
 KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & options)
   : Node("op3_kajita_walking_controller_node", options) {
-    RCLCPP_INFO(this->get_logger(), "Iniciando o Módulo de Caminhada Kajita...");
+    RCLCPP_INFO(this->get_logger(), "Iniciando o Módulo de Caminhada Kajita (Puro)...");
 
     this->declare_parameter<std::string>("publish_mode", "joint_state");
     this->get_parameter("publish_mode", publish_mode_);
@@ -13,42 +18,39 @@ KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & opt
 
     this->initialize();
 
-
+    // Configuração da Pose Inicial
     initial_pose_achieved_ = false;
-    initial_pose_duration_ = 3.0; // Duração de 3 segundos para a transição
+    initial_pose_duration_ = 3.0; // Duração de 3 segundos
     initial_pose_ticks_count_ = 0;
 
-    // Pose inicial alvo - Pode ser ajustada conforme necessário
-    // Braços abaixados e pernas em posição neutra
+    // Pose inicial alvo (Agachamento e braços para baixo)
     target_initial_pose_["r_hip_yaw"] = 0.0;
     target_initial_pose_["r_hip_roll"] = 0.0;
-    target_initial_pose_["r_hip_pitch"] = 0.0;
-    target_initial_pose_["r_knee"] = 0.0;
-    target_initial_pose_["r_ank_pitch"] = 0.0;
+    target_initial_pose_["r_hip_pitch"] = 45 * M_PI / 180.0; // 45 graus em radianos
+    target_initial_pose_["r_knee"] = -90 * M_PI / 180.0; // -90 graus em radianos
+    target_initial_pose_["r_ank_pitch"] = -45 * M_PI / 180.0;
     target_initial_pose_["r_ank_roll"] = 0.0;
     target_initial_pose_["l_hip_yaw"] = 0.0;
     target_initial_pose_["l_hip_roll"] = 0.0;
-    target_initial_pose_["l_hip_pitch"] = 0.0;
-    target_initial_pose_["l_knee"] = 0.0;
-    target_initial_pose_["l_ank_pitch"] = 0.0;
+    target_initial_pose_["l_hip_pitch"] = -45 * M_PI / 180.0;
+    target_initial_pose_["l_knee"] = 90 * M_PI / 180.0;
+    target_initial_pose_["l_ank_pitch"] = 45 * M_PI / 180.0;
     target_initial_pose_["l_ank_roll"] = 0.0;
     target_initial_pose_["r_sho_pitch"] = 0.0; 
-    target_initial_pose_["r_sho_roll"] = -1.3;
-    target_initial_pose_["r_el"] = 0.2;
+    target_initial_pose_["r_sho_roll"] = -75 * M_PI / 180.0;
+    target_initial_pose_["r_el"] = 10 * M_PI / 180.0;
     target_initial_pose_["l_sho_pitch"] = 0.0; 
-    target_initial_pose_["l_sho_roll"] = 1.3;
-    target_initial_pose_["l_el"] = -0.2;
+    target_initial_pose_["l_sho_roll"] = 75 * M_PI / 180.0;
+    target_initial_pose_["l_el"] = -10 * M_PI / 180.0;
     target_initial_pose_["head_pan"] = 0.0;
     target_initial_pose_["head_tilt"] = 0.0;
 
-    // ====================================================================
-    // Definição dos Offsets de Pose do Corpo  
-    // ====================================================================
+    // Configuração dos Offsets de Pose
     x_offset_ = 0.0;
     y_offset_ = 0.0;
     z_offset_ = 0.0;
     roll_offset_ = 0.0;
-    pitch_offset_ = 10.0 * M_PI / 180.0; // Inclinando tronco 10 graus para frente
+    pitch_offset_ = 10.0 * M_PI / 180.0; // Inclinando tronco 10 graus
     yaw_offset_ = 0.0;
 
     all_joint_names_ = {
@@ -58,8 +60,17 @@ KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & opt
         "head_pan", "head_tilt"
     };
 
+    // --- Configuração dos Grupos de Callback para Multi-threading ---
+    timer_group_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+    sub_group_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+    rclcpp::SubscriptionOptions sub_options;
+    sub_options.callback_group = sub_group_;
+
+    // --- Subscribers e Publishers ---
     cmd_vel_sub_ = this->create_subscription<geometry_msgs::msg::Twist>(
-        "/cmd_vel", 10, std::bind(&KajitaWalkingController::cmdVelCallback, this, std::placeholders::_1));
+        "/cmd_vel", 10, std::bind(&KajitaWalkingController::cmdVelCallback, this, std::placeholders::_1),
+        sub_options // Atribui ao grupo de subscribers
+    );
 
     joint_state_pub_ = this->create_publisher<sensor_msgs::msg::JointState>("/joint_states", 10);
 
@@ -71,9 +82,12 @@ KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & opt
     kinematics_ = new robotis_op::OP3KinematicsDynamics(robotis_op::WholeBody);
     RCLCPP_INFO(this->get_logger(), "Biblioteca de Cinemática Inversa inicializada.");
     
+    // --- Timer Principal ---
     process_timer_ = this->create_wall_timer(
         std::chrono::duration<double>(dt_),
-        std::bind(&KajitaWalkingController::process, this));
+        std::bind(&KajitaWalkingController::process, this),
+        timer_group_ // Atribui ao grupo do timer
+    );
 
     RCLCPP_INFO(this->get_logger(), "Controlador Kajita pronto para operar.");
 }
@@ -83,23 +97,27 @@ KajitaWalkingController::~KajitaWalkingController()
     delete kinematics_;
 }
 
+// =========================================================================
+// MÉTODOS DE INICIALIZAÇÃO
+// =========================================================================
+
 void KajitaWalkingController::initialize()
 {
-    // 1. Parâmetros
-    vx_desejada_ = 0.03; // m/s
+    // --- 1. Parâmetros da Caminhada ---
+    vx_desejada_ = 0.04; // m/s
     n_step_ = 20;
     t_step_ = 0.6; 
-    largura_passo_base_ = 0.03; // Largura do passo (distância lateral entre os pés)
+    largura_passo_base_ = 0.03; 
     zc_ = 0.22;
     g_ = 9.81;
     dt_ = 0.001;
     K_preview_ = int(1.6 / dt_);
-    t_dsp_ = t_step_ * 0.17; // 17% do tempo de passo
+    t_dsp_ = t_step_ * 0.2;
     t_ssp_ = t_step_ - t_dsp_;
         
-    // 2. Geração do Plano de Passos (step_pos_)
+    // --- 2. Geração do Plano de Passos (step_pos_) ---
     step_pos_.clear();
-    step_pos_.push_back(Eigen::Vector2d(0.0, 0.0)); // Posição inicial no centro
+    step_pos_.push_back(Eigen::Vector2d(0.0, 0.0));
     double sinal = 1.0;
     double dist_x = vx_desejada_ * t_step_;
     for (int i = 0; i < n_step_; ++i) {
@@ -114,9 +132,8 @@ void KajitaWalkingController::initialize()
                                             step_pos_.back().y() + dy_total));
     }
 
-    // 3. Geração da Trajetória de Referência do ZMP 
+    // --- 3. Geração da Trajetória de Referência do ZMP ---
     ZMP_x_ref_.clear(); ZMP_y_ref_.clear();
-
     int idx_passo_gerador = 0;
     double tempo_no_passo_gerador = 0.0;
     int K_ref_total = int((n_step_ * t_step_) / dt_) + K_preview_;
@@ -148,10 +165,9 @@ void KajitaWalkingController::initialize()
         ZMP_y_ref_.push_back(zmp_y);
         tempo_no_passo_gerador += dt_;
     }
-    
     K_sim_ = ZMP_x_ref_.size() - K_preview_;
 
-    // 4. Cálculo de Ganhos 
+    // --- 4. Cálculo de Ganhos (LQR/DARE) ---
     A_.resize(3,3); A_ << 1, dt_, dt_*dt_/2, 0, 1, dt_, 0, 0, 1;
     B_.resize(3,1); B_ << dt_*dt_*dt_/6, dt_*dt_/2, dt_;
     C_.resize(1,3); C_ << 1, 0, -zc_/g_;
@@ -174,17 +190,20 @@ void KajitaWalkingController::initialize()
         X_til_ = Ac_til_.transpose() * X_til_;
     }
 
-    // 5. Inicializa variáveis de estado
+    // --- 5. Inicializa Variáveis de Estado ---
     sum_e_x_ = 0.0; sum_e_y_ = 0.0; k_sim_atual_ = 0;
     COM_x_ = MatrixXd::Zero(3, ZMP_x_ref_.size() + 1);
     COM_y_ = MatrixXd::Zero(3, ZMP_y_ref_.size() + 1);
-    idx_passo_suporte_ = 0; // Inicia no passo 0
+    idx_passo_suporte_ = 0; 
     tempo_no_passo_ = 0.0;
 }
 
+// =========================================================================
+// LOOP PRINCIPAL DE CONTROLE
+// =========================================================================
+
 void KajitaWalkingController::process()
 {
-
     // ==============================================================
     // BLOCO DE LÓGICA PARA ATINGIR A POSE INICIAL
     // ==============================================================
@@ -192,23 +211,20 @@ void KajitaWalkingController::process()
     {
         int total_ticks = static_cast<int>(initial_pose_duration_ / dt_);
         
-        // Calcula a interpolação linear suave
         double alpha = static_cast<double>(initial_pose_ticks_count_) / total_ticks;
         alpha = std::min(1.0, std::max(0.0, alpha));
 
         std::map<std::string, double> angulos_atuais;
 
-        // Assumindo que a pose de spawn é 0 para todas as juntas (T-pose)
         for (const auto& pair : target_initial_pose_) {
             const std::string& joint_name = pair.first;
             double target_angle = pair.second;
-            double initial_angle = 0.0; // Posição inicial da T-pose
+            double initial_angle = 0.0;
             
-            // Fórmula de Interpolação Linear (LERP)
             angulos_atuais[joint_name] = initial_angle * (1.0 - alpha) + target_angle * alpha;
         }
 
-        // Publica os ângulos calculados nos dois modos de publicação
+        // --- Publicação dos ângulos da pose inicial ---
         if (publish_mode_ == "joint_state") {
             sensor_msgs::msg::JointState goal_joint_msg;
             goal_joint_msg.header.stamp = this->now();
@@ -228,10 +244,8 @@ void KajitaWalkingController::process()
             }
         }
 
-        // Incrementa o contador de tempo
         initial_pose_ticks_count_++;
 
-        // Verifica se a transição terminou
         if (initial_pose_ticks_count_ >= total_ticks) {
             initial_pose_achieved_ = true;
             RCLCPP_INFO(this->get_logger(), "Pose inicial alcançada. Iniciando a caminhada...");
@@ -240,12 +254,11 @@ void KajitaWalkingController::process()
         return; 
     }
     
-
     // ==============================================================
-    // BLOCO DE LÓGICA CAMINHADA
+    // BLOCO DE LÓGICA PRINCIPAL DA CAMINHADA
     // ==============================================================
 
-    // --- Etapa 1: Gerenciamento de Tempo e Estado da Caminhada ---
+    // --- Etapa 1: Gerenciamento de Tempo e Estado ---
     if (k_sim_atual_ >= K_sim_) {
         if (k_sim_atual_ == K_sim_) {
              RCLCPP_INFO(this->get_logger(), "Caminhada planejada concluída.");
@@ -281,14 +294,10 @@ void KajitaWalkingController::process()
     COM_x_.col(k+1) = A_ * COM_x_.col(k) + B_ * ux;
     COM_y_.col(k+1) = A_ * COM_y_.col(k) + B_ * uy;
 
-    // --- Etapa 3: Preparar Poses para IK ---
+    // --- Etapa 3: Preparar Poses dos Pés para IK ---
     Eigen::Matrix4d body_pose = Eigen::Matrix4d::Identity();
-
-    // 3.1. Criar a matriz de rotação a partir dos ângulos de Euler (RPY)
     Eigen::Matrix3d body_rotation = robotis_framework::convertRPYToRotation(
         roll_offset_, pitch_offset_, yaw_offset_);
-
-    // 3.2. Aplicar a rotação e a translação (posição do CoM) na matriz de pose do corpo
     body_pose.topLeftCorner<3,3>() = body_rotation;
     body_pose.topRightCorner<3,1>() << COM_x_(0, k+1) + x_offset_, 
                                     COM_y_(0, k+1) + y_offset_, 
@@ -298,8 +307,6 @@ void KajitaWalkingController::process()
     Eigen::Matrix4d left_foot_pose  = Eigen::Matrix4d::Identity();
     
     bool pe_esquerdo_e_balanco = (idx_passo_suporte_ % 2 != 0); 
-
-    // Define a posição inicial dos pés (antes de qualquer passo)
     Vector2d pe_direito_inicial(0.0, -largura_passo_base_ / 2.0);
     Vector2d pe_esquerdo_inicial(0.0, largura_passo_base_ / 2.0);
 
@@ -307,7 +314,6 @@ void KajitaWalkingController::process()
         auto clamp01 = [](double v){ return v < 0.0 ? 0.0 : (v > 1.0 ? 1.0 : v); };
         double s = clamp01(tempo_no_passo_ / t_ssp_);
 
-        // smoothstep 3s^2 - 2s^3 para (x,y): velocidade zero nas extremidades
         auto smoothstep = [](double v){
             if (v <= 0.0) return 0.0;
             if (v >= 1.0) return 1.0;
@@ -319,12 +325,10 @@ void KajitaWalkingController::process()
         double z_sin = altura_passo * std::sin(s * M_PI);
 
         if (pe_esquerdo_e_balanco) { // esquerdo = balanço, direito = suporte
-            // pé de suporte (direito)
             Eigen::Vector2d suporte = (idx_passo_suporte_ == 0) ? pe_direito_inicial
                                                                 : step_pos_[idx_passo_suporte_ - 1];
             right_foot_pose.topRightCorner<3,1>() << suporte.x(), suporte.y(), 0.0;
 
-            // início do swing (esquerdo)
             Eigen::Vector2d inicio = (idx_passo_suporte_ == 1) ? pe_esquerdo_inicial
                                                             : step_pos_[idx_passo_suporte_ - 2];
             Eigen::Vector2d fim = step_pos_[idx_passo_suporte_];
@@ -335,13 +339,11 @@ void KajitaWalkingController::process()
             if (s >= 1.0 - 1e-12)  left_foot_pose.topRightCorner<3,1>() << fim.x(), fim.y(), 0.0;
             else                   left_foot_pose.topRightCorner<3,1>() << x, y, z_sin;
 
-        } else { // direito = balanço, esquerdo = suporte (primeiro passo típico)
-            // pé de suporte (esquerdo)
+        } else { // direito = balanço, esquerdo = suporte
             Eigen::Vector2d suporte = (idx_passo_suporte_ == 0) ? pe_esquerdo_inicial
                                                                 : step_pos_[idx_passo_suporte_ - 1];
             left_foot_pose.topRightCorner<3,1>() << suporte.x(), suporte.y(), 0.0;
 
-            // início do swing (direito)
             Eigen::Vector2d inicio = (idx_passo_suporte_ == 0) ? pe_direito_inicial
                                                             : step_pos_[idx_passo_suporte_ - 2];
             Eigen::Vector2d fim = step_pos_[idx_passo_suporte_];
@@ -352,13 +354,11 @@ void KajitaWalkingController::process()
             if (s >= 1.0 - 1e-12)  right_foot_pose.topRightCorner<3,1>() << fim.x(), fim.y(), 0.0;
             else                   right_foot_pose.topRightCorner<3,1>() << x, y, z_sin;
         }
-    } else { // DSP — manter pés em contato
+    } else { // DSP 
         if (idx_passo_suporte_ == 0) {
-            // estado inicial
             right_foot_pose.topRightCorner<3,1>() << pe_direito_inicial.x(),  pe_direito_inicial.y(),  0.0;
             left_foot_pose.topRightCorner<3,1>()  << pe_esquerdo_inicial.x(), pe_esquerdo_inicial.y(), 0.0;
         } else {
-            // suporte = passo anterior, pousado = passo atual
             Eigen::Vector2d suporte = step_pos_[idx_passo_suporte_ - 1];
             int idx_pousado = std::min(idx_passo_suporte_, static_cast<int>(step_pos_.size() - 1));
             Eigen::Vector2d pousado = step_pos_[idx_pousado];
@@ -373,8 +373,6 @@ void KajitaWalkingController::process()
         }
     }
 
-
-
     // --- Etapa 4: Chamada da IK e Publicação ---
     Eigen::Matrix4d body_pose_inv = body_pose.inverse();
     Eigen::Matrix4d right_foot_pose_relativa = body_pose_inv * right_foot_pose;
@@ -385,7 +383,6 @@ void KajitaWalkingController::process()
     Eigen::Vector3d pos_perna_esquerda = left_foot_pose_relativa.topRightCorner<3,1>();
     Eigen::Vector3d rpy_perna_esquerda = robotis_framework::convertRotationToRPY(left_foot_pose_relativa.topLeftCorner<3,3>());
     
-
     double angulos_perna_direita[6], angulos_perna_esquerda[6];
     bool sucesso_ik_direita = kinematics_->calcInverseKinematicsForRightLeg(angulos_perna_direita, pos_perna_direita.x(), pos_perna_direita.y(), pos_perna_direita.z(), rpy_perna_direita.x(), rpy_perna_direita.y(), rpy_perna_direita.z());
     bool sucesso_ik_esquerda = kinematics_->calcInverseKinematicsForLeftLeg(angulos_perna_esquerda, pos_perna_esquerda.x(), pos_perna_esquerda.y(), pos_perna_esquerda.z(), rpy_perna_esquerda.x(), rpy_perna_esquerda.y(), rpy_perna_esquerda.z());
@@ -405,40 +402,22 @@ void KajitaWalkingController::process()
         angulos_calculados["l_ank_pitch"] = angulos_perna_esquerda[4];
         angulos_calculados["l_ank_roll"] = angulos_perna_esquerda[5];
         
-        // =======================================================
-        // Lógica de Publicação com dois modos
-        // =======================================================
-        if (publish_mode_ == "joint_state") {
-            // MODO RViz2: Publica uma única mensagem JointState COMPLETA
+        // --- Publicação ---
+        if (publish_mode_ == "joint_state") { // publicação via JointState para o Rviz
             sensor_msgs::msg::JointState goal_joint_msg;
             goal_joint_msg.header.stamp = this->now();
-
-            // Itera sobre a lista COMPLETA de todas as juntas do robô
             for (const auto& joint_name : all_joint_names_) {
                 goal_joint_msg.name.push_back(joint_name);
-
-                // Verifica se a junta atual é uma das pernas que calculámos
-                if (angulos_calculados.count(joint_name)) {
-                    // Se for uma junta da perna, usa o ângulo calculado do mapa
-                    goal_joint_msg.position.push_back(angulos_calculados.at(joint_name));
-                } else {
-                    // Se não for (é um braço ou a cabeça), usa o valor padrão 0.0
-                    goal_joint_msg.position.push_back(0.0);
-                }
+                goal_joint_msg.position.push_back(angulos_calculados.count(joint_name) ? angulos_calculados.at(joint_name) : 0.0);
             }
             joint_state_pub_->publish(goal_joint_msg);
         }
-        else if (publish_mode_ == "individual_topics") {
-            // MODO WEBOTS: Publica em tópicos individuais
+        else if (publish_mode_ == "individual_topics") { // publicação em tópicos individuais para o Webots
             for (const auto& joint_pair : angulos_calculados) {
-                std::string joint_name = joint_pair.first;
-                double joint_angle = joint_pair.second;
-
-                auto goal_msg = std_msgs::msg::Float64();
-                goal_msg.data = joint_angle;
-
-                if (joint_publishers_.count(joint_name)) {
-                    joint_publishers_[joint_name]->publish(goal_msg);
+                if (joint_publishers_.count(joint_pair.first)) {
+                    auto goal_msg = std_msgs::msg::Float64();
+                    goal_msg.data = joint_pair.second;
+                    joint_publishers_[joint_pair.first]->publish(goal_msg);
                 }
             }
         }
@@ -447,21 +426,26 @@ void KajitaWalkingController::process()
         RCLCPP_WARN(this->get_logger(), "A Cinemática Inversa falhou para o passo k=%d!", k);
     }
 
+    // --- Etapa 5: Histórico e Atualização ---
     ZMP_x_H_.push_back(zx);
     ZMP_y_H_.push_back(zy);
     COM_x_H_.push_back(COM_x_(0, k));
     COM_y_H_.push_back(COM_y_(0, k));
     
-    // --- Etapa 5: Atualizar Contador de Tempo Principal ---
     k_sim_atual_++;
 }
 
+// =========================================================================
+// MÉTODOS DE CALLBACK E UTILITÁRIOS
+// =========================================================================
+
+// Callback do subscriber /cmd_vel. Atualiza as variáveis de velocidade linear (x) e lateral (y) desejadas para a caminhada.
 void KajitaWalkingController::cmdVelCallback(const geometry_msgs::msg::Twist::SharedPtr msg)
 {
     vx_desejada_ = msg->linear.x;
-    vy_desejada_ = msg->linear.y;
 }
 
+// Resolve a Equação Discreta Algébrica de Riccati (DARE) de forma iterativa para encontrar a matriz de ganho 'S' do controlador LQR.
 MatrixXd KajitaWalkingController::solveDARE(const MatrixXd &A, const MatrixXd &B, const MatrixXd &Q, double R)
 {
     MatrixXd P = Q;
