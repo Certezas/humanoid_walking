@@ -41,3 +41,7 @@
 *.dwo
 
 .vscode/
+
+build/
+install/
+log/
