@@ -1,1 +1,0 @@
-CameraParams  params
