@@ -1,1 +1,0 @@
-BallDetectorParams  params
