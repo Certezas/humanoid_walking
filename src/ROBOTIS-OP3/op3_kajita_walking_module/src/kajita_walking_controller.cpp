@@ -6,9 +6,12 @@ KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & opt
   : Node("op3_kajita_walking_controller_node", options) {
     RCLCPP_INFO(this->get_logger(), "Iniciando o Módulo de Caminhada Kajita...");
 
-    this->declare_parameter<std::string>("publish_mode", "joint_state");
+    this->declare_parameter<std::string>("publish_mode", "individual_topics");
     this->get_parameter("publish_mode", publish_mode_);
     RCLCPP_INFO(this->get_logger(), "Modo de Publicação: %s", publish_mode_.c_str());
+
+    this->set_parameter(rclcpp::Parameter("use_sim_time", true));
+    RCLCPP_INFO(this->get_logger(), "Usando tempo simulado: %s", this->get_parameter("use_sim_time").as_bool() ? "true" : "false");
 
     this->initialize();
 
@@ -24,15 +27,15 @@ KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & opt
     // Pose inicial alvo (Agachamento e braços para baixo)
     target_initial_pose_["r_hip_yaw"] = 0.0;
     target_initial_pose_["r_hip_roll"] = 0.0;
-    target_initial_pose_["r_hip_pitch"] = 45 * M_PI / 180.0; // 45 graus em radianos
-    target_initial_pose_["r_knee"] = -90 * M_PI / 180.0; // -90 graus em radianos
-    target_initial_pose_["r_ank_pitch"] = -45 * M_PI / 180.0;
+    target_initial_pose_["r_hip_pitch"] = 30 * M_PI / 180.0; // 30 graus em radianos
+    target_initial_pose_["r_knee"] = -60 * M_PI / 180.0; // -60 graus em radianos
+    target_initial_pose_["r_ank_pitch"] = -30 * M_PI / 180.0;
     target_initial_pose_["r_ank_roll"] = 0.0;
     target_initial_pose_["l_hip_yaw"] = 0.0;
     target_initial_pose_["l_hip_roll"] = 0.0;
-    target_initial_pose_["l_hip_pitch"] = -45 * M_PI / 180.0;
-    target_initial_pose_["l_knee"] = 90 * M_PI / 180.0;
-    target_initial_pose_["l_ank_pitch"] = 45 * M_PI / 180.0;
+    target_initial_pose_["l_hip_pitch"] = -30 * M_PI / 180.0;
+    target_initial_pose_["l_knee"] = 60 * M_PI / 180.0;
+    target_initial_pose_["l_ank_pitch"] = 30 * M_PI / 180.0;
     target_initial_pose_["l_ank_roll"] = 0.0;
     target_initial_pose_["r_sho_pitch"] = 0.0; 
     target_initial_pose_["r_sho_roll"] = -75 * M_PI / 180.0;
@@ -80,10 +83,12 @@ KajitaWalkingController::KajitaWalkingController(const rclcpp::NodeOptions & opt
     kinematics_ = new robotis_op::OP3KinematicsDynamics(robotis_op::WholeBody);
     RCLCPP_INFO(this->get_logger(), "Biblioteca de Cinemática Inversa inicializada.");
     
-    process_timer_ = this->create_wall_timer(
-        std::chrono::duration<double>(dt_),
-        std::bind(&KajitaWalkingController::process, this),
-        timer_group_ // Atribui o timer ao seu próprio grupo
+    process_timer_ = rclcpp::create_timer(
+        this,                           
+        this->get_clock(),              //Simulação ou Real)
+        std::chrono::duration<double>(dt_), 
+        std::bind(&KajitaWalkingController::process, this), 
+        timer_group_                   
     );
 
     RCLCPP_INFO(this->get_logger(), "Controlador Kajita pronto para operar.");
@@ -96,36 +101,58 @@ KajitaWalkingController::~KajitaWalkingController()
 
 void KajitaWalkingController::initialize()
 {
-    // 1. Parâmetros
-    vx_desejada_ = 0.040; // m/s
+    // Parâmetros
+    vx_desejada_ = 0.0; // m/s
+    vy_desejada_ = 0.0;
+    omega_desejada_ = 0.2; // rad/s
     n_step_ = 20;
-    t_step_ = 0.6; 
+    t_step_ = 0.3; 
     largura_passo_base_ = 0.03; // Largura do passo (distância lateral entre os pés)
-    zc_ = 0.22; // Altura do centro de massa
+    zc_ = 0.235; // Altura do centro de massa
     g_ = 9.81;
-    dt_ = 0.001;
-    K_preview_ = int(1.6 / dt_);
+    dt_ = 0.032;
+    K_preview_ = int(2.0 / dt_);
     t_dsp_ = t_step_ * 0.2; // 20% do tempo de passo
     t_ssp_ = t_step_ - t_dsp_;
+    altura_passo_ = 0.05; // Altura máxima do pé durante o balanço
         
-    // 2. Geração do Plano de Passos (step_pos_)
+    // Geração do Plano de Passos (step_pos_)
     step_pos_.clear();
+    step_yaw_.push_back(0.0);
     step_pos_.push_back(Eigen::Vector2d(0.0, 0.0)); // Posição inicial no centro
-    double sinal = 1.0;
-    double dist_x = vx_desejada_ * t_step_;
+    double t_step = t_step_; 
+    double sx = vx_desejada_ * t_step;
+    double sy = vy_desejada_ * t_step;
+    double s_theta = omega_desejada_ * t_step;
+    double current_theta = 0.0;
+
     for (int i = 0; i < n_step_; ++i) {
-        double dy_total = 0;
+        double foot_sign = (i % 2 == 0) ? 1.0 : -1.0;        
+        current_theta += s_theta;        
+        double dx_global, dy_global;
+        
         if (i == 0) {
-            dy_total = sinal * (largura_passo_base_ / 2.0);
+            dx_global = sx; 
+            dy_global = sy + (foot_sign * largura_passo_base_ / 2.0); 
         } else {
-            sinal = -sinal;
-            dy_total = sinal * largura_passo_base_;
+            double step_dy_local = sy + foot_sign * largura_passo_base_;             
+            double theta_prev = step_yaw_.back();
+            dx_global = sx * std::cos(theta_prev) - step_dy_local * std::sin(theta_prev);
+            dy_global = sx * std::sin(theta_prev) + step_dy_local * std::cos(theta_prev);
         }
-        step_pos_.push_back(Eigen::Vector2d(step_pos_.back().x() + dist_x,
-                                            step_pos_.back().y() + dy_total));
+
+        Eigen::Vector2d next_pos;
+        if(i == 0) {
+             next_pos = Eigen::Vector2d(dx_global, dy_global); 
+        } else {
+             next_pos = step_pos_.back() + Eigen::Vector2d(dx_global, dy_global);
+        }
+
+        step_pos_.push_back(next_pos);
+        step_yaw_.push_back(current_theta);
     }
 
-    // 3. Geração da Trajetória de Referência do ZMP 
+    // Geração da Trajetória de Referência do ZMP 
     ZMP_x_ref_.clear(); ZMP_y_ref_.clear();
 
     int idx_passo_gerador = 0;
@@ -162,7 +189,7 @@ void KajitaWalkingController::initialize()
     
     K_sim_ = ZMP_x_ref_.size() - K_preview_;
 
-    // 4. Cálculo de Ganhos 
+    // Cálculo de Ganhos 
     A_.resize(3,3); A_ << 1, dt_, dt_*dt_/2, 0, 1, dt_, 0, 0, 1;
     B_.resize(3,1); B_ << dt_*dt_*dt_/6, dt_*dt_/2, dt_;
     C_.resize(1,3); C_ << 1, 0, -zc_/g_;
@@ -185,7 +212,7 @@ void KajitaWalkingController::initialize()
         X_til_ = Ac_til_.transpose() * X_til_;
     }
 
-    // 5. Inicializa variáveis de estado
+    // Inicializa variáveis de estado
     sum_e_x_ = 0.0; sum_e_y_ = 0.0; k_sim_atual_ = 0;
     COM_x_ = MatrixXd::Zero(3, ZMP_x_ref_.size() + 1);
     COM_y_ = MatrixXd::Zero(3, ZMP_y_ref_.size() + 1);
@@ -264,6 +291,7 @@ void KajitaWalkingController::process()
             idx_passo_suporte_++;
         }
     }
+    
     int k = k_sim_atual_;
 
     // --- Etapa 2: Controlador por Antevisão do CoM ---
@@ -284,82 +312,185 @@ void KajitaWalkingController::process()
     COM_x_.col(k+1) = A_ * COM_x_.col(k) + B_ * ux;
     COM_y_.col(k+1) = A_ * COM_y_.col(k) + B_ * uy;
 
-    // --- Etapa 3: Preparar Poses para IK ---
+    // --- Etapa 3: Preparar Poses para IK (Com Orientação Dinâmica) ---
+
+    // 1. Recuperar orientações (Yaw) dos passos
+    // step_yaw_ deve ter sido preenchido no initialize() com a orientação acumulada de cada passo
+    double yaw_passo_anterior = 0.0;
+    double yaw_passo_atual = 0.0;
+    
+    if (idx_passo_suporte_ > 0 && idx_passo_suporte_ < (int)step_yaw_.size()) {
+        yaw_passo_atual = step_yaw_[idx_passo_suporte_];
+        yaw_passo_anterior = step_yaw_[idx_passo_suporte_ - 1];
+    } else if (idx_passo_suporte_ == 0 && step_yaw_.size() > 0) {
+        yaw_passo_atual = step_yaw_[0];
+        yaw_passo_anterior = 0.0; // Assume 0.0 no início
+    }
+
+    // 2. Definir Orientação do Corpo (Tronco)
+    // O corpo deve girar suavemente. Uma abordagem simples para Preview Control
+    // é alinhar o corpo com a orientação do passo atual ou interpolar.
+    // Aqui, usamos o yaw do passo atual para garantir alinhamento.
+    double body_yaw_atual = yaw_passo_anterior; 
+    
+    // Na fase de balanço, interpolamos o corpo também para não "quebrar" a cintura
+    double t_norm_body = 0.0;
+    if (tempo_no_passo_ < t_ssp_) {
+         t_norm_body = tempo_no_passo_ / t_ssp_;
+         // Polinômio cúbico (Eq 2.24 do TCC) para suavizar a rotação do corpo
+         double f_tau_body = 3 * std::pow(t_norm_body, 2) - 2 * std::pow(t_norm_body, 3);
+         body_yaw_atual = yaw_passo_anterior + (yaw_passo_atual - yaw_passo_anterior) * f_tau_body;
+    }
+
+    // Matriz de Rotação do Corpo (inclui os offsets fixos + a rotação da odometria)
     Eigen::Matrix4d body_pose = Eigen::Matrix4d::Identity();
     Eigen::Matrix3d body_rotation = robotis_framework::convertRPYToRotation(
-        roll_offset_, pitch_offset_, yaw_offset_);
+        roll_offset_, 
+        pitch_offset_, 
+        yaw_offset_ + body_yaw_atual // Adiciona a rotação calculada
+    );
+    
     body_pose.topLeftCorner<3,3>() = body_rotation;
     body_pose.topRightCorner<3,1>() << COM_x_(0, k+1) + x_offset_, 
-                                    COM_y_(0, k+1) + y_offset_, 
-                                    zc_ + z_offset_;
+                                       COM_y_(0, k+1) + y_offset_, 
+                                       zc_ + z_offset_;
 
+    // 3. Matrizes de Pose dos Pés
     Eigen::Matrix4d right_foot_pose = Eigen::Matrix4d::Identity();
     Eigen::Matrix4d left_foot_pose  = Eigen::Matrix4d::Identity();
     
     bool pe_esquerdo_e_balanco = (idx_passo_suporte_ % 2 != 0); 
-
+    
+    // Posições base locais (para o primeiro passo)
     Vector2d pe_direito_inicial(0.0, -largura_passo_base_ / 2.0);
     Vector2d pe_esquerdo_inicial(0.0, largura_passo_base_ / 2.0);
 
-    if (tempo_no_passo_ < t_ssp_ && idx_passo_suporte_ <= n_step_) { // SSP
-        auto clamp01 = [](double v){ return v < 0.0 ? 0.0 : (v > 1.0 ? 1.0 : v); };
-        double s = clamp01(tempo_no_passo_ / t_ssp_);
+    if (tempo_no_passo_ < t_ssp_ && idx_passo_suporte_ <= n_step_) { // SSP (Single Support Phase)
+        
+        // --- Cálculo da Interpolação (Eq 2.24 e 2.25 do TCC) ---
+        double t_norm = tempo_no_passo_ / t_ssp_;
+        t_norm = std::max(0.0, std::min(1.0, t_norm)); // Clamp
 
-        auto smoothstep = [](double v){
-            if (v <= 0.0) return 0.0;
-            if (v >= 1.0) return 1.0;
-            return v*v*(3.0 - 2.0*v);
-        };
-        double sc = smoothstep(s);
+        double two_pi = 2.0 * M_PI;
+        double cycloid_progression = t_norm - std::sin(two_pi * t_norm) / two_pi; // Para X, Y
+        double cubic_progression = 3 * std::pow(t_norm, 2) - 2 * std::pow(t_norm, 3); // Para Theta (Eq 2.24)
+        double vertical_progression = 0.5 * (1.0 - std::cos(two_pi * t_norm)); // Para Z
 
-        double altura_passo = 0.04;
-        double z_sin = altura_passo * std::sin(s * M_PI);
+        double z_step = altura_passo_ * vertical_progression;
+        
+        // Interpolação de Yaw para o pé de balanço (Eq. 2.25)
+        double swing_yaw_angle = yaw_passo_anterior + (yaw_passo_atual - yaw_passo_anterior) * cubic_progression;
+        
+        // Matrizes de rotação para os pés
+        Eigen::Matrix3d rot_support = robotis_framework::convertRPYToRotation(0, 0, yaw_passo_anterior);
+        Eigen::Matrix3d rot_swing   = robotis_framework::convertRPYToRotation(0, 0, swing_yaw_angle);
 
-        if (pe_esquerdo_e_balanco) { // esquerdo = balanço, direito = suporte
+        if (pe_esquerdo_e_balanco) { // ESQUERDO BALANÇO, DIREITO SUPORTE
+            
+            // PÉ DIREITO (Suporte): Fixo na posição anterior
             Eigen::Vector2d suporte = (idx_passo_suporte_ == 0) ? pe_direito_inicial
                                                                 : step_pos_[idx_passo_suporte_ - 1];
+            
+            right_foot_pose.topLeftCorner<3,3>() = rot_support; // Orientação fixa
             right_foot_pose.topRightCorner<3,1>() << suporte.x(), suporte.y(), 0.0;
 
+            // PÉ ESQUERDO (Balanço): Interpola da anterior para a atual
             Eigen::Vector2d inicio = (idx_passo_suporte_ == 1) ? pe_esquerdo_inicial
-                                                            : step_pos_[idx_passo_suporte_ - 2];
+                                                               : step_pos_[idx_passo_suporte_ - 2];
             Eigen::Vector2d fim = step_pos_[idx_passo_suporte_];
 
-            double x = (1.0 - sc) * inicio.x() + sc * fim.x();
-            double y = (1.0 - sc) * inicio.y() + sc * fim.y();
+            double x_step = inicio.x() + (fim.x() - inicio.x()) * cycloid_progression;
+            double y_step = inicio.y() + (fim.y() - inicio.y()) * cycloid_progression;
 
-            if (s >= 1.0 - 1e-12)  left_foot_pose.topRightCorner<3,1>() << fim.x(), fim.y(), 0.0;
-            else                   left_foot_pose.topRightCorner<3,1>() << x, y, z_sin;
+            left_foot_pose.topLeftCorner<3,3>() = rot_swing; // Orientação interpolada (Eq 2.25)
+            left_foot_pose.topRightCorner<3,1>() << x_step, y_step, z_step;
 
-        } else { // direito = balanço, esquerdo = suporte
+        } else { // DIREITO BALANÇO, ESQUERDO SUPORTE
+            
+            // PÉ ESQUERDO (Suporte): Fixo
             Eigen::Vector2d suporte = (idx_passo_suporte_ == 0) ? pe_esquerdo_inicial
                                                                 : step_pos_[idx_passo_suporte_ - 1];
+            
+            left_foot_pose.topLeftCorner<3,3>() = rot_support; // Orientação fixa
             left_foot_pose.topRightCorner<3,1>() << suporte.x(), suporte.y(), 0.0;
 
+            // PÉ DIREITO (Balanço): Interpola
             Eigen::Vector2d inicio = (idx_passo_suporte_ == 0) ? pe_direito_inicial
-                                                            : step_pos_[idx_passo_suporte_ - 2];
+                                                               : step_pos_[idx_passo_suporte_ - 2];
             Eigen::Vector2d fim = step_pos_[idx_passo_suporte_];
 
-            double x = (1.0 - sc) * inicio.x() + sc * fim.x();
-            double y = (1.0 - sc) * inicio.y() + sc * fim.y();
+            double x_step = inicio.x() + (fim.x() - inicio.x()) * cycloid_progression;
+            double y_step = inicio.y() + (fim.y() - inicio.y()) * cycloid_progression;
 
-            if (s >= 1.0 - 1e-12)  right_foot_pose.topRightCorner<3,1>() << fim.x(), fim.y(), 0.0;
-            else                   right_foot_pose.topRightCorner<3,1>() << x, y, z_sin;
+            right_foot_pose.topLeftCorner<3,3>() = rot_swing; // Orientação interpolada (Eq 2.25)
+            right_foot_pose.topRightCorner<3,1>() << x_step, y_step, z_step;
         }
-    } else { // fase de duplo suporte (DSP)
-        if (idx_passo_suporte_ == 0) {
-            right_foot_pose.topRightCorner<3,1>() << pe_direito_inicial.x(),  pe_direito_inicial.y(),  0.0;
-            left_foot_pose.topRightCorner<3,1>()  << pe_esquerdo_inicial.x(), pe_esquerdo_inicial.y(), 0.0;
-        } else {
-            Eigen::Vector2d suporte = step_pos_[idx_passo_suporte_ - 1];
-            int idx_pousado = std::min(idx_passo_suporte_, static_cast<int>(step_pos_.size() - 1));
-            Eigen::Vector2d pousado = step_pos_[idx_pousado];
 
-            if (pe_esquerdo_e_balanco) {
-                left_foot_pose.topRightCorner<3,1>()  << pousado.x(), pousado.y(), 0.0;
-                right_foot_pose.topRightCorner<3,1>() << suporte.x(), suporte.y(), 0.0;
+    } else { // DSP (Double Support Phase)
+        
+        // Conversão segura de tamanho para int
+        int total_steps = (int)step_pos_.size();
+        int total_yaws = (int)step_yaw_.size();
+
+        // --- DEFINIÇÕES DE ONDE OS PÉS DEVEM ESTAR NA DSP ---
+        
+        // 1. O pé que ACABOU de completar o passo (Current/Alvo)
+        // Ele deve ficar fixo onde pousou (step_pos_[idx])
+        Eigen::Vector2d pos_alvo_pousado = (idx_passo_suporte_ >= total_steps) ? step_pos_.back() : step_pos_[idx_passo_suporte_];
+        double rot_alvo_pousado_val = (idx_passo_suporte_ >= total_yaws) ? step_yaw_.back() : step_yaw_[idx_passo_suporte_];
+        Eigen::Matrix3d rot_matrix_alvo = robotis_framework::convertRPYToRotation(0, 0, rot_alvo_pousado_val);
+
+        // 2. O pé que FICOU parado dando suporte (Previous/Anterior)
+        // Ele deve continuar onde estava (step_pos_[idx-1])
+        Eigen::Vector2d pos_suporte_fixo; 
+        double rot_suporte_fixo_val;
+        
+        if (idx_passo_suporte_ == 0) {
+            // Se é o primeiro passo, o "anterior" é a origem absoluta ou posição inicial dos pés
+            // Assumindo que o pé de suporte inicial está em (0, -largura/2) ou (0, +largura/2)
+            // Mas para simplificar a lógica global, usamos a referência do step 0 (0,0) e ajustamos no if abaixo se necessário
+            pos_suporte_fixo = Eigen::Vector2d(0.0, 0.0);
+            rot_suporte_fixo_val = 0.0;
+        } else {
+            pos_suporte_fixo = step_pos_[idx_passo_suporte_ - 1];
+            rot_suporte_fixo_val = step_yaw_[idx_passo_suporte_ - 1];
+        }
+        Eigen::Matrix3d rot_matrix_suporte = robotis_framework::convertRPYToRotation(0, 0, rot_suporte_fixo_val);
+
+
+        if (pe_esquerdo_e_balanco) {
+            // Se a variável diz que o esquerdo é o de "balanço", significa que neste passo (idx)
+            // foi o ESQUERDO que se moveu. Agora na DSP, ele acabou de chegar no chão.
+            
+            // PÉ ESQUERDO: Acabou de pousar no Alvo. Manter no Alvo.
+            left_foot_pose.topLeftCorner<3,3>() = rot_matrix_alvo;
+            left_foot_pose.topRightCorner<3,1>() << pos_alvo_pousado.x(), pos_alvo_pousado.y(), 0.0;
+
+            // PÉ DIREITO: Foi o suporte durante o balanço. Manter no Anterior.
+            right_foot_pose.topLeftCorner<3,3>() = rot_matrix_suporte;
+            
+            if (idx_passo_suporte_ == 0) {
+                 // Caso especial passo 0: Direito estava na posição inicial de repouso
+                 right_foot_pose.topRightCorner<3,1>() << pe_direito_inicial.x(), pe_direito_inicial.y(), 0.0;
             } else {
-                right_foot_pose.topRightCorner<3,1>() << pousado.x(), pousado.y(), 0.0;
-                left_foot_pose.topRightCorner<3,1>()  << suporte.x(), suporte.y(), 0.0;
+                 right_foot_pose.topRightCorner<3,1>() << pos_suporte_fixo.x(), pos_suporte_fixo.y(), 0.0;
+            }
+
+        } else {
+            // Lógica inversa: O DIREITO foi quem se moveu e pousou.
+            
+            // PÉ DIREITO: Acabou de pousar no Alvo. Manter no Alvo.
+            right_foot_pose.topLeftCorner<3,3>() = rot_matrix_alvo;
+            right_foot_pose.topRightCorner<3,1>() << pos_alvo_pousado.x(), pos_alvo_pousado.y(), 0.0;
+
+            // PÉ ESQUERDO: Foi o suporte. Manter no Anterior.
+            left_foot_pose.topLeftCorner<3,3>() = rot_matrix_suporte;
+            
+            if (idx_passo_suporte_ == 0) {
+                // Caso especial passo 0: Esquerdo estava na posição inicial de repouso
+                left_foot_pose.topRightCorner<3,1>() << pe_esquerdo_inicial.x(), pe_esquerdo_inicial.y(), 0.0;
+            } else {
+                left_foot_pose.topRightCorner<3,1>() << pos_suporte_fixo.x(), pos_suporte_fixo.y(), 0.0;
             }
         }
     }
@@ -393,7 +524,7 @@ void KajitaWalkingController::process()
         angulos_calculados["l_ank_pitch"] = angulos_perna_esquerda[4];
         angulos_calculados["l_ank_roll"] = angulos_perna_esquerda[5];
         
-        // --- Atualizar Cinemática ---
+        // Atualizar Cinemática 
         for (int id = 1; id <= ALL_JOINT_ID; id++) {
             robotis_op::LinkData* link = kinematics_->op3_link_data_[id];
             if (link != NULL && angulos_calculados.count(link->name_)) {
@@ -402,7 +533,7 @@ void KajitaWalkingController::process()
         }
         kinematics_->calcForwardKinematics(0);
 
-        // --- Compensação de Gravidade ---
+        // Compensação de Gravidade 
         if (enable_gravity_compensation_) {
             Eigen::Vector3d gravity_in_world(0, 0, -g_);
             Eigen::Vector3d gravity_in_torso = body_rotation.transpose() * gravity_in_world;
@@ -438,7 +569,7 @@ void KajitaWalkingController::process()
             }
         }
 
-        // --- Publicação ---
+        // Publicação 
         if (publish_mode_ == "joint_state") {
             sensor_msgs::msg::JointState goal_joint_msg;
             goal_joint_msg.header.stamp = this->now();
@@ -475,6 +606,8 @@ void KajitaWalkingController::process()
 void KajitaWalkingController::cmdVelCallback(const geometry_msgs::msg::Twist::SharedPtr msg)
 {
     vx_desejada_ = msg->linear.x;
+    vy_desejada_ = msg->linear.y;
+    omega_desejada_ = msg->angular.z;
 }
 
 // Resolve a Equação Discreta Algébrica de Riccati (DARE) de forma iterativa para encontrar a matriz de ganho 'S' do controlador LQR.

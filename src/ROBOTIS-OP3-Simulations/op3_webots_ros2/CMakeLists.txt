@@ -12,6 +12,7 @@ find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(webots_ros2_driver REQUIRED)
+find_package(rosgraph_msgs REQUIRED)
 
 find_package(PkgConfig REQUIRED)
 
@@ -52,6 +53,7 @@ ament_target_dependencies(op3_extern_controller
   ament_index_cpp
   rclcpp
   webots_ros2_driver
+  rosgraph_msgs
 )
 
 install(TARGETS

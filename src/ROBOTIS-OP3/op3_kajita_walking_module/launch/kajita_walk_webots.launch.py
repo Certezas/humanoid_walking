@@ -8,36 +8,36 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
     package_dir = get_package_share_directory('op3_webots_ros2')
     
-    # Inicia o Webots com o mundo que já contém o robô
+    # 1. Inicia o Webots com o mundo
     webots = WebotsLauncher(
         world=os.path.join(package_dir, 'worlds', 'robotis_op3_extern.wbt')
     )
 
-    # Inicia o controlador externo, que faz a ponte com o simulador
+    # 2. Inicia o controlador externo 
     op3_webots_controller = Node(
         package='op3_webots_ros2',
         executable='op3_extern_controller',
         output='screen',
-        # Remapeia o TÓPICO DE ENTRADA do controlador para que ele
-        # receba os ângulos do SEU nó, em vez de um nó padrão.
-        
+        parameters=[{'use_sim_time': True}] 
     )
 
-    # Inicia o SEU nó de caminhada, que publica os ângulos
+    # 3. Definição do nó Kajita
     kajita_walking_node = Node(
         package='op3_kajita_walking_module',
-        executable='kajita_walking_node',
-        name='kajita_walking_node',
+        executable='op3_kajita_walking_controller_node',
+        name='op3_kajita_walking_controller_node',
         output='screen',
         parameters=[
-            {'publish_mode': 'individual_topics'}  # Modo de publicação individual
+            {'use_sim_time': True},
+            {'publish_mode': 'individual_topics'}
         ]
     )
 
     return LaunchDescription([
         webots,
         op3_webots_controller,
-        #kajita_walking_node,
+        
+        # kajita_walking_node,  <--- COMENTADO PARA NÃO RODAR AUTOMÁTICO
         
         # Garante que tudo feche ao fechar o Webots
         launch.actions.RegisterEventHandler(

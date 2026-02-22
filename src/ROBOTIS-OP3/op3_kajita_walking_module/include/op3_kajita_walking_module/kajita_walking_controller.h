@@ -80,10 +80,11 @@ private:
     std::map<std::string, double> target_initial_pose_;
 
     // --- Parâmetros de Entrada da Caminhada ---
-    double vx_desejada_, vy_desejada_, v_ang_desejada_;
+    double vx_desejada_, vy_desejada_, omega_desejada_;
     int n_step_;
     double t_step_;
     double largura_passo_base_;
+    std::vector<double> step_yaw_;
 
     // --- Offsets da Posição do Tronco ---
     double x_offset_, y_offset_, z_offset_;
@@ -94,6 +95,7 @@ private:
     double zc_; // Altura constante do Centro de Massa (CoM)
     double g_;  // Aceleração da gravidade
     double dt_; // Passo de tempo da simulação
+    double altura_passo_; // Altura do passo na fase de balanço
 
     // --- Matrizes e Ganhos do Controlador ---
     int K_preview_, K_sim_;
