@@ -21,8 +21,6 @@
 #include "op3_kinematics_dynamics/op3_kinematics_dynamics_define.h"
 #include "op3_kinematics_dynamics/link_data.h"
 
-// 'using namespace Eigen;' foi removido do cabeçalho.
-
 class KajitaWalkingController : public rclcpp::Node
 {
 public:
@@ -65,9 +63,9 @@ private:
     std::map<std::string, double> target_initial_pose_;
 
     // --- Parâmetros de Entrada e Caminhada ---
-    double vx_desejada_, vy_desejada_, v_ang_desejada_;
+    double vx_desejada_, vy_desejada_, vw_desejada_;
     int n_step_;
-    double t_step_, largura_passo_base_;
+    double t_step_, largura_passo_base_, altura_passo_;
 
     // --- Offsets da Posição do Tronco ---
     double x_offset_, y_offset_, z_offset_;
@@ -90,6 +88,7 @@ private:
 
     // --- Vetores de Planejamento e Estado ---
     std::vector<Eigen::Vector2d> step_pos_;
+    std::vector<double> step_yaw_;
     std::vector<double> ZMP_x_ref_, ZMP_y_ref_;
     Eigen::MatrixXd COM_x_, COM_y_;
     
@@ -99,9 +98,17 @@ private:
     int idx_passo_suporte_;
     double tempo_no_passo_;
 
-    // --- Histórico para Análise (Opcional) ---
+    // --- Histórico para Análise ---
     std::vector<double> COM_x_H_, COM_y_H_;
     std::vector<double> ZMP_x_H_, ZMP_y_H_;
+    std::vector<double> foot_r_x_H_;
+    std::vector<double> foot_r_y_H_;
+    std::vector<double> foot_l_x_H_;
+    std::vector<double> foot_l_y_H_;
+    std::vector<double> foot_r_yaw_H_;
+    std::vector<double> foot_l_yaw_H_;
+    std::vector<double> jerk_x_H_;
+    std::vector<double> jerk_y_H_;
 };
 
 #endif

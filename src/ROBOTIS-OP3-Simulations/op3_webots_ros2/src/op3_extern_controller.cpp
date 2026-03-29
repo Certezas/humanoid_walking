@@ -13,6 +13,7 @@
 #include <webots/Gyro.hpp>
 #include <webots/Accelerometer.hpp>
 #include <webots/InertialUnit.hpp>
+#include <rosgraph_msgs/msg/clock.hpp>
 
 namespace robotis_op
 {
@@ -206,7 +207,7 @@ void OP3ExternController::getPresentJointTorques()
 void OP3ExternController::getCurrentRobotCOM()
 {
   const double* com = this->getSelf()->getCenterOfMass();
-
+  RCLCPP_INFO(this->get_logger(), "Altura Atual do CoM (Z): %f", com[2]);
   previous_com_m_[0] = current_com_m_[0];
   previous_com_m_[1] = current_com_m_[1];
   previous_com_m_[2] = current_com_m_[2];
@@ -294,6 +295,7 @@ void OP3ExternController::publishCameraData()
 void OP3ExternController::queueThread()
 {
   auto executor = std::make_shared<rclcpp::executors::SingleThreadedExecutor>();
+  auto clock_pub = this->create_publisher<rosgraph_msgs::msg::Clock>("/clock", 10);
   executor->add_node(this->get_node_base_interface());
 
 
@@ -321,6 +323,12 @@ void OP3ExternController::queueThread()
   while (rclcpp::ok())
   {
     executor->spin_some();
+    // PUBLIQUE O CLOCK AQUI
+    rosgraph_msgs::msg::Clock clock_msg;
+    // Pega o tempo atual do Webots e converte para segundos/nanossegundos
+    double webots_time = this->getTime(); 
+    clock_msg.clock = rclcpp::Time(static_cast<uint64_t>(webots_time * 1e9));
+    clock_pub->publish(clock_msg);
     this->publishCameraData();
     rate.sleep();
   }
